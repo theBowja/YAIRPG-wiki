@@ -98,7 +98,7 @@
     "base_xp_cost": 60,
     "xp_scaling": 1.8
   },
-  "berserker's-stride": {
+  "berserkers-stride": {
     "id": "Berserker's stride",
     "name": "Berserker's stride",
     "description": "A wild and dangerous technique that focuses on dealing as much damage as possible, while completely ignoring own defense",
@@ -156,7 +156,6 @@
     "id": "Strength of mind",
     "name": "Strength of mind",
     "description": "Resist and reject the unnatural influence. Turn your psyche into an iron fortress",
-    "flavour_text": "Blessed is the mind too small for doubt.",
     "max_level": 40,
     "category": "Environmental",
     "base_xp_cost": 400,
@@ -283,7 +282,6 @@
     "id": "Sleeping",
     "name": "Sleeping",
     "description": "Good, regular sleep is the basis of getting stronger and helps your body heal",
-    "flavour_text": "One rat, two rats, three rats...",
     "max_level": 10,
     "category": "Activity",
     "base_xp_cost": 1000,
@@ -491,7 +489,6 @@
     "id": "Persistence",
     "name": "Persistence",
     "description": "Do not give up, no matter what",
-    "flavour_text": "Believe in me that believes in you!",
     "max_level": 30,
     "category": "Character",
     "base_xp_cost": 60,
@@ -537,7 +534,6 @@
     "id": "Breathing",
     "name": "Breathing",
     "description": "Oxygen is the most important resource for improving the performance of your body. Learn how to take it in more efficiently",
-    "flavour_text": "You are now breathing manually",
     "max_level": 40,
     "category": "Character",
     "base_xp_cost": 400,

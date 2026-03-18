@@ -1,0 +1,51 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import activitiesData from '../../data/activities.json';
+
+export function getStaticPaths() {
+  return Object.entries(activitiesData).map(([slug, activity]) => ({
+    params: { id: slug },
+    props: { activity },
+  }));
+}
+
+const { id } = Astro.params;
+const { activity } = Astro.props;
+---
+
+<StarlightPage frontmatter={{ title: activity.name, description: activity.description }}>
+  <div class="activity-details">
+    <p>{activity.description}</p>
+
+    <h2>Attributes</h2>
+    <ul>
+      <li><strong>Type:</strong> {activity.type}</li>
+      <li><strong>Action Text:</strong> {activity.action_text}</li>
+      {activity.payment_type && (
+        <li><strong>Payment Type:</strong> {activity.payment_type}</li>
+      )}
+      {activity.required_tool_type && (
+        <li><strong>Required Tool:</strong> {activity.required_tool_type}</li>
+      )}
+      <li><strong>Skills Involved:</strong> {activity.base_skills_names.join(', ')}</li>
+    </ul>
+  </div>
+</StarlightPage>
+
+<style>
+  .activity-details {
+    margin-top: 1rem;
+  }
+  .activity-details h2 {
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--sl-color-gray-5);
+    padding-bottom: 0.5rem;
+  }
+  .activity-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  .activity-details li {
+    margin-bottom: 0.5rem;
+  }
+</style>

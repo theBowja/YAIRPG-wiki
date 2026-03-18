@@ -33,6 +33,8 @@ export async function load(url, context, nextLoad) {
             source = craftingRecipesSource;
         } else if (url.includes('main.js')) {
             source = mainSource;
+        } else if (url.includes('display.js')) {
+            source = displaySource;
         }
 
         return {
@@ -58,4 +60,9 @@ const mainSource = `
 export const game_options = {
     exp_threshold: 9,
 }
+export const add_active_effect = () => {};
+`
+
+const displaySource = `
+export const log_message = () => {};
 `

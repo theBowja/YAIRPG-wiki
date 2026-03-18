@@ -15,6 +15,11 @@ const { skill } = Astro.props;
 
 <StarlightPage frontmatter={{ title: skill.name, description: skill.description }}>
   <div class="skill-details">
+    <p>{skill.description}</p>
+    {skill.flavour_text && (
+      <p><em>{skill.flavour_text}</em></p>
+    )}
+
     <h2>Attributes</h2>
     <ul>
       <li><strong>Category:</strong> {skill.category}</li>
@@ -22,12 +27,6 @@ const { skill } = Astro.props;
       <li><strong>Base XP Cost:</strong> {skill.base_xp_cost}</li>
       <li><strong>XP Scaling:</strong> {skill.xp_scaling}</li>
     </ul>
-
-    <h2>Description</h2>
-    <p>{skill.description}</p>
-    {skill.flavour_text && (
-      <p><em>{skill.flavour_text}</em></p>
-    )}
   </div>
 </StarlightPage>
 

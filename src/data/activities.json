@@ -1,0 +1,157 @@
+{
+  "fieldwork": {
+    "id": "fieldwork",
+    "name": "Fieldwork",
+    "description": "It's tiring and doesn't pay much, but it's better than doing nothing",
+    "action_text": "Working on the fields",
+    "base_skills_names": [
+      "Farming"
+    ],
+    "type": "Job"
+  },
+  "patrolling": {
+    "id": "patrolling",
+    "name": "Patrolling",
+    "description": "Nothing ever happens",
+    "action_text": "Patrolling",
+    "base_skills_names": [
+      "Spatial awareness"
+    ],
+    "type": "Job"
+  },
+  "running": {
+    "id": "running",
+    "name": "Running",
+    "description": "One of the most basic exercises",
+    "action_text": "Just running around",
+    "base_skills_names": [
+      "Running"
+    ],
+    "type": "Training"
+  },
+  "weightlifting": {
+    "id": "weightlifting",
+    "name": "Weightlifting",
+    "description": "One of the most basic exercises",
+    "action_text": "Carrying heavy things",
+    "base_skills_names": [
+      "Weightlifting"
+    ],
+    "type": "Training"
+  },
+  "balancing": {
+    "id": "balancing",
+    "name": "Balancing",
+    "description": "One of the most basic exercises",
+    "action_text": "Trying to keep your balance",
+    "base_skills_names": [
+      "Equilibrium"
+    ],
+    "type": "Training"
+  },
+  "swimming": {
+    "id": "swimming",
+    "name": "Swimming",
+    "description": "A rather basic, although somewhat risky exercise",
+    "action_text": "Splish, splash, splosh",
+    "base_skills_names": [
+      "Swimming"
+    ],
+    "type": "Training"
+  },
+  "meditating": {
+    "id": "meditating",
+    "name": "Meditating",
+    "description": "A somewhat basic exercise",
+    "action_text": "Focusing your mind",
+    "base_skills_names": [
+      "Meditation"
+    ],
+    "type": "Training"
+  },
+  "climbing": {
+    "id": "climbing",
+    "name": "Climbing",
+    "description": "An advanced exercise that uses majority of muscles in the body",
+    "action_text": "Looking for next grip to hold to",
+    "base_skills_names": [
+      "Climbing"
+    ],
+    "type": "Training"
+  },
+  "enduring": {
+    "id": "enduring",
+    "name": "Enduring",
+    "description": "An advanced technique that hardens your resolve more than your body",
+    "action_text": "Withstanding the elements",
+    "base_skills_names": [
+      "Persistence"
+    ],
+    "type": "Training"
+  },
+  "mining": {
+    "id": "mining",
+    "name": "Mining",
+    "description": "Swing you pickaxe against the hard rock",
+    "action_text": "Swinging the pickaxe",
+    "base_skills_names": [
+      "Mining"
+    ],
+    "type": "Gathering",
+    "required_tool_type": "pickaxe"
+  },
+  "digging": {
+    "id": "digging",
+    "name": "Digging",
+    "description": "Dig up useful materials with a shovel",
+    "action_text": "Swinging the shovel",
+    "base_skills_names": [
+      "Digging"
+    ],
+    "type": "Gathering",
+    "required_tool_type": "shovel"
+  },
+  "woodcutting": {
+    "id": "woodcutting",
+    "name": "Woodcutting",
+    "description": "Chop chop",
+    "action_text": "Gathering wood",
+    "base_skills_names": [
+      "Woodcutting"
+    ],
+    "type": "Gathering",
+    "required_tool_type": "axe"
+  },
+  "herbalism": {
+    "id": "herbalism",
+    "name": "Herbalism",
+    "description": "Look for any useful plants and mushrooms",
+    "action_text": "Searching for herbs",
+    "base_skills_names": [
+      "Herbalism"
+    ],
+    "type": "Gathering",
+    "required_tool_type": "sickle"
+  },
+  "animal-care": {
+    "id": "animal care",
+    "name": "Animal Care",
+    "description": "Take care of animals",
+    "action_text": "Tending to animals",
+    "base_skills_names": [
+      "Animal handling"
+    ],
+    "type": "Gathering"
+  },
+  "fishing": {
+    "id": "fishing",
+    "name": "Fishing",
+    "description": "Try to catch some fish",
+    "action_text": "Waiting for a bite",
+    "base_skills_names": [
+      "Fishing"
+    ],
+    "type": "Gathering",
+    "required_tool_type": "fishing_pole"
+  }
+}
