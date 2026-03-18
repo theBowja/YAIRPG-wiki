@@ -7,7 +7,10 @@
     "start": "astro dev",
     "build": "astro build",
     "preview": "astro preview",
-    "astro": "astro"
+    "astro": "astro",
+    "clone": "node ./scripts/clone-yairpg.js",
+    "danger": "node --import ./scripts/register-hooks.js ./scripts/danger.js",
+    "build:skills": "node --import ./scripts/register-hooks.js ./scripts/build-skill-docs.js"
   },
   "dependencies": {
     "@astrojs/starlight": "^0.38.1",

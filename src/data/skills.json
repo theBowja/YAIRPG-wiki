@@ -1,0 +1,564 @@
+{
+  "combat": {
+    "id": "Combat",
+    "name": "Combat",
+    "description": "Overall combat ability",
+    "max_level": 60,
+    "category": "Combat",
+    "base_xp_cost": 60,
+    "xp_scaling": 1.8
+  },
+  "pest-killer": {
+    "id": "Pest killer",
+    "name": "Pest killer",
+    "description": "Small enemies might not seem very dangerous, but it's not that easy to hit them!",
+    "max_level": 60,
+    "category": "Combat",
+    "base_xp_cost": 100,
+    "xp_scaling": 1.8
+  },
+  "giant-slayer": {
+    "id": "Giant slayer",
+    "name": "Giant killer",
+    "description": "Large opponents might seem scary, but just don't get hit and you should be fine!",
+    "max_level": 60,
+    "category": "Combat",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "evasion": {
+    "id": "Evasion",
+    "name": "Evasion",
+    "description": "Ability to evade attacks. You cannot do it while using a shield",
+    "max_level": 60,
+    "category": "Combat",
+    "base_xp_cost": 20,
+    "xp_scaling": 1.8
+  },
+  "shield-blocking": {
+    "id": "Shield blocking",
+    "name": "Shield blocking",
+    "description": "Ability to block attacks with shield. You cannot evade while using one",
+    "max_level": 30,
+    "category": "Combat",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "unarmed": {
+    "id": "Unarmed",
+    "name": "Unarmed",
+    "description": "It's definitely, unquestionably, undoubtedly better to just use a weapon instead of doing this. But sure, why not?",
+    "max_level": 60,
+    "category": "Combat",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "stance-mastery": {
+    "id": "Stance mastery",
+    "name": "Stance proficiency",
+    "description": "Knowledge on how to apply different stances in combat",
+    "max_level": 30,
+    "category": "Stance",
+    "base_xp_cost": 60,
+    "xp_scaling": 1.8
+  },
+  "quick-steps": {
+    "id": "Quick steps",
+    "name": "Quick steps",
+    "description": "A swift and precise technique that abandons strength in favor of greater speed",
+    "max_level": 30,
+    "category": "Stance",
+    "base_xp_cost": 60,
+    "xp_scaling": 1.8
+  },
+  "heavy-strike": {
+    "id": "Heavy strike",
+    "name": "Crushing force",
+    "description": "A powerful and dangerous technique that abandons speed in favor of overwhelmingly strong attacks",
+    "max_level": 30,
+    "category": "Stance",
+    "base_xp_cost": 60,
+    "xp_scaling": 1.8
+  },
+  "wide-swing": {
+    "id": "Wide swing",
+    "name": "Broad arc",
+    "description": "A special technique that allows striking multiple enemies at once, although at a cost of lower overall efficiency. Slightly reduces xp and loot.",
+    "max_level": 30,
+    "category": "Stance",
+    "base_xp_cost": 60,
+    "xp_scaling": 1.8
+  },
+  "defensive-measures": {
+    "id": "Defensive measures",
+    "name": "Defensive measures",
+    "description": "A careful technique focused much more on defense than on attacking",
+    "max_level": 30,
+    "category": "Stance",
+    "base_xp_cost": 60,
+    "xp_scaling": 1.8
+  },
+  "berserker's-stride": {
+    "id": "Berserker's stride",
+    "name": "Berserker's stride",
+    "description": "A wild and dangerous technique that focuses on dealing as much damage as possible, while completely ignoring own defense",
+    "max_level": 30,
+    "category": "Stance",
+    "base_xp_cost": 60,
+    "xp_scaling": 1.8
+  },
+  "flowing-water": {
+    "id": "Flowing water",
+    "name": "Flowing water",
+    "description": "A wild and dangerous technique that focuses on dealing as much damage as possible, while completely ignoring own defense",
+    "max_level": 30,
+    "category": "Stance",
+    "base_xp_cost": 60,
+    "xp_scaling": 1.8
+  },
+  "spatial-awareness": {
+    "id": "Spatial awareness",
+    "name": "Spatial awareness",
+    "description": "Understanding where you are in relation to other creatures and objects",
+    "max_level": 60,
+    "category": "Environmental",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "tight-maneuvers": {
+    "id": "Tight maneuvers",
+    "name": "Tight maneuvers",
+    "description": "Learn how to fight in narrow environment, where there's not much space for dodging attacks",
+    "max_level": 60,
+    "category": "Environmental",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "night-vision": {
+    "id": "Night vision",
+    "name": "Night vision",
+    "description": "Ability to see in darkness",
+    "max_level": 10,
+    "category": "Environmental",
+    "base_xp_cost": 600,
+    "xp_scaling": 1.9
+  },
+  "presence-sensing": {
+    "id": "Presence sensing",
+    "name": "Presence sensing",
+    "description": "Ability to sense a presence without using your eyes",
+    "max_level": 20,
+    "category": "Environmental",
+    "base_xp_cost": 60,
+    "xp_scaling": 2
+  },
+  "strength-of-mind": {
+    "id": "Strength of mind",
+    "name": "Strength of mind",
+    "description": "Resist and reject the unnatural influence. Turn your psyche into an iron fortress",
+    "flavour_text": "Blessed is the mind too small for doubt.",
+    "max_level": 40,
+    "category": "Environmental",
+    "base_xp_cost": 400,
+    "xp_scaling": 1.7
+  },
+  "scrambling": {
+    "id": "Scrambling",
+    "name": "Scrambling",
+    "description": "Ability to act quickly and with secure footing in rough, loose, or unstable ground",
+    "max_level": 60,
+    "category": "Environmental",
+    "base_xp_cost": 400,
+    "xp_scaling": 1.7
+  },
+  "heat-resistance": {
+    "id": "Heat resistance",
+    "name": "Heat resistance",
+    "description": "Ability to survive and function in high temperatures",
+    "max_level": 40,
+    "category": "Environmental",
+    "base_xp_cost": 100,
+    "xp_scaling": 1.8
+  },
+  "cold-resistance": {
+    "id": "Cold resistance",
+    "name": "Cold resistance",
+    "description": "Ability to survive and function in low temperatures",
+    "max_level": 40,
+    "category": "Environmental",
+    "base_xp_cost": 200,
+    "xp_scaling": 1.8
+  },
+  "dazzle-resistance": {
+    "id": "Dazzle resistance",
+    "name": "Dazzle resistance",
+    "description": "Don't look at the sun, it's bad for your eyes",
+    "max_level": 30,
+    "category": "Environmental",
+    "base_xp_cost": 60,
+    "xp_scaling": 1.8
+  },
+  "weapon-mastery": {
+    "id": "Weapon mastery",
+    "name": "Weapon proficiency",
+    "description": "Knowledge of all weapons",
+    "max_level": 60,
+    "category": "Weapon",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "swords": {
+    "id": "Swords",
+    "name": "Swordsmanship",
+    "description": "The noble art of swordsmanship",
+    "max_level": 60,
+    "category": "Weapon",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "axes": {
+    "id": "Axes",
+    "name": "Axe combat",
+    "description": "Ability to fight with axes",
+    "max_level": 60,
+    "category": "Weapon",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "spears": {
+    "id": "Spears",
+    "name": "Spearmanship",
+    "description": "The ability to fight with the most deadly weapon in history",
+    "max_level": 60,
+    "category": "Weapon",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "hammers": {
+    "id": "Hammers",
+    "name": "Hammer combat",
+    "description": "Ability to fight with battle hammers. Why bother trying to cut someone, when you can just crack all their bones?",
+    "max_level": 60,
+    "category": "Weapon",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "daggers": {
+    "id": "Daggers",
+    "name": "Dagger combat",
+    "description": "The disdained art of fighting (and stabbing) with daggers",
+    "max_level": 60,
+    "category": "Weapon",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "wands": {
+    "id": "Wands",
+    "name": "Wand casting",
+    "description": "Ability to cast spells with magic wands, increases damage dealt",
+    "max_level": 60,
+    "category": "Weapon",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "staffs": {
+    "id": "Staffs",
+    "name": "Staff casting",
+    "description": "Ability to cast spells with magic staffs, increases damage dealt",
+    "max_level": 60,
+    "category": "Weapon",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "farming": {
+    "id": "Farming",
+    "name": "Farming",
+    "description": "Even a simple action of plowing some fields, can be performed better with skills and experience",
+    "max_level": 10,
+    "category": "Activity",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.6
+  },
+  "sleeping": {
+    "id": "Sleeping",
+    "name": "Sleeping",
+    "description": "Good, regular sleep is the basis of getting stronger and helps your body heal",
+    "flavour_text": "One rat, two rats, three rats...",
+    "max_level": 10,
+    "category": "Activity",
+    "base_xp_cost": 1000,
+    "xp_scaling": 2
+  },
+  "meditation": {
+    "id": "Meditation",
+    "name": "Meditation",
+    "description": "Focus your mind",
+    "max_level": 30,
+    "category": "Activity",
+    "base_xp_cost": 200,
+    "xp_scaling": 1.8
+  },
+  "running": {
+    "id": "Running",
+    "name": "Running",
+    "description": "Great way to improve the efficiency of the body",
+    "max_level": 50,
+    "category": "Activity",
+    "base_xp_cost": 50,
+    "xp_scaling": 1.8
+  },
+  "weightlifting": {
+    "id": "Weightlifting",
+    "name": "Weightlifting",
+    "description": "No better way to get stronger than by lifting heavy things",
+    "max_level": 50,
+    "category": "Activity",
+    "base_xp_cost": 50,
+    "xp_scaling": 1.8
+  },
+  "swimming": {
+    "id": "Swimming",
+    "name": "Swimming",
+    "description": "A nice, gentle, and relaxing exercise. Just remember to be careful",
+    "max_level": 50,
+    "category": "Activity",
+    "base_xp_cost": 50,
+    "xp_scaling": 1.8
+  },
+  "equilibrium": {
+    "id": "Equilibrium",
+    "name": "Equilibrium",
+    "description": "Nothing will throw you off your balance (at least the physical one)",
+    "max_level": 50,
+    "category": "Activity",
+    "base_xp_cost": 50,
+    "xp_scaling": 1.8
+  },
+  "climbing": {
+    "id": "Climbing",
+    "name": "Climbing",
+    "description": "Intense and slightly dangerous form of training that involves majority of your muscles",
+    "max_level": 50,
+    "category": "Activity",
+    "base_xp_cost": 50,
+    "xp_scaling": 1.8
+  },
+  "woodcutting": {
+    "id": "Woodcutting",
+    "name": "Woodcutting",
+    "description": "Get better with chopping the wood",
+    "max_level": 60,
+    "category": "Gathering",
+    "base_xp_cost": 10,
+    "xp_scaling": 1.6
+  },
+  "mining": {
+    "id": "Mining",
+    "name": "Mining",
+    "description": "Get better with mining the ores",
+    "max_level": 60,
+    "category": "Gathering",
+    "base_xp_cost": 10,
+    "xp_scaling": 1.6
+  },
+  "digging": {
+    "id": "Digging",
+    "name": "Digging",
+    "description": "Get better with swinging the shovel",
+    "max_level": 60,
+    "category": "Gathering",
+    "base_xp_cost": 10,
+    "xp_scaling": 1.6
+  },
+  "herbalism": {
+    "id": "Herbalism",
+    "name": "Herbalism",
+    "description": "Knowledge of useful plants and mushrooms",
+    "max_level": 60,
+    "category": "Gathering",
+    "base_xp_cost": 10,
+    "xp_scaling": 1.6
+  },
+  "animal-handling": {
+    "id": "Animal handling",
+    "name": "Animal handling",
+    "description": "Knowledge and skills required to deal with a wide variety of animals",
+    "max_level": 60,
+    "category": "Gathering",
+    "base_xp_cost": 10,
+    "xp_scaling": 1.6
+  },
+  "fishing": {
+    "id": "Fishing",
+    "name": "Fishing",
+    "description": "Get better at luring all kinds of fish",
+    "max_level": 60,
+    "category": "Gathering",
+    "base_xp_cost": 10,
+    "xp_scaling": 1.6
+  },
+  "crafting-mastery": {
+    "id": "Crafting mastery",
+    "name": "Crafting mastery",
+    "description": "A mastery of the minor crafting branches like tinkering, woodworking, or butchering",
+    "max_level": 60,
+    "category": "Crafting",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.5
+  },
+  "crafting": {
+    "id": "Crafting",
+    "name": "Tinkering",
+    "description": "Turn smaller pieces into one bigger thing",
+    "max_level": 60,
+    "category": "Crafting",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.5
+  },
+  "smelting": {
+    "id": "Smelting",
+    "name": "Smelting",
+    "description": "Turning raw ore into raw metal",
+    "max_level": 60,
+    "category": "Crafting",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.5
+  },
+  "forging": {
+    "id": "Forging",
+    "name": "Forging",
+    "description": "Turning raw metal into something useful",
+    "max_level": 60,
+    "category": "Crafting",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.5
+  },
+  "cooking": {
+    "id": "Cooking",
+    "name": "Cooking",
+    "description": "Making the inedible edible",
+    "max_level": 60,
+    "category": "Crafting",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.5
+  },
+  "alchemy": {
+    "id": "Alchemy",
+    "name": "Alchemy",
+    "description": "Extracting and enhancing useful properties of the ingredients",
+    "max_level": 60,
+    "category": "Crafting",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.5
+  },
+  "butchering": {
+    "id": "Butchering",
+    "name": "Butchering",
+    "description": "Making the most of what you kill",
+    "max_level": 60,
+    "category": "Crafting",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.5
+  },
+  "woodworking": {
+    "id": "Woodworking",
+    "name": "Woodworking",
+    "description": "Turning wood logs into something useful",
+    "max_level": 60,
+    "category": "Crafting",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.5
+  },
+  "iron-skin": {
+    "id": "Iron skin",
+    "name": "Tough skin",
+    "description": "Wearing no protective armor means that your skin keeps getting damaged in combat, which leads to it regenerating over and over to become tougher",
+    "max_level": 30,
+    "category": "Combat",
+    "base_xp_cost": 400,
+    "xp_scaling": 1.9
+  },
+  "fortitude": {
+    "id": "Fortitude",
+    "name": "Fortitude",
+    "description": "Pretend the wounds are not there",
+    "max_level": 60,
+    "category": "Combat",
+    "base_xp_cost": 200,
+    "xp_scaling": 1.6
+  },
+  "persistence": {
+    "id": "Persistence",
+    "name": "Persistence",
+    "description": "Do not give up, no matter what",
+    "flavour_text": "Believe in me that believes in you!",
+    "max_level": 30,
+    "category": "Character",
+    "base_xp_cost": 60,
+    "xp_scaling": 1.8
+  },
+  "perception": {
+    "id": "Perception",
+    "name": "Perception",
+    "description": "Better grasp on your senses allows you to notice small and hidden things, as well as to discern the true nature of what you observe",
+    "max_level": 40,
+    "category": "Character",
+    "base_xp_cost": 100,
+    "xp_scaling": 1.8
+  },
+  "literacy": {
+    "id": "Literacy",
+    "name": "Literacy",
+    "description": "Ability to read and understand written text",
+    "max_level": 10,
+    "category": "Character",
+    "base_xp_cost": 120,
+    "xp_scaling": 2
+  },
+  "medicine": {
+    "id": "Medicine",
+    "name": "Medicine",
+    "description": "Create better medicaments and improve your skill at treating wounds",
+    "max_level": 30,
+    "category": "Character",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "gluttony": {
+    "id": "Gluttony",
+    "name": "Gluttony",
+    "description": "The more you eat the better you will be at digesting, right?",
+    "max_level": 30,
+    "category": "Character",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8
+  },
+  "breathing": {
+    "id": "Breathing",
+    "name": "Breathing",
+    "description": "Oxygen is the most important resource for improving the performance of your body. Learn how to take it in more efficiently",
+    "flavour_text": "You are now breathing manually",
+    "max_level": 40,
+    "category": "Character",
+    "base_xp_cost": 400,
+    "xp_scaling": 1.6
+  },
+  "regeneration": {
+    "id": "Regeneration",
+    "name": "Regeneration",
+    "description": "As your body regenerates more and more, it slowly becomes more proficient in this task",
+    "max_level": 40,
+    "category": "Character",
+    "base_xp_cost": 1000,
+    "xp_scaling": 1.5
+  },
+  "haggling": {
+    "id": "Haggling",
+    "name": "Haggling",
+    "description": "The art of the deal",
+    "max_level": 25,
+    "category": "Character",
+    "base_xp_cost": 100,
+    "xp_scaling": 1.8
+  }
+}

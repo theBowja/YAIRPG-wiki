@@ -1,0 +1,50 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import skillsData from '../../data/skills.json';
+
+export function getStaticPaths() {
+  return Object.entries(skillsData).map(([slug, skill]) => ({
+    params: { id: slug },
+    props: { skill },
+  }));
+}
+
+const { id } = Astro.params;
+const { skill } = Astro.props;
+---
+
+<StarlightPage frontmatter={{ title: skill.name, description: skill.description }}>
+  <div class="skill-details">
+    <h2>Attributes</h2>
+    <ul>
+      <li><strong>Category:</strong> {skill.category}</li>
+      <li><strong>Max Level:</strong> {skill.max_level}</li>
+      <li><strong>Base XP Cost:</strong> {skill.base_xp_cost}</li>
+      <li><strong>XP Scaling:</strong> {skill.xp_scaling}</li>
+    </ul>
+
+    <h2>Description</h2>
+    <p>{skill.description}</p>
+    {skill.flavour_text && (
+      <p><em>{skill.flavour_text}</em></p>
+    )}
+  </div>
+</StarlightPage>
+
+<style>
+  .skill-details {
+    margin-top: 1rem;
+  }
+  .skill-details h2 {
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--sl-color-gray-5);
+    padding-bottom: 0.5rem;
+  }
+  .skill-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  .skill-details li {
+    margin-bottom: 0.5rem;
+  }
+</style>
