@@ -4,6 +4,8 @@ import starlight from '@astrojs/starlight';
 
 // https://astro.build/config
 export default defineConfig({
+	site: 'https://thebowja.github.io',
+	base: '/YAIRPG-wiki',
 	integrations: [
 		starlight({
 			title: 'My Docs',
