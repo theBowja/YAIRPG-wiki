@@ -1,0 +1,2036 @@
+{
+  "village": {
+    "id": "Village",
+    "name": "Village",
+    "description": "Medium-sized village, built next to a small and calm river at the foot of the mountains. It's surrounded by many fields, most of them infested by huge rats. Other than that, there's nothing interesting around",
+    "connected_locations": [
+      {
+        "name": "Shack",
+        "travel_time": 10
+      },
+      {
+        "name": "Eastern mill",
+        "travel_time": 30
+      },
+      {
+        "name": "Infested field",
+        "travel_time": 15
+      },
+      {
+        "name": "Nearby cave",
+        "travel_time": 60
+      },
+      {
+        "name": "Forest road",
+        "travel_time": 240,
+        "custom_text": "Leave the village towards [Forest road]"
+      },
+      {
+        "name": "Downstream from the village",
+        "travel_time": 2160,
+        "custom_text": "Hike down the river"
+      },
+      {
+        "name": "Riverbank",
+        "travel_time": 2160,
+        "custom_text": "Hike down the river"
+      },
+      {
+        "name": "Sparring with the village guard (heavy)",
+        "travel_time": 0,
+        "custom_text": "Spar with the guard [heavy]"
+      },
+      {
+        "name": "Sparring with the village guard (quick)",
+        "travel_time": 0,
+        "custom_text": "Spar with the guard [quick]"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [
+      "village trader"
+    ],
+    "dialogues": [
+      "village elder",
+      "village guard",
+      "old craftsman"
+    ],
+    "activities": [
+      "fieldwork",
+      "running",
+      "weightlifting",
+      "swimming",
+      "balancing",
+      "meditating",
+      "patrolling",
+      "woodcutting",
+      "sand",
+      "fishing"
+    ],
+    "actions": [
+      "search for delivery",
+      "carry grain",
+      "pull cart",
+      "convince horse",
+      "hike down river"
+    ],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "shack": {
+    "id": "Shack",
+    "name": "Shack",
+    "description": "This small shack was the only spare building in the village. It's surprisingly tidy",
+    "connected_locations": [
+      {
+        "name": "Village",
+        "travel_time": 10,
+        "custom_text": "Go outside to [Village]"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "eastern-mill": {
+    "id": "Eastern mill",
+    "name": "Eastern mill",
+    "description": "Local mill, run by a young duo. It's somewhat tidy, with occasional flour dust in corners",
+    "connected_locations": [
+      {
+        "name": "Village",
+        "travel_time": 30,
+        "custom_text": "Go outside to [Village]"
+      },
+      {
+        "name": "Eastern storehouse",
+        "travel_time": 10
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [
+      "village millers"
+    ],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "eastern-storehouse": {
+    "id": "Eastern storehouse",
+    "name": "Eastern storehouse",
+    "description": "",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Eastern mill",
+      "name": "Eastern mill",
+      "travel_time": 10
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Wolf rat"
+    ],
+    "enemy_count": 25,
+    "repeatable_reward": {
+      "textlines": [
+        {
+          "dialogue": "village millers",
+          "lines": [
+            "cleared storage"
+          ]
+        }
+      ],
+      "locks": {
+        "locations": [
+          "Eastern storehouse"
+        ]
+      },
+      "move_to": {
+        "location": "Eastern mill"
+      }
+    }
+  },
+  "infested-field": {
+    "id": "Infested field",
+    "name": "Infested field",
+    "description": "Field infested with wolf rats. You can see the grain stalks move as these creatures scurry around",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Village",
+      "name": "Village",
+      "travel_time": 15
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Starving wolf rat",
+      "Wolf rat"
+    ],
+    "enemy_count": 15,
+    "repeatable_reward": {
+      "textlines": [
+        {
+          "dialogue": "village elder",
+          "lines": [
+            "cleared field"
+          ]
+        }
+      ],
+      "xp": 5
+    }
+  },
+  "nearby-cave": {
+    "id": "Nearby cave",
+    "name": "Nearby cave",
+    "description": "A big cave at the base of a steep mountain, near the village. There are old storage sheds outside and signs of mining inside. Groups of fluorescent mushrooms cover the walls, providing a dim light. You can hear sounds of wolf rats from the nearby room",
+    "connected_locations": [
+      {
+        "name": "Village",
+        "travel_time": 60,
+        "custom_text": "Go outside and to the [Village]"
+      },
+      {
+        "name": "Cave room",
+        "travel_time": 5
+      },
+      {
+        "name": "Cave depths",
+        "travel_time": 20
+      },
+      {
+        "name": "Hidden tunnel",
+        "travel_time": 40,
+        "custom_text": "Enter the [Hidden tunnel]"
+      },
+      {
+        "name": "Pitch black tunnel",
+        "travel_time": 60,
+        "custom_text": "Go into the [Pitch black tunnel]"
+      },
+      {
+        "name": "Mysterious gate",
+        "travel_time": 90,
+        "custom_text": "Go to the [Mysterious gate]"
+      },
+      {
+        "name": "Writhing tunnel",
+        "travel_time": 100
+      },
+      {
+        "name": "Mysterious depths",
+        "travel_time": 120,
+        "custom_text": "Climb down to [Mysterious depths]"
+      },
+      {
+        "name": "Mountain path",
+        "travel_time": 60,
+        "custom_text": "Climb up to [Mountain path]"
+      },
+      {
+        "name": "Mountain camp",
+        "travel_time": 140
+      },
+      {
+        "name": "Suspicious wall",
+        "travel_time": 0,
+        "custom_text": "Try to break the suspicious wall"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [
+      "weightlifting",
+      "climbing",
+      "meditating",
+      "mining",
+      "mining2",
+      "mining3"
+    ],
+    "actions": [
+      "open the gate",
+      "climb the mountain"
+    ],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "cave-room": {
+    "id": "Cave room",
+    "name": "Cave room",
+    "description": "It's full of rats. At least the glowing mushrooms provide some light",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Nearby cave",
+      "name": "Nearby cave",
+      "travel_time": 5
+    },
+    "leave_text": "Go back to entrance",
+    "enemies_list": [
+      "Wolf rat"
+    ],
+    "enemy_count": 25,
+    "repeatable_reward": {
+      "textlines": [
+        {
+          "dialogue": "village elder",
+          "lines": [
+            "cleared room"
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "location": "Cave depths"
+        }
+      ],
+      "xp": 15,
+      "activities": [
+        {
+          "location": "Nearby cave",
+          "activity": "weightlifting"
+        },
+        {
+          "location": "Nearby cave",
+          "activity": "mining"
+        },
+        {
+          "location": "Village",
+          "activity": "balancing"
+        }
+      ]
+    }
+  },
+  "cave-depths": {
+    "id": "Cave depths",
+    "name": "Cave depths",
+    "description": "It's dark. And full of rats",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Nearby cave",
+      "name": "Nearby cave",
+      "travel_time": 20
+    },
+    "leave_text": "Climb out",
+    "enemies_list": [
+      "Wolf rat"
+    ],
+    "enemy_count": 40,
+    "repeatable_reward": {
+      "textlines": [
+        {
+          "dialogue": "village elder",
+          "lines": [
+            "cleared cave"
+          ]
+        }
+      ],
+      "xp": 50
+    }
+  },
+  "hidden-tunnel": {
+    "id": "Hidden tunnel",
+    "name": "Hidden tunnel",
+    "description": "There is, in fact, even more rats here",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Nearby cave",
+      "name": "Nearby cave",
+      "travel_time": 40
+    },
+    "leave_text": "Retreat for now",
+    "enemies_list": [
+      "Elite wolf rat"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "locations": [
+        {
+          "location": "Pitch black tunnel"
+        }
+      ],
+      "xp": 60,
+      "activities": [
+        {
+          "location": "Nearby cave",
+          "activity": "mining2"
+        }
+      ]
+    }
+  },
+  "pitch-black-tunnel": {
+    "id": "Pitch black tunnel",
+    "name": "Pitch black tunnel",
+    "description": "There is no light here. Only rats",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Nearby cave",
+      "name": "Nearby cave",
+      "travel_time": 60
+    },
+    "leave_text": "Retreat for now",
+    "enemies_list": [
+      "Elite wolf rat"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 260,
+      "global_activities": [
+        "climbing"
+      ],
+      "actions": [
+        {
+          "location": "Nearby cave",
+          "action": "climb the mountain"
+        }
+      ]
+    }
+  },
+  "mysterious-gate": {
+    "id": "Mysterious gate",
+    "name": "Mysterious gate",
+    "description": "It's dark. And full of rats.",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Nearby cave",
+      "name": "Nearby cave",
+      "travel_time": 90
+    },
+    "leave_text": "Get away",
+    "enemies_list": [
+      "Elite wolf rat guardian"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 1000,
+      "activities": [
+        {
+          "location": "Nearby cave",
+          "activity": "meditating"
+        },
+        {
+          "location": "Nearby cave",
+          "activity": "mining3"
+        }
+      ],
+      "actions": [
+        {
+          "action": "open the gate",
+          "location": "Nearby cave"
+        }
+      ],
+      "quest_progress": [
+        {
+          "quest_id": "The Infinite Rat Saga",
+          "task_index": 0
+        }
+      ],
+      "flags": [
+        "is_strength_proved"
+      ]
+    }
+  },
+  "writhing-tunnel": {
+    "id": "Writhing tunnel",
+    "name": "Writhing tunnel",
+    "description": "The walls are moving...",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Nearby cave",
+      "name": "Nearby cave",
+      "travel_time": 100
+    },
+    "leave_text": "Run away...",
+    "enemies_list": [
+      "Wall rat"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 2000,
+      "locations": [
+        {
+          "location": "Mysterious depths"
+        }
+      ],
+      "quest_progress": [
+        {
+          "quest_id": "The Infinite Rat Saga",
+          "task_index": 2
+        }
+      ]
+    }
+  },
+  "mysterious-depths": {
+    "id": "Mysterious depths",
+    "name": "Mysterious depths",
+    "description": "You find yourself in a large chamber with smooth walls and vaulted ceiling. The floor is covered in square tiles in the center, yet you cannot help but notice that all these squares make a circle, in some impossible to understand way.\nThere's another gate on the wall in front of you, but you have a strange feeling that you won't be able to open it with brute strength.",
+    "connected_locations": [
+      {
+        "name": "Nearby cave",
+        "travel_time": 100,
+        "custom_text": "Climb back up to the main level of [Nearby cave]"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "forest-road": {
+    "id": "Forest road",
+    "name": "Forest road",
+    "description": "Old trodden road leading through a dark forest, the only path connecting the village to the town. You can hear some animals from the surrounding woods",
+    "connected_locations": [
+      {
+        "name": "Village",
+        "travel_time": 240
+      },
+      {
+        "name": "Forest",
+        "travel_time": 30,
+        "custom_text": "Leave the safe path and walk into the [Forest]"
+      },
+      {
+        "name": "Deep forest",
+        "travel_time": 60,
+        "custom_text": "Venture into the [Deep forest]"
+      },
+      {
+        "name": "Forest clearing",
+        "travel_time": 60,
+        "custom_text": "Go towards the [Forest clearing] in the north"
+      },
+      {
+        "name": "Forest den",
+        "travel_time": 90,
+        "custom_text": "Enter the [Forest den]"
+      },
+      {
+        "name": "Bears' den",
+        "travel_time": 180,
+        "custom_text": "Enter the [Bears' den]"
+      },
+      {
+        "name": "Forest lake",
+        "travel_time": 120
+      },
+      {
+        "name": "Red ant nest",
+        "travel_time": 120,
+        "custom_text": "Enter the [Red ant nest]"
+      },
+      {
+        "name": "Town outskirts",
+        "travel_time": 240,
+        "custom_text": "Go towards the [Town outskirts]"
+      },
+      {
+        "name": "Forest den traversal",
+        "travel_time": 90,
+        "custom_text": "Try to get to the other side of the [Forest den]"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [
+      "running",
+      "woodcutting",
+      "woodcutting2",
+      "herbalism"
+    ],
+    "actions": [
+      "search for boars",
+      "follow the trail",
+      "search predator"
+    ],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "forest": {
+    "id": "Forest",
+    "name": "Forest",
+    "description": "Forest surrounding the village, a dangerous place",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Forest road",
+      "name": "Forest road",
+      "travel_time": 30
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Starving wolf",
+      "Young wolf"
+    ],
+    "enemy_count": 30,
+    "repeatable_reward": {
+      "xp": 30,
+      "locations": [
+        {
+          "location": "Deep forest"
+        }
+      ],
+      "activities": [
+        {
+          "location": "Forest road",
+          "activity": "herbalism"
+        }
+      ]
+    }
+  },
+  "deep-forest": {
+    "id": "Deep forest",
+    "name": "Deep forest",
+    "description": "Deeper part of the forest, a dangerous place",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Forest road",
+      "name": "Forest road",
+      "travel_time": 60
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Wolf",
+      "Starving wolf",
+      "Young wolf"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 150,
+      "flags": [
+        "is_strength_proved"
+      ],
+      "activities": [
+        {
+          "location": "Forest road",
+          "activity": "woodcutting"
+        }
+      ]
+    }
+  },
+  "forest-clearing": {
+    "id": "Forest clearing",
+    "name": "Forest clearing",
+    "description": "A surprisingly big clearing hidden in the northern part of the forest, covered with very tall grass and filled with a mass of wild boars",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Forest road",
+      "name": "Forest road",
+      "travel_time": 60
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Boar"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 500,
+      "textlines": [
+        {
+          "dialogue": "farm supervisor",
+          "lines": [
+            "defeated boars"
+          ]
+        }
+      ],
+      "activities": [
+        {
+          "location": "Forest road",
+          "activity": "woodcutting2"
+        }
+      ]
+    }
+  },
+  "forest-den": {
+    "id": "Forest den",
+    "name": "Forest den",
+    "description": "A relatively large cave in the depths of the forest, filled with hordes of direwolves",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Forest road",
+      "name": "Forest road",
+      "travel_time": 90
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Direwolf"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 500
+    }
+  },
+  "bears-den": {
+    "id": "Bears' den",
+    "name": "Bears' den",
+    "description": "A dark, smelly cave in the heart of the forest, with massive bones spread around the entrance",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Forest road",
+      "name": "Forest road",
+      "travel_time": 180
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Forest bear"
+    ],
+    "enemy_count": 20,
+    "repeatable_reward": {
+      "xp": 250
+    }
+  },
+  "forest-lake": {
+    "id": "Forest lake",
+    "name": "Forest lake",
+    "description": "Far away from civilization, the forest opens up to an unspoiled lake. Nestled between a small cliff where it receives water from a rocky waterfall, and a dense canopy leading to what must be the forest's heart, it serves as a respite for the local animals - and now, yourself",
+    "connected_locations": [
+      {
+        "name": "Forest road",
+        "travel_time": 120
+      },
+      {
+        "name": "Frogs",
+        "custom_text": "Challenge the apex predator"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [
+      "swimming",
+      "balancing",
+      "mining",
+      "fishing"
+    ],
+    "actions": [
+      "search1",
+      "search2",
+      "gaze"
+    ],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "frogs": {
+    "id": "Frogs",
+    "name": "Frogs",
+    "description": "Battling at the lake's edge",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Forest lake",
+      "name": "Forest lake",
+      "travel_time": 0
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Frog"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 800,
+      "actions": []
+    }
+  },
+  "forest-ant-nest": {
+    "id": "Forest ant nest",
+    "name": "Red ant nest",
+    "description": "A labyrinthine nest of red ants",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Forest road",
+      "name": "Forest road",
+      "travel_time": 120
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Red ant swarm"
+    ],
+    "enemy_count": 100,
+    "repeatable_reward": {
+      "xp": 3000
+    }
+  },
+  "town-outskirts": {
+    "id": "Town outskirts",
+    "name": "Town outskirts",
+    "description": "The town is surrounded by a tall stone wall. The only gate seems to be closed, with a lone guard outside. You can see farms to the north and slums to the south",
+    "connected_locations": [
+      {
+        "name": "Forest road",
+        "travel_time": 240,
+        "custom_text": "Return to the [Forest road]"
+      },
+      {
+        "name": "Town farms",
+        "travel_time": 60
+      },
+      {
+        "name": "Slums",
+        "travel_time": 60
+      },
+      {
+        "name": "Town square",
+        "travel_time": 40
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [
+      "gate guard"
+    ],
+    "activities": [
+      "herbalism"
+    ],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "slums": {
+    "id": "Slums",
+    "name": "Slums",
+    "description": "A wild settlement next to city walls, filled with decaying buildings, poverty, and violent criminals",
+    "connected_locations": [
+      {
+        "name": "Town outskirts",
+        "travel_time": 60
+      },
+      {
+        "name": "Gang hideout",
+        "travel_time": 10
+      },
+      {
+        "name": "Fight off the assailant",
+        "travel_time": 0,
+        "custom_text": "Fight off the suspicious man"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [
+      "suspicious trader",
+      "suspicious trader 2"
+    ],
+    "dialogues": [
+      "suspicious man",
+      "old woman of the slums"
+    ],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "town-farms": {
+    "id": "Town farms",
+    "name": "Town farms",
+    "description": "Semi-private farms under jurisdiction of the city council. Full of life and sounds of heavy work",
+    "connected_locations": [
+      {
+        "name": "Town outskirts",
+        "travel_time": 60
+      },
+      {
+        "name": "Red ant nest",
+        "travel_time": 10,
+        "custom_text": "Enter the [Red ant nest]"
+      },
+      {
+        "name": "Red ant nest",
+        "travel_time": 10,
+        "custom_text": "Enter the [Red ant nest]"
+      },
+      {
+        "name": "Red ant nest",
+        "travel_time": 10,
+        "custom_text": "Enter the [Red ant nest]"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [
+      "farm supervisor"
+    ],
+    "activities": [
+      "fieldwork",
+      "animal care"
+    ],
+    "actions": [
+      "dig for ants 1",
+      "dig for ants 2",
+      "dig for ants 3",
+      "follow ant trail"
+    ],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "red-ant-nest-1": {
+    "id": "Red ant nest 1",
+    "name": "Red ant nest",
+    "description": "A labyrinthine nest of red ants",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Town farms",
+      "name": "Town farms",
+      "travel_time": 10
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Red ant swarm"
+    ],
+    "enemy_count": 100,
+    "repeatable_reward": {
+      "locks": {
+        "locations": [
+          "Red ant nest 1"
+        ]
+      },
+      "move_to": {
+        "location": "Town farms"
+      },
+      "actions": [
+        {
+          "location": "Town farms",
+          "action": "dig for ants 2"
+        }
+      ]
+    }
+  },
+  "red-ant-nest-2": {
+    "id": "Red ant nest 2",
+    "name": "Red ant nest",
+    "description": "A labyrinthine nest of red ants",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Town farms",
+      "name": "Town farms",
+      "travel_time": 10
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Red ant swarm"
+    ],
+    "enemy_count": 100,
+    "repeatable_reward": {
+      "locks": {
+        "locations": [
+          "Red ant nest 2"
+        ]
+      },
+      "move_to": {
+        "location": "Town farms"
+      },
+      "actions": [
+        {
+          "location": "Town farms",
+          "action": "dig for ants 3"
+        }
+      ]
+    }
+  },
+  "red-ant-nest-3": {
+    "id": "Red ant nest 3",
+    "name": "Red ant nest",
+    "description": "A labyrinthine nest of red ants",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Town farms",
+      "name": "Town farms",
+      "travel_time": 10
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Red ant swarm"
+    ],
+    "enemy_count": 100,
+    "repeatable_reward": {
+      "locks": {
+        "locations": [
+          "Red ant nest 3"
+        ]
+      },
+      "move_to": {
+        "location": "Town farms"
+      },
+      "actions": [
+        {
+          "location": "Town farms",
+          "action": "follow ant trail"
+        }
+      ],
+      "textlines": [
+        {
+          "dialogue": "farm supervisor",
+          "lines": [
+            "eliminated ants"
+          ]
+        }
+      ]
+    }
+  },
+  "gang-hideout": {
+    "id": "Gang hideout",
+    "name": "Gang hideout",
+    "description": "Hideout of a local gang. Old building with a labirynth of narrow corridors",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Slums",
+      "name": "Slums",
+      "travel_time": 10
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Slums thug"
+    ],
+    "enemy_count": 30,
+    "repeatable_reward": {
+      "traders": [
+        {
+          "trader": "suspicious trader 2",
+          "skip_message": true
+        }
+      ],
+      "textlines": [
+        {
+          "dialogue": "suspicious man",
+          "lines": [
+            "defeated gang"
+          ]
+        }
+      ],
+      "locks": {
+        "traders": [
+          "suspicious trader"
+        ],
+        "locations": [
+          "Gang hideout"
+        ],
+        "textlines": {
+          "suspicious man": [
+            "behave 2"
+          ]
+        }
+      },
+      "move_to": {
+        "location": "Slums"
+      },
+      "quest_progress": [
+        {
+          "quest_id": "Light in the darkness",
+          "task_index": 1
+        }
+      ]
+    }
+  },
+  "town-square": {
+    "id": "Town square",
+    "name": "Town square",
+    "description": "The town's center of life, connected to all the markets, guilds, and other important places",
+    "connected_locations": [
+      {
+        "name": "Town outskirts",
+        "travel_time": 40
+      },
+      {
+        "name": "Cat café",
+        "travel_time": 4
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "cat-caf": {
+    "id": "Cat café",
+    "name": "Cat café",
+    "description": "A cat café in the center of town. There are multiple kitties of all kinds, but two females especially catch your eyes\n - a chubby mackerel tabby with a white belly and neck, and a slender tortoishell that seems blind on the right eye. There's a single worker in the café, a person of ambiguous gender with with long ponytail and glasses.",
+    "connected_locations": [
+      {
+        "name": "Town square",
+        "travel_time": 4
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "mountain-path": {
+    "id": "Mountain path",
+    "name": "Mountain path",
+    "description": "A treacherous path high above the village",
+    "connected_locations": [
+      {
+        "name": "Nearby cave",
+        "travel_time": 20,
+        "custom_text": "Climb down to [Nearby Cave]"
+      },
+      {
+        "name": "Small flat area in mountains",
+        "travel_time": 120
+      },
+      {
+        "name": "Mountain camp",
+        "travel_time": 120
+      },
+      {
+        "name": "Fight the angry mountain goat",
+        "travel_time": 0,
+        "custom_text": "Fight the angry goat"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [
+      "balancing"
+    ],
+    "actions": [
+      "explore"
+    ],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "small-flat-area-in-mountains": {
+    "id": "Small flat area in mountains",
+    "name": "Small flat area in mountains",
+    "description": "A piece of flatland somewhere in the mountains, very high above the village. It's not that big, but more than enough for a camp",
+    "connected_locations": [
+      {
+        "name": "Mountain path",
+        "travel_time": 120
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [
+      "create camp"
+    ],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "mountain-camp": {
+    "id": "Mountain camp",
+    "name": "Mountain camp",
+    "description": "A nice safe camp with a crackling fire and a rainproof tent, created by you to be a perfect base for further exploration",
+    "connected_locations": [
+      {
+        "name": "Nearby cave",
+        "travel_time": 140,
+        "custom_text": "Climb down to [Nearby cave]"
+      },
+      {
+        "name": "Gentle mountain slope",
+        "travel_time": 120
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [
+      "herbalism",
+      "balancing",
+      "climbing"
+    ],
+    "actions": [
+      "explore1",
+      "explore2"
+    ],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "gentle-mountain-slope": {
+    "id": "Gentle mountain slope",
+    "name": "Gentle mountain slope",
+    "description": "A surprisingly gentle clearing, with a herd of angry goats protecting it",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Mountain camp",
+      "name": "Mountain camp",
+      "travel_time": 120
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Angry mountain goat"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 500
+    }
+  },
+  "downstream-from-the-village": {
+    "id": "Downstream from the village",
+    "name": "Downstream from the village",
+    "description": "The chittering clicks of crabs tell you that you're headed in the right direction. As you make your way closer to the riverbank's shore, you stumble across what you think at first is a boulder the size of a small building blocking your path. That is, until you notice it start to move...",
+    "connected_locations": [
+      {
+        "name": "Village",
+        "travel_time": 2160,
+        "custom_text": "Make the long hike back to the [Village]"
+      },
+      {
+        "name": "Riverbank",
+        "travel_time": 30,
+        "custom_text": "Move down to the [Riverbank]"
+      },
+      {
+        "name": "Fight the giant crab",
+        "travel_time": 5,
+        "custom_text": "Fight the giant crab"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "riverbank": {
+    "id": "Riverbank",
+    "name": "Riverbank",
+    "description": "You manage to deal a wounding crack to the giant crab's shell, driving it into a rage as it flees through the forest. With a moment of peace, you take stock of your surroundings. And if the amount of crabs on the river's shore are any indication, this might be the enormous crab nest you had heard about. You can't even tell where the shore meets the riverbank with the amount of crabs around here. The giant crab's trail is easy to spot, but it's just not possible to follow it without getting attacked by the smaller crabs. You will likely nead to get through  multiple groups of them on your way",
+    "connected_locations": [
+      {
+        "name": "Village",
+        "travel_time": 2160,
+        "custom_text": "Make the long hike back to the [Village]"
+      },
+      {
+        "name": "Riverbank shore",
+        "travel_time": 15,
+        "custom_text": "Climb down to the [Riverbank shore]"
+      },
+      {
+        "name": "Further downstream",
+        "travel_time": 240,
+        "custom_text": "Follow the giant crab's trail"
+      },
+      {
+        "name": "Lake beach",
+        "travel_time": 180,
+        "custom_text": "Go to the [Lake beach]"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [
+      "herbalism"
+    ],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "riverbank-shore": {
+    "id": "Riverbank shore",
+    "name": "Riverbank shore",
+    "description": "As your eyes scan the shoreline, you see nothing but crabs across the horizon",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Riverbank",
+      "name": "Riverbank",
+      "travel_time": 15
+    },
+    "leave_text": "Climb off the beach and back to safety",
+    "enemies_list": [
+      "River crab"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 900
+    }
+  },
+  "further-downstream": {
+    "id": "Further downstream",
+    "name": "Further downstream",
+    "description": "While it wasn't hard to spot the giant crab's trail, following after it proved to be a different story. You made your way through the thick forest bush until the woods gave way to a moderately large lake overlooking a great basin, where you finally spotted the crab in a frenzy at it's nest. You consider going back and telling the guards, but by the time they'd arrive, the crab might have chosen a new nesting ground -- and you decide you have to end it now. Despite the cracks you've caused in it's shell, it seems more dangerous than when you fought it earlier, and the loose sand is only going to make this fight harder...",
+    "connected_locations": [
+      {
+        "name": "Riverbank",
+        "travel_time": 240,
+        "custom_text": "Go back along the path you've made to the [Riverbank]"
+      },
+      {
+        "name": "Lake beach",
+        "travel_time": 240,
+        "custom_text": "Go to the [Lake beach]"
+      },
+      {
+        "name": "Fight the giant crab again!",
+        "travel_time": 5,
+        "custom_text": "Fight the giant crab again"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "lake-beach": {
+    "id": "Lake beach",
+    "name": "Lake beach",
+    "description": "The winding river lead to a peaceful lake on the edge of the forest overlooking a great basin. The surface of the lake ripples from the current of the river feeding into it. Animals occasionally come up and lap at the edge of the lake before running back off into the woods. On the far end, the lake feeds into a waterfall",
+    "connected_locations": [
+      {
+        "name": "Riverbank",
+        "travel_time": 180,
+        "custom_text": "Go back along the path you've made to the [Riverbank]"
+      },
+      {
+        "name": "Waterfall basin",
+        "travel_time": 40,
+        "custom_text": "Rappel down to the [Waterfall basin]"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [
+      "swimming",
+      "sand",
+      "climbing",
+      "weightlifting",
+      "running"
+    ],
+    "actions": [
+      "create lake camp",
+      "rappel waterfall",
+      "create lake climbing",
+      "create lake weightlifting"
+    ],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "waterfall-basin": {
+    "id": "Waterfall basin",
+    "name": "Waterfall basin",
+    "description": "The waterfall at the bottom of the lake. Large crabs almost indistinguishable from the stone inhabit the shore and nearby rock shelters. You consider that the cool rushing waters from overhead might be an good way to train your body to endure tougher situations",
+    "connected_locations": [
+      {
+        "name": "Lake beach",
+        "travel_time": 80,
+        "custom_text": "Climb up the cliffside and return to the [Lake beach]"
+      },
+      {
+        "name": "Crab spawning grounds",
+        "travel_time": 20
+      },
+      {
+        "name": "Swampland fields",
+        "travel_time": 45,
+        "custom_text": "Crawl through the muck and brush to the [Swampland fields]"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [
+      "enduring",
+      "meditating"
+    ],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "crab-spawning-grounds": {
+    "id": "Crab spawning grounds",
+    "name": "Crab spawning grounds",
+    "description": "First an enormous crab nest, then an enormous crab's nest, and now this??",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Waterfall basin",
+      "name": "Waterfall basin",
+      "travel_time": 20
+    },
+    "leave_text": "Leave the crab spawning grounds",
+    "enemies_list": [
+      "Stone crab"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 2000
+    }
+  },
+  "swampland-fields": {
+    "id": "Swampland fields",
+    "name": "Swampland fields",
+    "description": "A disgusting boggy marsh lies before you. Most of the ground, or at least what you can make out through the reeds, is covered in filthy water halfway up to your knees, and what isn't submerged has rotted into compost or is the nest of some unknown creature. You think you see something out of the corner of your eye, but as you turn to look, all you catch is a ripple in the reeds",
+    "connected_locations": [
+      {
+        "name": "Waterfall basin",
+        "travel_time": 45,
+        "custom_text": "Crawl through the muck and brush and return to the [Waterfall basin]"
+      },
+      {
+        "name": "The swamplands",
+        "travel_time": 45,
+        "custom_text": "Wander randomly in the swamplands"
+      },
+      {
+        "name": "Swampland tribe",
+        "travel_time": 90
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "the-swamplands": {
+    "id": "The swamplands",
+    "name": "The swamplands",
+    "description": "The swamplands are hot, wet, and smell of rot. Water impedes your every movement, and vicious predators lie beneath it's surface",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Swampland fields",
+      "name": "Swampland fields",
+      "travel_time": 45
+    },
+    "leave_text": "Slink away to some higher, dryer ground",
+    "enemies_list": [
+      "Alligator",
+      "Snapping turtle",
+      "Giant snake"
+    ],
+    "enemy_count": 100,
+    "repeatable_reward": {
+      "xp": 4000
+    }
+  },
+  "swampland-tribe": {
+    "id": "Swampland tribe",
+    "name": "Swampland tribe",
+    "description": "Very small fortified settlement, built on a stretch of dry, stable ground. There are a few small huts and a single building built into the back of the encampment. As small as the settlement is, the fortifications surrounding it suggest that it once was larger",
+    "connected_locations": [
+      {
+        "name": "Swampland fields",
+        "travel_time": 90,
+        "custom_text": "Leave the safety of the settlement and return to the [Swampland fields]"
+      },
+      {
+        "name": "Longhouse",
+        "travel_time": 5
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [
+      "swampland trader",
+      "swampland trader 2"
+    ],
+    "dialogues": [
+      "swampland chief",
+      "swampland cook",
+      "swampland tailor",
+      "swampland tanner"
+    ],
+    "activities": [
+      "herbalism"
+    ],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "longhouse": {
+    "id": "Longhouse",
+    "name": "Longhouse",
+    "description": "A communal building that members of the settlement rest, eat, and recover in. The only other person in here right now is a wounded young woman, lying in a cot next to the door. The air smells faintly of rot and you can't help but notice there's far more cots than needed",
+    "connected_locations": [
+      {
+        "name": "Swampland tribe",
+        "travel_time": 5,
+        "custom_text": "Go back out to the [Swampland tribe]"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [
+      "swampland scout"
+    ],
+    "activities": [],
+    "actions": [
+      "learn forage"
+    ],
+    "parent_location": null,
+    "leave_text": null
+  },
+  "sparring-with-the-village-guard-heavy": {
+    "id": "Sparring with the village guard (heavy)",
+    "name": "Sparring with the village guard (heavy)",
+    "description": "She's showing you a technique that makes her attacks slow but deadly",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Village",
+      "name": "Village",
+      "travel_time": 0
+    },
+    "leave_text": "Give up",
+    "enemies_list": [
+      "Village guard (heavy)"
+    ],
+    "enemy_count": 1,
+    "repeatable_reward": {
+      "textlines": [
+        {
+          "dialogue": "village guard",
+          "lines": [
+            "heavy"
+          ]
+        }
+      ]
+    }
+  },
+  "sparring-with-the-village-guard-quick": {
+    "id": "Sparring with the village guard (quick)",
+    "name": "Sparring with the village guard (quick)",
+    "description": "She's showing you a technique that makes her attacks fast but weaker",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Village",
+      "name": "Village",
+      "travel_time": 0
+    },
+    "leave_text": "Give up",
+    "enemies_list": [
+      "Village guard (quick)"
+    ],
+    "enemy_count": 1,
+    "repeatable_reward": {
+      "textlines": [
+        {
+          "dialogue": "village guard",
+          "lines": [
+            "quick"
+          ]
+        }
+      ]
+    }
+  },
+  "suspicious-wall": {
+    "id": "Suspicious wall",
+    "name": "Suspicious wall",
+    "description": "It can be broken with enough force, you can feel it",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Nearby cave",
+      "name": "Nearby cave",
+      "travel_time": 0
+    },
+    "leave_text": "Leave it for now",
+    "enemies_list": [
+      "Suspicious wall"
+    ],
+    "enemy_count": 1,
+    "repeatable_reward": {
+      "locations": [
+        {
+          "location": "Hidden tunnel"
+        }
+      ],
+      "textlines": [
+        {
+          "dialogue": "village elder",
+          "lines": [
+            "new tunnel"
+          ]
+        }
+      ],
+      "xp": 20,
+      "quests": [
+        "The Infinite Rat Saga"
+      ]
+    }
+  },
+  "fight-off-the-assailant": {
+    "id": "Fight off the assailant",
+    "name": "Fight off the assailant",
+    "description": "He attacked you out of nowhere",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Slums",
+      "name": "Slums",
+      "travel_time": 0
+    },
+    "leave_text": "Run away for now",
+    "enemies_list": [
+      "Suspicious man"
+    ],
+    "enemy_count": 1,
+    "repeatable_reward": {
+      "textlines": [
+        {
+          "dialogue": "suspicious man",
+          "lines": [
+            "defeated"
+          ]
+        }
+      ],
+      "xp": 40
+    }
+  },
+  "fight-the-angry-mountain-goat": {
+    "id": "Fight the angry mountain goat",
+    "name": "Fight the angry mountain goat",
+    "description": "It won't let you pass...",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Mountain path",
+      "name": "Mountain path",
+      "travel_time": 0
+    },
+    "leave_text": "Run away and hope it won't follow",
+    "enemies_list": [
+      "Angry-looking mountain goat"
+    ],
+    "enemy_count": 1,
+    "repeatable_reward": {
+      "locations": [
+        {
+          "location": "Small flat area in mountains"
+        }
+      ],
+      "xp": 500
+    }
+  },
+  "fight-the-giant-crab": {
+    "id": "Fight the giant crab",
+    "name": "Fight the giant crab",
+    "description": "The village elder told you to be cautious...",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Downstream from the village",
+      "name": "Downstream from the village",
+      "travel_time": 5
+    },
+    "leave_text": "Scramble away and hide!",
+    "enemies_list": [
+      "Giant crab"
+    ],
+    "enemy_count": 1,
+    "repeatable_reward": {
+      "locations": [
+        {
+          "location": "Riverbank"
+        }
+      ],
+      "xp": 2000,
+      "move_to": {
+        "location": "Riverbank"
+      },
+      "quest_progress": [
+        {
+          "quest_id": "Giant Enemy Crab",
+          "task_index": 0
+        }
+      ],
+      "locks": {
+        "locations": [
+          "Downstream from the village"
+        ]
+      }
+    }
+  },
+  "fight-the-giant-crab-again": {
+    "id": "Fight the giant crab again",
+    "name": "Fight the giant crab again!",
+    "description": "This time, you can't let it get away",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Further downstream",
+      "name": "Further downstream",
+      "travel_time": 5
+    },
+    "leave_text": "Scramble away and hide!",
+    "enemies_list": [
+      "Enraged giant crab"
+    ],
+    "enemy_count": 1,
+    "repeatable_reward": {
+      "locations": [
+        {
+          "location": "Lake beach"
+        }
+      ],
+      "xp": 5000,
+      "move_to": {
+        "location": "Lake beach"
+      },
+      "quest_progress": [
+        {
+          "quest_id": "Giant Enemy Crab",
+          "task_index": 1
+        }
+      ],
+      "locks": {
+        "locations": [
+          "Further downstream"
+        ]
+      }
+    }
+  },
+  "forest-den-traversal": {
+    "id": "Forest den traversal",
+    "name": "Forest den traversal",
+    "description": "A relatively large cave in the depths of the forest, filled with hordes of direwolves. You are trying to find out what's on the other side.",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "Combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Forest road",
+      "name": "Forest road",
+      "travel_time": 90
+    },
+    "leave_text": null,
+    "enemies_list": [
+      "Direwolf"
+    ],
+    "enemy_count": 50,
+    "repeatable_reward": {
+      "xp": 1000,
+      "messages": [
+        "You reach a wall of water and push through"
+      ],
+      "locations": [
+        {
+          "location": "Forest lake"
+        }
+      ],
+      "move_to": {
+        "location": "Forest lake"
+      }
+    }
+  }
+}

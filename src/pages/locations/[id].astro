@@ -1,0 +1,149 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import locationsData from '../../data/locations.json';
+
+export function getStaticPaths() {
+  return Object.entries(locationsData).map(([slug, location]) => ({
+    params: { id: slug },
+    props: { location },
+  }));
+}
+
+const slugify = (text) => {
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+};
+
+const { id } = Astro.params;
+const { location } = Astro.props;
+---
+
+<StarlightPage frontmatter={{ title: location.name, description: location.description || '' }}>
+  <div class="location-details">
+    <p>{location.description}</p>
+
+    <h2>Attributes</h2>
+    <ul>
+      <li><strong>Type:</strong> {location.is_combat_zone ? 'Combat Zone' : 'Safe Zone'}</li>
+      {location.tags.length > 0 && (
+        <li><strong>Tags:</strong> {location.tags.join(', ')}</li>
+      )}
+    </ul>
+
+    {location.parent_location && (
+      <>
+        <h2>Go back</h2>
+        <ul>
+          <li>
+            <a href={`/YAIRPG-wiki/locations/${slugify(location.parent_location.name)}`}>
+              {location.leave_text || `Go back to [${location.parent_location.name}]`}
+              {location.parent_location.travel_time > 0 ? ` [${location.parent_location.travel_time}m]` : ''}
+            </a>
+          </li>
+        </ul>
+      </>
+    )}
+
+    {location.connected_locations.length > 0 && (
+      <>
+        <h2>Connected Locations</h2>
+        <ul>
+          {location.connected_locations.map(conn => {
+            const linkText = conn.custom_text || `Go to [${conn.name}]`;
+            const timeText = conn.travel_time > 0 ? ` [${conn.travel_time}m]` : '';
+            return (
+              <li>
+                <a href={`/YAIRPG-wiki/locations/${slugify(conn.name)}`}>
+                  {linkText}{timeText}
+                </a>
+              </li>
+            );
+          })}
+        </ul>
+      </>
+    )}
+
+    {location.activities.length > 0 && (
+      <>
+        <h2>Activities</h2>
+        <ul>
+          {location.activities.map(activity => (
+            <li>
+              <a href={`/YAIRPG-wiki/activities/${slugify(activity)}`}>{activity}</a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {location.actions.length > 0 && (
+      <>
+        <h2>Actions</h2>
+        <ul>
+          {location.actions.map(action => (
+            <li>{action}</li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {location.is_combat_zone && (
+      <>
+        <h2>Combat Information</h2>
+        <ul>
+          <li><strong>Enemy Count:</strong> {location.enemy_count}</li>
+          <li><strong>Possible Enemies:</strong> {location.enemies_list.map((enemy, index) => (
+            <>
+              <a href={`/YAIRPG-wiki/enemies/${slugify(enemy)}`}>{enemy}</a>
+              {index < location.enemies_list.length - 1 ? ', ' : ''}
+            </>
+          ))}</li>
+        </ul>
+      </>
+    )}
+
+    {location.traders.length > 0 && (
+      <>
+        <h2>Traders</h2>
+        <ul>
+          {location.traders.map(trader => (
+            <li>{trader}</li>
+          ))}
+        </ul>
+      </>
+    )}
+
+    {location.dialogues.length > 0 && (
+      <>
+        <h2>Dialogues</h2>
+        <ul>
+          {location.dialogues.map(dialogue => (
+            <li>{dialogue}</li>
+          ))}
+        </ul>
+      </>
+    )}
+  </div>
+</StarlightPage>
+
+<style>
+  .location-details {
+    margin-top: 1rem;
+  }
+  .location-details h2 {
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--sl-color-gray-5);
+    padding-bottom: 0.5rem;
+  }
+  .location-details ul {
+    list-style: none;
+    padding: 0;
+  }
+  .location-details li {
+    margin-bottom: 0.5rem;
+  }
+</style>

@@ -2,6 +2,7 @@ import fs from 'node:fs';
 import { skills } from '../yairpg/src/skills.js?real=true';
 import { activities } from '../yairpg/src/activities.js?real=true';
 import { enemy_templates } from '../yairpg/src/enemies.js?real=true';
+import { locations } from '../yairpg/src/locations.js?real=true';
 
 function slugify(text) {
     return text.toString().toLowerCase()
@@ -72,8 +73,44 @@ for (const [id, enemy] of Object.entries(enemy_templates)) {
     };
 }
 
+const locationsOutput = {};
+for (const [id, loc] of Object.entries(locations)) {
+    const slug = slugify(id);
+    const locationData = {
+        id: id,
+        name: loc.name,
+        description: loc.getDescription(),
+        connected_locations: (loc.connected_locations || []).map(conn => ({
+            name: conn.location.name,
+            travel_time: conn.travel_time,
+            custom_text: conn.custom_text
+        })),
+        is_combat_zone: !!loc.enemies_list || !!loc.enemy_groups_list,
+        tags: Object.keys(loc.tags),
+        traders: loc.traders || [],
+        dialogues: loc.dialogues || [],
+        activities: Object.keys(loc.activities || {}),
+        actions: Object.keys(loc.actions || {}),
+        parent_location: loc.parent_location ? {
+            id: loc.parent_location.id,
+            name: loc.parent_location.name,
+            travel_time: (loc.parent_location.connected_locations || []).find(conn => conn.location === loc)?.travel_time || 0
+        } : null,
+        leave_text: loc.leave_text || null
+    };
+
+    if (locationData.is_combat_zone) {
+        locationData.enemies_list = loc.enemies_list || [];
+        locationData.enemy_count = loc.enemy_count;
+        locationData.repeatable_reward = loc.repeatable_reward;
+    }
+
+    locationsOutput[slug] = locationData;
+}
+
 fs.writeFileSync('./src/data/skills.json', JSON.stringify(skillsOutput, null, 2));
 fs.writeFileSync('./src/data/activities.json', JSON.stringify(activitiesOutput, null, 2));
 fs.writeFileSync('./src/data/enemies.json', JSON.stringify(enemiesOutput, null, 2));
+fs.writeFileSync('./src/data/locations.json', JSON.stringify(locationsOutput, null, 2));
 
-console.log('skills.json, activities.json and enemies.json generated.');
+console.log('skills.json, activities.json, enemies.json and locations.json generated.');

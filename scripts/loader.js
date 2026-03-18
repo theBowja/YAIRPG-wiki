@@ -9,8 +9,8 @@ export async function resolve(specifier, context, nextResolve) {
         return nextResolve(specifier, context);
     }
 
-    // Allow misc.js to be imported
-    if (specifier.includes('misc.js')) {
+    const dataModules = ['misc.js', 'enemies.js', 'skills.js', 'activities.js', 'locations.js'];
+    if (dataModules.some(mod => specifier.includes(mod))) {
         return nextResolve(specifier, context);
     }
 
@@ -35,6 +35,12 @@ export async function load(url, context, nextLoad) {
             source = mainSource;
         } else if (url.includes('display.js')) {
             source = displaySource;
+        } else if (url.includes('game_time.js')) {
+            source = gameTimeSource;
+        } else if (url.includes('actions.js')) {
+            source = actionsSource;
+        } else if (url.includes('market_saturation.js')) {
+            source = marketSaturationSource;
         }
 
         return {
@@ -50,6 +56,7 @@ const characterSource = `
 export const get_total_level_bonus = () => 100;
 export const get_total_skill_coefficient = () => 1.5;
 export const get_total_skill_level = () => 50;
+export const is_rat = () => false;
 `
 
 const craftingRecipesSource = `
@@ -61,8 +68,31 @@ export const game_options = {
     exp_threshold: 9,
 }
 export const add_active_effect = () => {};
+export const global_flags = {};
 `
 
 const displaySource = `
 export const log_message = () => {};
+`
+
+const gameTimeSource = `
+export const current_game_time = {
+    hour: 12,
+    minute: 0,
+    day_of_week: 1,
+    day: 1,
+    month: 1,
+    year: 1,
+};
+`
+
+const actionsSource = `
+export class GameAction {
+    constructor() {}
+}
+`
+
+const marketSaturationSource = `
+export const fill_market_regions = () => {};
+export const market_regions = {};
 `

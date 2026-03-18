@@ -89,6 +89,40 @@ if (fs.existsSync(enemiesDataPath)) {
 	}
 }
 
+const locationsDataPath = './src/data/locations.json';
+/** @type {any[]} */
+let locationSidebarItems = [];
+if (fs.existsSync(locationsDataPath)) {
+	try {
+		const locationsData = JSON.parse(fs.readFileSync(locationsDataPath, 'utf-8'));
+
+		// Group by type (Safe Zone / Combat Zone)
+		/** @type {Object.<string, any[]>} */
+		const types = {
+			'Safe Zones': [],
+			'Combat Zones': [],
+		};
+
+		for (const [slug, location] of Object.entries(locationsData)) {
+			const type = location.is_combat_zone ? 'Combat Zones' : 'Safe Zones';
+			types[type].push({
+				label: location.name,
+				link: `/locations/${slug}`,
+			});
+		}
+
+		locationSidebarItems = Object.entries(types)
+			.map(([type, items]) => ({
+				label: type,
+				collapsed: true,
+				items: items.sort((a, b) => a.label.localeCompare(b.label)),
+			}));
+
+	} catch (e) {
+		console.error('Failed to parse locations.json for sidebar:', e);
+	}
+}
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://thebowja.github.io',
@@ -105,6 +139,10 @@ export default defineConfig({
 				{
 					label: 'Enemies',
 					items: enemySidebarItems,
+				},
+				{
+					label: 'Locations',
+					items: locationSidebarItems,
 				},
 				{
 					label: 'Skills',

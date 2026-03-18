@@ -1,0 +1,75 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import locationsData from '../../data/locations.json';
+
+const slugify = (text) => {
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+};
+
+const safeZones = Object.entries(locationsData)
+  .filter(([_, loc]) => !loc.is_combat_zone)
+  .sort(([_, a], [__, b]) => a.name.localeCompare(b.name));
+
+const combatZones = Object.entries(locationsData)
+  .filter(([_, loc]) => loc.is_combat_zone)
+  .sort(([_, a], [__, b]) => a.name.localeCompare(b.name));
+---
+
+<StarlightPage frontmatter={{ title: 'Locations', description: 'List of all locations in YAIRPG' }}>
+  <div class="locations-list">
+    <h2>Safe Zones</h2>
+    <ul>
+      {safeZones.map(([slug, loc]) => (
+        <li>
+          <a href={`/YAIRPG-wiki/locations/${slug}`}>{loc.name}</a>
+        </li>
+      ))}
+    </ul>
+
+    <h2>Combat Zones</h2>
+    <ul>
+      {combatZones.map(([slug, loc]) => (
+        <li>
+          <a href={`/YAIRPG-wiki/locations/${slug}`}>{loc.name}</a>
+        </li>
+      ))}
+    </ul>
+  </div>
+</StarlightPage>
+
+<style>
+  .locations-list h2 {
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--sl-color-gray-5);
+    padding-bottom: 0.5rem;
+  }
+  .locations-list ul {
+    list-style: none;
+    padding: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+  }
+  .locations-list li {
+    margin-bottom: 0.5rem;
+    padding: 0.5rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    text-align: center;
+  }
+  .locations-list li:hover {
+    background-color: var(--sl-color-gray-6);
+  }
+  .locations-list a {
+    text-decoration: none;
+    font-weight: bold;
+    display: block;
+    width: 100%;
+    height: 100%;
+  }
+</style>

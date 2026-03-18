@@ -1,6 +1,7 @@
 ---
 import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
 import enemiesData from '../../data/enemies.json';
+import locationsData from '../../data/locations.json';
 
 export function getStaticPaths() {
   return Object.entries(enemiesData).map(([slug, enemy]) => ({
@@ -9,12 +10,25 @@ export function getStaticPaths() {
   }));
 }
 
+const slugify = (text) => {
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+};
+
 const { id } = Astro.params;
 const { enemy } = Astro.props;
 
 const capitalizeStat = (stat) => {
   return stat.replace(/_/g, ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
 };
+
+const foundInLocations = Object.entries(locationsData)
+  .filter(([_, loc]) => loc.is_combat_zone && loc.enemies_list.includes(enemy.id))
+  .map(([slug, loc]) => ({ slug, name: loc.name }));
 ---
 
 <StarlightPage frontmatter={{ title: enemy.name, description: enemy.description }}>
@@ -29,6 +43,19 @@ const capitalizeStat = (stat) => {
       <li><strong>Tags:</strong> {enemy.tags.join(', ')}</li>
       <li><strong>Add to Bestiary:</strong> {enemy.add_to_bestiary ? 'Yes' : 'No'}</li>
     </ul>
+
+    {foundInLocations.length > 0 && (
+      <>
+        <h2>Found in Locations</h2>
+        <ul>
+          {foundInLocations.map(loc => (
+            <li>
+              <a href={`/YAIRPG-wiki/locations/${loc.slug}`}>{loc.name}</a>
+            </li>
+          ))}
+        </ul>
+      </>
+    )}
 
     <h2>Stats</h2>
     <table>

@@ -9,6 +9,15 @@ export function getStaticPaths() {
   }));
 }
 
+const slugify = (text) => {
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+};
+
 const { id } = Astro.params;
 const { activity } = Astro.props;
 ---
@@ -27,7 +36,12 @@ const { activity } = Astro.props;
       {activity.required_tool_type && (
         <li><strong>Required Tool:</strong> {activity.required_tool_type}</li>
       )}
-      <li><strong>Skills Involved:</strong> {activity.base_skills_names.join(', ')}</li>
+      <li><strong>Skills Involved:</strong> {activity.base_skills_names.map((skill, index) => (
+        <>
+          <a href={`/YAIRPG-wiki/skills/${slugify(skill)}`}>{skill}</a>
+          {index < activity.base_skills_names.length - 1 ? ', ' : ''}
+        </>
+      ))}</li>
     </ul>
   </div>
 </StarlightPage>
