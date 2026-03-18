@@ -25,24 +25,6 @@ const { activity } = Astro.props;
 <StarlightPage frontmatter={{ title: activity.name, description: activity.description }}>
   <div class="activity-details">
     <p>{activity.description}</p>
-
-    <h2>Attributes</h2>
-    <ul>
-      <li><strong>Type:</strong> {activity.type}</li>
-      <li><strong>Action Text:</strong> {activity.action_text}</li>
-      {activity.payment_type && (
-        <li><strong>Payment Type:</strong> {activity.payment_type}</li>
-      )}
-      {activity.required_tool_type && (
-        <li><strong>Required Tool:</strong> {activity.required_tool_type}</li>
-      )}
-      <li><strong>Skills Involved:</strong> {activity.base_skills_names.map((skill, index) => (
-        <>
-          <a href={`/YAIRPG-wiki/skills/${slugify(skill)}`}>{skill}</a>
-          {index < activity.base_skills_names.length - 1 ? ', ' : ''}
-        </>
-      ))}</li>
-    </ul>
   </div>
 </StarlightPage>
 

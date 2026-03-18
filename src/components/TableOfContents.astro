@@ -1,0 +1,206 @@
+---
+import type { Props } from '@astrojs/starlight/props';
+import Default from '@astrojs/starlight/components/TableOfContents.astro';
+import locationsData from '../data/locations.json';
+import activitiesData from '../data/activities.json';
+import skillsData from '../data/skills.json';
+import enemiesData from '../data/enemies.json';
+
+const { id } = Astro.params;
+const starlightRoute = Astro.locals.starlightRoute;
+const slug = starlightRoute?.slug || Astro.url.pathname.replace(/^\/YAIRPG-wiki\//, '').replace(/\/$/, '') || '';
+
+const isLocationPage = slug.startsWith('locations/');
+const isActivityPage = slug.startsWith('activities/');
+const isSkillPage = slug.startsWith('skills/');
+const isEnemyPage = slug.startsWith('enemies/');
+
+let data: any = null;
+
+if (isLocationPage) {
+  data = (locationsData as any)[id || ''];
+} else if (isActivityPage) {
+  data = (activitiesData as any)[id || ''];
+} else if (isSkillPage) {
+  data = (skillsData as any)[id || ''];
+} else if (isEnemyPage) {
+  data = (enemiesData as any)[id || ''];
+}
+
+const isDetailsPage = !!data;
+
+const slugify = (text: string) => {
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+};
+---
+
+{isDetailsPage ? (
+  <div class="custom-sidebar">
+    <h2 id="sidebar-attributes-title">Attributes</h2>
+    <div class="attributes-grid">
+      {isLocationPage && (
+        <>
+          <div class="attribute-item">
+            <span class="label">ID</span>
+            <span class="value">{data.id}</span>
+          </div>
+          <div class="attribute-item">
+            <span class="label">Type</span>
+            <span class="value">{data.is_combat_zone ? 'Combat Zone' : 'Safe Zone'}</span>
+          </div>
+          {data.tags.length > 0 && (
+            <div class="attribute-item">
+              <span class="label">Tags</span>
+              <span class="value">{data.tags.join(', ')}</span>
+            </div>
+          )}
+          {data.is_combat_zone && (
+            <div class="attribute-item">
+              <span class="label">Enemy Count</span>
+              <span class="value">{data.enemy_count}</span>
+            </div>
+          )}
+        </>
+      )}
+
+      {isActivityPage && (
+        <>
+          <div class="attribute-item">
+            <span class="label">Type</span>
+            <span class="value">{data.type}</span>
+          </div>
+          <div class="attribute-item">
+            <span class="label">Action Text</span>
+            <span class="value">{data.action_text}</span>
+          </div>
+          {data.payment_type && (
+            <div class="attribute-item">
+              <span class="label">Payment Type</span>
+              <span class="value">{data.payment_type}</span>
+            </div>
+          )}
+          {data.required_tool_type && (
+            <div class="attribute-item">
+              <span class="label">Required Tool</span>
+              <span class="value">{data.required_tool_type}</span>
+            </div>
+          )}
+          {data.base_skills_names && data.base_skills_names.length > 0 && (
+            <div class="attribute-item">
+              <span class="label">Skills Involved</span>
+              <span class="value">
+                {data.base_skills_names.map((skill: string, index: number) => (
+                  <>
+                    <a href={`/YAIRPG-wiki/skills/${slugify(skill)}`}>{skill}</a>
+                    {index < data.base_skills_names.length - 1 ? ', ' : ''}
+                  </>
+                ))}
+              </span>
+            </div>
+          )}
+        </>
+      )}
+
+      {isSkillPage && (
+        <>
+          <div class="attribute-item">
+            <span class="label">Category</span>
+            <span class="value">{data.category}</span>
+          </div>
+          <div class="attribute-item">
+            <span class="label">Max Level</span>
+            <span class="value">{data.max_level}</span>
+          </div>
+          <div class="attribute-item">
+            <span class="label">Base XP Cost</span>
+            <span class="value">{data.base_xp_cost}</span>
+          </div>
+          <div class="attribute-item">
+            <span class="label">XP Scaling</span>
+            <span class="value">{data.xp_scaling}</span>
+          </div>
+        </>
+      )}
+
+      {isEnemyPage && (
+        <>
+          <div class="attribute-item">
+            <span class="label">Rank</span>
+            <span class="value">{data.rank}</span>
+          </div>
+          <div class="attribute-item">
+            <span class="label">XP Value</span>
+            <span class="value">{data.xp_value}</span>
+          </div>
+          <div class="attribute-item">
+            <span class="label">Size</span>
+            <span class="value">{data.size}</span>
+          </div>
+          {data.tags.length > 0 && (
+            <div class="attribute-item">
+              <span class="label">Tags</span>
+              <span class="value">{data.tags.join(', ')}</span>
+            </div>
+          )}
+          <div class="attribute-item">
+            <span class="label">Bestiary</span>
+            <span class="value">{data.add_to_bestiary ? 'Yes' : 'No'}</span>
+          </div>
+        </>
+      )}
+    </div>
+  </div>
+) : (
+  <Default {...Astro.props} />
+)}
+
+<style>
+  .custom-sidebar {
+    padding: 1rem;
+    background-color: var(--sl-color-gray-6);
+    border-radius: 0.5rem;
+    border: 1px solid var(--sl-color-gray-5);
+    margin-bottom: 1rem;
+  }
+  .custom-sidebar h2 {
+    font-size: var(--sl-text-h5);
+    margin-top: 0;
+    margin-bottom: 1rem;
+    color: var(--sl-color-white);
+    border-bottom: 1px solid var(--sl-color-gray-5);
+    padding-bottom: 0.5rem;
+  }
+  .attributes-grid {
+    display: flex;
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+  .attribute-item {
+    display: flex;
+    flex-direction: column;
+    gap: 0.25rem;
+  }
+  .attribute-item .label {
+    font-size: var(--sl-text-xs);
+    font-weight: bold;
+    color: var(--sl-color-gray-3);
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+  }
+  .attribute-item .value {
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-white);
+  }
+  .attribute-item .value a {
+    color: var(--sl-color-accent-high);
+    text-decoration: none;
+  }
+  .attribute-item .value a:hover {
+    text-decoration: underline;
+  }
+</style>

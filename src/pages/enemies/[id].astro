@@ -35,15 +35,6 @@ const foundInLocations = Object.entries(locationsData)
   <div class="enemy-details">
     <p>{enemy.description}</p>
 
-    <h2>Attributes</h2>
-    <ul>
-      <li><strong>Rank:</strong> {enemy.rank}</li>
-      <li><strong>XP Value:</strong> {enemy.xp_value}</li>
-      <li><strong>Size:</strong> {enemy.size}</li>
-      <li><strong>Tags:</strong> {enemy.tags.join(', ')}</li>
-      <li><strong>Add to Bestiary:</strong> {enemy.add_to_bestiary ? 'Yes' : 'No'}</li>
-    </ul>
-
     {foundInLocations.length > 0 && (
       <>
         <h2>Found in Locations</h2>

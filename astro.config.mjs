@@ -131,6 +131,9 @@ export default defineConfig({
 		starlight({
 			title: 'YAIRPG Wiki',
 			social: [{ icon: 'github', label: 'GitHub', href: 'https://github.com/withastro/starlight' }],
+			components: {
+				TableOfContents: './src/components/TableOfContents.astro',
+			},
 			sidebar: [
 				{
 					label: 'Activities',
@@ -149,6 +152,7 @@ export default defineConfig({
 					items: skillSidebarItems,
 				},
 			],
+			pagination: false
 		}),
 	],
 });

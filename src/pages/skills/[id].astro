@@ -19,14 +19,6 @@ const { skill } = Astro.props;
     {skill.flavour_text && (
       <p><em>{skill.flavour_text}</em></p>
     )}
-
-    <h2>Attributes</h2>
-    <ul>
-      <li><strong>Category:</strong> {skill.category}</li>
-      <li><strong>Max Level:</strong> {skill.max_level}</li>
-      <li><strong>Base XP Cost:</strong> {skill.base_xp_cost}</li>
-      <li><strong>XP Scaling:</strong> {skill.xp_scaling}</li>
-    </ul>
   </div>
 </StarlightPage>
 

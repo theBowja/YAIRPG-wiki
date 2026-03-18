@@ -26,14 +26,6 @@ const { location } = Astro.props;
   <div class="location-details">
     <p>{location.description}</p>
 
-    <h2>Attributes</h2>
-    <ul>
-      <li><strong>Type:</strong> {location.is_combat_zone ? 'Combat Zone' : 'Safe Zone'}</li>
-      {location.tags.length > 0 && (
-        <li><strong>Tags:</strong> {location.tags.join(', ')}</li>
-      )}
-    </ul>
-
     {location.parent_location && (
       <>
         <h2>Go back</h2>
