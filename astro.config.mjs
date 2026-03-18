@@ -76,14 +76,17 @@ let enemySidebarItems = [];
 if (fs.existsSync(enemiesDataPath)) {
 	try {
 		const enemiesData = JSON.parse(fs.readFileSync(enemiesDataPath, 'utf-8'));
-		enemySidebarItems = Object.entries(enemiesData)
-			.map(([slug, enemy]) => ({
-				label: enemy.name,
-				link: `/enemies/${slug}`,
-				rank: enemy.rank || 0,
-			}))
-			.sort((a, b) => a.rank - b.rank || a.label.localeCompare(b.label))
-			.map(({ label, link }) => ({ label, link }));
+		enemySidebarItems = [
+			{ label: 'All Enemies', link: '/enemies' },
+			...Object.entries(enemiesData)
+				.map(([slug, enemy]) => ({
+					label: enemy.name,
+					link: `/enemies/${slug}`,
+					rank: enemy.rank || 0,
+				}))
+				.sort((a, b) => a.rank - b.rank || a.label.localeCompare(b.label))
+				.map(({ label, link }) => ({ label, link }))
+		];
 	} catch (e) {
 		console.error('Failed to parse enemies.json for sidebar:', e);
 	}

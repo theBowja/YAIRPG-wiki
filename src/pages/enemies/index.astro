@@ -1,0 +1,314 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import enemiesData from '../../data/enemies.json';
+
+const enemies = Object.entries(enemiesData).map(([slug, enemy]) => ({
+  slug,
+  ...enemy,
+}));
+
+// Sort initial list by rank then name
+enemies.sort((a, b) => (a.rank || 0) - (b.rank || 0) || a.name.localeCompare(b.name));
+---
+
+<StarlightPage frontmatter={{ 
+  title: 'All Enemies', 
+  description: 'A complete list of all enemies in YAIRPG.',
+  tableOfContents: false 
+}}>
+  <style slot="head">
+    :root {
+      --sl-content-width: 57rem;
+    }
+  </style>
+  <div class="enemies-container">
+    <div class="controls">
+      <div class="search-box">
+        <label for="enemy-search">Search</label>
+        <input type="text" id="enemy-search" placeholder="Search by name or tags..." />
+      </div>
+      <div class="filter-box">
+        <label class="checkbox-container">
+          <input type="checkbox" id="bestiary-filter" />
+          <span class="checkmark"></span>
+          Bestiary Only
+        </label>
+      </div>
+    </div>
+
+    <div class="table-wrapper">
+      <table id="enemies-table">
+        <thead>
+          <tr>
+            <th data-sort="name" class="sortable">Name <span class="sort-icon">↕</span></th>
+            <th data-sort="rank" class="sortable">Rank <span class="sort-icon">↕</span></th>
+            <th data-sort="xp" class="sortable">XP Value <span class="sort-icon">↕</span></th>
+            <th data-sort="bestiary" class="sortable">Bestiary <span class="sort-icon">↕</span></th>
+            <th>Tags</th>
+          </tr>
+        </thead>
+        <tbody id="enemies-body">
+          {enemies.map(enemy => (
+            <tr data-name={enemy.name.toLowerCase()} data-rank={enemy.rank} data-xp={enemy.xp_value} data-bestiary={enemy.add_to_bestiary ? 'true' : 'false'} data-tags={enemy.tags?.join(',').toLowerCase() || ''}>
+              <td><a href={`/YAIRPG-wiki/enemies/${enemy.slug}`}>{enemy.name}</a></td>
+              <td>{enemy.rank}</td>
+              <td>{enemy.xp_value}</td>
+              <td>{enemy.add_to_bestiary ? '✅' : '❌'}</td>
+              <td>{enemy.tags?.join(', ')}</td>
+            </tr>
+          ))}
+        </tbody>
+      </table>
+    </div>
+  </div>
+
+  <script is:inline>
+    const searchInput = document.getElementById('enemy-search');
+    const bestiaryCheckbox = document.getElementById('bestiary-filter');
+    const tableBody = document.getElementById('enemies-body');
+    const tableRows = Array.from(tableBody.querySelectorAll('tr'));
+    const headers = document.querySelectorAll('th.sortable');
+
+    let currentSort = { column: 'rank', direction: 'asc' };
+
+    function filterTable() {
+      const searchTerm = searchInput.value.toLowerCase();
+      const bestiaryOnly = bestiaryCheckbox.checked;
+
+      tableRows.forEach(row => {
+        const name = row.getAttribute('data-name');
+        const tags = row.getAttribute('data-tags');
+        const isBestiary = row.getAttribute('data-bestiary') === 'true';
+
+        const matchesSearch = name.includes(searchTerm) || tags.includes(searchTerm);
+        const matchesBestiary = !bestiaryOnly || isBestiary;
+
+        if (matchesSearch && matchesBestiary) {
+          row.style.display = '';
+        } else {
+          row.style.display = 'none';
+        }
+      });
+    }
+
+    function sortTable(column) {
+      const direction = currentSort.column === column && currentSort.direction === 'asc' ? 'desc' : 'asc';
+      currentSort = { column, direction };
+
+      // Update headers
+      headers.forEach(h => {
+        h.classList.remove('asc', 'desc');
+        const icon = h.querySelector('.sort-icon');
+        if (h.getAttribute('data-sort') === column) {
+          h.classList.add(direction);
+          icon.textContent = direction === 'asc' ? '↑' : '↓';
+        } else {
+          icon.textContent = '↕';
+        }
+      });
+
+      const sortedRows = tableRows.sort((a, b) => {
+        let valA, valB;
+        if (column === 'name') {
+          valA = a.getAttribute('data-name');
+          valB = b.getAttribute('data-name');
+          return direction === 'asc' ? valA.localeCompare(valB) : valB.localeCompare(valA);
+        } else if (column === 'rank') {
+          valA = parseInt(a.getAttribute('data-rank')) || 0;
+          valB = parseInt(b.getAttribute('data-rank')) || 0;
+        } else if (column === 'xp') {
+          valA = parseInt(a.getAttribute('data-xp')) || 0;
+          valB = parseInt(b.getAttribute('data-xp')) || 0;
+        } else if (column === 'bestiary') {
+          valA = a.getAttribute('data-bestiary') === 'true' ? 1 : 0;
+          valB = b.getAttribute('data-bestiary') === 'true' ? 1 : 0;
+        }
+
+        if (valA < valB) return direction === 'asc' ? -1 : 1;
+        if (valA > valB) return direction === 'asc' ? 1 : -1;
+        return 0;
+      });
+
+      sortedRows.forEach(row => tableBody.appendChild(row));
+    }
+
+    searchInput.addEventListener('input', filterTable);
+    bestiaryCheckbox.addEventListener('change', filterTable);
+
+    headers.forEach(header => {
+      header.addEventListener('click', () => {
+        sortTable(header.getAttribute('data-sort'));
+      });
+    });
+
+    // Initial sort state display
+    const rankHeader = document.querySelector('th[data-sort="rank"]');
+    rankHeader.classList.add('asc');
+    rankHeader.querySelector('.sort-icon').textContent = '↑';
+  </script>
+
+  <style>
+    .enemies-container {
+      display: flex;
+      flex-direction: column;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+
+    .controls {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 2rem;
+      align-items: flex-end;
+      background: var(--sl-color-gray-6);
+      padding: 1rem;
+      border-radius: 0.5rem;
+      border: 1px solid var(--sl-color-gray-5);
+    }
+
+    .search-box {
+      display: flex;
+      flex-direction: column;
+      gap: 0.5rem;
+      flex: 1;
+      min-width: 200px;
+    }
+
+    .search-box input {
+      padding: 0.6rem;
+      border-radius: 0.4rem;
+      border: 1px solid var(--sl-color-gray-5);
+      background: var(--sl-color-black);
+      color: var(--sl-color-white);
+      font-size: 1rem;
+    }
+
+    .filter-box {
+      display: flex;
+      align-items: center;
+      padding-bottom: 0.5rem;
+    }
+
+    .checkbox-container {
+      display: flex;
+      align-items: center;
+      position: relative;
+      padding-left: 35px;
+      cursor: pointer;
+      font-size: 1rem;
+      user-select: none;
+    }
+
+    .checkbox-container input {
+      position: absolute;
+      opacity: 0;
+      cursor: pointer;
+      height: 0;
+      width: 0;
+    }
+
+    .checkmark {
+      position: absolute;
+      top: 0;
+      left: 0;
+      height: 25px;
+      width: 25px;
+      background-color: var(--sl-color-gray-5);
+      border-radius: 4px;
+    }
+
+    .checkbox-container:hover input ~ .checkmark {
+      background-color: var(--sl-color-gray-4);
+    }
+
+    .checkbox-container input:checked ~ .checkmark {
+      background-color: var(--sl-color-accent);
+    }
+
+    .checkmark:after {
+      content: "";
+      position: absolute;
+      display: none;
+    }
+
+    .checkbox-container input:checked ~ .checkmark:after {
+      display: block;
+    }
+
+    .checkbox-container .checkmark:after {
+      left: 9px;
+      top: 5px;
+      width: 5px;
+      height: 10px;
+      border: solid white;
+      border-width: 0 3px 3px 0;
+      transform: rotate(45deg);
+    }
+
+    .table-wrapper {
+      overflow-x: auto;
+    }
+
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      border: 1px solid var(--sl-color-gray-5);
+    }
+
+    th, td {
+      padding: 0.8rem 1rem;
+      text-align: left;
+      border-bottom: 1px solid var(--sl-color-gray-5);
+    }
+
+    th {
+      background-color: var(--sl-color-gray-6);
+      font-weight: 600;
+      position: sticky;
+      top: 0;
+    }
+
+    th.sortable {
+      cursor: pointer;
+      user-select: none;
+      transition: background-color 0.2s;
+    }
+
+    th.sortable:hover {
+      background-color: var(--sl-color-gray-5);
+    }
+
+    th .sort-icon {
+      margin-left: 0.5rem;
+      font-size: 0.8rem;
+      opacity: 0.6;
+    }
+
+    th.asc .sort-icon, th.desc .sort-icon {
+      opacity: 1;
+      color: var(--sl-color-accent);
+    }
+
+    tr {
+      transition: background-color 0.1s;
+    }
+
+    tr:hover {
+      background-color: rgba(var(--sl-color-accent-high-rgb), 0.1);
+    }
+
+    tbody tr:last-child td {
+      border-bottom: none;
+    }
+
+    a {
+      color: var(--sl-color-accent-high);
+      text-decoration: none;
+      font-weight: 500;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+  </style>
+</StarlightPage>
