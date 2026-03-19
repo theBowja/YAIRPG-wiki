@@ -4,7 +4,7 @@
     "name": "ABC for kids",
     "description": "The simplest book on the market",
     "value": 100,
-    "item_type": "BOOK",
+    "item_type": "Book",
     "tags": [
       "item",
       "book"
@@ -15,7 +15,7 @@
     "name": "Old combat manual",
     "description": "Old book about combat, worn and outdated, but might still contain something useful",
     "value": 200,
-    "item_type": "BOOK",
+    "item_type": "Book",
     "tags": [
       "item",
       "book"
@@ -26,7 +26,7 @@
     "name": "Twist liek a snek",
     "description": "This book has a terrible grammar, seemingly written by some uneducated bandit, but despite that it quite well details how to properly evade attacks",
     "value": 200,
-    "item_type": "BOOK",
+    "item_type": "Book",
     "tags": [
       "item",
       "book"
@@ -37,7 +37,7 @@
     "name": "Medicine for dummies",
     "description": "A simple book about healing, describing how to create some basic medicines",
     "value": 320,
-    "item_type": "BOOK",
+    "item_type": "Book",
     "tags": [
       "item",
       "book"
@@ -48,7 +48,7 @@
     "name": "Butchering and you",
     "description": "An introductory book to animal butchering, that goes into further detail on how to make a use of animal parts, especially hides and bones",
     "value": 240,
-    "item_type": "BOOK",
+    "item_type": "Book",
     "tags": [
       "item",
       "book"
@@ -59,7 +59,7 @@
     "name": "Ode to Whimsy, and other poems",
     "description": "A short and wonderful book of poetry that fills one with appreciation for life",
     "value": 200,
-    "item_type": "BOOK",
+    "item_type": "Book",
     "tags": [
       "item",
       "book"
@@ -70,7 +70,7 @@
     "name": "A Glint On The Sand",
     "description": "This books recounts a tale of shipwrecked crew accidentally discovering glassmaking while cooking on a beach. More importantly, it details the processees and materials necessary to manufacture glass",
     "value": 300,
-    "item_type": "BOOK",
+    "item_type": "Book",
     "tags": [
       "item",
       "book"
@@ -81,7 +81,7 @@
     "name": "Shellfish desires",
     "description": "A cookbook detailing various methods of cleaning and preparing crab, clam, snail, turtle, and other aquatic animals",
     "value": 1620,
-    "item_type": "BOOK",
+    "item_type": "Book",
     "tags": [
       "item",
       "book"
@@ -92,7 +92,7 @@
     "name": "Rat fang",
     "description": "Fang of a huge rat, not very sharp, but can still pierce a human skin if enough force is applied",
     "value": 8,
-    "item_type": "OTHER",
+    "item_type": "Other",
     "tags": [
       "item"
     ]
@@ -102,7 +102,7 @@
     "name": "Wolf fang",
     "description": "Fang of a wild wolf. Somewhat sharp, still not very useful. Maybe if it had a bit better quality...",
     "value": 12,
-    "item_type": "OTHER",
+    "item_type": "Other",
     "tags": [
       "item"
     ]
@@ -112,7 +112,7 @@
     "name": "Boar tusk",
     "description": "Tusk of a wild boar. Visibly worn and not very sharp",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -123,7 +123,7 @@
     "name": "Rat meat chunks",
     "description": "Eww",
     "value": 8,
-    "item_type": "OTHER",
+    "item_type": "Other",
     "tags": [
       "item"
     ]
@@ -133,7 +133,7 @@
     "name": "Fish fillet",
     "description": "Cuts of meat from a fish that was too big to eat whole",
     "value": 30,
-    "item_type": "OTHER",
+    "item_type": "Other",
     "tags": [
       "item"
     ]
@@ -143,7 +143,7 @@
     "name": "Glass phial",
     "description": "Small glass phial, a perfect container for a potion",
     "value": 10,
-    "item_type": "OTHER",
+    "item_type": "Other",
     "tags": [
       "item"
     ]
@@ -153,7 +153,7 @@
     "name": "Glass bottle",
     "description": "A glass bottle, perfect for carrying a drink around",
     "value": 20,
-    "item_type": "OTHER",
+    "item_type": "Other",
     "tags": [
       "item"
     ]
@@ -163,7 +163,7 @@
     "name": "Camping supplies",
     "description": "Bedroll, tent, small chest, and generally just anything that could be needed to establish a camp",
     "value": 2000,
-    "item_type": "OTHER",
+    "item_type": "Other",
     "tags": [
       "item"
     ]
@@ -173,7 +173,7 @@
     "name": "Coil of rope",
     "description": "A nice, long coil of rope, for whatever use you might find (although you have a feeling it will only be very situational)",
     "value": 400,
-    "item_type": "OTHER",
+    "item_type": "Other",
     "tags": [
       "item"
     ]
@@ -183,7 +183,7 @@
     "name": "Mountain goat horn",
     "description": "A curved and sturdy horn of a mountain goat. While not very useful in itself, it makes for a nice decoration",
     "value": 30,
-    "item_type": "OTHER",
+    "item_type": "Other",
     "tags": [
       "item"
     ]
@@ -193,7 +193,7 @@
     "name": "Rat tail",
     "description": "Tail of a huge rat. Doesn't seem very useful, but maybe some meat could be recovered from it",
     "value": 4,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -204,7 +204,7 @@
     "name": "Rat pelt",
     "description": "Pelt of a huge rat. Fur has terrible quality, but maybe leather could be used for something if you gather more?",
     "value": 10,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -215,7 +215,7 @@
     "name": "High quality wolf fang",
     "description": "Fang of a wild wolf. Very sharp, undamaged and surprisingly clean",
     "value": 15,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -226,7 +226,7 @@
     "name": "Wolf pelt",
     "description": "Pelt of a wild wolf. It's a bit damaged so it won't fetch a great price, but the leather itself could be useful",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -237,7 +237,7 @@
     "name": "Boar hide",
     "description": "Thick hide of a wild boar. Too stiff for clothing, but might be useful for an armor",
     "value": 30,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -248,7 +248,7 @@
     "name": "Boar meat",
     "description": "Fatty meat of a wild boar, all it needs is to be cooked",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -259,7 +259,7 @@
     "name": "High quality boar tusk",
     "description": "Tusk of a wild boar. Sharp and long enough to easily kill an adult human",
     "value": 25,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -270,7 +270,7 @@
     "name": "Bear hide",
     "description": "A strong hide of a wild bear, so strong that even steel struggles against it",
     "value": 50,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -281,7 +281,7 @@
     "name": "Bear claw",
     "description": "Large and dangerous claw of a wild bear, but it has seen better days",
     "value": 50,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -292,7 +292,7 @@
     "name": "Sharp bear claw",
     "description": "Large and dangerous claw of a wild bear, sharp enough to easily cut through meat",
     "value": 80,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -303,7 +303,7 @@
     "name": "Weak monster bone",
     "description": "Mutated and dark bone of a monster. While on the weaker side, it's still very strong and should be useful for crafting after some processing",
     "value": 30,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -314,7 +314,7 @@
     "name": "Goat meat",
     "description": "Lean meat of a goat, it's pretty tough and needs to be cooked for a long time",
     "value": 25,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -325,7 +325,7 @@
     "name": "Mountain goat hide",
     "description": "Thick hide of a mountain goat hide. Not as strong as boar hide, but this one can actually be turned into clothes after some processing",
     "value": 30,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -336,7 +336,7 @@
     "name": "Pristine mountain goat horn",
     "description": "Curved and sturdy horn of a mountain goat. It's noticeably bigger than average and seems to be even sturdier",
     "value": 70,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -347,7 +347,7 @@
     "name": "Crab meat",
     "description": "A sandy shell filled with crab meat. It needs to be cleaned before it can be cooked",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -358,7 +358,7 @@
     "name": "Crab claw",
     "description": "A large claw of a crab, covered in abrasions and barnicles, but it makes a nice souvenier",
     "value": 40,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -369,7 +369,7 @@
     "name": "Giant crab claw",
     "description": "A large claw of a crab in pristine condition, still sharp and strong enough to take a finger off",
     "value": 100,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -380,7 +380,7 @@
     "name": "Alligator meat",
     "description": "A lean chunk of alligator meat. It's tough, with a strange but not unappealing smell",
     "value": 40,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -391,7 +391,7 @@
     "name": "Alligator skin",
     "description": "Rough, scaly hide of an alligator. Deceptively strong and flexible, but uncomfortable to touch and terrible at keeping the cold at bay",
     "value": 50,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -402,7 +402,7 @@
     "name": "Turtle meat",
     "description": "A lean cut of turtle meat. It's tender and versatile, but difficult to prepare",
     "value": 40,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -413,7 +413,7 @@
     "name": "Turtle shell",
     "description": "A dense, thick turtle shell. It's stronger than steel, but too bulky to work with",
     "value": 30,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -424,7 +424,7 @@
     "name": "Giant snake meat",
     "description": "A lean cut of snake meat. It's rubbery, and looks difficult to cook",
     "value": 40,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -435,7 +435,7 @@
     "name": "Giant snake skin",
     "description": "Smooth, scaly hide of a giant snake. Very durable, but very thin and a poor insulator",
     "value": 50,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -446,7 +446,7 @@
     "name": "Frog meat",
     "description": "Surprisingly tender meat from a frog",
     "value": 50,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -457,7 +457,7 @@
     "name": "Frog hide",
     "description": "Slippery hide of a giant frog. If you could remove the toxins from it, the leather could be put into good use",
     "value": 50,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -468,7 +468,7 @@
     "name": "Low quality iron ore",
     "description": "Iron content is rather low and there are a lot of problematic components that can't be fully removed, which will affect created materials",
     "value": 3,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -479,7 +479,7 @@
     "name": "Iron ore",
     "description": "It has a decent iron content and can be smelt into market-quality iron",
     "value": 5,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -490,7 +490,7 @@
     "name": "Atratan ore",
     "description": "A dark-colored ore said to have minuscule magical effects, but used almost exclusively for refining all types of iron",
     "value": 6,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -501,7 +501,7 @@
     "name": "Silver ore",
     "description": "Peculiar for its ability to direct or disrupt magic",
     "value": 10,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -512,7 +512,7 @@
     "name": "Coal",
     "description": "A flammable material with extremely high carbon content",
     "value": 7,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -523,7 +523,7 @@
     "name": "Charcoal",
     "description": "A flammable material with extremely high carbon content, created by strongly heating wood",
     "value": 5,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -534,7 +534,7 @@
     "name": "Piece of rough wood",
     "description": "Cheapest form of wood. There's a lot of bark and malformed pieces",
     "value": 2,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -545,7 +545,7 @@
     "name": "Piece of wood",
     "description": "Average quality wood. There's a lot of bark and malformed pieces",
     "value": 4,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -556,7 +556,7 @@
     "name": "Piece of ash wood",
     "description": "Strong yet elastic, it's best wood you can hope to find around. There's a lot of bark and malformed pieces",
     "value": 7,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -567,7 +567,7 @@
     "name": "Belmart leaf",
     "description": "Small, round, dark-green leaves with very good disinfectant properties",
     "value": 8,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -578,7 +578,7 @@
     "name": "Golmoon leaf",
     "description": "Big green-brown leaves that can be applied to wounds to speed up their healing",
     "value": 8,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -589,7 +589,7 @@
     "name": "Oneberry",
     "description": "Small blue berries capable of stimulating body's natural healing",
     "value": 8,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -600,7 +600,7 @@
     "name": "Silver thistle",
     "description": "Rare herb that usually grows high up in mountains, a potent healing ingredient",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -611,7 +611,7 @@
     "name": "Parsley, sage, rosemary and thyme",
     "description": "A collection of various herbs commonly used to enhance the flavour and nutrition of dishes",
     "value": 10,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -622,7 +622,7 @@
     "name": "Wool",
     "description": "A handful of wool, raw and unprocessed",
     "value": 8,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -633,7 +633,7 @@
     "name": "Silica sand",
     "description": "Sand made potent by the remains of countless generations of creatures that lived and died in the body of water it was taken from",
     "value": 1,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -644,7 +644,7 @@
     "name": "Flax",
     "description": "A bundle of flax, raw and unprocessed",
     "value": 14,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -655,7 +655,7 @@
     "name": "Clam",
     "description": "Common shellfish found in the sand and mud around the lake shore. Can't be eaten raw",
     "value": 6,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -666,7 +666,7 @@
     "name": "Wild onion",
     "description": "A wild root vegetable sometimes used to add flavor to dishes. Can't be eaten raw",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -677,7 +677,7 @@
     "name": "Wild garlic",
     "description": "A wild root vegetable known to possess anti-fungal properties, sometimes used to add flavor to dishes. Can't be eaten raw",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -688,7 +688,7 @@
     "name": "Wild potato",
     "description": "A wild nutrient-rich stem tuber that can be used in a variety of dishes. Can't be eaten raw",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -699,7 +699,7 @@
     "name": "Ratfish",
     "description": "A small sweetwater fish, named after its unremarkable coloration and propensity to travel in large groups",
     "value": 5,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -710,7 +710,7 @@
     "name": "Minnow",
     "description": "One of the variety of small fish that inhabit rivers and streams",
     "value": 10,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -721,7 +721,7 @@
     "name": "Mackerel shark",
     "description": "A shark small enough to fit in a stream. Makes up for its size with its feistiness and big mouth",
     "value": 50,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -732,7 +732,7 @@
     "name": "Trout",
     "description": "A fish large enough for a full meal and common in most rivers, making it a convenient source of food. So far, this has not effected their population",
     "value": 50,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -743,7 +743,7 @@
     "name": "Carp",
     "description": "It hasn't grown into any of its more powerful forms yet, so its meat is still fatty and plump",
     "value": 50,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -754,7 +754,7 @@
     "name": "Catfish",
     "description": "A large fish with whiskers. Usually found near the bottom of lakes, where it feeds on ratfish and pretty much everything else it can hunt",
     "value": 200,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -765,7 +765,7 @@
     "name": "Bonemeal",
     "description": "Powdered bones and teeth, that can be used as an organic fertilizer",
     "value": 100,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -776,7 +776,7 @@
     "name": "Low quality iron ingot",
     "description": "It has a lot of impurities, resulting in it being noticeably below the market standard",
     "value": 10,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -787,7 +787,7 @@
     "name": "Iron ingot",
     "description": "It doesn't suffer from any excessive impurities and can be used without worries",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -798,7 +798,7 @@
     "name": "Steel ingot",
     "description": "Basic alloy of iron, harder and more resistant",
     "value": 40,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -809,7 +809,7 @@
     "name": "Turtle shellplate",
     "description": "Small, dense plates capable of reflecting mighty blows. Useless in their current form, but can be turned into something useful with enough effort and focus",
     "value": 60,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -820,7 +820,7 @@
     "name": "Silver ingot",
     "description": "Too soft to use as weapon material, but has potential for use in magic tools",
     "value": 30,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -831,7 +831,7 @@
     "name": "Piece of wolf rat leather",
     "description": "It's slightly damaged and seems useless for anything that requires precise work",
     "value": 10,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -842,7 +842,7 @@
     "name": "Processed rat pelt",
     "description": "Processed pelt of a huge rat. It's of a barely acceptable quality, but it's still a miracle with how terrible the basic material was",
     "value": 15,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -853,7 +853,7 @@
     "name": "Piece of wolf leather",
     "description": "Somewhat strong, should offer some protection when turned into armor",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -864,7 +864,7 @@
     "name": "Processed wolf pelt",
     "description": "Processed pelt of a wild wolf. It's a nice, stylish material, with fur that's feels good to touch",
     "value": 30,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -875,7 +875,7 @@
     "name": "Piece of boar leather",
     "description": "Thick and resistant leather, too stiff for clothes but perfect for armor",
     "value": 30,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -886,7 +886,7 @@
     "name": "Processed boar hide",
     "description": "Processed hide of a wild boar. It's a thick, heavy material, with short rough fur, but it's quite strong",
     "value": 45,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -897,7 +897,7 @@
     "name": "Piece of goat leather",
     "description": "Thick and resistant, just barely elastic enough to be used for clothing",
     "value": 40,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -908,7 +908,7 @@
     "name": "Processed goat hide",
     "description": "Processed hide of a wild goat. It's a resistant material, with short and rough fur",
     "value": 60,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -919,7 +919,7 @@
     "name": "Piece of bear leather",
     "description": "Strong and resistant, but too thick for clothing",
     "value": 60,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -930,7 +930,7 @@
     "name": "Processed bear hide",
     "description": "Strong, resistant, and warm, with fluffy fur",
     "value": 90,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -941,7 +941,7 @@
     "name": "Piece of alligator leather",
     "description": "Strong and flexible, but too uncomfortable to use as clothing",
     "value": 150,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -952,7 +952,7 @@
     "name": "Piece of snakeskin leather",
     "description": "Durable and thin, but a poor insulator",
     "value": 150,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -963,7 +963,7 @@
     "name": "Piece of frog leather",
     "description": "The toxins have been removed and the slime coagulated into a waxy coating",
     "value": 60,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -974,7 +974,7 @@
     "name": "Animal fat",
     "description": "White, thick, oily substance, rendered from animal tissue",
     "value": 40,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -985,7 +985,7 @@
     "name": "Wool cloth",
     "description": "Thick and warm, might possibly absorb some punches",
     "value": 8,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -996,7 +996,7 @@
     "name": "Linen cloth",
     "description": "Bolt of durable and thin cloth that won't restrict mobility",
     "value": 14,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -1007,7 +1007,7 @@
     "name": "Iron chainmail",
     "description": "Dozens of tiny iron rings linked together. Nowhere near a wearable form, turning it into armor will still take a lot of effort and focus",
     "value": 12,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -1018,7 +1018,7 @@
     "name": "Steel chainmail",
     "description": "Dozens of tiny steel rings linked together. Nowhere near a wearable form, turning it into armor will still take a lot of effort and focus",
     "value": 18,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -1029,7 +1029,7 @@
     "name": "Scraps of wolf rat meat",
     "description": "Ignoring where they come from and all the attached diseases, they actually look edible. Just remember to cook it first",
     "value": 8,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -1040,7 +1040,7 @@
     "name": "Processed rough wood",
     "description": "Cheapest form of wood, ready to be used. Despite being rather weak, it still has a lot of uses",
     "value": 6,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -1051,7 +1051,7 @@
     "name": "Processed wood",
     "description": "Average quality wood, ready to be used",
     "value": 11,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -1062,7 +1062,7 @@
     "name": "Processed ash wood",
     "description": "High quality wood, just waiting to be turned into a piece of equipment",
     "value": 20,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -1073,7 +1073,7 @@
     "name": "Processed weak monster bone",
     "description": "Polished and cleaned bones of a weak monster, just waiting to be turned into a piece of equipment",
     "value": 40,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -1084,7 +1084,7 @@
     "name": "Potash",
     "description": "An alchemical substance derived from plant ash, sought after for production of bleach, soap and glass",
     "value": 25,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -1095,7 +1095,7 @@
     "name": "Raw glass",
     "description": "Molten piece of glass, yet to be shaped into something useful",
     "value": 100,
-    "item_type": "MATERIAL",
+    "item_type": "Material",
     "tags": [
       "item",
       "material"
@@ -1106,7 +1106,7 @@
     "name": "Basic spare parts",
     "description": "Some cheap and simple spare parts, like bindings and screws, necessary for crafting equipment",
     "value": 30,
-    "item_type": "OTHER",
+    "item_type": "Other",
     "tags": [
       "item"
     ]
@@ -1116,7 +1116,7 @@
     "name": "Cheap short iron blade",
     "description": "Crude blade made of iron. Perfect length for a dagger, but could be also used for a spear",
     "value": 70,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1141,7 +1141,7 @@
     "name": "Short iron blade",
     "description": "A good iron blade. Perfect length for a dagger, but could be also used for a spear",
     "value": 160,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1166,7 +1166,7 @@
     "name": "Short steel blade",
     "description": "A good steel blade. Perfect length for a dagger, but could be also used for a spear",
     "value": 240,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1191,7 +1191,7 @@
     "name": "Cheap long iron blade",
     "description": "Crude blade made of iron, with a perfect length for a sword",
     "value": 100,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1216,7 +1216,7 @@
     "name": "Long iron blade",
     "description": "Good blade made of iron, with a perfect length for a sword",
     "value": 210,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1241,7 +1241,7 @@
     "name": "Long steel blade",
     "description": "Good blade made of steel, with a perfect length for a sword",
     "value": 310,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1266,7 +1266,7 @@
     "name": "Cheap iron axe head",
     "description": "A heavy axe head made of low quality iron",
     "value": 100,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1285,7 +1285,7 @@
     "name": "Iron axe head",
     "description": "A heavy axe head made of steel",
     "value": 210,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1304,7 +1304,7 @@
     "name": "Steel axe head",
     "description": "A heavy axe head made of steel",
     "value": 310,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1319,7 +1319,7 @@
     "name": "Cheap iron hammer head",
     "description": "A crude ball made of low quality iron, with a small hole for the handle",
     "value": 100,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1338,7 +1338,7 @@
     "name": "Iron hammer head",
     "description": "A crude ball made of iron, with a small hole for the handle",
     "value": 210,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1357,7 +1357,7 @@
     "name": "Steel hammer head",
     "description": "A blocky piece of steel, with a small hole for the handle",
     "value": 300,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1376,7 +1376,7 @@
     "name": "Simple short wooden hilt",
     "description": "A short handle for a sword or maybe a dagger",
     "value": 8,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1391,7 +1391,7 @@
     "name": "Short wooden hilt",
     "description": "A short handle for a sword or maybe a dagger",
     "value": 32,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1410,7 +1410,7 @@
     "name": "Short ash wood hilt",
     "description": "A short handle for a sword or maybe a dagger",
     "value": 48,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1429,7 +1429,7 @@
     "name": "Simple medium wooden handle",
     "description": "A medium handle for an axe or a hammer",
     "value": 16,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1448,7 +1448,7 @@
     "name": "Medium wooden handle",
     "description": "A medium handle for an axe or a hammer",
     "value": 64,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1463,7 +1463,7 @@
     "name": "Medium ash wood handle",
     "description": "A medium handle for an axe or a hammer",
     "value": 96,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1482,7 +1482,7 @@
     "name": "Simple long wooden shaft",
     "description": "A long shaft for a spear, somewhat uneven",
     "value": 24,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1501,7 +1501,7 @@
     "name": "Long wooden shaft",
     "description": "A long shaft for a spear, somewhat uneven",
     "value": 100,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1520,7 +1520,7 @@
     "name": "Long ash wood shaft",
     "description": "A long shaft for a spear",
     "value": 150,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1535,7 +1535,7 @@
     "name": "Cheap short iron hilt",
     "description": "A short handle for a sword or maybe a dagger, heavy",
     "value": 56,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1557,7 +1557,7 @@
     "name": "Short iron hilt",
     "description": "A short handle for a sword or maybe a dagger, heavy",
     "value": 80,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1576,7 +1576,7 @@
     "name": "Short steel hilt",
     "description": "A short handle for a sword or maybe a dagger, heavy",
     "value": 120,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1595,7 +1595,7 @@
     "name": "Cheap medium iron handle",
     "description": "A medium handle for an axe or a hammer, very heavy",
     "value": 64,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1617,7 +1617,7 @@
     "name": "Medium iron handle",
     "description": "A medium handle for an axe or a hammer, very heavy",
     "value": 100,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1639,7 +1639,7 @@
     "name": "Medium steel handle",
     "description": "A medium handle for an axe or a hammer, very heavy",
     "value": 150,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1661,7 +1661,7 @@
     "name": "Cheap long iron shaft",
     "description": "A long shaft for a spear, extremely heavy",
     "value": 92,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1683,7 +1683,7 @@
     "name": "Long iron shaft",
     "description": "A long shaft for a spear, extremely heavy",
     "value": 128,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1705,7 +1705,7 @@
     "name": "Long steel shaft",
     "description": "A long shaft for a spear, extremely heavy",
     "value": 192,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1727,7 +1727,7 @@
     "name": "Short weak bone hilt",
     "description": "A short handle for a sword or maybe a dagger, made of a weak monster's bone",
     "value": 120,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1749,7 +1749,7 @@
     "name": "Medium weak bone handle",
     "description": "A medium handle for an axe or a hammer, made of a weak monster's bone",
     "value": 150,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1771,7 +1771,7 @@
     "name": "Long weak bone shaft",
     "description": "A long shaft for a spear, made of weak monster's bone",
     "value": 192,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1793,7 +1793,7 @@
     "name": "Turtleshell hilt",
     "description": "A short handle for a sword or maybe a dagger, made of turtle shellplate",
     "value": 140,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1815,7 +1815,7 @@
     "name": "Turtleshell handle",
     "description": "A medium handle for an axe or a hammer, made of turtle shellplate",
     "value": 190,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1837,7 +1837,7 @@
     "name": "Turtleshell shaft",
     "description": "A long shaft for a spear, made of turtle shellplate",
     "value": 250,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -1861,7 +1861,7 @@
     "id": "Cheap iron spear",
     "name": "Cheap iron spear",
     "value": 118,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -1887,7 +1887,7 @@
     "id": "Iron spear",
     "name": "Iron spear",
     "value": 230,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -1913,7 +1913,7 @@
     "id": "Steel spear",
     "name": "Steel spear",
     "value": 430,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -1939,7 +1939,7 @@
     "id": "Cheap iron dagger",
     "name": "Cheap iron dagger",
     "value": 98,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -1965,7 +1965,7 @@
     "id": "Iron dagger",
     "name": "Iron dagger",
     "value": 210,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -1991,7 +1991,7 @@
     "id": "Steel dagger",
     "name": "Steel dagger",
     "value": 340,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2017,7 +2017,7 @@
     "id": "Cheap iron sword",
     "name": "Cheap iron sword",
     "value": 135,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2043,7 +2043,7 @@
     "id": "Iron sword",
     "name": "Iron sword",
     "value": 280,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2069,7 +2069,7 @@
     "id": "Steel sword",
     "name": "Steel sword",
     "value": 430,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2095,7 +2095,7 @@
     "id": "Cheap iron axe",
     "name": "Cheap iron axe",
     "value": 145,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2115,7 +2115,7 @@
     "id": "Iron axe",
     "name": "Iron axe",
     "value": 290,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2135,7 +2135,7 @@
     "id": "Steel axe",
     "name": "Steel axe",
     "value": 470,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2151,7 +2151,7 @@
     "id": "Cheap iron battle hammer",
     "name": "Cheap iron battle hammer",
     "value": 145,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2171,7 +2171,7 @@
     "id": "Iron battle hammer",
     "name": "Iron battle hammer",
     "value": 290,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2191,7 +2191,7 @@
     "id": "Steel battle hammer",
     "name": "Steel battle hammer",
     "value": 460,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2212,7 +2212,7 @@
     "name": "Wolf leather helmet armor",
     "description": "Strenghtened wolf leather, ready to be used as a part of a helmet",
     "value": 240,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2231,7 +2231,7 @@
     "name": "Boar leather helmet armor",
     "description": "Strong boar leather, ready to be used as a part of a helmet",
     "value": 400,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2250,7 +2250,7 @@
     "name": "Bear leather helmet armor",
     "description": "Strong bear leather, ready to be used as a part of a helmet",
     "value": 600,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2269,7 +2269,7 @@
     "name": "Alligator leather helmet armor",
     "description": "Strong alligator leather, ready to be used as a part of a helmet",
     "value": 900,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2288,7 +2288,7 @@
     "name": "Wolf leather cuirass",
     "description": "Simple cuirass made of solid wolf leather, all it needs now is something softer to wear under it",
     "value": 480,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2307,7 +2307,7 @@
     "name": "Boar leather cuirass",
     "description": "Strong cuirass made of boar leather",
     "value": 800,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2326,7 +2326,7 @@
     "name": "Bear leather cuirass",
     "description": "Strong cuirass made of bear leather",
     "value": 1000,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2345,7 +2345,7 @@
     "name": "Alligator leather cuirass",
     "description": "Strong cuirass made of alligator leather",
     "value": 1600,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2364,7 +2364,7 @@
     "name": "Wolf leather greaves",
     "description": "Greaves made of wolf leather. Just attach them onto some pants and you are ready to go",
     "value": 240,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2383,7 +2383,7 @@
     "name": "Boar leather greaves",
     "description": "Greaves made of thick boar leather. Just attach them onto some pants and you are ready to go",
     "value": 400,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2402,7 +2402,7 @@
     "name": "Bear leather greaves",
     "description": "Greaves made of thick bear leather. Just attach them onto some pants and you are ready to go",
     "value": 600,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2421,7 +2421,7 @@
     "name": "Alligator leather greaves",
     "description": "Greaves made of alligator leather. Just attach them onto some pants and you are ready to go",
     "value": 900,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2440,7 +2440,7 @@
     "name": "Wolf leather glove armor",
     "description": "Pieces of wolf leather shaped for gloves",
     "value": 240,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2455,7 +2455,7 @@
     "name": "Boar leather glove armor",
     "description": "Pieces of boar leather shaped for gloves",
     "value": 400,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2470,7 +2470,7 @@
     "name": "Bear leather glove armor",
     "description": "Pieces of bear leather shaped for gloves",
     "value": 600,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2485,7 +2485,7 @@
     "name": "Alligator leather glove armor",
     "description": "Pieces of alligator leather shaped for gloves",
     "value": 900,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2504,7 +2504,7 @@
     "name": "Wolf leather shoe armor",
     "description": "Pieces of wolf leather shaped for shoes",
     "value": 240,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2519,7 +2519,7 @@
     "name": "Boar leather shoe armor",
     "description": "Pieces of boar leather shaped for shoes",
     "value": 400,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2534,7 +2534,7 @@
     "name": "Bear leather shoe armor",
     "description": "Pieces of bear leather shaped for shoes",
     "value": 600,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2549,7 +2549,7 @@
     "name": "Alligator leather shoe armor",
     "description": "Pieces of alligator leather shaped for shoes",
     "value": 900,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2568,7 +2568,7 @@
     "name": "Iron chainmail helmet armor",
     "description": "Best way to keep your head in one piece",
     "value": 320,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2593,7 +2593,7 @@
     "name": "Steel chainmail helmet armor",
     "description": "Best way to keep your head in one piece",
     "value": 480,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2618,7 +2618,7 @@
     "name": "Turtleshell helmet armor",
     "description": "Best way to keep your head in one piece",
     "value": 900,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2640,7 +2640,7 @@
     "name": "Iron chainmail vest",
     "description": "Basic iron chainmail. Nowhere near as strong as a plate armor",
     "value": 640,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2665,7 +2665,7 @@
     "name": "Steel chainmail vest",
     "description": "Basic steel chainmail. Nowhere near as strong as a plate armor",
     "value": 960,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2690,7 +2690,7 @@
     "name": "Turtleshell chestplate",
     "description": "Basic turtle shellplate mail. Nowhere near as strong as a plate armor",
     "value": 1400,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2712,7 +2712,7 @@
     "name": "Iron chainmail greaves",
     "description": "Greaves made of iron chainmail. Just attach them onto some pants and you are ready to go",
     "value": 320,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2737,7 +2737,7 @@
     "name": "Steel chainmail greaves",
     "description": "Greaves made of steel chainmail. Just attach them onto some pants and you are ready to go",
     "value": 480,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2762,7 +2762,7 @@
     "name": "Turtleshell greaves",
     "description": "Greaves made of turtle shellplate. Just attach them onto some pants and you are ready to go",
     "value": 1200,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2784,7 +2784,7 @@
     "name": "Iron chainmail glove",
     "description": "Iron chainmail in a form ready to be applied onto a glove",
     "value": 320,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2809,7 +2809,7 @@
     "name": "Steel chainmail glove",
     "description": "Steel chainmail in a form ready to be applied onto a glove",
     "value": 480,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2834,7 +2834,7 @@
     "name": "Turtleshell glove",
     "description": "Turtle shellplate in a form ready to be applied onto a glove",
     "value": 1200,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2856,7 +2856,7 @@
     "name": "Iron chainmail shoes",
     "description": "Iron chainmail in a form ready to be applied onto a pair of shoes",
     "value": 320,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2878,7 +2878,7 @@
     "name": "Steel chainmail shoes",
     "description": "Steel chainmail in a form ready to be applied onto a pair of shoes",
     "value": 480,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2900,7 +2900,7 @@
     "name": "Turtleshell shoes",
     "description": "Turtle shellplate in a form ready to be applied onto a pair of shoes",
     "value": 1200,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -2922,7 +2922,7 @@
     "name": "Cheap leather vest",
     "description": "Vest providing very low protection. Better not to know what's it made from",
     "value": 100,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2948,7 +2948,7 @@
     "name": "Leather vest",
     "description": "Comfortable leather vest, offering low protection",
     "value": 300,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2971,7 +2971,7 @@
     "name": "Goat leather vest",
     "description": "Comfortable leather vest, offering mediocre protection",
     "value": 450,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -2994,7 +2994,7 @@
     "name": "Snakeskin vest",
     "description": "Comfortable snakeskin vest, offering decent protection",
     "value": 1200,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3023,7 +3023,7 @@
     "name": "Batrachian vest",
     "description": "Comfortable leather vest, slippery enough to make enemy blows slide off",
     "value": 700,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3051,7 +3051,7 @@
     "name": "Cheap leather pants",
     "description": "Leather pants made from cheapest resources available",
     "value": 100,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3077,7 +3077,7 @@
     "name": "Leather pants",
     "description": "Solid leather pants",
     "value": 300,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3100,7 +3100,7 @@
     "name": "Goat leather pants",
     "description": "Solid leather pants",
     "value": 450,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3123,7 +3123,7 @@
     "name": "Snakeskin leggings",
     "description": "Solid snakeskin leggings",
     "value": 1200,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3152,7 +3152,7 @@
     "name": "Batrachian pants",
     "description": "Slippery leather pants",
     "value": 700,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3180,7 +3180,7 @@
     "name": "Cheap leather hat",
     "description": "A cheap leather hat to protect your head",
     "value": 100,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3206,7 +3206,7 @@
     "name": "Leather hat",
     "description": "A nice leather hat to protect your head",
     "value": 300,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3229,7 +3229,7 @@
     "name": "Goat leather hat",
     "description": "A solid leather hat to protect your head",
     "value": 450,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3252,7 +3252,7 @@
     "name": "Snakeskin hat",
     "description": "A solid snakeskin hat to protect your head",
     "value": 1200,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3281,7 +3281,7 @@
     "name": "Batrachian hat",
     "description": "A slippery leather hat to protect your head",
     "value": 700,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3309,7 +3309,7 @@
     "name": "Leather gloves",
     "description": "Strong leather gloves, perfect for handling rough and sharp objects",
     "value": 300,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3332,7 +3332,7 @@
     "name": "Goat leather gloves",
     "description": "Strong leather gloves, perfect for handling rough and sharp objects",
     "value": 450,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3355,7 +3355,7 @@
     "name": "Snakeskin gloves",
     "description": "Strong snakeskin gloves, perfect for handling rough and sharp objects",
     "value": 1200,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3384,7 +3384,7 @@
     "name": "Batrachian gloves",
     "description": "Strong leather gloves, with membranes to help you swim",
     "value": 700,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3412,7 +3412,7 @@
     "name": "Cheap leather shoes",
     "description": "Shoes made of thin and cheap leather. Even then, they are in every single aspect better than not having any",
     "value": 100,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3438,7 +3438,7 @@
     "name": "Work shoes",
     "description": "Work shoes made of a mix of leather and wool. While they provide no protection, they are very comfortable for moving around",
     "value": 300,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3467,7 +3467,7 @@
     "name": "Leather shoes",
     "description": "Solid shoes made of leather, a must have for any traveler",
     "value": 300,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3496,7 +3496,7 @@
     "name": "Goat leather shoes",
     "description": "Strong shoes made of leather, a must have for any traveler",
     "value": 450,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3525,7 +3525,7 @@
     "name": "Snakeskin boots",
     "description": "Strong boots made of snakeskin, a must have for any traveler",
     "value": 1200,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3554,7 +3554,7 @@
     "name": "Batrachian shoes",
     "description": "Strong shoes made of frog leather, that let you slide along the ground",
     "value": 700,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3585,7 +3585,7 @@
     "name": "Wool shirt",
     "description": "It's not thick enough to provide any physical protection, but on the plus side it's light, it's warm, and it and doesn't block your moves",
     "value": 300,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3614,7 +3614,7 @@
     "name": "Linen vest",
     "description": "A thin, breezy vest that won't get in your way, however it won't keep you warm and offers no protection from attacks",
     "value": 650,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3643,7 +3643,7 @@
     "name": "Wool pants",
     "description": "Nice woollen pants. Slightly itchy",
     "value": 100,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3666,7 +3666,7 @@
     "name": "Linen leggings",
     "description": "Nice linen leggings",
     "value": 450,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3695,7 +3695,7 @@
     "name": "Wool hat",
     "description": "Simple woollen hat to protect your head from cold",
     "value": 300,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3724,7 +3724,7 @@
     "name": "Linen bandanna",
     "description": "Simple linen bandanna to keep hair and sweat away from your eyes",
     "value": 650,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3753,7 +3753,7 @@
     "name": "Wool gloves",
     "description": "Warm and comfy, but they don't provide any protection",
     "value": 300,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3776,7 +3776,7 @@
     "name": "Linen gloves",
     "description": "Thin and tight, they help to maintain a grip on something, but they don't provide any protection",
     "value": 650,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3805,7 +3805,7 @@
     "name": "Rat pelt cape",
     "description": "It's a cape... made of wolf rat pelts. Only for poor or insane",
     "value": 100,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3825,7 +3825,7 @@
     "name": "Wolf pelt cape",
     "description": "An elegant cape made from wolf pelts. Doesn't provide much protection, but is light enough to not hinder your movements",
     "value": 400,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3845,7 +3845,7 @@
     "name": "Boar hide cape",
     "description": "A rough cape made from boar hides. Offers a nice protection, but is heavy and stiff",
     "value": 700,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3871,7 +3871,7 @@
     "name": "Goat hide cape",
     "description": "A rough cape made from goat hides",
     "value": 700,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3897,7 +3897,7 @@
     "name": "Bear hide cape",
     "description": "A thick, heavy, and warm furry cape, made from a bear hide",
     "value": 1000,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3923,7 +3923,7 @@
     "name": "Batrachian cape",
     "description": "A slippery cape made from frogskin. Technically waterproof, but doesn't cover your entire body.",
     "value": 1000,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3945,7 +3945,7 @@
     "id": "Wolf leather armor",
     "name": "Wolf leather armor",
     "value": 980,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3967,7 +3967,7 @@
     "id": "Wolf leather helmet",
     "name": "Wolf leather helmet",
     "value": 680,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -3989,7 +3989,7 @@
     "id": "Wolf leather armored pants",
     "name": "Wolf leather armored pants",
     "value": 680,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4011,7 +4011,7 @@
     "id": "Iron chainmail armor",
     "name": "Iron chainmail armor",
     "value": 1180,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4036,7 +4036,7 @@
     "id": "Iron chainmail helmet",
     "name": "Iron chainmail helmet",
     "value": 780,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4061,7 +4061,7 @@
     "id": "Iron chainmail pants",
     "name": "Iron chainmail pants",
     "value": 780,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4086,7 +4086,7 @@
     "id": "Steel chainmail armor",
     "name": "Steel chainmail armor",
     "value": 1770,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4111,7 +4111,7 @@
     "id": "Steel chainmail helmet",
     "name": "Steel chainmail helmet",
     "value": 1170,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4136,7 +4136,7 @@
     "id": "Steel chainmail pants",
     "name": "Steel chainmail pants",
     "value": 1170,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4161,7 +4161,7 @@
     "id": "Alligator armor",
     "name": "Alligator armor",
     "value": 2900,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4186,7 +4186,7 @@
     "id": "Alligator helmet",
     "name": "Alligator helmet",
     "value": 1940,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4211,7 +4211,7 @@
     "id": "Alligator armored pants",
     "name": "Alligator armored pants",
     "value": 1690,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4236,7 +4236,7 @@
     "id": "Turtleshell platemail armor",
     "name": "Turtleshell platemail armor",
     "value": 2600,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4261,7 +4261,7 @@
     "id": "Turtleshell platemail helmet",
     "name": "Turtleshell platemail helmet",
     "value": 1940,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4286,7 +4286,7 @@
     "id": "Turtleshell platemail pants",
     "name": "Turtleshell platemail pants",
     "value": 2100,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4312,7 +4312,7 @@
     "name": "Wooden training shield base",
     "description": "A primitive but cheap form of a shield",
     "value": 16,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "ignore_skill",
       "item",
@@ -4332,7 +4332,7 @@
     "name": "Cheap wooden shield base",
     "description": "Cheap shield component made of wood, basically just a few planks barely holding together",
     "value": 16,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4351,7 +4351,7 @@
     "name": "Crude wooden shield base",
     "description": "A shield base of rather bad quality, but at least it won't fall apart by itself",
     "value": 32,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4370,7 +4370,7 @@
     "name": "Wooden shield base",
     "description": "Proper wooden shield base, although it could use some additional reinforcement",
     "value": 80,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4389,7 +4389,7 @@
     "name": "Ash wood shield base",
     "description": "Solid wooden shield base, although still nowhere near as resistant as metal",
     "value": 120,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4408,7 +4408,7 @@
     "name": "Crude iron shield base",
     "description": "Heavy shield base made of low quality iron",
     "value": 128,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4427,7 +4427,7 @@
     "name": "Iron shield base",
     "description": "Solid and strong shield base, although it's quite heavy",
     "value": 210,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4446,7 +4446,7 @@
     "name": "Steel shield base",
     "description": "Mighty shield base, although it's quite heavy",
     "value": 300,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4465,7 +4465,7 @@
     "name": "Turtleshell shield base",
     "description": "Dense turtle shellplate base, although it's quite heavy",
     "value": 650,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4484,7 +4484,7 @@
     "name": "Crude wooden shield handle",
     "description": "A simple handle for holding the shield",
     "value": 10,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4499,7 +4499,7 @@
     "name": "Wooden shield handle",
     "description": "A decent wooden handle for holding the shield",
     "value": 32,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4518,7 +4518,7 @@
     "name": "Ash wood shield handle",
     "description": "A solid wooden handle for holding the shield",
     "value": 48,
-    "item_type": "COMPONENT",
+    "item_type": "Component",
     "tags": [
       "item",
       "component",
@@ -4536,7 +4536,7 @@
     "id": "Wooden training shield",
     "name": "Wooden training shield",
     "value": 33,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4558,7 +4558,7 @@
     "id": "Cheap wooden shield",
     "name": "Cheap wooden shield",
     "value": 33,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4579,7 +4579,7 @@
     "id": "Crude wooden shield",
     "name": "Crude wooden shield",
     "value": 53,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4600,7 +4600,7 @@
     "id": "Wooden shield",
     "name": "Wooden shield",
     "value": 140,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4622,7 +4622,7 @@
     "id": "Ash wood shield",
     "name": "Ash wood shield",
     "value": 210,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4644,7 +4644,7 @@
     "id": "Crude iron shield",
     "name": "Crude iron shield",
     "value": 173,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4665,7 +4665,7 @@
     "id": "Iron shield",
     "name": "Iron shield",
     "value": 310,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4687,7 +4687,7 @@
     "id": "Steel shield",
     "name": "Steel shield",
     "value": 440,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4709,7 +4709,7 @@
     "id": "Turtleshell shield",
     "name": "Turtleshell shield",
     "value": 880,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4731,7 +4731,7 @@
     "id": "Wolf trophy",
     "name": "Wolf trophy",
     "value": 100,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4753,7 +4753,7 @@
     "id": "Boar trophy",
     "name": "Boar trophy",
     "value": 160,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4775,7 +4775,7 @@
     "id": "Mountain goat trophy",
     "name": "Mountain goat trophy",
     "value": 250,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4798,7 +4798,7 @@
     "id": "Bear trophy",
     "name": "Bear trophy",
     "value": 400,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4820,7 +4820,7 @@
     "id": "Crab trophy",
     "name": "Crab trophy",
     "value": 650,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4842,7 +4842,7 @@
     "id": "Warrior's necklace",
     "name": "Warrior's necklace",
     "value": 1000,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "unique",
       "unsellable",
@@ -4866,7 +4866,7 @@
     "id": "Snake fang ring",
     "name": "Snake fang ring",
     "value": 2000,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "unique",
       "unsellable",
@@ -4894,7 +4894,7 @@
     "name": "Old pickaxe",
     "description": "An old pickaxe that has seen better times, but is still usable",
     "value": 10,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4911,7 +4911,7 @@
     "name": "Old axe",
     "description": "An old axe that has seen better times, but is still usable",
     "value": 10,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4928,7 +4928,7 @@
     "name": "Old sickle",
     "description": "And old herb sickle that has seen better times, but is still usable",
     "value": 10,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4945,7 +4945,7 @@
     "name": "Old shovel",
     "description": "And old shovel that has seen better times, but can still be used to dig something up",
     "value": 10,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4962,7 +4962,7 @@
     "name": "Iron pickaxe",
     "description": "A decent pickaxe made of iron, strong enough for most ores",
     "value": 1000,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -4981,7 +4981,7 @@
     "name": "Iron chopping axe",
     "description": "A decent axe made of iron, hard and sharp enough for most of trees, even if they will still require an effort",
     "value": 1000,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -5000,7 +5000,7 @@
     "name": "Iron sickle",
     "description": "A decent sickle made of iron, sharp enough for most of plants",
     "value": 1000,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -5019,7 +5019,7 @@
     "name": "Iron shovel",
     "description": "A decent shovel made of iron, solid enough for most of your digging needs",
     "value": 1000,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -5038,7 +5038,7 @@
     "name": "Makeshift fishing pole",
     "description": "Little more than a piece of string tied to a stick, but sufficient to get a catch",
     "value": 10,
-    "item_type": "EQUIPPABLE",
+    "item_type": "Equippable",
     "tags": [
       "item",
       "equippable",
@@ -5055,7 +5055,7 @@
     "name": "Stale bread",
     "description": "Big piece of an old bread, still edible",
     "value": 20,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5067,7 +5067,7 @@
     "name": "Fresh bread",
     "description": "Freshly baked bread, delicious",
     "value": 40,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5079,7 +5079,7 @@
     "name": "Bread kwas",
     "description": "Tastes like bread",
     "value": 40,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "drink",
       "item",
@@ -5091,7 +5091,7 @@
     "name": "Carrot",
     "description": "A delicious root that can be eaten raw",
     "value": 20,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5103,7 +5103,7 @@
     "name": "Cooked carrot",
     "description": "A delicious root, cooked",
     "value": 30,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5115,7 +5115,7 @@
     "name": "Potato",
     "description": "A common tuber with versatile culinary usage. Just remember to cook it first!",
     "value": 15,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5127,7 +5127,7 @@
     "name": "Potato",
     "description": "A common tuber with versatile culinary usage, though this one was simply cooked",
     "value": 40,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5139,7 +5139,7 @@
     "name": "Boiled clam",
     "description": "Common shellfish found around the lake shore that has been boiled, not steamed",
     "value": 6,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5151,7 +5151,7 @@
     "name": "Weak healing powder",
     "description": "Not very potent, but can still make body heal noticeably faster for quite a while",
     "value": 40,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "medicine",
       "item",
@@ -5163,7 +5163,7 @@
     "name": "Healing powder",
     "description": "Not exactly powerful in its effects, but still makes the body heal noticeably faster and for a long time",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "medicine",
       "item",
@@ -5175,7 +5175,7 @@
     "name": "Oneberry juice",
     "description": "Tastes kinda nice and provides a quick burst of healing",
     "value": 80,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "medicine",
       "item",
@@ -5187,7 +5187,7 @@
     "name": "Healing potion",
     "description": "Tastes nice at first but has a bitter aftertaste. Provides a quick burst of healing",
     "value": 200,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "medicine",
       "item",
@@ -5199,7 +5199,7 @@
     "name": "Healing balm",
     "description": "Simply apply it to your wound and watch it heal",
     "value": 120,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "medicine",
       "item",
@@ -5211,7 +5211,7 @@
     "name": "Roasted rat meat",
     "description": "Smell might be fine now, but it still seems like a bad idea to eat it",
     "value": 10,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5223,7 +5223,7 @@
     "name": "Roasted purified rat meat",
     "description": "Smells alright and should be safe to eat, yet you still have some doubts",
     "value": 20,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5235,7 +5235,7 @@
     "name": "Fried pork",
     "description": "It's dripping with fat and smells fantastic, all it lacks is some spices and a good side dish",
     "value": 40,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5247,7 +5247,7 @@
     "name": "Fried goat meat",
     "description": "It has a nice aroma, but is a bit too tough. Perhaps a stew would have been a better choice?",
     "value": 40,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5259,7 +5259,7 @@
     "name": "Pork roast",
     "description": "A generous amount of herbs has been rubbed into the meat, resulting in a hearty meal with a mouthwatering aroma",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5271,7 +5271,7 @@
     "name": "Goat stew",
     "description": "Goat meat boiled to tenderness in a herbal broth. Perfect to warm yourself up for the road",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5283,7 +5283,7 @@
     "name": "Crab bisque",
     "description": "A smooth, creamy crab soup, lightly seasoned with fragrant herbs and vegetables",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5295,7 +5295,7 @@
     "name": "Clam broth",
     "description": "Briny, flavorful, and tastes of the ocean. In a good way",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5307,7 +5307,7 @@
     "name": "Alligator jerky",
     "description": "It's tough meat, but it'll keep you from going hungry for a long time",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5319,7 +5319,7 @@
     "name": "Snake jerky",
     "description": "It's rubbery meat, but it'll keep you from going hungry for a long time",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5331,7 +5331,7 @@
     "name": "Turtle jerky",
     "description": "It's stringy meat, but it'll still keep you from going hungry for a long time",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5343,7 +5343,7 @@
     "name": "Turtle soup",
     "description": "Tonight you dine on turtle soup",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5355,7 +5355,7 @@
     "name": "Swampland skewer",
     "description": "There's no better way to feed on the creatures of the swampland",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5367,7 +5367,7 @@
     "name": "Basin gumbo",
     "description": "An incredibly complex meal that's difficult to make, but it's got an indescribable taste",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5379,7 +5379,7 @@
     "name": "Fried frog meat",
     "description": "Tastes a bit like bird, and a bit like fish",
     "value": 50,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5391,7 +5391,7 @@
     "name": "Kingsized frog legs",
     "description": "The legs are agreed to be the best part, and when cooked with proper seasoning, considered a delicacy by some",
     "value": 100,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5403,7 +5403,7 @@
     "name": "Fish skewer",
     "description": "Several small fish cooked together on a stick. While none of them have much meat on them individually, together they make for a servicable meal",
     "value": 20,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5415,7 +5415,7 @@
     "name": "Fried fish",
     "description": "A fish fried whole. A simple but fulfilling meal",
     "value": 40,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",
@@ -5427,7 +5427,7 @@
     "name": "Fish steak",
     "description": "Properly filleted and cooked. A much better experience than eating them whole",
     "value": 60,
-    "item_type": "USABLE",
+    "item_type": "Usable",
     "tags": [
       "food",
       "item",

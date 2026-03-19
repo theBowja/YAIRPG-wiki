@@ -117,7 +117,7 @@ for (const [id, item] of Object.entries(item_templates)) {
         name: item.getName ? item.getName() : item.name,
         description: item.getDescription ? item.getDescription() : item.description,
         value: item.getBaseValue ? item.getBaseValue() : item.value,
-        item_type: item.item_type || 'OTHER',
+        item_type: formatType(item.item_type || 'OTHER'),
         tags: Object.keys(item.tags || {}),
     };
 
@@ -147,3 +147,7 @@ fs.writeFileSync('./src/data/locations.json', JSON.stringify(locationsOutput, nu
 fs.writeFileSync('./src/data/items.json', JSON.stringify(itemsOutput, null, 2));
 
 console.log('skills.json, activities.json, enemies.json, locations.json and items.json generated.');
+function formatType(type) {
+    if (!type) return 'Other';
+    return type.toLowerCase().split('_').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+}

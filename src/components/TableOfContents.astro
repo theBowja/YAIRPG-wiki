@@ -194,10 +194,9 @@ const slugify = (text: string) => {
   <Default {...Astro.props} />
 )}
 
-<style>
+<style is:inline>
   .custom-sidebar {
     padding: 1rem;
-    background-color: var(--sl-color-gray-6);
     border-radius: 0.5rem;
     border: 1px solid var(--sl-color-gray-5);
     margin-bottom: 1rem;
@@ -217,19 +216,32 @@ const slugify = (text: string) => {
   }
   .attribute-item {
     display: flex;
-    flex-direction: column;
-    gap: 0.25rem;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    gap: 0.5rem;
+    padding-bottom: 0.5rem;
+    border-bottom: 1px solid var(--sl-color-gray-5);
+  }
+  .attribute-item:last-child {
+    border-bottom: none;
+    padding-bottom: 0;
   }
   .attribute-item .label {
     font-size: var(--sl-text-xs);
-    font-weight: bold;
-    color: var(--sl-color-gray-3);
+    font-weight: normal;
+    color: var(--sl-color-gray-2);
     text-transform: uppercase;
     letter-spacing: 0.05em;
+    flex-shrink: 0;
+    max-width: 50%;
   }
   .attribute-item .value {
     font-size: var(--sl-text-sm);
+    font-weight: bold;
     color: var(--sl-color-white);
+    text-align: right;
+    word-break: break-word;
   }
   .attribute-item .value a {
     color: var(--sl-color-accent-high);

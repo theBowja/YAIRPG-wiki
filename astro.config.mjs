@@ -146,13 +146,16 @@ if (fs.existsSync(itemsDataPath)) {
 		}
 
 		// Sort items within types and build sidebar items
-		itemSidebarItems = Object.entries(types)
-			.sort(([a], [b]) => a.localeCompare(b))
-			.map(([type, items]) => ({
-				label: type,
-				collapsed: true,
-				items: items.sort((a, b) => a.label.localeCompare(b.label)),
-			}));
+		itemSidebarItems = [
+			{ label: 'All Items', link: '/items' },
+			...Object.entries(types)
+				.sort(([a], [b]) => a.localeCompare(b))
+				.map(([type, items]) => ({
+					label: type,
+					collapsed: true,
+					items: items.sort((a, b) => a.label.localeCompare(b.label)),
+				}))
+		];
 
 	} catch (e) {
 		console.error('Failed to parse items.json for sidebar:', e);

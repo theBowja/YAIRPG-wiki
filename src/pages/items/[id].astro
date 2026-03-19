@@ -42,37 +42,6 @@ const droppedBy = Object.entries(enemiesData)
   <div class="item-details">
     <p>{item.description}</p>
 
-    <h2>Attributes</h2>
-    <table>
-      <tbody>
-        <tr>
-          <th>Type</th>
-          <td>{item.item_type}</td>
-        </tr>
-        {item.equip_slot && (
-          <tr>
-            <th>Equip Slot</th>
-            <td>{capitalize(item.equip_slot)}</td>
-          </tr>
-        )}
-        <tr>
-          <th>Value</th>
-          <td>{item.value}</td>
-        </tr>
-        {item.rarity && (
-          <tr>
-            <th>Rarity</th>
-            <td class={`rarity-${item.rarity.toLowerCase()}`}>{capitalize(item.rarity)}</td>
-          </tr>
-        )}
-        {item.tags.length > 0 && (
-          <tr>
-            <th>Tags</th>
-            <td>{item.tags.join(', ')}</td>
-          </tr>
-        )}
-      </tbody>
-    </table>
 
     {item.stats && Object.keys(item.stats).length > 0 && (
       <>
