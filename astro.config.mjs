@@ -126,6 +126,39 @@ if (fs.existsSync(locationsDataPath)) {
 	}
 }
 
+const itemsDataPath = './src/data/items.json';
+/** @type {any[]} */
+let itemSidebarItems = [];
+if (fs.existsSync(itemsDataPath)) {
+	try {
+		const itemsData = JSON.parse(fs.readFileSync(itemsDataPath, 'utf-8'));
+
+		// Group by type
+		/** @type {Object.<string, any[]>} */
+		const types = {};
+		for (const [slug, item] of Object.entries(itemsData)) {
+			const type = item.item_type || 'Miscellaneous';
+			if (!types[type]) types[type] = [];
+			types[type].push({
+				label: item.name,
+				link: `/items/${slug}`,
+			});
+		}
+
+		// Sort items within types and build sidebar items
+		itemSidebarItems = Object.entries(types)
+			.sort(([a], [b]) => a.localeCompare(b))
+			.map(([type, items]) => ({
+				label: type,
+				collapsed: true,
+				items: items.sort((a, b) => a.label.localeCompare(b.label)),
+			}));
+
+	} catch (e) {
+		console.error('Failed to parse items.json for sidebar:', e);
+	}
+}
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://thebowja.github.io',
@@ -149,6 +182,10 @@ export default defineConfig({
 				{
 					label: 'Locations',
 					items: locationSidebarItems,
+				},
+				{
+					label: 'Items',
+					items: itemSidebarItems,
 				},
 				{
 					label: 'Skills',

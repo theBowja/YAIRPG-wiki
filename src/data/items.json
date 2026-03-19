@@ -1,0 +1,5437 @@
+{
+  "abc-for-kids": {
+    "id": "ABC for kids",
+    "name": "ABC for kids",
+    "description": "The simplest book on the market",
+    "value": 100,
+    "item_type": "BOOK",
+    "tags": [
+      "item",
+      "book"
+    ]
+  },
+  "old-combat-manual": {
+    "id": "Old combat manual",
+    "name": "Old combat manual",
+    "description": "Old book about combat, worn and outdated, but might still contain something useful",
+    "value": 200,
+    "item_type": "BOOK",
+    "tags": [
+      "item",
+      "book"
+    ]
+  },
+  "twist-liek-a-snek": {
+    "id": "Twist liek a snek",
+    "name": "Twist liek a snek",
+    "description": "This book has a terrible grammar, seemingly written by some uneducated bandit, but despite that it quite well details how to properly evade attacks",
+    "value": 200,
+    "item_type": "BOOK",
+    "tags": [
+      "item",
+      "book"
+    ]
+  },
+  "medicine-for-dummies": {
+    "id": "Medicine for dummies",
+    "name": "Medicine for dummies",
+    "description": "A simple book about healing, describing how to create some basic medicines",
+    "value": 320,
+    "item_type": "BOOK",
+    "tags": [
+      "item",
+      "book"
+    ]
+  },
+  "butchering-and-you": {
+    "id": "Butchering and you",
+    "name": "Butchering and you",
+    "description": "An introductory book to animal butchering, that goes into further detail on how to make a use of animal parts, especially hides and bones",
+    "value": 240,
+    "item_type": "BOOK",
+    "tags": [
+      "item",
+      "book"
+    ]
+  },
+  "ode-to-whimsy-and-other-poems": {
+    "id": "Ode to Whimsy, and other poems",
+    "name": "Ode to Whimsy, and other poems",
+    "description": "A short and wonderful book of poetry that fills one with appreciation for life",
+    "value": 200,
+    "item_type": "BOOK",
+    "tags": [
+      "item",
+      "book"
+    ]
+  },
+  "a-glint-on-the-sand": {
+    "id": "A Glint On The Sand",
+    "name": "A Glint On The Sand",
+    "description": "This books recounts a tale of shipwrecked crew accidentally discovering glassmaking while cooking on a beach. More importantly, it details the processees and materials necessary to manufacture glass",
+    "value": 300,
+    "item_type": "BOOK",
+    "tags": [
+      "item",
+      "book"
+    ]
+  },
+  "shellfish-desires": {
+    "id": "Shellfish desires",
+    "name": "Shellfish desires",
+    "description": "A cookbook detailing various methods of cleaning and preparing crab, clam, snail, turtle, and other aquatic animals",
+    "value": 1620,
+    "item_type": "BOOK",
+    "tags": [
+      "item",
+      "book"
+    ]
+  },
+  "rat-fang": {
+    "id": "Rat fang",
+    "name": "Rat fang",
+    "description": "Fang of a huge rat, not very sharp, but can still pierce a human skin if enough force is applied",
+    "value": 8,
+    "item_type": "OTHER",
+    "tags": [
+      "item"
+    ]
+  },
+  "wolf-fang": {
+    "id": "Wolf fang",
+    "name": "Wolf fang",
+    "description": "Fang of a wild wolf. Somewhat sharp, still not very useful. Maybe if it had a bit better quality...",
+    "value": 12,
+    "item_type": "OTHER",
+    "tags": [
+      "item"
+    ]
+  },
+  "boar-tusk": {
+    "id": "Boar tusk",
+    "name": "Boar tusk",
+    "description": "Tusk of a wild boar. Visibly worn and not very sharp",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "rat-meat-chunks": {
+    "id": "Rat meat chunks",
+    "name": "Rat meat chunks",
+    "description": "Eww",
+    "value": 8,
+    "item_type": "OTHER",
+    "tags": [
+      "item"
+    ]
+  },
+  "fish-fillet": {
+    "id": "Fish fillet",
+    "name": "Fish fillet",
+    "description": "Cuts of meat from a fish that was too big to eat whole",
+    "value": 30,
+    "item_type": "OTHER",
+    "tags": [
+      "item"
+    ]
+  },
+  "glass-phial": {
+    "id": "Glass phial",
+    "name": "Glass phial",
+    "description": "Small glass phial, a perfect container for a potion",
+    "value": 10,
+    "item_type": "OTHER",
+    "tags": [
+      "item"
+    ]
+  },
+  "glass-bottle": {
+    "id": "Glass bottle",
+    "name": "Glass bottle",
+    "description": "A glass bottle, perfect for carrying a drink around",
+    "value": 20,
+    "item_type": "OTHER",
+    "tags": [
+      "item"
+    ]
+  },
+  "camping-supplies": {
+    "id": "Camping supplies",
+    "name": "Camping supplies",
+    "description": "Bedroll, tent, small chest, and generally just anything that could be needed to establish a camp",
+    "value": 2000,
+    "item_type": "OTHER",
+    "tags": [
+      "item"
+    ]
+  },
+  "coil-of-rope": {
+    "id": "Coil of rope",
+    "name": "Coil of rope",
+    "description": "A nice, long coil of rope, for whatever use you might find (although you have a feeling it will only be very situational)",
+    "value": 400,
+    "item_type": "OTHER",
+    "tags": [
+      "item"
+    ]
+  },
+  "mountain-goat-horn": {
+    "id": "Mountain goat horn",
+    "name": "Mountain goat horn",
+    "description": "A curved and sturdy horn of a mountain goat. While not very useful in itself, it makes for a nice decoration",
+    "value": 30,
+    "item_type": "OTHER",
+    "tags": [
+      "item"
+    ]
+  },
+  "rat-tail": {
+    "id": "Rat tail",
+    "name": "Rat tail",
+    "description": "Tail of a huge rat. Doesn't seem very useful, but maybe some meat could be recovered from it",
+    "value": 4,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "rat-pelt": {
+    "id": "Rat pelt",
+    "name": "Rat pelt",
+    "description": "Pelt of a huge rat. Fur has terrible quality, but maybe leather could be used for something if you gather more?",
+    "value": 10,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "high-quality-wolf-fang": {
+    "id": "High quality wolf fang",
+    "name": "High quality wolf fang",
+    "description": "Fang of a wild wolf. Very sharp, undamaged and surprisingly clean",
+    "value": 15,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "wolf-pelt": {
+    "id": "Wolf pelt",
+    "name": "Wolf pelt",
+    "description": "Pelt of a wild wolf. It's a bit damaged so it won't fetch a great price, but the leather itself could be useful",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "boar-hide": {
+    "id": "Boar hide",
+    "name": "Boar hide",
+    "description": "Thick hide of a wild boar. Too stiff for clothing, but might be useful for an armor",
+    "value": 30,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "boar-meat": {
+    "id": "Boar meat",
+    "name": "Boar meat",
+    "description": "Fatty meat of a wild boar, all it needs is to be cooked",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "high-quality-boar-tusk": {
+    "id": "High quality boar tusk",
+    "name": "High quality boar tusk",
+    "description": "Tusk of a wild boar. Sharp and long enough to easily kill an adult human",
+    "value": 25,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "bear-hide": {
+    "id": "Bear hide",
+    "name": "Bear hide",
+    "description": "A strong hide of a wild bear, so strong that even steel struggles against it",
+    "value": 50,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "bear-claw": {
+    "id": "Bear claw",
+    "name": "Bear claw",
+    "description": "Large and dangerous claw of a wild bear, but it has seen better days",
+    "value": 50,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "sharp-bear-claw": {
+    "id": "Sharp bear claw",
+    "name": "Sharp bear claw",
+    "description": "Large and dangerous claw of a wild bear, sharp enough to easily cut through meat",
+    "value": 80,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "weak-monster-bone": {
+    "id": "Weak monster bone",
+    "name": "Weak monster bone",
+    "description": "Mutated and dark bone of a monster. While on the weaker side, it's still very strong and should be useful for crafting after some processing",
+    "value": 30,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "goat-meat": {
+    "id": "Goat meat",
+    "name": "Goat meat",
+    "description": "Lean meat of a goat, it's pretty tough and needs to be cooked for a long time",
+    "value": 25,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "mountain-goat-hide": {
+    "id": "Mountain goat hide",
+    "name": "Mountain goat hide",
+    "description": "Thick hide of a mountain goat hide. Not as strong as boar hide, but this one can actually be turned into clothes after some processing",
+    "value": 30,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "pristine-mountain-goat-horn": {
+    "id": "Pristine mountain goat horn",
+    "name": "Pristine mountain goat horn",
+    "description": "Curved and sturdy horn of a mountain goat. It's noticeably bigger than average and seems to be even sturdier",
+    "value": 70,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "crab-meat": {
+    "id": "Crab meat",
+    "name": "Crab meat",
+    "description": "A sandy shell filled with crab meat. It needs to be cleaned before it can be cooked",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "crab-claw": {
+    "id": "Crab claw",
+    "name": "Crab claw",
+    "description": "A large claw of a crab, covered in abrasions and barnicles, but it makes a nice souvenier",
+    "value": 40,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "giant-crab-claw": {
+    "id": "Giant crab claw",
+    "name": "Giant crab claw",
+    "description": "A large claw of a crab in pristine condition, still sharp and strong enough to take a finger off",
+    "value": 100,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "alligator-meat": {
+    "id": "Alligator meat",
+    "name": "Alligator meat",
+    "description": "A lean chunk of alligator meat. It's tough, with a strange but not unappealing smell",
+    "value": 40,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "alligator-skin": {
+    "id": "Alligator skin",
+    "name": "Alligator skin",
+    "description": "Rough, scaly hide of an alligator. Deceptively strong and flexible, but uncomfortable to touch and terrible at keeping the cold at bay",
+    "value": 50,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "turtle-meat": {
+    "id": "Turtle meat",
+    "name": "Turtle meat",
+    "description": "A lean cut of turtle meat. It's tender and versatile, but difficult to prepare",
+    "value": 40,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "turtle-shell": {
+    "id": "Turtle shell",
+    "name": "Turtle shell",
+    "description": "A dense, thick turtle shell. It's stronger than steel, but too bulky to work with",
+    "value": 30,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "giant-snake-meat": {
+    "id": "Giant snake meat",
+    "name": "Giant snake meat",
+    "description": "A lean cut of snake meat. It's rubbery, and looks difficult to cook",
+    "value": 40,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "giant-snake-skin": {
+    "id": "Giant snake skin",
+    "name": "Giant snake skin",
+    "description": "Smooth, scaly hide of a giant snake. Very durable, but very thin and a poor insulator",
+    "value": 50,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "frog-meat": {
+    "id": "Frog meat",
+    "name": "Frog meat",
+    "description": "Surprisingly tender meat from a frog",
+    "value": 50,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "frog-hide": {
+    "id": "Frog hide",
+    "name": "Frog hide",
+    "description": "Slippery hide of a giant frog. If you could remove the toxins from it, the leather could be put into good use",
+    "value": 50,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "low-quality-iron-ore": {
+    "id": "Low quality iron ore",
+    "name": "Low quality iron ore",
+    "description": "Iron content is rather low and there are a lot of problematic components that can't be fully removed, which will affect created materials",
+    "value": 3,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "iron-ore": {
+    "id": "Iron ore",
+    "name": "Iron ore",
+    "description": "It has a decent iron content and can be smelt into market-quality iron",
+    "value": 5,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "atratan-ore": {
+    "id": "Atratan ore",
+    "name": "Atratan ore",
+    "description": "A dark-colored ore said to have minuscule magical effects, but used almost exclusively for refining all types of iron",
+    "value": 6,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "silver-ore": {
+    "id": "Silver ore",
+    "name": "Silver ore",
+    "description": "Peculiar for its ability to direct or disrupt magic",
+    "value": 10,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "coal": {
+    "id": "Coal",
+    "name": "Coal",
+    "description": "A flammable material with extremely high carbon content",
+    "value": 7,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "charcoal": {
+    "id": "Charcoal",
+    "name": "Charcoal",
+    "description": "A flammable material with extremely high carbon content, created by strongly heating wood",
+    "value": 5,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-rough-wood": {
+    "id": "Piece of rough wood",
+    "name": "Piece of rough wood",
+    "description": "Cheapest form of wood. There's a lot of bark and malformed pieces",
+    "value": 2,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-wood": {
+    "id": "Piece of wood",
+    "name": "Piece of wood",
+    "description": "Average quality wood. There's a lot of bark and malformed pieces",
+    "value": 4,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-ash-wood": {
+    "id": "Piece of ash wood",
+    "name": "Piece of ash wood",
+    "description": "Strong yet elastic, it's best wood you can hope to find around. There's a lot of bark and malformed pieces",
+    "value": 7,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "belmart-leaf": {
+    "id": "Belmart leaf",
+    "name": "Belmart leaf",
+    "description": "Small, round, dark-green leaves with very good disinfectant properties",
+    "value": 8,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "golmoon-leaf": {
+    "id": "Golmoon leaf",
+    "name": "Golmoon leaf",
+    "description": "Big green-brown leaves that can be applied to wounds to speed up their healing",
+    "value": 8,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "oneberry": {
+    "id": "Oneberry",
+    "name": "Oneberry",
+    "description": "Small blue berries capable of stimulating body's natural healing",
+    "value": 8,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "silver-thistle": {
+    "id": "Silver thistle",
+    "name": "Silver thistle",
+    "description": "Rare herb that usually grows high up in mountains, a potent healing ingredient",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "cooking-herbs": {
+    "id": "Cooking herbs",
+    "name": "Parsley, sage, rosemary and thyme",
+    "description": "A collection of various herbs commonly used to enhance the flavour and nutrition of dishes",
+    "value": 10,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "wool": {
+    "id": "Wool",
+    "name": "Wool",
+    "description": "A handful of wool, raw and unprocessed",
+    "value": 8,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "silica-sand": {
+    "id": "Silica Sand",
+    "name": "Silica sand",
+    "description": "Sand made potent by the remains of countless generations of creatures that lived and died in the body of water it was taken from",
+    "value": 1,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "flax": {
+    "id": "Flax",
+    "name": "Flax",
+    "description": "A bundle of flax, raw and unprocessed",
+    "value": 14,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "clam": {
+    "id": "Clam",
+    "name": "Clam",
+    "description": "Common shellfish found in the sand and mud around the lake shore. Can't be eaten raw",
+    "value": 6,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "wild-onion": {
+    "id": "Wild onion",
+    "name": "Wild onion",
+    "description": "A wild root vegetable sometimes used to add flavor to dishes. Can't be eaten raw",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "wild-garlic": {
+    "id": "Wild garlic",
+    "name": "Wild garlic",
+    "description": "A wild root vegetable known to possess anti-fungal properties, sometimes used to add flavor to dishes. Can't be eaten raw",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "wild-potato": {
+    "id": "Wild potato",
+    "name": "Wild potato",
+    "description": "A wild nutrient-rich stem tuber that can be used in a variety of dishes. Can't be eaten raw",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "ratfish": {
+    "id": "Ratfish",
+    "name": "Ratfish",
+    "description": "A small sweetwater fish, named after its unremarkable coloration and propensity to travel in large groups",
+    "value": 5,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "minnow": {
+    "id": "Minnow",
+    "name": "Minnow",
+    "description": "One of the variety of small fish that inhabit rivers and streams",
+    "value": 10,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "mackerel-shark": {
+    "id": "Mackerel shark",
+    "name": "Mackerel shark",
+    "description": "A shark small enough to fit in a stream. Makes up for its size with its feistiness and big mouth",
+    "value": 50,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "trout": {
+    "id": "Trout",
+    "name": "Trout",
+    "description": "A fish large enough for a full meal and common in most rivers, making it a convenient source of food. So far, this has not effected their population",
+    "value": 50,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "carp": {
+    "id": "Carp",
+    "name": "Carp",
+    "description": "It hasn't grown into any of its more powerful forms yet, so its meat is still fatty and plump",
+    "value": 50,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "catfish": {
+    "id": "Catfish",
+    "name": "Catfish",
+    "description": "A large fish with whiskers. Usually found near the bottom of lakes, where it feeds on ratfish and pretty much everything else it can hunt",
+    "value": 200,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "bonemeal": {
+    "id": "Bonemeal",
+    "name": "Bonemeal",
+    "description": "Powdered bones and teeth, that can be used as an organic fertilizer",
+    "value": 100,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "low-quality-iron-ingot": {
+    "id": "Low quality iron ingot",
+    "name": "Low quality iron ingot",
+    "description": "It has a lot of impurities, resulting in it being noticeably below the market standard",
+    "value": 10,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "iron-ingot": {
+    "id": "Iron ingot",
+    "name": "Iron ingot",
+    "description": "It doesn't suffer from any excessive impurities and can be used without worries",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "steel-ingot": {
+    "id": "Steel ingot",
+    "name": "Steel ingot",
+    "description": "Basic alloy of iron, harder and more resistant",
+    "value": 40,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "turtle-shellplate": {
+    "id": "Turtle shellplate",
+    "name": "Turtle shellplate",
+    "description": "Small, dense plates capable of reflecting mighty blows. Useless in their current form, but can be turned into something useful with enough effort and focus",
+    "value": 60,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "silver-ingot": {
+    "id": "Silver ingot",
+    "name": "Silver ingot",
+    "description": "Too soft to use as weapon material, but has potential for use in magic tools",
+    "value": 30,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-wolf-rat-leather": {
+    "id": "Piece of wolf rat leather",
+    "name": "Piece of wolf rat leather",
+    "description": "It's slightly damaged and seems useless for anything that requires precise work",
+    "value": 10,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "processed-rat-pelt": {
+    "id": "Processed rat pelt",
+    "name": "Processed rat pelt",
+    "description": "Processed pelt of a huge rat. It's of a barely acceptable quality, but it's still a miracle with how terrible the basic material was",
+    "value": 15,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-wolf-leather": {
+    "id": "Piece of wolf leather",
+    "name": "Piece of wolf leather",
+    "description": "Somewhat strong, should offer some protection when turned into armor",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "processed-wolf-pelt": {
+    "id": "Processed wolf pelt",
+    "name": "Processed wolf pelt",
+    "description": "Processed pelt of a wild wolf. It's a nice, stylish material, with fur that's feels good to touch",
+    "value": 30,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-boar-leather": {
+    "id": "Piece of boar leather",
+    "name": "Piece of boar leather",
+    "description": "Thick and resistant leather, too stiff for clothes but perfect for armor",
+    "value": 30,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "processed-boar-hide": {
+    "id": "Processed boar hide",
+    "name": "Processed boar hide",
+    "description": "Processed hide of a wild boar. It's a thick, heavy material, with short rough fur, but it's quite strong",
+    "value": 45,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-goat-leather": {
+    "id": "Piece of goat leather",
+    "name": "Piece of goat leather",
+    "description": "Thick and resistant, just barely elastic enough to be used for clothing",
+    "value": 40,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "processed-goat-hide": {
+    "id": "Processed goat hide",
+    "name": "Processed goat hide",
+    "description": "Processed hide of a wild goat. It's a resistant material, with short and rough fur",
+    "value": 60,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-bear-leather": {
+    "id": "Piece of bear leather",
+    "name": "Piece of bear leather",
+    "description": "Strong and resistant, but too thick for clothing",
+    "value": 60,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "processed-bear-hide": {
+    "id": "Processed bear hide",
+    "name": "Processed bear hide",
+    "description": "Strong, resistant, and warm, with fluffy fur",
+    "value": 90,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-alligator-leather": {
+    "id": "Piece of alligator leather",
+    "name": "Piece of alligator leather",
+    "description": "Strong and flexible, but too uncomfortable to use as clothing",
+    "value": 150,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-snakeskin-leather": {
+    "id": "Piece of snakeskin leather",
+    "name": "Piece of snakeskin leather",
+    "description": "Durable and thin, but a poor insulator",
+    "value": 150,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "piece-of-frog-leather": {
+    "id": "Piece of frog leather",
+    "name": "Piece of frog leather",
+    "description": "The toxins have been removed and the slime coagulated into a waxy coating",
+    "value": 60,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "animal-fat": {
+    "id": "Animal fat",
+    "name": "Animal fat",
+    "description": "White, thick, oily substance, rendered from animal tissue",
+    "value": 40,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "wool-cloth": {
+    "id": "Wool cloth",
+    "name": "Wool cloth",
+    "description": "Thick and warm, might possibly absorb some punches",
+    "value": 8,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "linen-cloth": {
+    "id": "Linen cloth",
+    "name": "Linen cloth",
+    "description": "Bolt of durable and thin cloth that won't restrict mobility",
+    "value": 14,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "iron-chainmail": {
+    "id": "Iron chainmail",
+    "name": "Iron chainmail",
+    "description": "Dozens of tiny iron rings linked together. Nowhere near a wearable form, turning it into armor will still take a lot of effort and focus",
+    "value": 12,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "steel-chainmail": {
+    "id": "Steel chainmail",
+    "name": "Steel chainmail",
+    "description": "Dozens of tiny steel rings linked together. Nowhere near a wearable form, turning it into armor will still take a lot of effort and focus",
+    "value": 18,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "scraps-of-wolf-rat-meat": {
+    "id": "Scraps of wolf rat meat",
+    "name": "Scraps of wolf rat meat",
+    "description": "Ignoring where they come from and all the attached diseases, they actually look edible. Just remember to cook it first",
+    "value": 8,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "processed-rough-wood": {
+    "id": "Processed rough wood",
+    "name": "Processed rough wood",
+    "description": "Cheapest form of wood, ready to be used. Despite being rather weak, it still has a lot of uses",
+    "value": 6,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "processed-wood": {
+    "id": "Processed wood",
+    "name": "Processed wood",
+    "description": "Average quality wood, ready to be used",
+    "value": 11,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "processed-ash-wood": {
+    "id": "Processed ash wood",
+    "name": "Processed ash wood",
+    "description": "High quality wood, just waiting to be turned into a piece of equipment",
+    "value": 20,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "processed-weak-monster-bone": {
+    "id": "Processed weak monster bone",
+    "name": "Processed weak monster bone",
+    "description": "Polished and cleaned bones of a weak monster, just waiting to be turned into a piece of equipment",
+    "value": 40,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "potash": {
+    "id": "Potash",
+    "name": "Potash",
+    "description": "An alchemical substance derived from plant ash, sought after for production of bleach, soap and glass",
+    "value": 25,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "raw-glass": {
+    "id": "Raw Glass",
+    "name": "Raw glass",
+    "description": "Molten piece of glass, yet to be shaped into something useful",
+    "value": 100,
+    "item_type": "MATERIAL",
+    "tags": [
+      "item",
+      "material"
+    ]
+  },
+  "basic-spare-parts": {
+    "id": "Basic spare parts",
+    "name": "Basic spare parts",
+    "description": "Some cheap and simple spare parts, like bindings and screws, necessary for crafting equipment",
+    "value": 30,
+    "item_type": "OTHER",
+    "tags": [
+      "item"
+    ]
+  },
+  "cheap-short-iron-blade": {
+    "id": "Cheap short iron blade",
+    "name": "Cheap short iron blade",
+    "description": "Crude blade made of iron. Perfect length for a dagger, but could be also used for a spear",
+    "value": 70,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "crit_rate": {
+        "flat": 0.06
+      },
+      "attack_speed": {
+        "multiplier": 1.2
+      },
+      "evasion_points": {
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "short-iron-blade": {
+    "id": "Short iron blade",
+    "name": "Short iron blade",
+    "description": "A good iron blade. Perfect length for a dagger, but could be also used for a spear",
+    "value": 160,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "crit_rate": {
+        "flat": 0.08
+      },
+      "attack_speed": {
+        "multiplier": 1.3
+      },
+      "evasion_points": {
+        "multiplier": 1.13
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "short-steel-blade": {
+    "id": "Short steel blade",
+    "name": "Short steel blade",
+    "description": "A good steel blade. Perfect length for a dagger, but could be also used for a spear",
+    "value": 240,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "crit_rate": {
+        "flat": 0.1
+      },
+      "attack_speed": {
+        "multiplier": 1.35
+      },
+      "evasion_points": {
+        "multiplier": 1.2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-long-iron-blade": {
+    "id": "Cheap long iron blade",
+    "name": "Cheap long iron blade",
+    "description": "Crude blade made of iron, with a perfect length for a sword",
+    "value": 100,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.1
+      },
+      "crit_rate": {
+        "flat": 0.02
+      },
+      "attack_points": {
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "long-iron-blade": {
+    "id": "Long iron blade",
+    "name": "Long iron blade",
+    "description": "Good blade made of iron, with a perfect length for a sword",
+    "value": 210,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.15
+      },
+      "crit_rate": {
+        "flat": 0.04
+      },
+      "attack_points": {
+        "multiplier": 1.13
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "long-steel-blade": {
+    "id": "Long steel blade",
+    "name": "Long steel blade",
+    "description": "Good blade made of steel, with a perfect length for a sword",
+    "value": 310,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.2
+      },
+      "crit_rate": {
+        "flat": 0.05
+      },
+      "attack_points": {
+        "multiplier": 1.2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-iron-axe-head": {
+    "id": "Cheap iron axe head",
+    "name": "Cheap iron axe head",
+    "description": "A heavy axe head made of low quality iron",
+    "value": 100,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-axe-head": {
+    "id": "Iron axe head",
+    "name": "Iron axe head",
+    "description": "A heavy axe head made of steel",
+    "value": 210,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-axe-head": {
+    "id": "Steel axe head",
+    "name": "Steel axe head",
+    "description": "A heavy axe head made of steel",
+    "value": 310,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-iron-hammer-head": {
+    "id": "Cheap iron hammer head",
+    "name": "Cheap iron hammer head",
+    "description": "A crude ball made of low quality iron, with a small hole for the handle",
+    "value": 100,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.8
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-hammer-head": {
+    "id": "Iron hammer head",
+    "name": "Iron hammer head",
+    "description": "A crude ball made of iron, with a small hole for the handle",
+    "value": 210,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.85
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-hammer-head": {
+    "id": "Steel hammer head",
+    "name": "Steel hammer head",
+    "description": "A blocky piece of steel, with a small hole for the handle",
+    "value": 300,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "simple-short-wooden-hilt": {
+    "id": "Simple short wooden hilt",
+    "name": "Simple short wooden hilt",
+    "description": "A short handle for a sword or maybe a dagger",
+    "value": 8,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "short-wooden-hilt": {
+    "id": "Short wooden hilt",
+    "name": "Short wooden hilt",
+    "description": "A short handle for a sword or maybe a dagger",
+    "value": 32,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "short-ash-wood-hilt": {
+    "id": "Short ash wood hilt",
+    "name": "Short ash wood hilt",
+    "description": "A short handle for a sword or maybe a dagger",
+    "value": 48,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "simple-medium-wooden-handle": {
+    "id": "Simple medium wooden handle",
+    "name": "Simple medium wooden handle",
+    "description": "A medium handle for an axe or a hammer",
+    "value": 16,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "medium-wooden-handle": {
+    "id": "Medium wooden handle",
+    "name": "Medium wooden handle",
+    "description": "A medium handle for an axe or a hammer",
+    "value": 64,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "medium-ash-wood-handle": {
+    "id": "Medium ash wood handle",
+    "name": "Medium ash wood handle",
+    "description": "A medium handle for an axe or a hammer",
+    "value": 96,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "simple-long-wooden-shaft": {
+    "id": "Simple long wooden shaft",
+    "name": "Simple long wooden shaft",
+    "description": "A long shaft for a spear, somewhat uneven",
+    "value": 24,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "long-wooden-shaft": {
+    "id": "Long wooden shaft",
+    "name": "Long wooden shaft",
+    "description": "A long shaft for a spear, somewhat uneven",
+    "value": 100,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "long-ash-wood-shaft": {
+    "id": "Long ash wood shaft",
+    "name": "Long ash wood shaft",
+    "description": "A long shaft for a spear",
+    "value": 150,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-short-iron-hilt": {
+    "id": "Cheap short iron hilt",
+    "name": "Cheap short iron hilt",
+    "description": "A short handle for a sword or maybe a dagger, heavy",
+    "value": 56,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.9
+      },
+      "attack_power": {
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "short-iron-hilt": {
+    "id": "Short iron hilt",
+    "name": "Short iron hilt",
+    "description": "A short handle for a sword or maybe a dagger, heavy",
+    "value": 80,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_power": {
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "short-steel-hilt": {
+    "id": "Short steel hilt",
+    "name": "Short steel hilt",
+    "description": "A short handle for a sword or maybe a dagger, heavy",
+    "value": 120,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_power": {
+        "multiplier": 1.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-medium-iron-handle": {
+    "id": "Cheap medium iron handle",
+    "name": "Cheap medium iron handle",
+    "description": "A medium handle for an axe or a hammer, very heavy",
+    "value": 64,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.7
+      },
+      "attack_power": {
+        "multiplier": 1.2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "medium-iron-handle": {
+    "id": "Medium iron handle",
+    "name": "Medium iron handle",
+    "description": "A medium handle for an axe or a hammer, very heavy",
+    "value": 100,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.8
+      },
+      "attack_power": {
+        "multiplier": 1.2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "medium-steel-handle": {
+    "id": "Medium steel handle",
+    "name": "Medium steel handle",
+    "description": "A medium handle for an axe or a hammer, very heavy",
+    "value": 150,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.8
+      },
+      "attack_power": {
+        "multiplier": 1.27
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-long-iron-shaft": {
+    "id": "Cheap long iron shaft",
+    "name": "Cheap long iron shaft",
+    "description": "A long shaft for a spear, extremely heavy",
+    "value": 92,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.5
+      },
+      "attack_power": {
+        "multiplier": 1.6
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "long-iron-shaft": {
+    "id": "Long iron shaft",
+    "name": "Long iron shaft",
+    "description": "A long shaft for a spear, extremely heavy",
+    "value": 128,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.6
+      },
+      "attack_power": {
+        "multiplier": 1.6
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "long-steel-shaft": {
+    "id": "Long steel shaft",
+    "name": "Long steel shaft",
+    "description": "A long shaft for a spear, extremely heavy",
+    "value": 192,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.6
+      },
+      "attack_power": {
+        "multiplier": 1.75
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "short-weak-bone-hilt": {
+    "id": "Short weak bone hilt",
+    "name": "Short weak bone hilt",
+    "description": "A short handle for a sword or maybe a dagger, made of a weak monster's bone",
+    "value": 120,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_power": {
+        "multiplier": 1.05
+      },
+      "attack_speed": {
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "medium-weak-bone-handle": {
+    "id": "Medium weak bone handle",
+    "name": "Medium weak bone handle",
+    "description": "A medium handle for an axe or a hammer, made of a weak monster's bone",
+    "value": 150,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      },
+      "attack_power": {
+        "multiplier": 1.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "long-weak-bone-shaft": {
+    "id": "Long weak bone shaft",
+    "name": "Long weak bone shaft",
+    "description": "A long shaft for a spear, made of weak monster's bone",
+    "value": 192,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.8
+      },
+      "attack_power": {
+        "multiplier": 1.25
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-hilt": {
+    "id": "Turtleshell hilt",
+    "name": "Turtleshell hilt",
+    "description": "A short handle for a sword or maybe a dagger, made of turtle shellplate",
+    "value": 140,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.05
+      },
+      "attack_points": {
+        "multiplier": 1.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-handle": {
+    "id": "Turtleshell handle",
+    "name": "Turtleshell handle",
+    "description": "A medium handle for an axe or a hammer, made of turtle shellplate",
+    "value": 190,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_points": {
+        "multiplier": 1.1
+      },
+      "attack_power": {
+        "multiplier": 1.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-shaft": {
+    "id": "Turtleshell shaft",
+    "name": "Turtleshell shaft",
+    "description": "A long shaft for a spear, made of turtle shellplate",
+    "value": 250,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "weapon component"
+    ],
+    "stats": {
+      "attack_power": {
+        "multiplier": 1.2
+      },
+      "attack_speed": {
+        "multiplier": 0.95
+      },
+      "attack_points": {
+        "multiplier": 1.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-iron-spear": {
+    "id": "Cheap iron spear",
+    "name": "Cheap iron spear",
+    "value": 118,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "spear"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "crit_rate": {
+        "flat": 0.06
+      },
+      "attack_speed": {
+        "multiplier": 1.08
+      },
+      "evasion_points": {
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-spear": {
+    "id": "Iron spear",
+    "name": "Iron spear",
+    "value": 230,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "spear"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "crit_rate": {
+        "flat": 0.08
+      },
+      "attack_speed": {
+        "multiplier": 1.17
+      },
+      "evasion_points": {
+        "multiplier": 1.13
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-spear": {
+    "id": "Steel spear",
+    "name": "Steel spear",
+    "value": 430,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "spear"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "crit_rate": {
+        "flat": 0.1
+      },
+      "attack_speed": {
+        "multiplier": 1.28
+      },
+      "evasion_points": {
+        "multiplier": 1.2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-iron-dagger": {
+    "id": "Cheap iron dagger",
+    "name": "Cheap iron dagger",
+    "value": 98,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "dagger"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "crit_rate": {
+        "flat": 0.06
+      },
+      "attack_speed": {
+        "multiplier": 1.2
+      },
+      "evasion_points": {
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-dagger": {
+    "id": "Iron dagger",
+    "name": "Iron dagger",
+    "value": 210,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "dagger"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "crit_rate": {
+        "flat": 0.08
+      },
+      "attack_speed": {
+        "multiplier": 1.3
+      },
+      "evasion_points": {
+        "multiplier": 1.13
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-dagger": {
+    "id": "Steel dagger",
+    "name": "Steel dagger",
+    "value": 340,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "dagger"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "crit_rate": {
+        "flat": 0.1
+      },
+      "attack_speed": {
+        "multiplier": 1.42
+      },
+      "evasion_points": {
+        "multiplier": 1.2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-iron-sword": {
+    "id": "Cheap iron sword",
+    "name": "Cheap iron sword",
+    "value": 135,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "sword"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.1
+      },
+      "crit_rate": {
+        "flat": 0.02
+      },
+      "attack_points": {
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-sword": {
+    "id": "Iron sword",
+    "name": "Iron sword",
+    "value": 280,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "sword"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.15
+      },
+      "crit_rate": {
+        "flat": 0.04
+      },
+      "attack_points": {
+        "multiplier": 1.13
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-sword": {
+    "id": "Steel sword",
+    "name": "Steel sword",
+    "value": 430,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "sword"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.26
+      },
+      "crit_rate": {
+        "flat": 0.05
+      },
+      "attack_points": {
+        "multiplier": 1.2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-iron-axe": {
+    "id": "Cheap iron axe",
+    "name": "Cheap iron axe",
+    "value": 145,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "axe"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.86
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-axe": {
+    "id": "Iron axe",
+    "name": "Iron axe",
+    "value": 290,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "axe"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-axe": {
+    "id": "Steel axe",
+    "name": "Steel axe",
+    "value": 470,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "axe"
+    ],
+    "equip_slot": "weapon",
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-iron-battle-hammer": {
+    "id": "Cheap iron battle hammer",
+    "name": "Cheap iron battle hammer",
+    "value": 145,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "hammer"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.76
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-battle-hammer": {
+    "id": "Iron battle hammer",
+    "name": "Iron battle hammer",
+    "value": 290,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "hammer"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.81
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-battle-hammer": {
+    "id": "Steel battle hammer",
+    "name": "Steel battle hammer",
+    "value": 460,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "weapon",
+      "hammer"
+    ],
+    "equip_slot": "weapon",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wolf-leather-helmet-armor": {
+    "id": "Wolf leather helmet armor",
+    "name": "Wolf leather helmet armor",
+    "description": "Strenghtened wolf leather, ready to be used as a part of a helmet",
+    "value": 240,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "boar-leather-helmet-armor": {
+    "id": "Boar leather helmet armor",
+    "name": "Boar leather helmet armor",
+    "description": "Strong boar leather, ready to be used as a part of a helmet",
+    "value": 400,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "bear-leather-helmet-armor": {
+    "id": "Bear leather helmet armor",
+    "name": "Bear leather helmet armor",
+    "description": "Strong bear leather, ready to be used as a part of a helmet",
+    "value": 600,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "alligator-leather-helmet-armor": {
+    "id": "Alligator leather helmet armor",
+    "name": "Alligator leather helmet armor",
+    "description": "Strong alligator leather, ready to be used as a part of a helmet",
+    "value": 900,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "cold_tolerance": {
+        "flat": -0.5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wolf-leather-chestplate-armor": {
+    "id": "Wolf leather chestplate armor",
+    "name": "Wolf leather cuirass",
+    "description": "Simple cuirass made of solid wolf leather, all it needs now is something softer to wear under it",
+    "value": 480,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "boar-leather-chestplate-armor": {
+    "id": "Boar leather chestplate armor",
+    "name": "Boar leather cuirass",
+    "description": "Strong cuirass made of boar leather",
+    "value": 800,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "bear-leather-chestplate-armor": {
+    "id": "Bear leather chestplate armor",
+    "name": "Bear leather cuirass",
+    "description": "Strong cuirass made of bear leather",
+    "value": 1000,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "alligator-leather-chestplate-armor": {
+    "id": "Alligator leather chestplate armor",
+    "name": "Alligator leather cuirass",
+    "description": "Strong cuirass made of alligator leather",
+    "value": 1600,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "cold_tolerance": {
+        "flat": -0.5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wolf-leather-greaves": {
+    "id": "Wolf leather greaves",
+    "name": "Wolf leather greaves",
+    "description": "Greaves made of wolf leather. Just attach them onto some pants and you are ready to go",
+    "value": 240,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "boar-leather-greaves": {
+    "id": "Boar leather greaves",
+    "name": "Boar leather greaves",
+    "description": "Greaves made of thick boar leather. Just attach them onto some pants and you are ready to go",
+    "value": 400,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "bear-leather-greaves": {
+    "id": "Bear leather greaves",
+    "name": "Bear leather greaves",
+    "description": "Greaves made of thick bear leather. Just attach them onto some pants and you are ready to go",
+    "value": 600,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "alligator-leather-greaves": {
+    "id": "Alligator leather greaves",
+    "name": "Alligator leather greaves",
+    "description": "Greaves made of alligator leather. Just attach them onto some pants and you are ready to go",
+    "value": 900,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "cold_tolerance": {
+        "flat": -0.5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wolf-leather-glove-armor": {
+    "id": "Wolf leather glove armor",
+    "name": "Wolf leather glove armor",
+    "description": "Pieces of wolf leather shaped for gloves",
+    "value": 240,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "boar-leather-glove-armor": {
+    "id": "Boar leather glove armor",
+    "name": "Boar leather glove armor",
+    "description": "Pieces of boar leather shaped for gloves",
+    "value": 400,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "bear-leather-glove-armor": {
+    "id": "Bear leather glove armor",
+    "name": "Bear leather glove armor",
+    "description": "Pieces of bear leather shaped for gloves",
+    "value": 600,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "alligator-leather-glove-armor": {
+    "id": "Alligator leather glove armor",
+    "name": "Alligator leather glove armor",
+    "description": "Pieces of alligator leather shaped for gloves",
+    "value": 900,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "cold_tolerance": {
+        "flat": -0.5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wolf-leather-shoe-armor": {
+    "id": "Wolf leather shoe armor",
+    "name": "Wolf leather shoe armor",
+    "description": "Pieces of wolf leather shaped for shoes",
+    "value": 240,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "boar-leather-shoe-armor": {
+    "id": "Boar leather shoe armor",
+    "name": "Boar leather shoe armor",
+    "description": "Pieces of boar leather shaped for shoes",
+    "value": 400,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "bear-leather-shoe-armor": {
+    "id": "Bear leather shoe armor",
+    "name": "Bear leather shoe armor",
+    "description": "Pieces of bear leather shaped for shoes",
+    "value": 600,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "alligator-leather-shoe-armor": {
+    "id": "Alligator leather shoe armor",
+    "name": "Alligator leather shoe armor",
+    "description": "Pieces of alligator leather shaped for shoes",
+    "value": 900,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "cold_tolerance": {
+        "flat": -0.5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-chainmail-helmet-armor": {
+    "id": "Iron chainmail helmet armor",
+    "name": "Iron chainmail helmet armor",
+    "description": "Best way to keep your head in one piece",
+    "value": 320,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": -1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-chainmail-helmet-armor": {
+    "id": "Steel chainmail helmet armor",
+    "name": "Steel chainmail helmet armor",
+    "description": "Best way to keep your head in one piece",
+    "value": 480,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": -1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-helmet-armor": {
+    "id": "Turtleshell helmet armor",
+    "name": "Turtleshell helmet armor",
+    "description": "Best way to keep your head in one piece",
+    "value": 900,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.97
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-chainmail-vest": {
+    "id": "Iron chainmail vest",
+    "name": "Iron chainmail vest",
+    "description": "Basic iron chainmail. Nowhere near as strong as a plate armor",
+    "value": 640,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": -1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-chainmail-vest": {
+    "id": "Steel chainmail vest",
+    "name": "Steel chainmail vest",
+    "description": "Basic steel chainmail. Nowhere near as strong as a plate armor",
+    "value": 960,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": -1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-chestplate": {
+    "id": "Turtleshell chestplate",
+    "name": "Turtleshell chestplate",
+    "description": "Basic turtle shellplate mail. Nowhere near as strong as a plate armor",
+    "value": 1400,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.97
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-chainmail-greaves": {
+    "id": "Iron chainmail greaves",
+    "name": "Iron chainmail greaves",
+    "description": "Greaves made of iron chainmail. Just attach them onto some pants and you are ready to go",
+    "value": 320,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": -1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-chainmail-greaves": {
+    "id": "Steel chainmail greaves",
+    "name": "Steel chainmail greaves",
+    "description": "Greaves made of steel chainmail. Just attach them onto some pants and you are ready to go",
+    "value": 480,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": -1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-greaves": {
+    "id": "Turtleshell greaves",
+    "name": "Turtleshell greaves",
+    "description": "Greaves made of turtle shellplate. Just attach them onto some pants and you are ready to go",
+    "value": 1200,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.97
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-chainmail-glove": {
+    "id": "Iron chainmail glove",
+    "name": "Iron chainmail glove",
+    "description": "Iron chainmail in a form ready to be applied onto a glove",
+    "value": 320,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": -1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-chainmail-glove": {
+    "id": "Steel chainmail glove",
+    "name": "Steel chainmail glove",
+    "description": "Steel chainmail in a form ready to be applied onto a glove",
+    "value": 480,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": -1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-glove": {
+    "id": "Turtleshell glove",
+    "name": "Turtleshell glove",
+    "description": "Turtle shellplate in a form ready to be applied onto a glove",
+    "value": 1200,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.97
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-chainmail-shoes": {
+    "id": "Iron chainmail shoes",
+    "name": "Iron chainmail shoes",
+    "description": "Iron chainmail in a form ready to be applied onto a pair of shoes",
+    "value": 320,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": -1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-chainmail-shoes": {
+    "id": "Steel chainmail shoes",
+    "name": "Steel chainmail shoes",
+    "description": "Steel chainmail in a form ready to be applied onto a pair of shoes",
+    "value": 480,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": -1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-shoes": {
+    "id": "Turtleshell shoes",
+    "name": "Turtleshell shoes",
+    "description": "Turtle shellplate in a form ready to be applied onto a pair of shoes",
+    "value": 1200,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "armor component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.97
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-leather-vest": {
+    "id": "Cheap leather vest",
+    "name": "Cheap leather vest",
+    "description": "Vest providing very low protection. Better not to know what's it made from",
+    "value": 100,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.99
+      },
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "leather-vest": {
+    "id": "Leather vest",
+    "name": "Leather vest",
+    "description": "Comfortable leather vest, offering low protection",
+    "value": 300,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "goat-leather-vest": {
+    "id": "Goat leather vest",
+    "name": "Goat leather vest",
+    "description": "Comfortable leather vest, offering mediocre protection",
+    "value": 450,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "snakeskin-vest": {
+    "id": "Snakeskin vest",
+    "name": "Snakeskin vest",
+    "description": "Comfortable snakeskin vest, offering decent protection",
+    "value": 1200,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.02
+      },
+      "agility": {
+        "multiplier": 1.05
+      },
+      "cold_tolerance": {
+        "flat": -0.5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "batrachian-vest": {
+    "id": "Batrachian vest",
+    "name": "Batrachian vest",
+    "description": "Comfortable leather vest, slippery enough to make enemy blows slide off",
+    "value": 700,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "agility": {
+        "multiplier": 1.05
+      },
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {
+      "Swimming": 1
+    },
+    "rarity": "common"
+  },
+  "cheap-leather-pants": {
+    "id": "Cheap leather pants",
+    "name": "Cheap leather pants",
+    "description": "Leather pants made from cheapest resources available",
+    "value": 100,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.99
+      },
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "leather-pants": {
+    "id": "Leather pants",
+    "name": "Leather pants",
+    "description": "Solid leather pants",
+    "value": 300,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "goat-leather-pants": {
+    "id": "Goat leather pants",
+    "name": "Goat leather pants",
+    "description": "Solid leather pants",
+    "value": 450,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "snakeskin-leggings": {
+    "id": "Snakeskin leggings",
+    "name": "Snakeskin leggings",
+    "description": "Solid snakeskin leggings",
+    "value": 1200,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.01
+      },
+      "agility": {
+        "multiplier": 1.05
+      },
+      "cold_tolerance": {
+        "flat": -0.5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "batrachian-pants": {
+    "id": "Batrachian pants",
+    "name": "Batrachian pants",
+    "description": "Slippery leather pants",
+    "value": 700,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "agility": {
+        "multiplier": 1.05
+      },
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {
+      "Swimming": 1
+    },
+    "rarity": "common"
+  },
+  "cheap-leather-hat": {
+    "id": "Cheap leather hat",
+    "name": "Cheap leather hat",
+    "description": "A cheap leather hat to protect your head",
+    "value": 100,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.99
+      },
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "leather-hat": {
+    "id": "Leather hat",
+    "name": "Leather hat",
+    "description": "A nice leather hat to protect your head",
+    "value": 300,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "goat-leather-hat": {
+    "id": "Goat leather hat",
+    "name": "Goat leather hat",
+    "description": "A solid leather hat to protect your head",
+    "value": 450,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "snakeskin-hat": {
+    "id": "Snakeskin hat",
+    "name": "Snakeskin hat",
+    "description": "A solid snakeskin hat to protect your head",
+    "value": 1200,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.02
+      },
+      "agility": {
+        "multiplier": 1.03
+      },
+      "cold_tolerance": {
+        "flat": -0.5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "batrachian-hat": {
+    "id": "Batrachian hat",
+    "name": "Batrachian hat",
+    "description": "A slippery leather hat to protect your head",
+    "value": 700,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "agility": {
+        "multiplier": 1.05
+      },
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {
+      "Swimming": 1
+    },
+    "rarity": "common"
+  },
+  "leather-gloves": {
+    "id": "Leather gloves",
+    "name": "Leather gloves",
+    "description": "Strong leather gloves, perfect for handling rough and sharp objects",
+    "value": 300,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "arms",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "goat-leather-gloves": {
+    "id": "Goat leather gloves",
+    "name": "Goat leather gloves",
+    "description": "Strong leather gloves, perfect for handling rough and sharp objects",
+    "value": 450,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "arms",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "snakeskin-gloves": {
+    "id": "Snakeskin gloves",
+    "name": "Snakeskin gloves",
+    "description": "Strong snakeskin gloves, perfect for handling rough and sharp objects",
+    "value": 1200,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "arms",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.02
+      },
+      "dexterity": {
+        "multiplier": 1.02
+      },
+      "cold_tolerance": {
+        "flat": -0.5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "batrachian-gloves": {
+    "id": "Batrachian gloves",
+    "name": "Batrachian gloves",
+    "description": "Strong leather gloves, with membranes to help you swim",
+    "value": 700,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "arms",
+    "stats": {
+      "agility": {
+        "multiplier": 1.05
+      },
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {
+      "Swimming": 2
+    },
+    "rarity": "common"
+  },
+  "cheap-leather-shoes": {
+    "id": "Cheap leather shoes",
+    "name": "Cheap leather shoes",
+    "description": "Shoes made of thin and cheap leather. Even then, they are in every single aspect better than not having any",
+    "value": 100,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "feet",
+    "stats": {
+      "agility": {
+        "multiplier": 1.05
+      },
+      "cold_tolerance": {
+        "flat": 2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "work-shoes": {
+    "id": "Work shoes",
+    "name": "Work shoes",
+    "description": "Work shoes made of a mix of leather and wool. While they provide no protection, they are very comfortable for moving around",
+    "value": 300,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "feet",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.02
+      },
+      "agility": {
+        "multiplier": 1.15
+      },
+      "cold_tolerance": {
+        "flat": 2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "leather-shoes": {
+    "id": "Leather shoes",
+    "name": "Leather shoes",
+    "description": "Solid shoes made of leather, a must have for any traveler",
+    "value": 300,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "feet",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.02
+      },
+      "agility": {
+        "multiplier": 1.1
+      },
+      "cold_tolerance": {
+        "flat": 2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "goat-leather-shoes": {
+    "id": "Goat leather shoes",
+    "name": "Goat leather shoes",
+    "description": "Strong shoes made of leather, a must have for any traveler",
+    "value": 450,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "feet",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.02
+      },
+      "agility": {
+        "multiplier": 1.15
+      },
+      "cold_tolerance": {
+        "flat": 2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "snakeskin-boots": {
+    "id": "Snakeskin boots",
+    "name": "Snakeskin boots",
+    "description": "Strong boots made of snakeskin, a must have for any traveler",
+    "value": 1200,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "feet",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.05
+      },
+      "agility": {
+        "multiplier": 1.25
+      },
+      "cold_tolerance": {
+        "flat": -0.5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "batrachian-shoes": {
+    "id": "Batrachian shoes",
+    "name": "Batrachian shoes",
+    "description": "Strong shoes made of frog leather, that let you slide along the ground",
+    "value": 700,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "feet",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.05
+      },
+      "agility": {
+        "multiplier": 1.15
+      },
+      "cold_tolerance": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {
+      "Swimming": 2
+    },
+    "rarity": "common"
+  },
+  "wool-shirt": {
+    "id": "Wool shirt",
+    "name": "Wool shirt",
+    "description": "It's not thick enough to provide any physical protection, but on the plus side it's light, it's warm, and it and doesn't block your moves",
+    "value": 300,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.01
+      },
+      "agility": {
+        "multiplier": 1.02
+      },
+      "cold_tolerance": {
+        "flat": 3
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "linen-vest": {
+    "id": "Linen vest",
+    "name": "Linen vest",
+    "description": "A thin, breezy vest that won't get in your way, however it won't keep you warm and offers no protection from attacks",
+    "value": 650,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.04
+      },
+      "agility": {
+        "multiplier": 1.05
+      },
+      "cold_tolerance": {
+        "flat": 0.4
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wool-pants": {
+    "id": "Wool pants",
+    "name": "Wool pants",
+    "description": "Nice woollen pants. Slightly itchy",
+    "value": 100,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 3
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "linen-leggings": {
+    "id": "Linen leggings",
+    "name": "Linen leggings",
+    "description": "Nice linen leggings",
+    "value": 450,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.03
+      },
+      "agility": {
+        "multiplier": 1.04
+      },
+      "cold_tolerance": {
+        "flat": 0.4
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wool-hat": {
+    "id": "Wool hat",
+    "name": "Wool hat",
+    "description": "Simple woollen hat to protect your head from cold",
+    "value": 300,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.01
+      },
+      "agility": {
+        "multiplier": 1.01
+      },
+      "cold_tolerance": {
+        "flat": 2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "linen-bandanna": {
+    "id": "Linen bandanna",
+    "name": "Linen bandanna",
+    "description": "Simple linen bandanna to keep hair and sweat away from your eyes",
+    "value": 650,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.02
+      },
+      "agility": {
+        "multiplier": 1.03
+      },
+      "cold_tolerance": {
+        "flat": 0.4
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wool-gloves": {
+    "id": "Wool gloves",
+    "name": "Wool gloves",
+    "description": "Warm and comfy, but they don't provide any protection",
+    "value": 300,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "arms",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 3
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "linen-gloves": {
+    "id": "Linen gloves",
+    "name": "Linen gloves",
+    "description": "Thin and tight, they help to maintain a grip on something, but they don't provide any protection",
+    "value": 650,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "armor component",
+      "clothing",
+      "armor"
+    ],
+    "equip_slot": "arms",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.02
+      },
+      "dexterity": {
+        "multiplier": 1.02
+      },
+      "cold_tolerance": {
+        "flat": 0.4
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "rat-pelt-cape": {
+    "id": "Rat pelt cape",
+    "name": "Rat pelt cape",
+    "description": "It's a cape... made of wolf rat pelts. Only for poor or insane",
+    "value": 100,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "cape"
+    ],
+    "equip_slot": "cape",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wolf-pelt-cape": {
+    "id": "Wolf pelt cape",
+    "name": "Wolf pelt cape",
+    "description": "An elegant cape made from wolf pelts. Doesn't provide much protection, but is light enough to not hinder your movements",
+    "value": 400,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "cape"
+    ],
+    "equip_slot": "cape",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 4
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "boar-hide-cape": {
+    "id": "Boar hide cape",
+    "name": "Boar hide cape",
+    "description": "A rough cape made from boar hides. Offers a nice protection, but is heavy and stiff",
+    "value": 700,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "cape"
+    ],
+    "equip_slot": "cape",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.9
+      },
+      "agility": {
+        "multiplier": 0.9
+      },
+      "cold_tolerance": {
+        "flat": 5
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "goat-hide-cape": {
+    "id": "Goat hide cape",
+    "name": "Goat hide cape",
+    "description": "A rough cape made from goat hides",
+    "value": 700,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "cape"
+    ],
+    "equip_slot": "cape",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.95
+      },
+      "cold_tolerance": {
+        "flat": 4
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "bear-hide-cape": {
+    "id": "Bear hide cape",
+    "name": "Bear hide cape",
+    "description": "A thick, heavy, and warm furry cape, made from a bear hide",
+    "value": 1000,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "cape"
+    ],
+    "equip_slot": "cape",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      },
+      "agility": {
+        "multiplier": 0.95
+      },
+      "cold_tolerance": {
+        "flat": 7
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "batrachian-cape": {
+    "id": "Batrachian cape",
+    "name": "Batrachian cape",
+    "description": "A slippery cape made from frogskin. Technically waterproof, but doesn't cover your entire body.",
+    "value": 1000,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "cape"
+    ],
+    "equip_slot": "cape",
+    "stats": {
+      "agility": {
+        "multiplier": 0.95
+      },
+      "cold_tolerance": {
+        "flat": 4
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wolf-leather-armor": {
+    "id": "Wolf leather armor",
+    "name": "Wolf leather armor",
+    "value": 980,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 1
+      },
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wolf-leather-helmet": {
+    "id": "Wolf leather helmet",
+    "name": "Wolf leather helmet",
+    "value": 680,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 1
+      },
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wolf-leather-armored-pants": {
+    "id": "Wolf leather armored pants",
+    "name": "Wolf leather armored pants",
+    "value": 680,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 2
+      },
+      "agility": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-chainmail-armor": {
+    "id": "Iron chainmail armor",
+    "name": "Iron chainmail armor",
+    "value": 1180,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 0
+      },
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-chainmail-helmet": {
+    "id": "Iron chainmail helmet",
+    "name": "Iron chainmail helmet",
+    "value": 780,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 0
+      },
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-chainmail-pants": {
+    "id": "Iron chainmail pants",
+    "name": "Iron chainmail pants",
+    "value": 780,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 1
+      },
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-chainmail-armor": {
+    "id": "Steel chainmail armor",
+    "name": "Steel chainmail armor",
+    "value": 1770,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 0
+      },
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-chainmail-helmet": {
+    "id": "Steel chainmail helmet",
+    "name": "Steel chainmail helmet",
+    "value": 1170,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 0
+      },
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-chainmail-pants": {
+    "id": "Steel chainmail pants",
+    "name": "Steel chainmail pants",
+    "value": 1170,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "cold_tolerance": {
+        "flat": 1
+      },
+      "attack_speed": {
+        "multiplier": 0.98
+      },
+      "agility": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "alligator-armor": {
+    "id": "Alligator armor",
+    "name": "Alligator armor",
+    "value": 2900,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.04
+      },
+      "agility": {
+        "multiplier": 1.05
+      },
+      "cold_tolerance": {
+        "flat": -0.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "alligator-helmet": {
+    "id": "Alligator helmet",
+    "name": "Alligator helmet",
+    "value": 1940,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.02
+      },
+      "agility": {
+        "multiplier": 1.03
+      },
+      "cold_tolerance": {
+        "flat": -0.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "alligator-armored-pants": {
+    "id": "Alligator armored pants",
+    "name": "Alligator armored pants",
+    "value": 1690,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.03
+      },
+      "agility": {
+        "multiplier": 1.04
+      },
+      "cold_tolerance": {
+        "flat": -0.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-platemail-armor": {
+    "id": "Turtleshell platemail armor",
+    "name": "Turtleshell platemail armor",
+    "value": 2600,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "torso",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1.01
+      },
+      "agility": {
+        "multiplier": 0.95
+      },
+      "cold_tolerance": {
+        "flat": 0.4
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-platemail-helmet": {
+    "id": "Turtleshell platemail helmet",
+    "name": "Turtleshell platemail helmet",
+    "value": 1940,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "head",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.99
+      },
+      "agility": {
+        "multiplier": 0.93
+      },
+      "cold_tolerance": {
+        "flat": 0.4
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-platemail-pants": {
+    "id": "Turtleshell platemail pants",
+    "name": "Turtleshell platemail pants",
+    "value": 2100,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "armor"
+    ],
+    "equip_slot": "legs",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 1
+      },
+      "agility": {
+        "multiplier": 0.94
+      },
+      "cold_tolerance": {
+        "flat": 0.4
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wooden-training-shield-base": {
+    "id": "Wooden training shield base",
+    "name": "Wooden training shield base",
+    "description": "A primitive but cheap form of a shield",
+    "value": 16,
+    "item_type": "COMPONENT",
+    "tags": [
+      "ignore_skill",
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-wooden-shield-base": {
+    "id": "Cheap wooden shield base",
+    "name": "Cheap wooden shield base",
+    "description": "Cheap shield component made of wood, basically just a few planks barely holding together",
+    "value": 16,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "crude-wooden-shield-base": {
+    "id": "Crude wooden shield base",
+    "name": "Crude wooden shield base",
+    "description": "A shield base of rather bad quality, but at least it won't fall apart by itself",
+    "value": 32,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wooden-shield-base": {
+    "id": "Wooden shield base",
+    "name": "Wooden shield base",
+    "description": "Proper wooden shield base, although it could use some additional reinforcement",
+    "value": 80,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "ash-wood-shield-base": {
+    "id": "Ash wood shield base",
+    "name": "Ash wood shield base",
+    "description": "Solid wooden shield base, although still nowhere near as resistant as metal",
+    "value": 120,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "crude-iron-shield-base": {
+    "id": "Crude iron shield base",
+    "name": "Crude iron shield base",
+    "description": "Heavy shield base made of low quality iron",
+    "value": 128,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.75
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-shield-base": {
+    "id": "Iron shield base",
+    "name": "Iron shield base",
+    "description": "Solid and strong shield base, although it's quite heavy",
+    "value": 210,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.8
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-shield-base": {
+    "id": "Steel shield base",
+    "name": "Steel shield base",
+    "description": "Mighty shield base, although it's quite heavy",
+    "value": 300,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.85
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-shield-base": {
+    "id": "Turtleshell shield base",
+    "name": "Turtleshell shield base",
+    "description": "Dense turtle shellplate base, although it's quite heavy",
+    "value": 650,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.75
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "basic-shield-handle": {
+    "id": "Basic shield handle",
+    "name": "Crude wooden shield handle",
+    "description": "A simple handle for holding the shield",
+    "value": 10,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wooden-shield-handle": {
+    "id": "Wooden shield handle",
+    "name": "Wooden shield handle",
+    "description": "A decent wooden handle for holding the shield",
+    "value": 32,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "block_strength": {
+        "multiplier": 1.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "ash-wood-shield-handle": {
+    "id": "Ash wood shield handle",
+    "name": "Ash wood shield handle",
+    "description": "A solid wooden handle for holding the shield",
+    "value": 48,
+    "item_type": "COMPONENT",
+    "tags": [
+      "item",
+      "component",
+      "shield component"
+    ],
+    "stats": {
+      "block_strength": {
+        "multiplier": 1.2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wooden-training-shield": {
+    "id": "Wooden training shield",
+    "name": "Wooden training shield",
+    "value": 33,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "shield component",
+      "ignore_skill",
+      "shield"
+    ],
+    "equip_slot": "off-hand",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "cheap-wooden-shield": {
+    "id": "Cheap wooden shield",
+    "name": "Cheap wooden shield",
+    "value": 33,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "shield component",
+      "shield"
+    ],
+    "equip_slot": "off-hand",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "crude-wooden-shield": {
+    "id": "Crude wooden shield",
+    "name": "Crude wooden shield",
+    "value": 53,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "shield component",
+      "shield"
+    ],
+    "equip_slot": "off-hand",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wooden-shield": {
+    "id": "Wooden shield",
+    "name": "Wooden shield",
+    "value": 140,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "shield component",
+      "shield"
+    ],
+    "equip_slot": "off-hand",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      },
+      "block_strength": {}
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "ash-wood-shield": {
+    "id": "Ash wood shield",
+    "name": "Ash wood shield",
+    "value": 210,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "shield component",
+      "shield"
+    ],
+    "equip_slot": "off-hand",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.95
+      },
+      "block_strength": {}
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "crude-iron-shield": {
+    "id": "Crude iron shield",
+    "name": "Crude iron shield",
+    "value": 173,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "shield component",
+      "shield"
+    ],
+    "equip_slot": "off-hand",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.75
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-shield": {
+    "id": "Iron shield",
+    "name": "Iron shield",
+    "value": 310,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "shield component",
+      "shield"
+    ],
+    "equip_slot": "off-hand",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.8
+      },
+      "block_strength": {}
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "steel-shield": {
+    "id": "Steel shield",
+    "name": "Steel shield",
+    "value": 440,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "shield component",
+      "shield"
+    ],
+    "equip_slot": "off-hand",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.85
+      },
+      "block_strength": {}
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "turtleshell-shield": {
+    "id": "Turtleshell shield",
+    "name": "Turtleshell shield",
+    "value": 880,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "component",
+      "shield component",
+      "shield"
+    ],
+    "equip_slot": "off-hand",
+    "stats": {
+      "attack_speed": {
+        "multiplier": 0.75
+      },
+      "block_strength": {}
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "wolf-trophy": {
+    "id": "Wolf trophy",
+    "name": "Wolf trophy",
+    "value": 100,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "artifact"
+    ],
+    "equip_slot": "artifact",
+    "stats": {
+      "armor_penetration": {
+        "flat": 50
+      },
+      "crit_rate": {
+        "flat": 0.02
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "boar-trophy": {
+    "id": "Boar trophy",
+    "name": "Boar trophy",
+    "value": 160,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "artifact"
+    ],
+    "equip_slot": "artifact",
+    "stats": {
+      "attack_power": {
+        "multiplier": 1.1
+      },
+      "crit_multiplier": {
+        "flat": 0.2
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "mountain-goat-trophy": {
+    "id": "Mountain goat trophy",
+    "name": "Mountain goat trophy",
+    "value": 250,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "artifact"
+    ],
+    "equip_slot": "artifact",
+    "stats": {
+      "attack_power": {
+        "multiplier": 1.05
+      },
+      "defense": {
+        "flat": 5,
+        "multiplier": 1.05
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "bear-trophy": {
+    "id": "Bear trophy",
+    "name": "Bear trophy",
+    "value": 400,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "artifact"
+    ],
+    "equip_slot": "artifact",
+    "stats": {
+      "attack_power": {
+        "multiplier": 1.3
+      },
+      "attack_speed": {
+        "multiplier": 0.9
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "crab-trophy": {
+    "id": "Crab trophy",
+    "name": "Crab trophy",
+    "value": 650,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "artifact"
+    ],
+    "equip_slot": "artifact",
+    "stats": {
+      "attack_points": {
+        "multiplier": 1.15
+      },
+      "defense": {
+        "multiplier": 1.15
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "warriors-necklace": {
+    "id": "Warrior's necklace",
+    "name": "Warrior's necklace",
+    "value": 1000,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "unique",
+      "unsellable",
+      "item",
+      "equippable",
+      "amulet"
+    ],
+    "equip_slot": "amulet",
+    "stats": {
+      "attack_power": {
+        "multiplier": 1.1
+      },
+      "attack_speed": {
+        "multiplier": 1.1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "snake-fang-ring": {
+    "id": "Snake fang ring",
+    "name": "Snake fang ring",
+    "value": 2000,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "unique",
+      "unsellable",
+      "item",
+      "equippable",
+      "ring"
+    ],
+    "equip_slot": "ring",
+    "stats": {
+      "crit_multiplier": {
+        "multiplier": 1.3
+      },
+      "crit_rate": {
+        "multiplier": 1.2
+      },
+      "unarmed_power": {
+        "flat": 1
+      }
+    },
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "old-pickaxe": {
+    "id": "Old pickaxe",
+    "name": "Old pickaxe",
+    "description": "An old pickaxe that has seen better times, but is still usable",
+    "value": 10,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "tool",
+      "pickaxe"
+    ],
+    "equip_slot": "pickaxe",
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "old-axe": {
+    "id": "Old axe",
+    "name": "Old axe",
+    "description": "An old axe that has seen better times, but is still usable",
+    "value": 10,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "tool",
+      "axe"
+    ],
+    "equip_slot": "axe",
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "old-sickle": {
+    "id": "Old sickle",
+    "name": "Old sickle",
+    "description": "And old herb sickle that has seen better times, but is still usable",
+    "value": 10,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "tool",
+      "sickle"
+    ],
+    "equip_slot": "sickle",
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "old-shovel": {
+    "id": "Old shovel",
+    "name": "Old shovel",
+    "description": "And old shovel that has seen better times, but can still be used to dig something up",
+    "value": 10,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "tool",
+      "shovel"
+    ],
+    "equip_slot": "shovel",
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "iron-pickaxe": {
+    "id": "Iron pickaxe",
+    "name": "Iron pickaxe",
+    "description": "A decent pickaxe made of iron, strong enough for most ores",
+    "value": 1000,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "tool",
+      "pickaxe"
+    ],
+    "equip_slot": "pickaxe",
+    "stats": {},
+    "bonus_skill_levels": {
+      "Mining": 3
+    },
+    "rarity": "common"
+  },
+  "iron-chopping-axe": {
+    "id": "Iron chopping axe",
+    "name": "Iron chopping axe",
+    "description": "A decent axe made of iron, hard and sharp enough for most of trees, even if they will still require an effort",
+    "value": 1000,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "tool",
+      "axe"
+    ],
+    "equip_slot": "axe",
+    "stats": {},
+    "bonus_skill_levels": {
+      "Woodcutting": 3
+    },
+    "rarity": "common"
+  },
+  "iron-sickle": {
+    "id": "Iron sickle",
+    "name": "Iron sickle",
+    "description": "A decent sickle made of iron, sharp enough for most of plants",
+    "value": 1000,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "tool",
+      "sickle"
+    ],
+    "equip_slot": "sickle",
+    "stats": {},
+    "bonus_skill_levels": {
+      "Herbalism": 3
+    },
+    "rarity": "common"
+  },
+  "iron-shovel": {
+    "id": "Iron shovel",
+    "name": "Iron shovel",
+    "description": "A decent shovel made of iron, solid enough for most of your digging needs",
+    "value": 1000,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "tool",
+      "shovel"
+    ],
+    "equip_slot": "shovel",
+    "stats": {},
+    "bonus_skill_levels": {
+      "Digging": 3
+    },
+    "rarity": "common"
+  },
+  "makeshift-fishing-pole": {
+    "id": "Makeshift fishing pole",
+    "name": "Makeshift fishing pole",
+    "description": "Little more than a piece of string tied to a stick, but sufficient to get a catch",
+    "value": 10,
+    "item_type": "EQUIPPABLE",
+    "tags": [
+      "item",
+      "equippable",
+      "tool",
+      "fishing_pole"
+    ],
+    "equip_slot": "fishing_pole",
+    "stats": {},
+    "bonus_skill_levels": {},
+    "rarity": "common"
+  },
+  "stale-bread": {
+    "id": "Stale bread",
+    "name": "Stale bread",
+    "description": "Big piece of an old bread, still edible",
+    "value": 20,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "fresh-bread": {
+    "id": "Fresh bread",
+    "name": "Fresh bread",
+    "description": "Freshly baked bread, delicious",
+    "value": 40,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "bread-kwas": {
+    "id": "Bread kwas",
+    "name": "Bread kwas",
+    "description": "Tastes like bread",
+    "value": 40,
+    "item_type": "USABLE",
+    "tags": [
+      "drink",
+      "item",
+      "usable"
+    ]
+  },
+  "carrot": {
+    "id": "Carrot",
+    "name": "Carrot",
+    "description": "A delicious root that can be eaten raw",
+    "value": 20,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "cooked-carrot": {
+    "id": "Cooked carrot",
+    "name": "Cooked carrot",
+    "description": "A delicious root, cooked",
+    "value": 30,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "potato": {
+    "id": "Potato",
+    "name": "Potato",
+    "description": "A common tuber with versatile culinary usage. Just remember to cook it first!",
+    "value": 15,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "cooked-potato": {
+    "id": "Cooked potato",
+    "name": "Potato",
+    "description": "A common tuber with versatile culinary usage, though this one was simply cooked",
+    "value": 40,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "cooked-clam": {
+    "id": "Cooked clam",
+    "name": "Boiled clam",
+    "description": "Common shellfish found around the lake shore that has been boiled, not steamed",
+    "value": 6,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "weak-healing-powder": {
+    "id": "Weak healing powder",
+    "name": "Weak healing powder",
+    "description": "Not very potent, but can still make body heal noticeably faster for quite a while",
+    "value": 40,
+    "item_type": "USABLE",
+    "tags": [
+      "medicine",
+      "item",
+      "usable"
+    ]
+  },
+  "healing-powder": {
+    "id": "Healing powder",
+    "name": "Healing powder",
+    "description": "Not exactly powerful in its effects, but still makes the body heal noticeably faster and for a long time",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "medicine",
+      "item",
+      "usable"
+    ]
+  },
+  "oneberry-juice": {
+    "id": "Oneberry juice",
+    "name": "Oneberry juice",
+    "description": "Tastes kinda nice and provides a quick burst of healing",
+    "value": 80,
+    "item_type": "USABLE",
+    "tags": [
+      "medicine",
+      "item",
+      "usable"
+    ]
+  },
+  "healing-potion": {
+    "id": "Healing potion",
+    "name": "Healing potion",
+    "description": "Tastes nice at first but has a bitter aftertaste. Provides a quick burst of healing",
+    "value": 200,
+    "item_type": "USABLE",
+    "tags": [
+      "medicine",
+      "item",
+      "usable"
+    ]
+  },
+  "healing-balm": {
+    "id": "Healing balm",
+    "name": "Healing balm",
+    "description": "Simply apply it to your wound and watch it heal",
+    "value": 120,
+    "item_type": "USABLE",
+    "tags": [
+      "medicine",
+      "item",
+      "usable"
+    ]
+  },
+  "roasted-rat-meat": {
+    "id": "Roasted rat meat",
+    "name": "Roasted rat meat",
+    "description": "Smell might be fine now, but it still seems like a bad idea to eat it",
+    "value": 10,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "roasted-purified-rat-meat": {
+    "id": "Roasted purified rat meat",
+    "name": "Roasted purified rat meat",
+    "description": "Smells alright and should be safe to eat, yet you still have some doubts",
+    "value": 20,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "fried-pork": {
+    "id": "Fried pork",
+    "name": "Fried pork",
+    "description": "It's dripping with fat and smells fantastic, all it lacks is some spices and a good side dish",
+    "value": 40,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "fried-goat-meat": {
+    "id": "Fried goat meat",
+    "name": "Fried goat meat",
+    "description": "It has a nice aroma, but is a bit too tough. Perhaps a stew would have been a better choice?",
+    "value": 40,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "pork-roast": {
+    "id": "Pork roast",
+    "name": "Pork roast",
+    "description": "A generous amount of herbs has been rubbed into the meat, resulting in a hearty meal with a mouthwatering aroma",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "goat-stew": {
+    "id": "Goat stew",
+    "name": "Goat stew",
+    "description": "Goat meat boiled to tenderness in a herbal broth. Perfect to warm yourself up for the road",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "crab-bisque": {
+    "id": "Crab bisque",
+    "name": "Crab bisque",
+    "description": "A smooth, creamy crab soup, lightly seasoned with fragrant herbs and vegetables",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "clam-broth": {
+    "id": "Clam broth",
+    "name": "Clam broth",
+    "description": "Briny, flavorful, and tastes of the ocean. In a good way",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "alligator-jerky": {
+    "id": "Alligator jerky",
+    "name": "Alligator jerky",
+    "description": "It's tough meat, but it'll keep you from going hungry for a long time",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "snake-jerky": {
+    "id": "Snake jerky",
+    "name": "Snake jerky",
+    "description": "It's rubbery meat, but it'll keep you from going hungry for a long time",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "turtle-jerky": {
+    "id": "Turtle jerky",
+    "name": "Turtle jerky",
+    "description": "It's stringy meat, but it'll still keep you from going hungry for a long time",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "turtle-soup": {
+    "id": "Turtle soup",
+    "name": "Turtle soup",
+    "description": "Tonight you dine on turtle soup",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "swampland-skewer": {
+    "id": "Swampland skewer",
+    "name": "Swampland skewer",
+    "description": "There's no better way to feed on the creatures of the swampland",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "basin-gumbo": {
+    "id": "Basin gumbo",
+    "name": "Basin gumbo",
+    "description": "An incredibly complex meal that's difficult to make, but it's got an indescribable taste",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "fried-frog-meat": {
+    "id": "Fried frog meat",
+    "name": "Fried frog meat",
+    "description": "Tastes a bit like bird, and a bit like fish",
+    "value": 50,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "kingsized-frog-legs": {
+    "id": "Kingsized frog legs",
+    "name": "Kingsized frog legs",
+    "description": "The legs are agreed to be the best part, and when cooked with proper seasoning, considered a delicacy by some",
+    "value": 100,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "fish-skewer": {
+    "id": "Fish skewer",
+    "name": "Fish skewer",
+    "description": "Several small fish cooked together on a stick. While none of them have much meat on them individually, together they make for a servicable meal",
+    "value": 20,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "fried-fish": {
+    "id": "Fried fish",
+    "name": "Fried fish",
+    "description": "A fish fried whole. A simple but fulfilling meal",
+    "value": 40,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  },
+  "fish-steak": {
+    "id": "Fish steak",
+    "name": "Fish steak",
+    "description": "Properly filleted and cooked. A much better experience than eating them whole",
+    "value": 60,
+    "item_type": "USABLE",
+    "tags": [
+      "food",
+      "item",
+      "usable"
+    ]
+  }
+}

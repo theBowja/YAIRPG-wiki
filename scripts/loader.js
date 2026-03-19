@@ -9,7 +9,7 @@ export async function resolve(specifier, context, nextResolve) {
         return nextResolve(specifier, context);
     }
 
-    const dataModules = ['misc.js', 'enemies.js', 'skills.js', 'activities.js', 'locations.js'];
+    const dataModules = ['misc.js', 'enemies.js', 'skills.js', 'activities.js', 'locations.js', 'items.js'];
     if (dataModules.some(mod => specifier.includes(mod))) {
         return nextResolve(specifier, context);
     }
@@ -93,6 +93,10 @@ export class GameAction {
 `
 
 const marketSaturationSource = `
+export const group_key_prefix = "type_";
+export const get_item_value_with_market_saturation = ({value}) => value;
+export const get_total_tier_saturation = () => 0;
+export const get_loot_price_multiple = ({value, how_many_to_trade}) => value * how_many_to_trade;
 export const fill_market_regions = () => {};
 export const market_regions = {};
 `

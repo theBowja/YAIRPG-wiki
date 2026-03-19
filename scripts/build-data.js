@@ -3,6 +3,7 @@ import { skills } from '../yairpg/src/skills.js?real=true';
 import { activities } from '../yairpg/src/activities.js?real=true';
 import { enemy_templates } from '../yairpg/src/enemies.js?real=true';
 import { locations } from '../yairpg/src/locations.js?real=true';
+import { item_templates } from '../yairpg/src/items.js?real=true';
 
 function slugify(text) {
     return text.toString().toLowerCase()
@@ -108,9 +109,41 @@ for (const [id, loc] of Object.entries(locations)) {
     locationsOutput[slug] = locationData;
 }
 
+const itemsOutput = {};
+for (const [id, item] of Object.entries(item_templates)) {
+    const slug = slugify(id);
+    const itemData = {
+        id: id,
+        name: item.getName ? item.getName() : item.name,
+        description: item.getDescription ? item.getDescription() : item.description,
+        value: item.getBaseValue ? item.getBaseValue() : item.value,
+        item_type: item.item_type || 'OTHER',
+        tags: Object.keys(item.tags || {}),
+    };
+
+    if (item.equip_slot) {
+        itemData.equip_slot = item.equip_slot;
+    }
+
+    if (item.getStats) {
+        itemData.stats = item.getStats();
+    }
+
+    if (item.getBonusSkillLevels) {
+        itemData.bonus_skill_levels = item.getBonusSkillLevels();
+    }
+
+    if (item.getRarity) {
+        itemData.rarity = item.getRarity();
+    }
+
+    itemsOutput[slug] = itemData;
+}
+
 fs.writeFileSync('./src/data/skills.json', JSON.stringify(skillsOutput, null, 2));
 fs.writeFileSync('./src/data/activities.json', JSON.stringify(activitiesOutput, null, 2));
 fs.writeFileSync('./src/data/enemies.json', JSON.stringify(enemiesOutput, null, 2));
 fs.writeFileSync('./src/data/locations.json', JSON.stringify(locationsOutput, null, 2));
+fs.writeFileSync('./src/data/items.json', JSON.stringify(itemsOutput, null, 2));
 
-console.log('skills.json, activities.json, enemies.json and locations.json generated.');
+console.log('skills.json, activities.json, enemies.json, locations.json and items.json generated.');

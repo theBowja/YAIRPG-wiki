@@ -5,6 +5,7 @@ import locationsData from '../data/locations.json';
 import activitiesData from '../data/activities.json';
 import skillsData from '../data/skills.json';
 import enemiesData from '../data/enemies.json';
+import itemsData from '../data/items.json';
 
 const { id } = Astro.params;
 const starlightRoute = Astro.locals.starlightRoute;
@@ -14,6 +15,7 @@ const isLocationPage = slug.startsWith('locations/');
 const isActivityPage = slug.startsWith('activities/');
 const isSkillPage = slug.startsWith('skills/');
 const isEnemyPage = slug.startsWith('enemies/');
+const isItemPage = slug.startsWith('items/');
 
 let data: any = null;
 
@@ -25,6 +27,8 @@ if (isLocationPage) {
   data = (skillsData as any)[id || ''];
 } else if (isEnemyPage) {
   data = (enemiesData as any)[id || ''];
+} else if (isItemPage) {
+  data = (itemsData as any)[id || ''];
 }
 
 const isDetailsPage = !!data;
@@ -151,6 +155,37 @@ const slugify = (text: string) => {
             <span class="label">Bestiary</span>
             <span class="value">{data.add_to_bestiary ? 'Yes' : 'No'}</span>
           </div>
+        </>
+      )}
+
+      {isItemPage && (
+        <>
+          <div class="attribute-item">
+            <span class="label">Type</span>
+            <span class="value">{data.item_type}</span>
+          </div>
+          {data.equip_slot && (
+            <div class="attribute-item">
+              <span class="label">Equip Slot</span>
+              <span class="value">{data.equip_slot}</span>
+            </div>
+          )}
+          <div class="attribute-item">
+            <span class="label">Value</span>
+            <span class="value">{data.value}</span>
+          </div>
+          {data.rarity && (
+            <div class="attribute-item">
+              <span class="label">Rarity</span>
+              <span class="value">{data.rarity}</span>
+            </div>
+          )}
+          {data.tags.length > 0 && (
+            <div class="attribute-item">
+              <span class="label">Tags</span>
+              <span class="value">{data.tags.join(', ')}</span>
+            </div>
+          )}
         </>
       )}
     </div>

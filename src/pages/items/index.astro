@@ -1,0 +1,85 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import itemsData from '../../data/items.json';
+
+const itemsByType = Object.entries(itemsData).reduce((acc, [slug, item]) => {
+  const type = item.item_type || 'OTHER';
+  if (!acc[type]) acc[type] = [];
+  acc[type].push({ slug, ...item });
+  return acc;
+}, {});
+
+const typesOrder = ['EQUIPPABLE', 'USABLE', 'MATERIAL', 'COMPONENT', 'OTHER'];
+---
+
+<StarlightPage frontmatter={{ title: 'All Items', description: 'A list of all items in YAIRPG' }}>
+  <div class="items-list">
+    {typesOrder.map(type => itemsByType[type] && (
+      <section>
+        <h2>{type}</h2>
+        <div class="items-grid">
+          {itemsByType[type].sort((a, b) => a.name.localeCompare(b.name)).map(item => (
+            <div class="item-card">
+              <a href={`/YAIRPG-wiki/items/${item.slug}`}>{item.name}</a>
+              <span class="item-description">{item.description}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+
+    {Object.keys(itemsByType).filter(type => !typesOrder.includes(type)).map(type => (
+      <section>
+        <h2>{type}</h2>
+        <div class="items-grid">
+          {itemsByType[type].sort((a, b) => a.name.localeCompare(b.name)).map(item => (
+            <div class="item-card">
+              <a href={`/YAIRPG-wiki/items/${item.slug}`}>{item.name}</a>
+              <span class="item-description">{item.description}</span>
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</StarlightPage>
+
+<style>
+  .items-list h2 {
+    margin-top: 2rem;
+    border-bottom: 1px solid var(--sl-color-gray-5);
+    padding-bottom: 0.5rem;
+  }
+  .items-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .item-card {
+    padding: 1rem;
+    background-color: var(--sl-color-gray-6);
+    border-radius: 0.5rem;
+    border: 1px solid var(--sl-color-gray-5);
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  .item-card a {
+    font-weight: bold;
+    text-decoration: none;
+    color: var(--sl-color-accent-high);
+  }
+  .item-card a:hover {
+    text-decoration: underline;
+  }
+  .item-description {
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-3);
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+  }
+</style>
