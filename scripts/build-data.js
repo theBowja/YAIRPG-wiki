@@ -39,7 +39,7 @@ const activitiesOutput = {};
 for (const [id, activity] of Object.entries(activities)) {
     const slug = slugify(id);
     const activityLocations = [];
-    
+
     // Find locations that have this activity
     for (const [locId, loc] of Object.entries(locations)) {
         if (loc.activities) {
@@ -80,17 +80,17 @@ for (const [id, enemy] of Object.entries(enemy_templates)) {
     const slug = slugify(id);
     const stats = enemy.stats || {};
 
-    
+
     // Formula for Enemy AP = dexterity * sqrt(intuition || 1)
     // Source: yairpg/src/main.js (line 1691), yairpg/src/display.js (line 1867)
     const base_AP = Math.round((stats.dexterity || 0) * Math.sqrt(stats.intuition || 1));
-    
+
     // Formula for Enemy EP = agility * sqrt(intuition || 1)
     // Source: yairpg/src/display.js (line 1866)
     const base_EP = Math.round((stats.agility || 0) * Math.sqrt(stats.intuition || 1));
-    
+
     const location_combat_stats = [];
-    
+
     // Determine location-specific combat requirements
     // Source: yairpg/src/display.js (lines 1851-1866)
     // hero_hit_chance_modifier = count**(-1/4)
@@ -99,7 +99,7 @@ for (const [id, enemy] of Object.entries(enemy_templates)) {
         if (loc.enemies_list || loc.enemy_groups_list) {
             let max_enemies = 1;
             let spawned = false;
-            
+
             if (loc.enemies_list && loc.enemies_list.includes(id)) {
                 spawned = true;
                 if (loc.enemy_group_size) {
@@ -114,47 +114,35 @@ for (const [id, enemy] of Object.entries(enemy_templates)) {
                     }
                 });
             }
-            
+
             if (spawned) {
                 const stat_variation = loc.enemy_stat_variation || 0;
-                
-                const hero_hit_modifier = Math.pow(max_enemies, -1/4);
-                const hero_evasion_modifier = Math.pow(max_enemies, -1/3);
-                
+
+                const hero_hit_modifier = Math.pow(max_enemies, -1 / 4);
+                const hero_evasion_modifier = Math.pow(max_enemies, -1 / 3);
+
                 const max_dexterity = Math.round((stats.dexterity || 0) * (1 + stat_variation));
                 const max_intuition = Math.round((stats.intuition || 1) * (1 + stat_variation));
                 const max_agility = Math.round((stats.agility || 0) * (1 + stat_variation));
-                
+
                 const max_AP = max_dexterity * Math.sqrt(max_intuition);
                 const max_EP = max_agility * Math.sqrt(max_intuition);
-                
+
                 // evasion_to_dodge > 9 * max_AP / hero_evasion_modifier
                 const evasion_to_dodge = Math.floor(9 * max_AP / hero_evasion_modifier) + 1;
-                
+
                 // ap_to_hit >= max_EP * AP_multiplier / hero_hit_modifier
-                const TargetR = 0.8 + Math.pow(0.029, 1/1.4);
+                const TargetR = 0.8 + Math.pow(0.029, 1 / 1.4);
                 const AP_multiplier = TargetR / (1 - TargetR);
                 const ap_to_hit = Math.ceil(max_EP * AP_multiplier / hero_hit_modifier);
-                
-                let is_farmable = false;
-                if (!loc.is_challenge && loc.repeatable_reward) {
-                    const locked_locations = loc.repeatable_reward.locks?.locations || [];
-                    const is_self_locked = locked_locations.includes(loc.name);
-                    const is_parent_locked = loc.parent_location ? locked_locations.includes(loc.parent_location.name) : false;
-                    
-                    if (!is_self_locked && !is_parent_locked) {
-                        is_farmable = true;
-                    }
-                }
-                
+
                 location_combat_stats.push({
                     location_id: slugify(locId),
                     location_name: loc.name,
                     max_enemies,
                     stat_variation,
                     evasion_to_dodge,
-                    ap_to_hit,
-                    is_farmable
+                    ap_to_hit
                 });
             }
         }
@@ -225,9 +213,9 @@ for (const [id, loc] of Object.entries(locations)) {
         let is_farmable = false;
         if (!loc.is_challenge && loc.repeatable_reward) {
             const locked_locations = loc.repeatable_reward.locks?.locations || [];
-            const is_self_locked = locked_locations.includes(loc.name);
-            const is_parent_locked = loc.parent_location ? locked_locations.includes(loc.parent_location.name) : false;
-            
+            const is_self_locked = locked_locations.includes(loc.id);
+            const is_parent_locked = loc.parent_location ? locked_locations.includes(loc.parent_location.id) : false;
+
             if (!is_self_locked && !is_parent_locked) {
                 is_farmable = true;
             }
@@ -317,7 +305,7 @@ for (const [category, subcategories] of Object.entries(recipes)) {
                     material_count: recipe.materials ? recipe.materials[0]?.count : 1,
                     result_tier: 1, // Default to tier 1
                     rarity_multiplier: 1,
-                    selected_components: [{component_tier: 1}, {component_tier: 1}] // For equipment
+                    selected_components: [{ component_tier: 1 }, { component_tier: 1 }] // For equipment
                 });
             } catch (e) {
                 recipeData.xp_value = 'Dynamic';

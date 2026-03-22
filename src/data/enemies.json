@@ -27,8 +27,7 @@
         "max_enemies": 1,
         "stat_variation": 0.1,
         "evasion_to_dodge": 89,
-        "ap_to_hit": 108,
-        "is_farmable": true
+        "ap_to_hit": 108
       }
     ],
     "tags": [
@@ -80,8 +79,7 @@
         "max_enemies": 5,
         "stat_variation": 0.2,
         "evasion_to_dodge": 245,
-        "ap_to_hit": 203,
-        "is_farmable": false
+        "ap_to_hit": 203
       },
       {
         "location_id": "infested-field",
@@ -89,8 +87,7 @@
         "max_enemies": 1,
         "stat_variation": 0.1,
         "evasion_to_dodge": 143,
-        "ap_to_hit": 136,
-        "is_farmable": true
+        "ap_to_hit": 136
       },
       {
         "location_id": "cave-room",
@@ -98,8 +95,7 @@
         "max_enemies": 3,
         "stat_variation": 0.2,
         "evasion_to_dodge": 207,
-        "ap_to_hit": 179,
-        "is_farmable": true
+        "ap_to_hit": 179
       },
       {
         "location_id": "cave-depths",
@@ -107,8 +103,7 @@
         "max_enemies": 8,
         "stat_variation": 0.2,
         "evasion_to_dodge": 286,
-        "ap_to_hit": 228,
-        "is_farmable": true
+        "ap_to_hit": 228
       }
     ],
     "tags": [
@@ -160,8 +155,7 @@
         "max_enemies": 2,
         "stat_variation": 0.2,
         "evasion_to_dodge": 1771,
-        "ap_to_hit": 1687,
-        "is_farmable": true
+        "ap_to_hit": 1687
       },
       {
         "location_id": "pitch-black-tunnel",
@@ -169,8 +163,7 @@
         "max_enemies": 8,
         "stat_variation": 0.2,
         "evasion_to_dodge": 2812,
-        "ap_to_hit": 2386,
-        "is_farmable": true
+        "ap_to_hit": 2386
       }
     ],
     "tags": [
@@ -222,8 +215,7 @@
         "max_enemies": 8,
         "stat_variation": 0.2,
         "evasion_to_dodge": 8366,
-        "ap_to_hit": 5719,
-        "is_farmable": true
+        "ap_to_hit": 5719
       }
     ],
     "tags": [
@@ -281,8 +273,7 @@
         "max_enemies": 4,
         "stat_variation": 0.2,
         "evasion_to_dodge": 31872,
-        "ap_to_hit": 321,
-        "is_farmable": true
+        "ap_to_hit": 321
       }
     ],
     "tags": [
@@ -332,8 +323,7 @@
         "max_enemies": 1,
         "stat_variation": 0.2,
         "evasion_to_dodge": 2275,
-        "ap_to_hit": 1849,
-        "is_farmable": true
+        "ap_to_hit": 1849
       },
       {
         "location_id": "deep-forest",
@@ -341,8 +331,7 @@
         "max_enemies": 3,
         "stat_variation": 0.2,
         "evasion_to_dodge": 3281,
-        "ap_to_hit": 2434,
-        "is_farmable": true
+        "ap_to_hit": 2434
       }
     ],
     "tags": [
@@ -389,8 +378,7 @@
         "max_enemies": 1,
         "stat_variation": 0.2,
         "evasion_to_dodge": 1745,
-        "ap_to_hit": 1616,
-        "is_farmable": true
+        "ap_to_hit": 1616
       },
       {
         "location_id": "deep-forest",
@@ -398,8 +386,7 @@
         "max_enemies": 3,
         "stat_variation": 0.2,
         "evasion_to_dodge": 2517,
-        "ap_to_hit": 2126,
-        "is_farmable": true
+        "ap_to_hit": 2126
       }
     ],
     "tags": [
@@ -446,8 +433,7 @@
         "max_enemies": 3,
         "stat_variation": 0.2,
         "evasion_to_dodge": 5396,
-        "ap_to_hit": 4003,
-        "is_farmable": true
+        "ap_to_hit": 4003
       }
     ],
     "tags": [
@@ -498,8 +484,7 @@
         "max_enemies": 3,
         "stat_variation": 0.2,
         "evasion_to_dodge": 9994,
-        "ap_to_hit": 16943,
-        "is_farmable": true
+        "ap_to_hit": 16943
       },
       {
         "location_id": "forest-den-traversal",
@@ -507,8 +492,7 @@
         "max_enemies": 3,
         "stat_variation": 0,
         "evasion_to_dodge": 7603,
-        "ap_to_hit": 12889,
-        "is_farmable": false
+        "ap_to_hit": 12889
       }
     ],
     "tags": [
@@ -563,8 +547,7 @@
         "max_enemies": 1,
         "stat_variation": 0.2,
         "evasion_to_dodge": 8979,
-        "ap_to_hit": 11861,
-        "is_farmable": true
+        "ap_to_hit": 11861
       },
       {
         "location_id": "forest-den-traversal",
@@ -572,8 +555,7 @@
         "max_enemies": 1,
         "stat_variation": 0,
         "evasion_to_dodge": 6831,
-        "ap_to_hit": 9023,
-        "is_farmable": false
+        "ap_to_hit": 9023
       }
     ],
     "tags": [
@@ -628,8 +610,7 @@
         "max_enemies": 7,
         "stat_variation": 0.2,
         "evasion_to_dodge": 8766,
-        "ap_to_hit": 3635,
-        "is_farmable": true
+        "ap_to_hit": 3635
       }
     ],
     "tags": [
@@ -684,8 +665,7 @@
         "max_enemies": 4,
         "stat_variation": 0.2,
         "evasion_to_dodge": 8729,
-        "ap_to_hit": 10535,
-        "is_farmable": true
+        "ap_to_hit": 10535
       }
     ],
     "tags": [
@@ -740,8 +720,7 @@
         "max_enemies": 1,
         "stat_variation": 0.2,
         "evasion_to_dodge": 33463,
-        "ap_to_hit": 21761,
-        "is_farmable": true
+        "ap_to_hit": 21761
       }
     ],
     "tags": [
@@ -792,8 +771,7 @@
         "max_enemies": 1,
         "stat_variation": 0.2,
         "evasion_to_dodge": 50194,
-        "ap_to_hit": 34001,
-        "is_farmable": true
+        "ap_to_hit": 34001
       }
     ],
     "tags": [
@@ -845,8 +823,7 @@
         "max_enemies": 8,
         "stat_variation": 0.1,
         "evasion_to_dodge": 41533,
-        "ap_to_hit": 14195,
-        "is_farmable": true
+        "ap_to_hit": 14195
       },
       {
         "location_id": "red-ant-nest-1",
@@ -854,8 +831,7 @@
         "max_enemies": 6,
         "stat_variation": 0.1,
         "evasion_to_dodge": 37736,
-        "ap_to_hit": 13210,
-        "is_farmable": true
+        "ap_to_hit": 13210
       },
       {
         "location_id": "red-ant-nest-2",
@@ -863,8 +839,7 @@
         "max_enemies": 6,
         "stat_variation": 0.1,
         "evasion_to_dodge": 37736,
-        "ap_to_hit": 13210,
-        "is_farmable": true
+        "ap_to_hit": 13210
       },
       {
         "location_id": "red-ant-nest-3",
@@ -872,8 +847,7 @@
         "max_enemies": 6,
         "stat_variation": 0.1,
         "evasion_to_dodge": 37736,
-        "ap_to_hit": 13210,
-        "is_farmable": true
+        "ap_to_hit": 13210
       }
     ],
     "tags": [
@@ -928,8 +902,7 @@
         "max_enemies": 8,
         "stat_variation": 0.1,
         "evasion_to_dodge": 41533,
-        "ap_to_hit": 7098,
-        "is_farmable": true
+        "ap_to_hit": 7098
       },
       {
         "location_id": "red-ant-nest-1",
@@ -937,8 +910,7 @@
         "max_enemies": 1,
         "stat_variation": 0.1,
         "evasion_to_dodge": 20767,
-        "ap_to_hit": 4221,
-        "is_farmable": true
+        "ap_to_hit": 4221
       },
       {
         "location_id": "red-ant-nest-2",
@@ -946,8 +918,7 @@
         "max_enemies": 1,
         "stat_variation": 0.1,
         "evasion_to_dodge": 20767,
-        "ap_to_hit": 4221,
-        "is_farmable": true
+        "ap_to_hit": 4221
       },
       {
         "location_id": "red-ant-nest-3",
@@ -955,8 +926,7 @@
         "max_enemies": 1,
         "stat_variation": 0.1,
         "evasion_to_dodge": 20767,
-        "ap_to_hit": 4221,
-        "is_farmable": true
+        "ap_to_hit": 4221
       }
     ],
     "tags": [
@@ -994,8 +964,7 @@
         "max_enemies": 5,
         "stat_variation": 0.1,
         "evasion_to_dodge": 8252,
-        "ap_to_hit": 5866,
-        "is_farmable": false
+        "ap_to_hit": 5866
       }
     ],
     "tags": [
@@ -1034,8 +1003,7 @@
         "max_enemies": 4,
         "stat_variation": 0.2,
         "evasion_to_dodge": 11952,
-        "ap_to_hit": 11541,
-        "is_farmable": true
+        "ap_to_hit": 11541
       }
     ],
     "tags": [
@@ -1080,8 +1048,7 @@
         "max_enemies": 5,
         "stat_variation": 0.2,
         "evasion_to_dodge": 35459,
-        "ap_to_hit": 28356,
-        "is_farmable": true
+        "ap_to_hit": 28356
       }
     ],
     "tags": [
@@ -1133,8 +1100,7 @@
         "max_enemies": 1,
         "stat_variation": 0.2,
         "evasion_to_dodge": 45361,
-        "ap_to_hit": 26337,
-        "is_farmable": true
+        "ap_to_hit": 26337
       }
     ],
     "tags": [
@@ -1182,8 +1148,7 @@
         "max_enemies": 1,
         "stat_variation": 0.2,
         "evasion_to_dodge": 29677,
-        "ap_to_hit": 25220,
-        "is_farmable": true
+        "ap_to_hit": 25220
       }
     ],
     "tags": [
@@ -1231,8 +1196,7 @@
         "max_enemies": 1,
         "stat_variation": 0.2,
         "evasion_to_dodge": 66653,
-        "ap_to_hit": 30624,
-        "is_farmable": true
+        "ap_to_hit": 30624
       }
     ],
     "tags": [
@@ -1279,8 +1243,7 @@
         "max_enemies": 1,
         "stat_variation": 0,
         "evasion_to_dodge": 3220,
-        "ap_to_hit": 655,
-        "is_farmable": false
+        "ap_to_hit": 655
       }
     ],
     "tags": [
@@ -1318,8 +1281,7 @@
         "max_enemies": 1,
         "stat_variation": 0,
         "evasion_to_dodge": 2013,
-        "ap_to_hit": 655,
-        "is_farmable": false
+        "ap_to_hit": 655
       }
     ],
     "tags": [
@@ -1357,8 +1319,7 @@
         "max_enemies": 1,
         "stat_variation": 0,
         "evasion_to_dodge": 1,
-        "ap_to_hit": 0,
-        "is_farmable": false
+        "ap_to_hit": 0
       }
     ],
     "tags": [
@@ -1395,8 +1356,7 @@
         "max_enemies": 1,
         "stat_variation": 0,
         "evasion_to_dodge": 4183,
-        "ap_to_hit": 3401,
-        "is_farmable": false
+        "ap_to_hit": 3401
       }
     ],
     "tags": [
@@ -1434,8 +1394,7 @@
         "max_enemies": 1,
         "stat_variation": 0,
         "evasion_to_dodge": 4880,
-        "ap_to_hit": 5667,
-        "is_farmable": false
+        "ap_to_hit": 5667
       }
     ],
     "tags": [
@@ -1474,8 +1433,7 @@
         "max_enemies": 1,
         "stat_variation": 0,
         "evasion_to_dodge": 75300,
-        "ap_to_hit": 36725,
-        "is_farmable": false
+        "ap_to_hit": 36725
       }
     ],
     "tags": [
@@ -1515,8 +1473,7 @@
         "max_enemies": 1,
         "stat_variation": 0,
         "evasion_to_dodge": 63001,
-        "ap_to_hit": 32922,
-        "is_farmable": false
+        "ap_to_hit": 32922
       }
     ],
     "tags": [

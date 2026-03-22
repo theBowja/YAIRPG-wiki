@@ -1386,7 +1386,7 @@
         }
       ]
     },
-    "is_farmable": true
+    "is_farmable": false
   },
   "red-ant-nest-2": {
     "id": "Red ant nest 2",
@@ -1439,7 +1439,7 @@
         }
       ]
     },
-    "is_farmable": true
+    "is_farmable": false
   },
   "red-ant-nest-3": {
     "id": "Red ant nest 3",
@@ -1500,7 +1500,7 @@
         }
       ]
     },
-    "is_farmable": true
+    "is_farmable": false
   },
   "gang-hideout": {
     "id": "Gang hideout",
