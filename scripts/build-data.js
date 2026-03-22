@@ -75,33 +75,11 @@ if (!fs.existsSync('./src/data')) {
     fs.mkdirSync('./src/data', { recursive: true });
 }
 
-// Calculate maximum stat variation for each enemy across all locations
-// Logic from yairpg/src/locations.js (Enemy combat zone generation)
-const enemyMaxVariations = {};
-for (const [id, loc] of Object.entries(locations)) {
-    if (loc.is_combat_zone && loc.enemy_stat_variation > 0) {
-        const variation = loc.enemy_stat_variation;
-        
-        const listToProcess = [];
-        if (loc.enemies_list) listToProcess.push(...loc.enemies_list);
-        if (loc.enemy_groups_list) {
-            loc.enemy_groups_list.forEach(group => {
-                if (group.enemies) listToProcess.push(...group.enemies);
-            });
-        }
-        
-        listToProcess.forEach(enemyId => {
-            if (!enemyMaxVariations[enemyId] || variation > enemyMaxVariations[enemyId]) {
-                enemyMaxVariations[enemyId] = variation;
-            }
-        });
-    }
-}
-
 const enemiesOutput = {};
 for (const [id, enemy] of Object.entries(enemy_templates)) {
     const slug = slugify(id);
     const stats = enemy.stats || {};
+
     
     // Formula for Enemy AP = dexterity * sqrt(intuition || 1)
     // Source: yairpg/src/main.js (line 1691), yairpg/src/display.js (line 1867)
@@ -111,19 +89,64 @@ for (const [id, enemy] of Object.entries(enemy_templates)) {
     // Source: yairpg/src/display.js (line 1866)
     const base_EP = Math.round((stats.agility || 0) * Math.sqrt(stats.intuition || 1));
     
-    // Max stat calculation based on stat variation
-    // Source for variation: yairpg/src/locations.js (Combat_zone generation, line 251)
-    // base_stat * (1 + variation - random * 2 * variation). Max is achieved when random = 0.
-    const max_variation = enemyMaxVariations[id] || 0;
-    const max_dexterity = Math.round((stats.dexterity || 0) * (1 + max_variation));
-    const max_intuition = Math.round((stats.intuition || 1) * (1 + max_variation));
+    const location_combat_stats = [];
     
-    const max_AP = max_dexterity * Math.sqrt(max_intuition);
-    
-    // Formula for evasion to 100% dodge = Math.floor(9 * max_AP) + 1
-    // Source: yairpg/src/misc.js (get_hit_chance function)
-    // Hit chance drops to 0 when AP / (AP + EP) < 0.1, meaning EP > 9 * AP. 
-    const evasion_to_dodge = Math.floor(9 * max_AP) + 1;
+    // Determine location-specific combat requirements
+    // Source: yairpg/src/display.js (lines 1851-1866)
+    // hero_hit_chance_modifier = count**(-1/4)
+    // hero_evasion_chance_modifier = count**(-1/3)
+    for (const [locId, loc] of Object.entries(locations)) {
+        if (loc.enemies_list || loc.enemy_groups_list) {
+            let max_enemies = 1;
+            let spawned = false;
+            
+            if (loc.enemies_list && loc.enemies_list.includes(id)) {
+                spawned = true;
+                if (loc.enemy_group_size) {
+                    max_enemies = Math.max(max_enemies, loc.enemy_group_size[1]);
+                }
+            }
+            if (loc.enemy_groups_list) {
+                loc.enemy_groups_list.forEach(group => {
+                    if (group.enemies && group.enemies.includes(id)) {
+                        spawned = true;
+                        max_enemies = Math.max(max_enemies, group.enemies.length);
+                    }
+                });
+            }
+            
+            if (spawned) {
+                const stat_variation = loc.enemy_stat_variation || 0;
+                
+                const hero_hit_modifier = Math.pow(max_enemies, -1/4);
+                const hero_evasion_modifier = Math.pow(max_enemies, -1/3);
+                
+                const max_dexterity = Math.round((stats.dexterity || 0) * (1 + stat_variation));
+                const max_intuition = Math.round((stats.intuition || 1) * (1 + stat_variation));
+                const max_agility = Math.round((stats.agility || 0) * (1 + stat_variation));
+                
+                const max_AP = max_dexterity * Math.sqrt(max_intuition);
+                const max_EP = max_agility * Math.sqrt(max_intuition);
+                
+                // evasion_to_dodge > 9 * max_AP / hero_evasion_modifier
+                const evasion_to_dodge = Math.floor(9 * max_AP / hero_evasion_modifier) + 1;
+                
+                // ap_to_hit >= max_EP * AP_multiplier / hero_hit_modifier
+                const TargetR = 0.8 + Math.pow(0.029, 1/1.4);
+                const AP_multiplier = TargetR / (1 - TargetR);
+                const ap_to_hit = Math.ceil(max_EP * AP_multiplier / hero_hit_modifier);
+                
+                location_combat_stats.push({
+                    location_id: slugify(locId),
+                    location_name: loc.name,
+                    max_enemies,
+                    stat_variation,
+                    evasion_to_dodge,
+                    ap_to_hit
+                });
+            }
+        }
+    }
 
     enemiesOutput[slug] = {
         id: id,
@@ -136,7 +159,7 @@ for (const [id, enemy] of Object.entries(enemy_templates)) {
         stats: stats,
         base_AP,
         base_EP,
-        evasion_to_dodge,
+        location_combat_stats,
         tags: Object.keys(enemy.tags || {}),
         loot_list: (enemy.loot_list || []).map(loot => ({
             item_name: loot.item_name,

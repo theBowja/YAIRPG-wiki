@@ -65,12 +65,40 @@ const foundInLocations = Object.entries(locationsData)
           <td>Base EP (Evasion Points)</td>
           <td>{enemy.base_EP}</td>
         </tr>
-        <tr>
-          <td>Evasion for 100% Dodge <br/><small>(accounts for max stat variation)</small></td>
-          <td>{enemy.evasion_to_dodge}</td>
-        </tr>
       </tbody>
     </table>
+
+    {enemy.location_combat_stats && enemy.location_combat_stats.length > 0 && (
+      <>
+        <h2>Location Combat Requirements</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>Max Group Size</th>
+              <th>Stat Variation</th>
+              <th>Character AP for 100% Hit</th>
+              <th>Character EP for 100% Dodge</th>
+            </tr>
+          </thead>
+          <tbody>
+            {enemy.location_combat_stats.map(stat => (
+              <tr>
+                <td>
+                  <a href={`/YAIRPG-wiki/locations/${stat.location_id}`}>
+                    {stat.location_name}
+                  </a>
+                </td>
+                <td>{stat.max_enemies} {stat.max_enemies > 1 ? 'enemies' : 'enemy'}</td>
+                <td>{Math.round(stat.stat_variation * 100)}%</td>
+                <td>{stat.ap_to_hit}</td>
+                <td>{stat.evasion_to_dodge}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </>
+    )}
 
     <h2>Base Stats</h2>
     <table>

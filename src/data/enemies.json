@@ -20,7 +20,16 @@
     },
     "base_AP": 9,
     "base_EP": 11,
-    "evasion_to_dodge": 81,
+    "location_combat_stats": [
+      {
+        "location_id": "infested-field",
+        "location_name": "Infested field",
+        "max_enemies": 1,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 89,
+        "ap_to_hit": 108
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -63,7 +72,40 @@
     },
     "base_AP": 12,
     "base_EP": 15,
-    "evasion_to_dodge": 111,
+    "location_combat_stats": [
+      {
+        "location_id": "eastern-storehouse",
+        "location_name": "Eastern storehouse",
+        "max_enemies": 5,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 245,
+        "ap_to_hit": 203
+      },
+      {
+        "location_id": "infested-field",
+        "location_name": "Infested field",
+        "max_enemies": 1,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 143,
+        "ap_to_hit": 136
+      },
+      {
+        "location_id": "cave-room",
+        "location_name": "Cave room",
+        "max_enemies": 3,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 207,
+        "ap_to_hit": 179
+      },
+      {
+        "location_id": "cave-depths",
+        "location_name": "Cave depths",
+        "max_enemies": 8,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 286,
+        "ap_to_hit": 228
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -106,7 +148,24 @@
     },
     "base_AP": 118,
     "base_EP": 147,
-    "evasion_to_dodge": 1059,
+    "location_combat_stats": [
+      {
+        "location_id": "hidden-tunnel",
+        "location_name": "Hidden tunnel",
+        "max_enemies": 2,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 1771,
+        "ap_to_hit": 1687
+      },
+      {
+        "location_id": "pitch-black-tunnel",
+        "location_name": "Pitch black tunnel",
+        "max_enemies": 8,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 2812,
+        "ap_to_hit": 2386
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -149,7 +208,16 @@
     },
     "base_AP": 354,
     "base_EP": 354,
-    "evasion_to_dodge": 3182,
+    "location_combat_stats": [
+      {
+        "location_id": "mysterious-gate",
+        "location_name": "Mysterious gate",
+        "max_enemies": 8,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 8366,
+        "ap_to_hit": 5719
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -198,7 +266,16 @@
     },
     "base_AP": 1697,
     "base_EP": 28,
-    "evasion_to_dodge": 15274,
+    "location_combat_stats": [
+      {
+        "location_id": "writhing-tunnel",
+        "location_name": "Writhing tunnel",
+        "max_enemies": 4,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 31872,
+        "ap_to_hit": 321
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -239,7 +316,24 @@
     },
     "base_AP": 192,
     "base_EP": 192,
-    "evasion_to_dodge": 1731,
+    "location_combat_stats": [
+      {
+        "location_id": "forest",
+        "location_name": "Forest",
+        "max_enemies": 1,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 2275,
+        "ap_to_hit": 1849
+      },
+      {
+        "location_id": "deep-forest",
+        "location_name": "Deep forest",
+        "max_enemies": 3,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 3281,
+        "ap_to_hit": 2434
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -277,7 +371,24 @@
     },
     "base_AP": 147,
     "base_EP": 167,
-    "evasion_to_dodge": 1323,
+    "location_combat_stats": [
+      {
+        "location_id": "forest",
+        "location_name": "Forest",
+        "max_enemies": 1,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 1745,
+        "ap_to_hit": 1616
+      },
+      {
+        "location_id": "deep-forest",
+        "location_name": "Deep forest",
+        "max_enemies": 3,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 2517,
+        "ap_to_hit": 2126
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -315,7 +426,16 @@
     },
     "base_AP": 316,
     "base_EP": 316,
-    "evasion_to_dodge": 2847,
+    "location_combat_stats": [
+      {
+        "location_id": "deep-forest",
+        "location_name": "Deep forest",
+        "max_enemies": 3,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 5396,
+        "ap_to_hit": 4003
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -357,7 +477,24 @@
     },
     "base_AP": 586,
     "base_EP": 1339,
-    "evasion_to_dodge": 5271,
+    "location_combat_stats": [
+      {
+        "location_id": "forest-den",
+        "location_name": "Forest den",
+        "max_enemies": 3,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 9994,
+        "ap_to_hit": 16943
+      },
+      {
+        "location_id": "forest-den-traversal",
+        "location_name": "Forest den traversal",
+        "max_enemies": 3,
+        "stat_variation": 0,
+        "evasion_to_dodge": 7603,
+        "ap_to_hit": 12889
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -403,7 +540,24 @@
     },
     "base_AP": 759,
     "base_EP": 1233,
-    "evasion_to_dodge": 6831,
+    "location_combat_stats": [
+      {
+        "location_id": "forest-den",
+        "location_name": "Forest den",
+        "max_enemies": 1,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 8979,
+        "ap_to_hit": 11861
+      },
+      {
+        "location_id": "forest-den-traversal",
+        "location_name": "Forest den traversal",
+        "max_enemies": 1,
+        "stat_variation": 0,
+        "evasion_to_dodge": 6831,
+        "ap_to_hit": 9023
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -449,7 +603,16 @@
     },
     "base_AP": 387,
     "base_EP": 232,
-    "evasion_to_dodge": 3486,
+    "location_combat_stats": [
+      {
+        "location_id": "forest-clearing",
+        "location_name": "Forest clearing",
+        "max_enemies": 7,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 8766,
+        "ap_to_hit": 3635
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -495,7 +658,16 @@
     },
     "base_AP": 465,
     "base_EP": 775,
-    "evasion_to_dodge": 4183,
+    "location_combat_stats": [
+      {
+        "location_id": "gentle-mountain-slope",
+        "location_name": "Gentle mountain slope",
+        "max_enemies": 4,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 8729,
+        "ap_to_hit": 10535
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -541,7 +713,16 @@
     },
     "base_AP": 2828,
     "base_EP": 2263,
-    "evasion_to_dodge": 25456,
+    "location_combat_stats": [
+      {
+        "location_id": "bears-den",
+        "location_name": "Bears' den",
+        "max_enemies": 1,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 33463,
+        "ap_to_hit": 21761
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -583,7 +764,16 @@
     },
     "base_AP": 4243,
     "base_EP": 3536,
-    "evasion_to_dodge": 38184,
+    "location_combat_stats": [
+      {
+        "location_id": "frogs",
+        "location_name": "Frogs",
+        "max_enemies": 1,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 50194,
+        "ap_to_hit": 34001
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -626,7 +816,40 @@
     },
     "base_AP": 2000,
     "base_EP": 1000,
-    "evasion_to_dodge": 18001,
+    "location_combat_stats": [
+      {
+        "location_id": "forest-ant-nest",
+        "location_name": "Red ant nest",
+        "max_enemies": 8,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 41533,
+        "ap_to_hit": 14195
+      },
+      {
+        "location_id": "red-ant-nest-1",
+        "location_name": "Red ant nest",
+        "max_enemies": 6,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 37736,
+        "ap_to_hit": 13210
+      },
+      {
+        "location_id": "red-ant-nest-2",
+        "location_name": "Red ant nest",
+        "max_enemies": 6,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 37736,
+        "ap_to_hit": 13210
+      },
+      {
+        "location_id": "red-ant-nest-3",
+        "location_name": "Red ant nest",
+        "max_enemies": 6,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 37736,
+        "ap_to_hit": 13210
+      }
+    ],
     "tags": [
       "living",
       "insect",
@@ -672,7 +895,40 @@
     },
     "base_AP": 2000,
     "base_EP": 500,
-    "evasion_to_dodge": 18001,
+    "location_combat_stats": [
+      {
+        "location_id": "forest-ant-nest",
+        "location_name": "Red ant nest",
+        "max_enemies": 8,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 41533,
+        "ap_to_hit": 7098
+      },
+      {
+        "location_id": "red-ant-nest-1",
+        "location_name": "Red ant nest",
+        "max_enemies": 1,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 20767,
+        "ap_to_hit": 4221
+      },
+      {
+        "location_id": "red-ant-nest-2",
+        "location_name": "Red ant nest",
+        "max_enemies": 1,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 20767,
+        "ap_to_hit": 4221
+      },
+      {
+        "location_id": "red-ant-nest-3",
+        "location_name": "Red ant nest",
+        "max_enemies": 1,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 20767,
+        "ap_to_hit": 4221
+      }
+    ],
     "tags": [
       "living",
       "insect",
@@ -701,7 +957,16 @@
     },
     "base_AP": 465,
     "base_EP": 465,
-    "evasion_to_dodge": 4183,
+    "location_combat_stats": [
+      {
+        "location_id": "gang-hideout",
+        "location_name": "Gang hideout",
+        "max_enemies": 5,
+        "stat_variation": 0.1,
+        "evasion_to_dodge": 8252,
+        "ap_to_hit": 5866
+      }
+    ],
     "tags": [
       "living",
       "human",
@@ -731,7 +996,16 @@
     },
     "base_AP": 636,
     "base_EP": 849,
-    "evasion_to_dodge": 5728,
+    "location_combat_stats": [
+      {
+        "location_id": "riverbank-shore",
+        "location_name": "Riverbank shore",
+        "max_enemies": 4,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 11952,
+        "ap_to_hit": 11541
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -767,7 +1041,16 @@
     },
     "base_AP": 1753,
     "base_EP": 1972,
-    "evasion_to_dodge": 15775,
+    "location_combat_stats": [
+      {
+        "location_id": "crab-spawning-grounds",
+        "location_name": "Crab spawning grounds",
+        "max_enemies": 5,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 35459,
+        "ap_to_hit": 28356
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -810,7 +1093,16 @@
     },
     "base_AP": 3834,
     "base_EP": 2739,
-    "evasion_to_dodge": 34507,
+    "location_combat_stats": [
+      {
+        "location_id": "the-swamplands",
+        "location_name": "The swamplands",
+        "max_enemies": 1,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 45361,
+        "ap_to_hit": 26337
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -849,7 +1141,16 @@
     },
     "base_AP": 2508,
     "base_EP": 2622,
-    "evasion_to_dodge": 22576,
+    "location_combat_stats": [
+      {
+        "location_id": "the-swamplands",
+        "location_name": "The swamplands",
+        "max_enemies": 1,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 29677,
+        "ap_to_hit": 25220
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -888,7 +1189,16 @@
     },
     "base_AP": 5634,
     "base_EP": 3184,
-    "evasion_to_dodge": 50705,
+    "location_combat_stats": [
+      {
+        "location_id": "the-swamplands",
+        "location_name": "The swamplands",
+        "max_enemies": 1,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 66653,
+        "ap_to_hit": 30624
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -926,7 +1236,16 @@
     },
     "base_AP": 358,
     "base_EP": 89,
-    "evasion_to_dodge": 3220,
+    "location_combat_stats": [
+      {
+        "location_id": "sparring-with-the-village-guard-heavy",
+        "location_name": "Sparring with the village guard (heavy)",
+        "max_enemies": 1,
+        "stat_variation": 0,
+        "evasion_to_dodge": 3220,
+        "ap_to_hit": 655
+      }
+    ],
     "tags": [
       "living",
       "human",
@@ -955,7 +1274,16 @@
     },
     "base_AP": 224,
     "base_EP": 89,
-    "evasion_to_dodge": 2013,
+    "location_combat_stats": [
+      {
+        "location_id": "sparring-with-the-village-guard-quick",
+        "location_name": "Sparring with the village guard (quick)",
+        "max_enemies": 1,
+        "stat_variation": 0,
+        "evasion_to_dodge": 2013,
+        "ap_to_hit": 655
+      }
+    ],
     "tags": [
       "living",
       "human",
@@ -984,7 +1312,16 @@
     },
     "base_AP": 0,
     "base_EP": 0,
-    "evasion_to_dodge": 1,
+    "location_combat_stats": [
+      {
+        "location_id": "suspicious-wall",
+        "location_name": "Suspicious wall",
+        "max_enemies": 1,
+        "stat_variation": 0,
+        "evasion_to_dodge": 1,
+        "ap_to_hit": 0
+      }
+    ],
     "tags": [
       "inanimate",
       "large"
@@ -1012,7 +1349,16 @@
     },
     "base_AP": 465,
     "base_EP": 465,
-    "evasion_to_dodge": 4183,
+    "location_combat_stats": [
+      {
+        "location_id": "fight-off-the-assailant",
+        "location_name": "Fight off the assailant",
+        "max_enemies": 1,
+        "stat_variation": 0,
+        "evasion_to_dodge": 4183,
+        "ap_to_hit": 3401
+      }
+    ],
     "tags": [
       "living",
       "human",
@@ -1041,7 +1387,16 @@
     },
     "base_AP": 542,
     "base_EP": 775,
-    "evasion_to_dodge": 4880,
+    "location_combat_stats": [
+      {
+        "location_id": "fight-the-angry-mountain-goat",
+        "location_name": "Fight the angry mountain goat",
+        "max_enemies": 1,
+        "stat_variation": 0,
+        "evasion_to_dodge": 4880,
+        "ap_to_hit": 5667
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -1071,7 +1426,16 @@
     },
     "base_AP": 8367,
     "base_EP": 5020,
-    "evasion_to_dodge": 75300,
+    "location_combat_stats": [
+      {
+        "location_id": "fight-the-giant-crab",
+        "location_name": "Fight the giant crab",
+        "max_enemies": 1,
+        "stat_variation": 0,
+        "evasion_to_dodge": 75300,
+        "ap_to_hit": 36725
+      }
+    ],
     "tags": [
       "living",
       "beast",
@@ -1102,7 +1466,16 @@
     },
     "base_AP": 7000,
     "base_EP": 4500,
-    "evasion_to_dodge": 63001,
+    "location_combat_stats": [
+      {
+        "location_id": "fight-the-giant-crab-again",
+        "location_name": "Fight the giant crab again!",
+        "max_enemies": 1,
+        "stat_variation": 0,
+        "evasion_to_dodge": 63001,
+        "ap_to_hit": 32922
+      }
+    ],
     "tags": [
       "living",
       "beast",
