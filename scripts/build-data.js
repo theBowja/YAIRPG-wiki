@@ -136,13 +136,25 @@ for (const [id, enemy] of Object.entries(enemy_templates)) {
                 const AP_multiplier = TargetR / (1 - TargetR);
                 const ap_to_hit = Math.ceil(max_EP * AP_multiplier / hero_hit_modifier);
                 
+                let is_farmable = false;
+                if (!loc.is_challenge && loc.repeatable_reward) {
+                    const locked_locations = loc.repeatable_reward.locks?.locations || [];
+                    const is_self_locked = locked_locations.includes(loc.name);
+                    const is_parent_locked = loc.parent_location ? locked_locations.includes(loc.parent_location.name) : false;
+                    
+                    if (!is_self_locked && !is_parent_locked) {
+                        is_farmable = true;
+                    }
+                }
+                
                 location_combat_stats.push({
                     location_id: slugify(locId),
                     location_name: loc.name,
                     max_enemies,
                     stat_variation,
                     evasion_to_dodge,
-                    ap_to_hit
+                    ap_to_hit,
+                    is_farmable
                 });
             }
         }
@@ -208,7 +220,19 @@ for (const [id, loc] of Object.entries(locations)) {
     if (locationData.is_combat_zone) {
         locationData.enemies_list = loc.enemies_list || [];
         locationData.enemy_count = loc.enemy_count;
-        locationData.repeatable_reward = loc.repeatable_reward;
+        locationData.repeatable_reward = loc.repeatable_reward || null;
+
+        let is_farmable = false;
+        if (!loc.is_challenge && loc.repeatable_reward) {
+            const locked_locations = loc.repeatable_reward.locks?.locations || [];
+            const is_self_locked = locked_locations.includes(loc.name);
+            const is_parent_locked = loc.parent_location ? locked_locations.includes(loc.parent_location.name) : false;
+            
+            if (!is_self_locked && !is_parent_locked) {
+                is_farmable = true;
+            }
+        }
+        locationData.is_farmable = is_farmable;
     }
 
     locationsOutput[slug] = locationData;

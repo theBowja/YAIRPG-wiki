@@ -235,7 +235,8 @@
       "move_to": {
         "location": "Eastern mill"
       }
-    }
+    },
+    "is_farmable": false
   },
   "infested-field": {
     "id": "Infested field",
@@ -278,7 +279,8 @@
         }
       ],
       "xp": 5
-    }
+    },
+    "is_farmable": true
   },
   "nearby-cave": {
     "id": "Nearby cave",
@@ -452,7 +454,8 @@
           "activity": "balancing"
         }
       ]
-    }
+    },
+    "is_farmable": true
   },
   "cave-depths": {
     "id": "Cave depths",
@@ -499,7 +502,8 @@
         }
       ],
       "xp": 50
-    }
+    },
+    "is_farmable": true
   },
   "hidden-tunnel": {
     "id": "Hidden tunnel",
@@ -549,7 +553,8 @@
           "activity": "mining2"
         }
       ]
-    }
+    },
+    "is_farmable": true
   },
   "pitch-black-tunnel": {
     "id": "Pitch black tunnel",
@@ -597,7 +602,8 @@
           "action": "climb the mountain"
         }
       ]
-    }
+    },
+    "is_farmable": true
   },
   "mysterious-gate": {
     "id": "Mysterious gate",
@@ -656,7 +662,8 @@
       "flags": [
         "is_strength_proved"
       ]
-    }
+    },
+    "is_farmable": true
   },
   "writhing-tunnel": {
     "id": "Writhing tunnel",
@@ -711,7 +718,8 @@
           "task_index": 2
         }
       ]
-    }
+    },
+    "is_farmable": true
   },
   "mysterious-depths": {
     "id": "Mysterious depths",
@@ -875,7 +883,8 @@
           "activity": "herbalism"
         }
       ]
-    }
+    },
+    "is_farmable": true
   },
   "deep-forest": {
     "id": "Deep forest",
@@ -920,7 +929,8 @@
           "activity": "woodcutting"
         }
       ]
-    }
+    },
+    "is_farmable": true
   },
   "forest-clearing": {
     "id": "Forest clearing",
@@ -968,7 +978,8 @@
           "activity": "woodcutting2"
         }
       ]
-    }
+    },
+    "is_farmable": true
   },
   "forest-den": {
     "id": "Forest den",
@@ -1007,7 +1018,8 @@
     "enemy_count": 50,
     "repeatable_reward": {
       "xp": 500
-    }
+    },
+    "is_farmable": true
   },
   "bears-den": {
     "id": "Bears' den",
@@ -1046,7 +1058,8 @@
     "enemy_count": 20,
     "repeatable_reward": {
       "xp": 250
-    }
+    },
+    "is_farmable": true
   },
   "forest-lake": {
     "id": "Forest lake",
@@ -1141,7 +1154,8 @@
     "repeatable_reward": {
       "xp": 800,
       "actions": []
-    }
+    },
+    "is_farmable": true
   },
   "forest-ant-nest": {
     "id": "Forest ant nest",
@@ -1180,7 +1194,8 @@
     "enemy_count": 100,
     "repeatable_reward": {
       "xp": 3000
-    }
+    },
+    "is_farmable": true
   },
   "town-outskirts": {
     "id": "Town outskirts",
@@ -1370,7 +1385,8 @@
           "action": "dig for ants 2"
         }
       ]
-    }
+    },
+    "is_farmable": true
   },
   "red-ant-nest-2": {
     "id": "Red ant nest 2",
@@ -1422,7 +1438,8 @@
           "action": "dig for ants 3"
         }
       ]
-    }
+    },
+    "is_farmable": true
   },
   "red-ant-nest-3": {
     "id": "Red ant nest 3",
@@ -1482,7 +1499,8 @@
           ]
         }
       ]
-    }
+    },
+    "is_farmable": true
   },
   "gang-hideout": {
     "id": "Gang hideout",
@@ -1556,7 +1574,8 @@
           "task_index": 1
         }
       ]
-    }
+    },
+    "is_farmable": false
   },
   "town-square": {
     "id": "Town square",
@@ -1761,7 +1780,8 @@
     "enemy_count": 50,
     "repeatable_reward": {
       "xp": 500
-    }
+    },
+    "is_farmable": true
   },
   "downstream-from-the-village": {
     "id": "Downstream from the village",
@@ -1878,7 +1898,8 @@
     "enemy_count": 50,
     "repeatable_reward": {
       "xp": 900
-    }
+    },
+    "is_farmable": true
   },
   "further-downstream": {
     "id": "Further downstream",
@@ -2063,7 +2084,8 @@
     "enemy_count": 50,
     "repeatable_reward": {
       "xp": 2000
-    }
+    },
+    "is_farmable": true
   },
   "swampland-fields": {
     "id": "Swampland fields",
@@ -2135,7 +2157,8 @@
     "enemy_count": 100,
     "repeatable_reward": {
       "xp": 4000
-    }
+    },
+    "is_farmable": true
   },
   "swampland-tribe": {
     "id": "Swampland tribe",
@@ -2239,7 +2262,8 @@
           ]
         }
       ]
-    }
+    },
+    "is_farmable": false
   },
   "sparring-with-the-village-guard-quick": {
     "id": "Sparring with the village guard (quick)",
@@ -2274,7 +2298,8 @@
           ]
         }
       ]
-    }
+    },
+    "is_farmable": false
   },
   "suspicious-wall": {
     "id": "Suspicious wall",
@@ -2318,7 +2343,8 @@
       "quests": [
         "The Infinite Rat Saga"
       ]
-    }
+    },
+    "is_farmable": false
   },
   "fight-off-the-assailant": {
     "id": "Fight off the assailant",
@@ -2354,7 +2380,8 @@
         }
       ],
       "xp": 40
-    }
+    },
+    "is_farmable": false
   },
   "fight-the-angry-mountain-goat": {
     "id": "Fight the angry mountain goat",
@@ -2398,7 +2425,8 @@
         }
       ],
       "xp": 500
-    }
+    },
+    "is_farmable": false
   },
   "fight-the-giant-crab": {
     "id": "Fight the giant crab",
@@ -2451,7 +2479,8 @@
           "Downstream from the village"
         ]
       }
-    }
+    },
+    "is_farmable": false
   },
   "fight-the-giant-crab-again": {
     "id": "Fight the giant crab again",
@@ -2509,7 +2538,8 @@
           "Further downstream"
         ]
       }
-    }
+    },
+    "is_farmable": false
   },
   "forest-den-traversal": {
     "id": "Forest den traversal",
@@ -2559,6 +2589,7 @@
       "move_to": {
         "location": "Forest lake"
       }
-    }
+    },
+    "is_farmable": false
   }
 }

@@ -104,6 +104,7 @@ const { location } = Astro.props;
       <>
         <h2>Combat Information</h2>
         <ul>
+          <li><strong>Repeatable Location:</strong> {location.is_farmable ? 'Yes' : 'No'}</li>
           <li><strong>Enemy Count:</strong> {location.enemy_count}</li>
           <li><strong>Possible Enemies:</strong> {location.enemies_list.map((enemy, index) => (
             <>
