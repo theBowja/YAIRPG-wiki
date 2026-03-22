@@ -1,0 +1,184 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import recipesData from '../../data/recipes.json';
+import itemsData from '../../data/items.json';
+
+export function getStaticPaths() {
+  return Object.entries(recipesData).map(([slug, recipe]) => ({
+    params: { id: slug },
+    props: { recipe },
+  }));
+}
+
+const { id } = Astro.params;
+const { recipe } = Astro.props;
+
+const slugify = (text) => {
+  return text.toString().toLowerCase()
+    .replace(/\s+/g, '-')
+    .replace(/[^\w-]+/g, '')
+    .replace(/--+/g, '-')
+    .replace(/^-+/, '')
+    .replace(/-+$/, '');
+};
+
+const getItemSlug = (itemId) => {
+    if (!itemId) return null;
+    return slugify(itemId);
+};
+
+const getItemName = (itemId) => {
+    const slug = getItemSlug(itemId);
+    return itemsData[slug]?.name || itemId;
+};
+
+const capitalize = (text) => {
+  if (!text) return '';
+  return text.replace(/_/g, ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+};
+---
+
+<StarlightPage frontmatter={{ title: recipe.name, description: `Crafting recipe for ${recipe.name}` }}>
+  <div class="recipe-details">
+    <section class="overview">
+      <p>A <strong>{capitalize(recipe.subcategory)}</strong> recipe using the <strong>{recipe.recipe_skill}</strong> skill.</p>
+    </section>
+
+    <div class="columns">
+      <section class="materials">
+        <h2>Materials</h2>
+        <table>
+          <thead>
+            <tr>
+              <th>Material</th>
+              <th>Quantity</th>
+            </tr>
+          </thead>
+          <tbody>
+            {recipe.materials?.map(m => (
+              <tr>
+                <td>
+                  {m.id ? (
+                    <a href={`/YAIRPG-wiki/items/${getItemSlug(m.id)}`}>{getItemName(m.id)}</a>
+                  ) : (
+                    <span>Any {capitalize(m.type)}</span>
+                  )}
+                </td>
+                <td>{m.count}</td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </section>
+
+      <section class="result">
+        <h2>Result</h2>
+        {recipe.result ? (
+          <div class="result-card">
+            <span class="count">{recipe.result.count}x</span>
+            <span class="name">
+                <a href={`/YAIRPG-wiki/items/${getItemSlug(recipe.result.id)}`}>{getItemName(recipe.result.id)}</a>
+            </span>
+          </div>
+        ) : recipe.components ? (
+            <div class="result-info">
+                <p>Produces an <strong>{recipe.item_type}</strong> using:</p>
+                <ul>
+                    {recipe.components.map(c => <li>{capitalize(c)}</li>)}
+                </ul>
+            </div>
+        ) : (
+          <p>Produces {recipe.name}</p>
+        )}
+      </section>
+    </div>
+
+    {recipe.materials?.some(m => m.result_id) && (
+        <section class="variations">
+            <h2>Variations</h2>
+            <p>The result depends on the material used:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Material</th>
+                        <th>Specific Result</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {recipe.materials.filter(m => m.result_id).map(m => (
+                        <tr>
+                            <td><a href={`/YAIRPG-wiki/items/${getItemSlug(m.id)}`}>{getItemName(m.id)}</a></td>
+                            <td><a href={`/YAIRPG-wiki/items/${getItemSlug(m.result_id)}`}>{getItemName(m.result_id)}</a></td>
+                        </tr>
+                    ))}
+                </tbody>
+            </table>
+        </section>
+    )}
+  </div>
+</StarlightPage>
+
+<style>
+  .recipe-details {
+    margin-top: 1rem;
+  }
+  .overview {
+    margin-bottom: 2rem;
+    font-size: var(--sl-text-lg);
+  }
+  .columns {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+  @media (max-width: 768px) {
+    .columns {
+      grid-template-columns: 1fr;
+    }
+  }
+  h2 {
+    margin-top: 0;
+    border-bottom: 1px solid var(--sl-color-gray-5);
+    padding-bottom: 0.5rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+  }
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--sl-color-gray-5);
+  }
+  th {
+    background: var(--sl-color-gray-6);
+    font-weight: bold;
+  }
+  .result-card {
+    background: var(--sl-color-gray-6);
+    border: 1px solid var(--sl-color-accent);
+    padding: 1.5rem;
+    border-radius: 0.5rem;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+  }
+  .result-card .count {
+    font-size: var(--sl-text-h3);
+    color: var(--sl-color-accent);
+    font-weight: bold;
+  }
+  .result-card .name {
+    font-size: var(--sl-text-xl);
+  }
+  .result-card .name a {
+    color: var(--sl-color-white);
+    text-decoration: none;
+  }
+  .result-card .name a:hover {
+    text-decoration: underline;
+  }
+  .variations {
+      margin-top: 3rem;
+  }
+</style>

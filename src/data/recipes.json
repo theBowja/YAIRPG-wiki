@@ -1,0 +1,3088 @@
+{
+  "crafting-items-wool-cloth": {
+    "id": "Wool cloth",
+    "name": "Wool cloth",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Wool",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Wool cloth",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "crafting-items-linen-cloth": {
+    "id": "Linen cloth",
+    "name": "Linen cloth",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      22,
+      30
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Flax",
+        "count": 10
+      }
+    ],
+    "result": {
+      "id": "Linen cloth",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
+  "crafting-items-glass-phial": {
+    "id": "Glass phial",
+    "name": "Glass phial",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      15,
+      25
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Raw Glass",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Glass phial",
+      "count": 1
+    },
+    "xp_value": 53.9
+  },
+  "crafting-items-glass-bottle": {
+    "id": "Glass bottle",
+    "name": "Glass bottle",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      15,
+      25
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Raw Glass",
+        "count": 3
+      }
+    ],
+    "result": {
+      "id": "Glass bottle",
+      "count": 1
+    },
+    "xp_value": 53.9
+  },
+  "crafting-items-bonemeal": {
+    "id": "Bonemeal",
+    "name": "Bonemeal",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      12
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "type": "animal tooth",
+        "count": 20
+      }
+    ],
+    "result": {
+      "id": "Bonemeal",
+      "count": 1
+    },
+    "xp_value": 24
+  },
+  "crafting-items-wolf-trophy": {
+    "id": "Wolf trophy",
+    "name": "Wolf trophy",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      10
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "High quality wolf fang",
+        "count": 4
+      }
+    ],
+    "result": {
+      "id": "Wolf trophy",
+      "count": 1
+    },
+    "xp_value": 19.7
+  },
+  "crafting-items-boar-trophy": {
+    "id": "Boar trophy",
+    "name": "Boar trophy",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "High quality boar tusk",
+        "count": 4
+      }
+    ],
+    "result": {
+      "id": "Boar trophy",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "crafting-items-mountain-goat-trophy": {
+    "id": "Mountain goat trophy",
+    "name": "Mountain goat trophy",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "Pristine mountain goat horn",
+        "count": 4
+      }
+    ],
+    "result": {
+      "id": "Mountain goat trophy",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "crafting-items-bear-trophy": {
+    "id": "Bear trophy",
+    "name": "Bear trophy",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      15,
+      25
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "Sharp bear claw",
+        "count": 4
+      }
+    ],
+    "result": {
+      "id": "Bear trophy",
+      "count": 1
+    },
+    "xp_value": 53.9
+  },
+  "crafting-items-crab-trophy": {
+    "id": "Crab trophy",
+    "name": "Crab trophy",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      22,
+      30
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "Giant crab claw",
+        "count": 4
+      }
+    ],
+    "result": {
+      "id": "Crab trophy",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
+  "crafting-components-short-hilt": {
+    "id": "Short hilt",
+    "name": "Short hilt",
+    "category": "crafting",
+    "subcategory": "components",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Processed weak monster bone",
+        "count": 1,
+        "result_id": "Short weak bone hilt"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 5.3
+  },
+  "crafting-components-medium-handle": {
+    "id": "Medium handle",
+    "name": "Medium handle",
+    "category": "crafting",
+    "subcategory": "components",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Processed weak monster bone",
+        "count": 2,
+        "result_id": "Medium weak bone handle"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 9.2
+  },
+  "crafting-components-long-shaft": {
+    "id": "Long shaft",
+    "name": "Long shaft",
+    "category": "crafting",
+    "subcategory": "components",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Processed weak monster bone",
+        "count": 4,
+        "result_id": "Long weak bone shaft"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 18.4
+  },
+  "crafting-components-helmet-exterior": {
+    "id": "Helmet exterior",
+    "name": "Helmet exterior",
+    "category": "crafting",
+    "subcategory": "components",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Piece of wolf leather",
+        "count": 3,
+        "result_id": "Wolf leather helmet armor"
+      },
+      {
+        "id": "Piece of boar leather",
+        "count": 3,
+        "result_id": "Boar leather helmet armor"
+      },
+      {
+        "id": "Piece of bear leather",
+        "count": 3,
+        "result_id": "Bear leather helmet armor"
+      },
+      {
+        "id": "Piece of alligator leather",
+        "count": 3,
+        "result_id": "Alligator leather helmet armor"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 13.8
+  },
+  "crafting-components-chestplate-exterior": {
+    "id": "Chestplate exterior",
+    "name": "Chestplate exterior",
+    "category": "crafting",
+    "subcategory": "components",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Piece of wolf leather",
+        "count": 5,
+        "result_id": "Wolf leather chestplate armor"
+      },
+      {
+        "id": "Piece of boar leather",
+        "count": 5,
+        "result_id": "Boar leather chestplate armor"
+      },
+      {
+        "id": "Piece of bear leather",
+        "count": 5,
+        "result_id": "Bear leather chestplate armor"
+      },
+      {
+        "id": "Piece of alligator leather",
+        "count": 5,
+        "result_id": "Alligator leather chestplate armor"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 23
+  },
+  "crafting-components-leg-armor-exterior": {
+    "id": "Leg armor exterior",
+    "name": "Leg armor exterior",
+    "category": "crafting",
+    "subcategory": "components",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Piece of wolf leather",
+        "count": 4,
+        "result_id": "Wolf leather greaves"
+      },
+      {
+        "id": "Piece of boar leather",
+        "count": 4,
+        "result_id": "Boar leather greaves"
+      },
+      {
+        "id": "Piece of bear leather",
+        "count": 4,
+        "result_id": "Bear leather greaves"
+      },
+      {
+        "id": "Piece of alligator leather",
+        "count": 4,
+        "result_id": "Alligator leather greaves"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 18.4
+  },
+  "crafting-components-glove-exterior": {
+    "id": "Glove exterior",
+    "name": "Glove exterior",
+    "category": "crafting",
+    "subcategory": "components",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Piece of wolf leather",
+        "count": 3,
+        "result_id": "Wolf leather glove armor"
+      },
+      {
+        "id": "Piece of boar leather",
+        "count": 3,
+        "result_id": "Boar leather glove armor"
+      },
+      {
+        "id": "Piece of bear leather",
+        "count": 3,
+        "result_id": "Bear leather glove armor"
+      },
+      {
+        "id": "Piece of alligator leather",
+        "count": 3,
+        "result_id": "Alligator leather glove armor"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 13.8
+  },
+  "crafting-components-shoes-exterior": {
+    "id": "Shoes exterior",
+    "name": "Shoes exterior",
+    "category": "crafting",
+    "subcategory": "components",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Piece of wolf leather",
+        "count": 3,
+        "result_id": "Wolf leather shoe armor"
+      },
+      {
+        "id": "Piece of boar leather",
+        "count": 3,
+        "result_id": "Boar leather shoe armor"
+      },
+      {
+        "id": "Piece of bear leather",
+        "count": 3,
+        "result_id": "Bear leather shoe armor"
+      },
+      {
+        "id": "Piece of alligator leather",
+        "count": 3,
+        "result_id": "Alligator leather shoe armor"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 13.8
+  },
+  "crafting-equipment-axe": {
+    "id": "Axe",
+    "name": "Axe",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "axe head",
+      "medium handle"
+    ],
+    "item_type": "Weapon",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-dagger": {
+    "id": "Dagger",
+    "name": "Dagger",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "short blade",
+      "short handle"
+    ],
+    "item_type": "Weapon",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-hammer": {
+    "id": "Hammer",
+    "name": "Hammer",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "hammer head",
+      "medium handle"
+    ],
+    "item_type": "Weapon",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-spear": {
+    "id": "Spear",
+    "name": "Spear",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "short blade",
+      "long handle"
+    ],
+    "item_type": "Weapon",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-sword": {
+    "id": "Sword",
+    "name": "Sword",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "long blade",
+      "short handle"
+    ],
+    "item_type": "Weapon",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-shield": {
+    "id": "Shield",
+    "name": "Shield",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "shield base",
+      "shield handle"
+    ],
+    "item_type": "Shield",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-helmet": {
+    "id": "Helmet",
+    "name": "Helmet",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "helmet interior",
+      "helmet exterior"
+    ],
+    "item_type": "Armor",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-chestplate": {
+    "id": "Chestplate",
+    "name": "Chestplate",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "chestplate interior",
+      "chestplate exterior"
+    ],
+    "item_type": "Armor",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-leg-armor": {
+    "id": "Leg armor",
+    "name": "Leg armor",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "leg armor interior",
+      "leg armor exterior"
+    ],
+    "item_type": "Armor",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-gauntlets": {
+    "id": "Gauntlets",
+    "name": "Gauntlets",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "glove interior",
+      "glove exterior"
+    ],
+    "item_type": "Armor",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-armored-shoes": {
+    "id": "Armored shoes",
+    "name": "Armored shoes",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "equipment",
+    "components": [
+      "shoes interior",
+      "shoes exterior"
+    ],
+    "item_type": "Armor",
+    "xp_value": 9.8
+  },
+  "crafting-equipment-hat": {
+    "id": "Hat",
+    "name": "Hat",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Piece of wolf leather",
+        "count": 3,
+        "result_id": "Leather hat"
+      },
+      {
+        "id": "Wool cloth",
+        "count": 3,
+        "result_id": "Wool hat"
+      },
+      {
+        "id": "Piece of goat leather",
+        "count": 3,
+        "result_id": "Goat leather hat"
+      },
+      {
+        "id": "Linen cloth",
+        "count": 3,
+        "result_id": "Linen bandanna"
+      },
+      {
+        "id": "Piece of snakeskin leather",
+        "count": 3,
+        "result_id": "Snakeskin hat"
+      },
+      {
+        "id": "Piece of frog leather",
+        "count": 3,
+        "result_id": "Batrachian hat"
+      }
+    ],
+    "item_type": "Armor",
+    "xp_value": 13.8
+  },
+  "crafting-equipment-shirt": {
+    "id": "Shirt",
+    "name": "Shirt",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Piece of wolf rat leather",
+        "count": 5,
+        "result_id": "Cheap leather vest"
+      },
+      {
+        "id": "Piece of wolf leather",
+        "count": 5,
+        "result_id": "Leather vest"
+      },
+      {
+        "id": "Wool cloth",
+        "count": 5,
+        "result_id": "Wool shirt"
+      },
+      {
+        "id": "Piece of goat leather",
+        "count": 5,
+        "result_id": "Goat leather vest"
+      },
+      {
+        "id": "Linen cloth",
+        "count": 5,
+        "result_id": "Linen vest"
+      },
+      {
+        "id": "Piece of snakeskin leather",
+        "count": 5,
+        "result_id": "Snakeskin vest"
+      },
+      {
+        "id": "Piece of frog leather",
+        "count": 5,
+        "result_id": "Batrachian vest"
+      }
+    ],
+    "item_type": "Armor",
+    "xp_value": 23
+  },
+  "crafting-equipment-pants": {
+    "id": "Pants",
+    "name": "Pants",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Piece of wolf rat leather",
+        "count": 3,
+        "result_id": "Cheap leather pants"
+      },
+      {
+        "id": "Piece of wolf leather",
+        "count": 3,
+        "result_id": "Leather pants"
+      },
+      {
+        "id": "Wool cloth",
+        "count": 3,
+        "result_id": "Wool pants"
+      },
+      {
+        "id": "Piece of goat leather",
+        "count": 3,
+        "result_id": "Goat leather pants"
+      },
+      {
+        "id": "Linen cloth",
+        "count": 3,
+        "result_id": "Linen leggings"
+      },
+      {
+        "id": "Piece of snakeskin leather",
+        "count": 3,
+        "result_id": "Snakeskin leggings"
+      },
+      {
+        "id": "Piece of frog leather",
+        "count": 3,
+        "result_id": "Batrachian pants"
+      }
+    ],
+    "item_type": "Armor",
+    "xp_value": 13.8
+  },
+  "crafting-equipment-gloves": {
+    "id": "Gloves",
+    "name": "Gloves",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Piece of wolf leather",
+        "count": 2,
+        "result_id": "Leather gloves"
+      },
+      {
+        "id": "Wool cloth",
+        "count": 2,
+        "result_id": "Wool gloves"
+      },
+      {
+        "id": "Piece of goat leather",
+        "count": 2,
+        "result_id": "Goat leather gloves"
+      },
+      {
+        "id": "Linen cloth",
+        "count": 2,
+        "result_id": "Linen gloves"
+      },
+      {
+        "id": "Piece of snakeskin leather",
+        "count": 2,
+        "result_id": "Snakeskin gloves"
+      },
+      {
+        "id": "Piece of frog leather",
+        "count": 2,
+        "result_id": "Batrachian gloves"
+      }
+    ],
+    "item_type": "Armor",
+    "xp_value": 9.2
+  },
+  "crafting-equipment-shoes": {
+    "id": "Shoes",
+    "name": "Shoes",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Piece of wolf rat leather",
+        "count": 2,
+        "result_id": "Cheap leather shoes"
+      },
+      {
+        "id": "Piece of wolf leather",
+        "count": 2,
+        "result_id": "Leather shoes"
+      },
+      {
+        "id": "Piece of goat leather",
+        "count": 2,
+        "result_id": "Goat leather shoes"
+      },
+      {
+        "id": "Piece of snakeskin leather",
+        "count": 2,
+        "result_id": "Snakeskin boots"
+      },
+      {
+        "id": "Piece of frog leather",
+        "count": 2,
+        "result_id": "Batrachian shoes"
+      }
+    ],
+    "item_type": "Armor",
+    "xp_value": 9.2
+  },
+  "crafting-equipment-cape": {
+    "id": "Cape",
+    "name": "Cape",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "componentless",
+    "materials": [
+      {
+        "id": "Processed rat pelt",
+        "count": 12,
+        "result_id": "Rat pelt cape"
+      },
+      {
+        "id": "Processed wolf pelt",
+        "count": 8,
+        "result_id": "Wolf pelt cape"
+      },
+      {
+        "id": "Processed boar hide",
+        "count": 8,
+        "result_id": "Boar hide cape"
+      },
+      {
+        "id": "Processed goat hide",
+        "count": 8,
+        "result_id": "Goat hide cape"
+      },
+      {
+        "id": "Processed bear hide",
+        "count": 8,
+        "result_id": "Bear hide cape"
+      },
+      {
+        "id": "Piece of frog leather",
+        "count": 8,
+        "result_id": "Batrachian cape"
+      }
+    ],
+    "item_type": "Cape",
+    "xp_value": 55.1
+  },
+  "cooking-items-animal-fat": {
+    "id": "Animal fat",
+    "name": "Animal fat",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      7,
+      20
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Boar meat",
+        "count": 3
+      }
+    ],
+    "result": {
+      "id": "Animal fat",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "cooking-items-roasted-rat-meat": {
+    "id": "Roasted rat meat",
+    "name": "Roasted rat meat",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      1,
+      5
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Rat meat chunks",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Roasted rat meat",
+      "count": 1
+    },
+    "xp_value": 9.2
+  },
+  "cooking-items-roasted-purified-rat-meat": {
+    "id": "Roasted purified rat meat",
+    "name": "Roasted purified rat meat",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      1,
+      10
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Rat meat chunks",
+        "count": 2
+      },
+      {
+        "id": "Belmart leaf",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Roasted purified rat meat",
+      "count": 1
+    },
+    "xp_value": 19.7
+  },
+  "cooking-items-fried-pork": {
+    "id": "Fried pork",
+    "name": "Fried pork",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      7,
+      15
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Boar meat",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Fried pork",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "cooking-items-fried-goat-meat": {
+    "id": "Fried goat meat",
+    "name": "Fried goat meat",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      10,
+      15
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Goat meat",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Fried goat meat",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "cooking-items-pork-roast": {
+    "id": "Pork roast",
+    "name": "Pork roast",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Boar meat",
+        "count": 2
+      },
+      {
+        "id": "Cooking herbs",
+        "count": 3
+      }
+    ],
+    "result": {
+      "id": "Pork roast",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "cooking-items-goat-stew": {
+    "id": "Goat stew",
+    "name": "Goat stew",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      15,
+      25
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Goat meat",
+        "count": 2
+      },
+      {
+        "id": "Cooking herbs",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Goat stew",
+      "count": 1
+    },
+    "xp_value": 53.9
+  },
+  "cooking-items-bread-kwas": {
+    "id": "Bread kwas",
+    "name": "Bread kwas",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      10,
+      15
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "type": "bread",
+        "count": 2
+      },
+      {
+        "id": "Glass bottle",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Bread kwas",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "cooking-items-fish-skewer": {
+    "id": "Fish skewer",
+    "name": "Fish skewer",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      1,
+      10
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "type": "small fish",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Fish skewer",
+      "count": 1
+    },
+    "xp_value": 19.7
+  },
+  "cooking-items-fried-fish": {
+    "id": "Fried fish",
+    "name": "Fried fish",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      7,
+      15
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "type": "medium fish",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Fried fish",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "cooking-items-fish-steak": {
+    "id": "Fish steak",
+    "name": "Fish steak",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      7,
+      15
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Fish fillet",
+        "count": 1
+      },
+      {
+        "id": "Cooking herbs",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Fish steak",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "cooking-items-fried-frog-meat": {
+    "id": "Fried frog meat",
+    "name": "Fried frog meat",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      12,
+      20
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Frog meat",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Fried frog meat",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "cooking-items-kingsized-frog-legs": {
+    "id": "Kingsized frog legs",
+    "name": "Kingsized frog legs",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      15,
+      25
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Frog meat",
+        "count": 2
+      },
+      {
+        "id": "Cooking herbs",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Kingsized frog legs",
+      "count": 1
+    },
+    "xp_value": 53.9
+  },
+  "cooking-items-alligator-jerky": {
+    "id": "Alligator jerky",
+    "name": "Alligator jerky",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      22,
+      30
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Alligator meat",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Alligator jerky",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
+  "cooking-items-snake-jerky": {
+    "id": "Snake jerky",
+    "name": "Snake jerky",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      22,
+      30
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Giant snake meat",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Snake jerky",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
+  "cooking-items-turtle-jerky": {
+    "id": "Turtle jerky",
+    "name": "Turtle jerky",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      22,
+      30
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Turtle meat",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Turtle jerky",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
+  "cooking-items-swampland-skewer": {
+    "id": "Swampland skewer",
+    "name": "Swampland skewer",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      27,
+      37
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Alligator meat",
+        "count": 1
+      },
+      {
+        "id": "Giant snake meat",
+        "count": 1
+      },
+      {
+        "id": "Turtle meat",
+        "count": 1
+      },
+      {
+        "id": "Wild garlic",
+        "count": 1
+      },
+      {
+        "id": "Wild onion",
+        "count": 1
+      },
+      {
+        "id": "Cooking herbs",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Swampland skewer",
+      "count": 1
+    },
+    "xp_value": 82.9
+  },
+  "cooking-items-crab-bisque": {
+    "id": "Crab bisque",
+    "name": "Crab bisque",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      22,
+      30
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Crab meat",
+        "count": 3
+      },
+      {
+        "id": "Cooking herbs",
+        "count": 1
+      },
+      {
+        "id": "Wild potato",
+        "count": 2
+      },
+      {
+        "id": "Wild onion",
+        "count": 1
+      },
+      {
+        "id": "Glass bottle",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Crab bisque",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
+  "cooking-items-clam-broth": {
+    "id": "Clam broth",
+    "name": "Clam broth",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      22,
+      30
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Clam",
+        "count": 3
+      },
+      {
+        "id": "Cooking herbs",
+        "count": 1
+      },
+      {
+        "id": "Wild garlic",
+        "count": 1
+      },
+      {
+        "id": "Glass bottle",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Clam broth",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
+  "cooking-items-turtle-soup": {
+    "id": "Turtle soup",
+    "name": "Turtle soup",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      22,
+      30
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Turtle meat",
+        "count": 1
+      },
+      {
+        "id": "Cooking herbs",
+        "count": 1
+      },
+      {
+        "id": "Wild potato",
+        "count": 1
+      },
+      {
+        "id": "Glass bottle",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Turtle soup",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
+  "cooking-items-basin-gumbo": {
+    "id": "Basin gumbo",
+    "name": "Basin gumbo",
+    "category": "cooking",
+    "subcategory": "items",
+    "recipe_skill": "Cooking",
+    "recipe_level": [
+      35,
+      60
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Alligator meat",
+        "count": 3
+      },
+      {
+        "id": "Turtle meat",
+        "count": 3
+      },
+      {
+        "id": "Crab meat",
+        "count": 6
+      },
+      {
+        "id": "Clam",
+        "count": 6
+      },
+      {
+        "id": "Wild potato",
+        "count": 6
+      },
+      {
+        "id": "Wild garlic",
+        "count": 4
+      },
+      {
+        "id": "Wild onion",
+        "count": 4
+      },
+      {
+        "id": "Animal fat",
+        "count": 3
+      },
+      {
+        "id": "Cooking herbs",
+        "count": 3
+      },
+      {
+        "id": "Belmart leaf",
+        "count": 2
+      },
+      {
+        "id": "Glass bottle",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Basin gumbo",
+      "count": 1
+    },
+    "xp_value": 141.1
+  },
+  "smelting-items-low-quality-iron-ingot": {
+    "id": "Low quality iron ingot",
+    "name": "Low quality iron ingot",
+    "category": "smelting",
+    "subcategory": "items",
+    "recipe_skill": "Smelting",
+    "recipe_level": [
+      1,
+      5
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Low quality iron ore",
+        "count": 5
+      },
+      {
+        "type": "coal",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Low quality iron ingot",
+      "count": 1
+    },
+    "xp_value": 9.2
+  },
+  "smelting-items-iron-ingot": {
+    "id": "Iron ingot",
+    "name": "Iron ingot",
+    "category": "smelting",
+    "subcategory": "items",
+    "recipe_skill": "Smelting",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Iron ore",
+        "count": 5
+      },
+      {
+        "type": "coal",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Iron ingot",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "smelting-items-steel-ingot-inefficient": {
+    "id": "Steel ingot (inefficient)",
+    "name": "Steel ingot (inefficient)",
+    "category": "smelting",
+    "subcategory": "items",
+    "recipe_skill": "Smelting",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Iron ore",
+        "count": 5
+      },
+      {
+        "id": "Atratan ore",
+        "count": 4
+      },
+      {
+        "type": "coal",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Steel ingot",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "smelting-items-raw-glass": {
+    "id": "Raw Glass",
+    "name": "Raw Glass",
+    "category": "smelting",
+    "subcategory": "items",
+    "recipe_skill": "Smelting",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Silica Sand",
+        "count": 2
+      },
+      {
+        "id": "Potash",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Raw Glass",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "smelting-items-charcoal": {
+    "id": "Charcoal",
+    "name": "Charcoal",
+    "category": "smelting",
+    "subcategory": "items",
+    "recipe_skill": "Smelting",
+    "recipe_level": [
+      1,
+      10
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "type": "raw wood",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Charcoal",
+      "count": 1
+    },
+    "xp_value": 19.7
+  },
+  "forging-items-iron-chainmail": {
+    "id": "Iron chainmail",
+    "name": "Iron chainmail",
+    "category": "forging",
+    "subcategory": "items",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Iron ingot",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Iron chainmail",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "forging-items-steel-chainmail": {
+    "id": "Steel chainmail",
+    "name": "Steel chainmail",
+    "category": "forging",
+    "subcategory": "items",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Steel ingot",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Steel chainmail",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "forging-components-short-blade": {
+    "id": "Short blade",
+    "name": "Short blade",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Low quality iron ingot",
+        "count": 2,
+        "result_id": "Cheap short iron blade"
+      },
+      {
+        "id": "Iron ingot",
+        "count": 2,
+        "result_id": "Short iron blade"
+      },
+      {
+        "id": "Steel ingot",
+        "count": 2,
+        "result_id": "Short steel blade"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 9.2
+  },
+  "forging-components-long-blade": {
+    "id": "Long blade",
+    "name": "Long blade",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Low quality iron ingot",
+        "count": 3,
+        "result_id": "Cheap long iron blade"
+      },
+      {
+        "id": "Iron ingot",
+        "count": 3,
+        "result_id": "Long iron blade"
+      },
+      {
+        "id": "Steel ingot",
+        "count": 3,
+        "result_id": "Long steel blade"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 13.8
+  },
+  "forging-components-axe-head": {
+    "id": "Axe head",
+    "name": "Axe head",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Low quality iron ingot",
+        "count": 4,
+        "result_id": "Cheap iron axe head"
+      },
+      {
+        "id": "Iron ingot",
+        "count": 4,
+        "result_id": "Iron axe head"
+      },
+      {
+        "id": "Steel ingot",
+        "count": 4,
+        "result_id": "Steel axe head"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 18.4
+  },
+  "forging-components-hammer-head": {
+    "id": "Hammer head",
+    "name": "Hammer head",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Low quality iron ingot",
+        "count": 4,
+        "result_id": "Cheap iron hammer head"
+      },
+      {
+        "id": "Iron ingot",
+        "count": 4,
+        "result_id": "Iron hammer head"
+      },
+      {
+        "id": "Steel ingot",
+        "count": 4,
+        "result_id": "Steel hammer head"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 18.4
+  },
+  "forging-components-short-hilt": {
+    "id": "Short hilt",
+    "name": "Short hilt",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Low quality iron ingot",
+        "count": 1,
+        "result_id": "Cheap short iron hilt"
+      },
+      {
+        "id": "Iron ingot",
+        "count": 1,
+        "result_id": "Short iron hilt"
+      },
+      {
+        "id": "Steel ingot",
+        "count": 1,
+        "result_id": "Short steel hilt"
+      },
+      {
+        "id": "Turtle shellplate",
+        "count": 2,
+        "result_id": "Turtleshell hilt"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 5.3
+  },
+  "forging-components-medium-handle": {
+    "id": "Medium handle",
+    "name": "Medium handle",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Low quality iron ingot",
+        "count": 2,
+        "result_id": "Cheap medium iron handle"
+      },
+      {
+        "id": "Iron ingot",
+        "count": 2,
+        "result_id": "Medium iron handle"
+      },
+      {
+        "id": "Steel ingot",
+        "count": 2,
+        "result_id": "Medium steel handle"
+      },
+      {
+        "id": "Turtle shellplate",
+        "count": 4,
+        "result_id": "Turtleshell handle"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 9.2
+  },
+  "forging-components-long-shaft": {
+    "id": "Long shaft",
+    "name": "Long shaft",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Low quality iron ingot",
+        "count": 4,
+        "result_id": "Cheap long iron shaft"
+      },
+      {
+        "id": "Iron ingot",
+        "count": 4,
+        "result_id": "Long iron shaft"
+      },
+      {
+        "id": "Steel ingot",
+        "count": 4,
+        "result_id": "Long steel shaft"
+      },
+      {
+        "id": "Turtle shellplate",
+        "count": 8,
+        "result_id": "Turtleshell shaft"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 18.4
+  },
+  "forging-components-shield-base": {
+    "id": "Shield base",
+    "name": "Shield base",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Low quality iron ingot",
+        "count": 5,
+        "result_id": "Crude iron shield base"
+      },
+      {
+        "id": "Iron ingot",
+        "count": 5,
+        "result_id": "Iron shield base"
+      },
+      {
+        "id": "Steel ingot",
+        "count": 5,
+        "result_id": "Steel shield base"
+      },
+      {
+        "id": "Turtle shellplate",
+        "count": 10,
+        "result_id": "Turtleshell shield base"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 23
+  },
+  "forging-components-helmet-exterior": {
+    "id": "Helmet exterior",
+    "name": "Helmet exterior",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Iron chainmail",
+        "count": 3,
+        "result_id": "Iron chainmail helmet armor"
+      },
+      {
+        "id": "Steel chainmail",
+        "count": 3,
+        "result_id": "Steel chainmail helmet armor"
+      },
+      {
+        "id": "Turtle shellplate",
+        "count": 6,
+        "result_id": "Turtleshell helmet armor"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 13.8
+  },
+  "forging-components-chestplate-exterior": {
+    "id": "Chestplate exterior",
+    "name": "Chestplate exterior",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Iron chainmail",
+        "count": 5,
+        "result_id": "Iron chainmail vest"
+      },
+      {
+        "id": "Steel chainmail",
+        "count": 5,
+        "result_id": "Steel chainmail vest"
+      },
+      {
+        "id": "Turtle shellplate",
+        "count": 10,
+        "result_id": "Turtleshell chestplate"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 23
+  },
+  "forging-components-leg-armor-exterior": {
+    "id": "Leg armor exterior",
+    "name": "Leg armor exterior",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Iron chainmail",
+        "count": 4,
+        "result_id": "Iron chainmail greaves"
+      },
+      {
+        "id": "Steel chainmail",
+        "count": 4,
+        "result_id": "Steel chainmail greaves"
+      },
+      {
+        "id": "Turtle shellplate",
+        "count": 8,
+        "result_id": "Turtleshell greaves"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 18.4
+  },
+  "forging-components-glove-exterior": {
+    "id": "Glove exterior",
+    "name": "Glove exterior",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Iron chainmail",
+        "count": 3,
+        "result_id": "Iron chainmail glove"
+      },
+      {
+        "id": "Steel chainmail",
+        "count": 3,
+        "result_id": "Steel chainmail glove"
+      },
+      {
+        "id": "Turtle shellplate",
+        "count": 6,
+        "result_id": "Turtleshell glove"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 13.8
+  },
+  "forging-components-shoes-exterior": {
+    "id": "Shoes exterior",
+    "name": "Shoes exterior",
+    "category": "forging",
+    "subcategory": "components",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Iron chainmail",
+        "count": 3,
+        "result_id": "Iron chainmail shoes"
+      },
+      {
+        "id": "Steel chainmail",
+        "count": 3,
+        "result_id": "Steel chainmail shoes"
+      },
+      {
+        "id": "Turtle shellplate",
+        "count": 6,
+        "result_id": "Turtleshell shoes"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 13.8
+  },
+  "alchemy-items-potash": {
+    "id": "Potash",
+    "name": "Potash",
+    "category": "alchemy",
+    "subcategory": "items",
+    "recipe_skill": "Alchemy",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Charcoal",
+        "count": 10
+      }
+    ],
+    "result": {
+      "id": "Potash",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "alchemy-items-weak-healing-powder": {
+    "id": "Weak healing powder",
+    "name": "Weak healing powder",
+    "category": "alchemy",
+    "subcategory": "items",
+    "recipe_skill": "Alchemy",
+    "recipe_level": [
+      1,
+      10
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Golmoon leaf",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Weak healing powder",
+      "count": 1
+    },
+    "xp_value": 19.7
+  },
+  "alchemy-items-healing-powder": {
+    "id": "Healing powder",
+    "name": "Healing powder",
+    "category": "alchemy",
+    "subcategory": "items",
+    "recipe_skill": "Alchemy",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Golmoon leaf",
+        "count": 3
+      },
+      {
+        "id": "Silver thistle",
+        "count": 3
+      }
+    ],
+    "result": {
+      "id": "Healing powder",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "alchemy-items-oneberry-juice": {
+    "id": "Oneberry juice",
+    "name": "Oneberry juice",
+    "category": "alchemy",
+    "subcategory": "items",
+    "recipe_skill": "Alchemy",
+    "recipe_level": [
+      2,
+      12
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Oneberry",
+        "count": 10
+      },
+      {
+        "id": "Glass phial",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Oneberry juice",
+      "count": 1
+    },
+    "xp_value": 24
+  },
+  "alchemy-items-healing-potion": {
+    "id": "Healing potion",
+    "name": "Healing potion",
+    "category": "alchemy",
+    "subcategory": "items",
+    "recipe_skill": "Alchemy",
+    "recipe_level": [
+      7,
+      17
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Oneberry",
+        "count": 8
+      },
+      {
+        "id": "Silver thistle",
+        "count": 4
+      },
+      {
+        "id": "Glass phial",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Healing potion",
+      "count": 1
+    },
+    "xp_value": 35.3
+  },
+  "alchemy-items-healing-balm": {
+    "id": "Healing balm",
+    "name": "Healing balm",
+    "category": "alchemy",
+    "subcategory": "items",
+    "recipe_skill": "Alchemy",
+    "recipe_level": [
+      7,
+      15
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Oneberry",
+        "count": 10
+      },
+      {
+        "id": "Golmoon leaf",
+        "count": 5
+      },
+      {
+        "id": "Animal fat",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Healing balm",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "butchering-items-piece-of-wolf-rat-leather": {
+    "id": "Piece of wolf rat leather",
+    "name": "Piece of wolf rat leather",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      1,
+      5
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Rat pelt",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Piece of wolf rat leather",
+      "count": 1
+    },
+    "xp_value": 9.2
+  },
+  "butchering-items-piece-of-wolf-leather": {
+    "id": "Piece of wolf leather",
+    "name": "Piece of wolf leather",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      1,
+      10
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Wolf pelt",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Piece of wolf leather",
+      "count": 1
+    },
+    "xp_value": 19.7
+  },
+  "butchering-items-piece-of-boar-leather": {
+    "id": "Piece of boar leather",
+    "name": "Piece of boar leather",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Boar hide",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Piece of boar leather",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "butchering-items-piece-of-goat-leather": {
+    "id": "Piece of goat leather",
+    "name": "Piece of goat leather",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Mountain goat hide",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Piece of goat leather",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "butchering-items-piece-of-bear-leather": {
+    "id": "Piece of bear leather",
+    "name": "Piece of bear leather",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      12,
+      25
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Bear hide",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Piece of bear leather",
+      "count": 1
+    },
+    "xp_value": 53.9
+  },
+  "butchering-items-piece-of-frog-leather": {
+    "id": "Piece of frog leather",
+    "name": "Piece of frog leather",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      12,
+      25
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Frog hide",
+        "count": 4
+      },
+      {
+        "id": "Belmart leaf",
+        "count": 4
+      }
+    ],
+    "result": {
+      "id": "Piece of frog leather",
+      "count": 1
+    },
+    "xp_value": 53.9
+  },
+  "butchering-items-piece-of-alligator-leather": {
+    "id": "Piece of alligator leather",
+    "name": "Piece of alligator leather",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      22,
+      30
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Alligator skin",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Piece of alligator leather",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
+  "butchering-items-piece-of-snakeskin-leather": {
+    "id": "Piece of snakeskin leather",
+    "name": "Piece of snakeskin leather",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      22,
+      30
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Giant snake skin",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Piece of snakeskin leather",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
+  "butchering-items-turtle-shellplate": {
+    "id": "Turtle shellplate",
+    "name": "Turtle shellplate",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      27,
+      37
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Turtle shell",
+        "count": 10
+      }
+    ],
+    "result": {
+      "id": "Turtle shellplate",
+      "count": 1
+    },
+    "xp_value": 82.9
+  },
+  "butchering-items-processed-rat-pelt": {
+    "id": "Processed rat pelt",
+    "name": "Processed rat pelt",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      1,
+      5
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Rat pelt",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Processed rat pelt",
+      "count": 1
+    },
+    "xp_value": 9.2
+  },
+  "butchering-items-processed-wolf-pelt": {
+    "id": "Processed wolf pelt",
+    "name": "Processed wolf pelt",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      1,
+      10
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Wolf pelt",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Processed wolf pelt",
+      "count": 1
+    },
+    "xp_value": 19.7
+  },
+  "butchering-items-processed-boar-hide": {
+    "id": "Processed boar hide",
+    "name": "Processed boar hide",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Boar hide",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Processed boar hide",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "butchering-items-processed-goat-hide": {
+    "id": "Processed goat hide",
+    "name": "Processed goat hide",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Mountain goat hide",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Processed goat hide",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "butchering-items-processed-bear-hide": {
+    "id": "Processed bear hide",
+    "name": "Processed bear hide",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      12,
+      25
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Bear hide",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Processed bear hide",
+      "count": 1
+    },
+    "xp_value": 53.9
+  },
+  "butchering-items-rat-meat-chunks": {
+    "id": "Rat meat chunks",
+    "name": "Rat meat chunks",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      1,
+      5
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Rat tail",
+        "count": 3
+      }
+    ],
+    "result": {
+      "id": "Rat meat chunks",
+      "count": 1
+    },
+    "xp_value": 9.2
+  },
+  "butchering-items-fish-fillet": {
+    "id": "Fish fillet",
+    "name": "Fish fillet",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      10,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "type": "large fish",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Fish fillet",
+      "count": 3
+    },
+    "xp_value": 30.7
+  },
+  "butchering-items-processed-weak-monster-bone": {
+    "id": "Processed weak monster bone",
+    "name": "Processed weak monster bone",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Weak monster bone",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Processed weak monster bone",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "butchering-items-high-quality-wolf-fang": {
+    "id": "High quality wolf fang",
+    "name": "High quality wolf fang",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      1,
+      7
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Wolf fang",
+        "count": 50
+      }
+    ],
+    "result": {
+      "id": "High quality wolf fang",
+      "count": 1
+    },
+    "xp_value": 13.3
+  },
+  "butchering-items-high-quality-boar-tusk": {
+    "id": "High quality boar tusk",
+    "name": "High quality boar tusk",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      5,
+      12
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Boar tusk",
+        "count": 50
+      }
+    ],
+    "result": {
+      "id": "High quality boar tusk",
+      "count": 1
+    },
+    "xp_value": 24
+  },
+  "butchering-items-pristine-mountain-goat-horn": {
+    "id": "Pristine mountain goat horn",
+    "name": "Pristine mountain goat horn",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      10,
+      17
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Mountain goat horn",
+        "count": 50
+      }
+    ],
+    "result": {
+      "id": "Pristine mountain goat horn",
+      "count": 1
+    },
+    "xp_value": 35.3
+  },
+  "butchering-items-sharp-bear-claw": {
+    "id": "Sharp bear claw",
+    "name": "Sharp bear claw",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      13,
+      20
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Bear claw",
+        "count": 50
+      }
+    ],
+    "result": {
+      "id": "Sharp bear claw",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "butchering-items-giant-crab-claw": {
+    "id": "Giant crab claw",
+    "name": "Giant crab claw",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      18,
+      25
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Crab claw",
+        "count": 50
+      }
+    ],
+    "result": {
+      "id": "Giant crab claw",
+      "count": 1
+    },
+    "xp_value": 53.9
+  },
+  "woodworking-items-processed-rough-wood": {
+    "id": "Processed rough wood",
+    "name": "Processed rough wood",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      1,
+      5
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Piece of rough wood",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Processed rough wood",
+      "count": 1
+    },
+    "xp_value": 9.2
+  },
+  "woodworking-items-processed-wood": {
+    "id": "Processed wood",
+    "name": "Processed wood",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Piece of wood",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Processed wood",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "woodworking-items-processed-ash-wood": {
+    "id": "Processed ash wood",
+    "name": "Processed ash wood",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Piece of ash wood",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Processed ash wood",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
+  "woodworking-items-makeshift-fishing-pole": {
+    "id": "Makeshift fishing pole",
+    "name": "Makeshift fishing pole",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      1,
+      10
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "Processed rough wood",
+        "count": 4
+      },
+      {
+        "id": "Wool",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Makeshift fishing pole",
+      "count": 1
+    },
+    "xp_value": 19.7
+  },
+  "woodworking-components-short-hilt": {
+    "id": "Short hilt",
+    "name": "Short hilt",
+    "category": "woodworking",
+    "subcategory": "components",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Processed rough wood",
+        "count": 1,
+        "result_id": "Simple short wooden hilt"
+      },
+      {
+        "id": "Processed wood",
+        "count": 1,
+        "result_id": "Short wooden hilt"
+      },
+      {
+        "id": "Processed ash wood",
+        "count": 1,
+        "result_id": "Short ash wood hilt"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 5.3
+  },
+  "woodworking-components-medium-handle": {
+    "id": "Medium handle",
+    "name": "Medium handle",
+    "category": "woodworking",
+    "subcategory": "components",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Processed rough wood",
+        "count": 2,
+        "result_id": "Simple medium wooden handle"
+      },
+      {
+        "id": "Processed wood",
+        "count": 2,
+        "result_id": "Medium wooden handle"
+      },
+      {
+        "id": "Processed ash wood",
+        "count": 2,
+        "result_id": "Medium ash wood handle"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 9.2
+  },
+  "woodworking-components-long-shaft": {
+    "id": "Long shaft",
+    "name": "Long shaft",
+    "category": "woodworking",
+    "subcategory": "components",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Processed rough wood",
+        "count": 4,
+        "result_id": "Simple long wooden shaft"
+      },
+      {
+        "id": "Processed wood",
+        "count": 4,
+        "result_id": "Long wooden shaft"
+      },
+      {
+        "id": "Processed ash wood",
+        "count": 4,
+        "result_id": "Long ash wood shaft"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 18.4
+  },
+  "woodworking-components-shield-base": {
+    "id": "Shield base",
+    "name": "Shield base",
+    "category": "woodworking",
+    "subcategory": "components",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Processed rough wood",
+        "count": 6,
+        "result_id": "Crude wooden shield base"
+      },
+      {
+        "id": "Processed wood",
+        "count": 6,
+        "result_id": "Wooden shield base"
+      },
+      {
+        "id": "Processed ash wood",
+        "count": 6,
+        "result_id": "Ash wood shield base"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 27.6
+  },
+  "woodworking-components-shield-handle": {
+    "id": "Shield handle",
+    "name": "Shield handle",
+    "category": "woodworking",
+    "subcategory": "components",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Processed rough wood",
+        "count": 4,
+        "result_id": "Basic shield handle"
+      },
+      {
+        "id": "Processed wood",
+        "count": 4,
+        "result_id": "Wooden shield handle"
+      },
+      {
+        "id": "Processed ash wood",
+        "count": 4,
+        "result_id": "Ash wood shield handle"
+      }
+    ],
+    "item_type": "Component",
+    "xp_value": 18.4
+  }
+}

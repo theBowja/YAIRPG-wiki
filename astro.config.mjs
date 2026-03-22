@@ -162,6 +162,39 @@ if (fs.existsSync(itemsDataPath)) {
 	}
 }
 
+const recipesDataPath = './src/data/recipes.json';
+/** @type {any[]} */
+let recipeSidebarItems = [];
+if (fs.existsSync(recipesDataPath)) {
+	try {
+		const recipesData = JSON.parse(fs.readFileSync(recipesDataPath, 'utf-8'));
+
+		/** @type {Object.<string, any[]>} */
+		const skills = {};
+		for (const [slug, recipe] of Object.entries(recipesData)) {
+			const skill = recipe.recipe_skill || 'Miscellaneous';
+			if (!skills[skill]) skills[skill] = [];
+			skills[skill].push({
+				label: recipe.name,
+				link: `/recipes/${slug}`,
+			});
+		}
+
+		recipeSidebarItems = [
+			{ label: 'All Recipes', link: '/recipes' },
+			...Object.entries(skills)
+				.sort(([a], [b]) => a.localeCompare(b))
+				.map(([skill, items]) => ({
+					label: skill,
+					collapsed: true,
+					items: items.sort((a, b) => a.label.localeCompare(b.label)),
+				}))
+		];
+	} catch (e) {
+		console.error('Failed to parse recipes.json for sidebar:', e);
+	}
+}
+
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://thebowja.github.io',
@@ -193,6 +226,10 @@ export default defineConfig({
 				{
 					label: 'Skills',
 					items: skillSidebarItems,
+				},
+				{
+					label: 'Recipes',
+					items: recipeSidebarItems,
 				},
 			],
 			pagination: false

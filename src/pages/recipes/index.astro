@@ -1,0 +1,112 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import recipesData from '../../data/recipes.json';
+
+const recipes = Object.entries(recipesData).map(([slug, recipe]) => ({
+  slug,
+  ...recipe,
+}));
+
+// Group by skill
+const groupedRecipes = recipes.reduce((acc, recipe) => {
+  const skill = recipe.recipe_skill || 'Miscellaneous';
+  if (!acc[skill]) acc[skill] = [];
+  acc[skill].push(recipe);
+  return acc;
+}, {});
+
+// Sort skills and recipes within skills
+const sortedSkills = Object.keys(groupedRecipes).sort();
+sortedSkills.forEach(skill => {
+  groupedRecipes[skill].sort((a, b) => {
+      const levelA = a.recipe_level ? a.recipe_level[0] : 0;
+      const levelB = b.recipe_level ? b.recipe_level[0] : 0;
+      return levelA - levelB || a.name.localeCompare(b.name);
+  });
+});
+
+const capitalize = (text) => {
+  return text.replace(/_/g, ' ').split(' ').map(word => word.charAt(0).toUpperCase() + word.slice(1)).join(' ');
+};
+---
+
+<StarlightPage frontmatter={{ title: 'Crafting Recipes', description: 'All crafting, cooking, and forging recipes in YAIRPG.' }}>
+  <div class="recipes-container">
+    {sortedSkills.map(skill => (
+      <section class="skill-group">
+        <h2>{skill}</h2>
+        <div class="recipe-grid">
+          {groupedRecipes[skill].map(recipe => (
+            <div class="recipe-card">
+              <h3><a href={`/YAIRPG-wiki/recipes/${recipe.slug}`}>{recipe.name}</a></h3>
+              <div class="recipe-meta">
+                <span class="level">Level {recipe.recipe_level ? `${recipe.recipe_level[0]}-${recipe.recipe_level[1]}` : '1'}</span>
+                <span class="type">{capitalize(recipe.subcategory)}</span>
+              </div>
+              {recipe.materials && (
+                <div class="materials-preview">
+                   {recipe.materials.slice(0, 3).map(m => m.id || m.type).join(', ')}
+                   {recipe.materials.length > 3 && '...'}
+                </div>
+              )}
+            </div>
+          ))}
+        </div>
+      </section>
+    ))}
+  </div>
+</StarlightPage>
+
+<style>
+  .recipes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin-top: 1rem;
+  }
+  .skill-group h2 {
+    font-size: var(--sl-text-h3);
+    border-bottom: 2px solid var(--sl-color-accent);
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+  }
+  .recipe-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .recipe-card {
+    background: var(--sl-color-gray-6);
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    padding: 1rem;
+    transition: transform 0.2s, border-color 0.2s;
+  }
+  .recipe-card:hover {
+    transform: translateY(-2px);
+    border-color: var(--sl-color-accent);
+  }
+  .recipe-card h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: var(--sl-text-lg);
+  }
+  .recipe-card h3 a {
+    color: var(--sl-color-white);
+    text-decoration: none;
+  }
+  .recipe-card h3 a:hover {
+    color: var(--sl-color-accent-high);
+  }
+  .recipe-meta {
+    display: flex;
+    justify-content: space-between;
+    font-size: var(--sl-text-xs);
+    color: var(--sl-color-gray-3);
+    margin-bottom: 0.75rem;
+  }
+  .materials-preview {
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-2);
+    font-style: italic;
+  }
+</style>

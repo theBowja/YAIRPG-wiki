@@ -6,6 +6,7 @@ import activitiesData from '../data/activities.json';
 import skillsData from '../data/skills.json';
 import enemiesData from '../data/enemies.json';
 import itemsData from '../data/items.json';
+import recipesData from '../data/recipes.json';
 
 const { id } = Astro.params;
 const starlightRoute = Astro.locals.starlightRoute;
@@ -16,6 +17,7 @@ const isActivityPage = slug.startsWith('activities/');
 const isSkillPage = slug.startsWith('skills/');
 const isEnemyPage = slug.startsWith('enemies/');
 const isItemPage = slug.startsWith('items/');
+const isRecipePage = slug.startsWith('recipes/');
 
 let data: any = null;
 
@@ -29,6 +31,8 @@ if (isLocationPage) {
   data = (enemiesData as any)[id || ''];
 } else if (isItemPage) {
   data = (itemsData as any)[id || ''];
+} else if (isRecipePage) {
+  data = (recipesData as any)[id || ''];
 }
 
 const isDetailsPage = !!data;
@@ -186,6 +190,22 @@ const slugify = (text: string) => {
               <span class="value">{data.tags.join(', ')}</span>
             </div>
           )}
+        </>
+      )}
+      {isRecipePage && (
+        <>
+          <div class="attribute-item">
+            <span class="label">Skill</span>
+            <span class="value">{data.recipe_skill}</span>
+          </div>
+          <div class="attribute-item">
+            <span class="label">Level</span>
+            <span class="value">{data.recipe_level ? `${data.recipe_level[0]} - ${data.recipe_level[1]}` : '1'}</span>
+          </div>
+          <div class="attribute-item">
+            <span class="label">XP</span>
+            <span class="value">{data.xp_value}</span>
+          </div>
         </>
       )}
     </div>
