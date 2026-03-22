@@ -7,7 +7,23 @@
     "base_skills_names": [
       "Farming"
     ],
-    "type": "Job"
+    "type": "Job",
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "xp": 1,
+        "activity_id": "fieldwork",
+        "starting_text": "Work on the fields"
+      },
+      {
+        "id": "town-farms",
+        "name": "Town farms",
+        "xp": 2,
+        "activity_id": "fieldwork",
+        "starting_text": "Work on the fields"
+      }
+    ]
   },
   "patrolling": {
     "id": "patrolling",
@@ -17,7 +33,16 @@
     "base_skills_names": [
       "Spatial awareness"
     ],
-    "type": "Job"
+    "type": "Job",
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "xp": 1,
+        "activity_id": "patrolling",
+        "starting_text": "Go on a patrol around the village."
+      }
+    ]
   },
   "running": {
     "id": "running",
@@ -27,7 +52,30 @@
     "base_skills_names": [
       "Running"
     ],
-    "type": "Training"
+    "type": "Training",
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "xp": 1,
+        "activity_id": "running",
+        "starting_text": "Go for a run around the village"
+      },
+      {
+        "id": "forest-road",
+        "name": "Forest road",
+        "xp": 4,
+        "activity_id": "running",
+        "starting_text": "Go for a run through the forest"
+      },
+      {
+        "id": "lake-beach",
+        "name": "Lake beach",
+        "xp": 10,
+        "activity_id": "running",
+        "starting_text": "Run along the shore"
+      }
+    ]
   },
   "weightlifting": {
     "id": "weightlifting",
@@ -37,7 +85,30 @@
     "base_skills_names": [
       "Weightlifting"
     ],
-    "type": "Training"
+    "type": "Training",
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "xp": 1,
+        "activity_id": "weightlifting",
+        "starting_text": "Try to carry some bags of grain"
+      },
+      {
+        "id": "nearby-cave",
+        "name": "Nearby cave",
+        "xp": 4,
+        "activity_id": "weightlifting",
+        "starting_text": "Try lifting some of the rocks"
+      },
+      {
+        "id": "lake-beach",
+        "name": "Lake beach",
+        "xp": 10,
+        "activity_id": "weightlifting",
+        "starting_text": "Sled pull a boulder"
+      }
+    ]
   },
   "balancing": {
     "id": "balancing",
@@ -47,7 +118,37 @@
     "base_skills_names": [
       "Equilibrium"
     ],
-    "type": "Training"
+    "type": "Training",
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "xp": 1,
+        "activity_id": "balancing",
+        "starting_text": "Try to keep your balance on rocks in the river"
+      },
+      {
+        "id": "forest-lake",
+        "name": "Forest lake",
+        "xp": 7,
+        "activity_id": "balancing",
+        "starting_text": "Try to keep your balance on top of the waterfall as water rushes around your feet"
+      },
+      {
+        "id": "mountain-path",
+        "name": "Mountain path",
+        "xp": 4,
+        "activity_id": "balancing",
+        "starting_text": "Stupidly risk your life by trying to balance on some stones on the very edge of the cliff"
+      },
+      {
+        "id": "mountain-camp",
+        "name": "Mountain camp",
+        "xp": 4,
+        "activity_id": "balancing",
+        "starting_text": "Stupidly risk your life by trying to balance on some stones on the very edge of the cliff"
+      }
+    ]
   },
   "swimming": {
     "id": "swimming",
@@ -57,7 +158,30 @@
     "base_skills_names": [
       "Swimming"
     ],
-    "type": "Training"
+    "type": "Training",
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "xp": 1,
+        "activity_id": "swimming",
+        "starting_text": "Swim in the river"
+      },
+      {
+        "id": "forest-lake",
+        "name": "Forest lake",
+        "xp": 4,
+        "activity_id": "swimming",
+        "starting_text": "Go diving in the lake waters"
+      },
+      {
+        "id": "lake-beach",
+        "name": "Lake beach",
+        "xp": 7,
+        "activity_id": "swimming",
+        "starting_text": "Swim against the current"
+      }
+    ]
   },
   "meditating": {
     "id": "meditating",
@@ -67,7 +191,30 @@
     "base_skills_names": [
       "Meditation"
     ],
-    "type": "Training"
+    "type": "Training",
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "xp": 1,
+        "activity_id": "meditating",
+        "starting_text": "Sit down and meditate"
+      },
+      {
+        "id": "nearby-cave",
+        "name": "Nearby cave",
+        "xp": 4,
+        "activity_id": "meditating",
+        "starting_text": "Sit down and meditate in front of the gate"
+      },
+      {
+        "id": "waterfall-basin",
+        "name": "Waterfall basin",
+        "xp": 8,
+        "activity_id": "meditating",
+        "starting_text": "Sit in the rock shelter behind the waterfall and focus your mind"
+      }
+    ]
   },
   "climbing": {
     "id": "climbing",
@@ -77,7 +224,30 @@
     "base_skills_names": [
       "Climbing"
     ],
-    "type": "Training"
+    "type": "Training",
+    "locations": [
+      {
+        "id": "nearby-cave",
+        "name": "Nearby cave",
+        "xp": 1,
+        "activity_id": "climbing",
+        "starting_text": "Attempt climbing the mountain walls outside"
+      },
+      {
+        "id": "mountain-camp",
+        "name": "Mountain camp",
+        "xp": 4,
+        "activity_id": "climbing",
+        "starting_text": "Take a lesson from the goats and try to climb a wall near the camp"
+      },
+      {
+        "id": "lake-beach",
+        "name": "Lake beach",
+        "xp": 10,
+        "activity_id": "climbing",
+        "starting_text": "Practice rappelling down the cliff face"
+      }
+    ]
   },
   "enduring": {
     "id": "enduring",
@@ -87,7 +257,16 @@
     "base_skills_names": [
       "Persistence"
     ],
-    "type": "Training"
+    "type": "Training",
+    "locations": [
+      {
+        "id": "waterfall-basin",
+        "name": "Waterfall basin",
+        "xp": 2,
+        "activity_id": "enduring",
+        "starting_text": "Harden your resolve by sitting underneath the waterfall"
+      }
+    ]
   },
   "mining": {
     "id": "mining",
@@ -98,7 +277,37 @@
       "Mining"
     ],
     "type": "Gathering",
-    "required_tool_type": "pickaxe"
+    "required_tool_type": "pickaxe",
+    "locations": [
+      {
+        "id": "nearby-cave",
+        "name": "Nearby cave",
+        "xp": 1,
+        "activity_id": "mining",
+        "starting_text": "Mine the strange looking iron vein"
+      },
+      {
+        "id": "nearby-cave",
+        "name": "Nearby cave",
+        "xp": 5,
+        "activity_id": "mining2",
+        "starting_text": "Mine the deeper iron vein"
+      },
+      {
+        "id": "nearby-cave",
+        "name": "Nearby cave",
+        "xp": 12,
+        "activity_id": "mining3",
+        "starting_text": "Mine the atratan vein"
+      },
+      {
+        "id": "forest-lake",
+        "name": "Forest lake",
+        "xp": 1,
+        "activity_id": "mining",
+        "starting_text": "Mine the the shiny underwater vein"
+      }
+    ]
   },
   "digging": {
     "id": "digging",
@@ -109,7 +318,23 @@
       "Digging"
     ],
     "type": "Gathering",
-    "required_tool_type": "shovel"
+    "required_tool_type": "shovel",
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "xp": 1,
+        "activity_id": "sand",
+        "starting_text": "Dredge up some sand from the riverbed"
+      },
+      {
+        "id": "lake-beach",
+        "name": "Lake beach",
+        "xp": 10,
+        "activity_id": "sand",
+        "starting_text": "Dig for clams around the lake beach"
+      }
+    ]
   },
   "woodcutting": {
     "id": "woodcutting",
@@ -120,7 +345,30 @@
       "Woodcutting"
     ],
     "type": "Gathering",
-    "required_tool_type": "axe"
+    "required_tool_type": "axe",
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "xp": 1,
+        "activity_id": "woodcutting",
+        "starting_text": "Gather wood on the outskirts"
+      },
+      {
+        "id": "forest-road",
+        "name": "Forest road",
+        "xp": 5,
+        "activity_id": "woodcutting",
+        "starting_text": "Gather wood from nearby trees"
+      },
+      {
+        "id": "forest-road",
+        "name": "Forest road",
+        "xp": 12,
+        "activity_id": "woodcutting2",
+        "starting_text": "Gather wood from sturdy trees"
+      }
+    ]
   },
   "herbalism": {
     "id": "herbalism",
@@ -131,7 +379,44 @@
       "Herbalism"
     ],
     "type": "Gathering",
-    "required_tool_type": "sickle"
+    "required_tool_type": "sickle",
+    "locations": [
+      {
+        "id": "forest-road",
+        "name": "Forest road",
+        "xp": 2,
+        "activity_id": "herbalism",
+        "starting_text": "Gather useful herbs throughout the forest"
+      },
+      {
+        "id": "town-outskirts",
+        "name": "Town outskirts",
+        "xp": 4,
+        "activity_id": "herbalism",
+        "starting_text": "Search for useful herbs by the roadside"
+      },
+      {
+        "id": "mountain-camp",
+        "name": "Mountain camp",
+        "xp": 6,
+        "activity_id": "herbalism",
+        "starting_text": "Search for useful herbs on the mountainside"
+      },
+      {
+        "id": "riverbank",
+        "name": "Riverbank",
+        "xp": 9,
+        "activity_id": "herbalism",
+        "starting_text": "Harvest flax from around the riverbank"
+      },
+      {
+        "id": "swampland-tribe",
+        "name": "Swampland tribe",
+        "xp": 14,
+        "activity_id": "herbalism",
+        "starting_text": "Forage for wild herbs and vegetables in the swamplands"
+      }
+    ]
   },
   "animal-care": {
     "id": "animal care",
@@ -141,7 +426,16 @@
     "base_skills_names": [
       "Animal handling"
     ],
-    "type": "Gathering"
+    "type": "Gathering",
+    "locations": [
+      {
+        "id": "town-farms",
+        "name": "Town farms",
+        "xp": 3,
+        "activity_id": "animal care",
+        "starting_text": "Take care of local sheep in exchange for some wool"
+      }
+    ]
   },
   "fishing": {
     "id": "fishing",
@@ -152,6 +446,22 @@
       "Fishing"
     ],
     "type": "Gathering",
-    "required_tool_type": "fishing_pole"
+    "required_tool_type": "fishing_pole",
+    "locations": [
+      {
+        "id": "village",
+        "name": "Village",
+        "xp": 1,
+        "activity_id": "fishing",
+        "starting_text": "Try fishing in the river"
+      },
+      {
+        "id": "forest-lake",
+        "name": "Forest lake",
+        "xp": 4,
+        "activity_id": "fishing",
+        "starting_text": "Try fishing in the lake"
+      }
+    ]
   }
 }

@@ -78,7 +78,8 @@
       "hike down river"
     ],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "shack": {
     "id": "Shack",
@@ -100,7 +101,8 @@
     "activities": [],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "eastern-mill": {
     "id": "Eastern mill",
@@ -128,7 +130,8 @@
     "activities": [],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "eastern-storehouse": {
     "id": "Eastern storehouse",
@@ -149,6 +152,18 @@
       "travel_time": 10
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 1,
+        "xp_gain": 3
+      },
+      {
+        "type": "dark",
+        "stage": 1,
+        "xp_gain": 2
+      }
+    ],
     "enemies_list": [
       "Wolf rat"
     ],
@@ -191,6 +206,13 @@
       "travel_time": 15
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "open",
+        "stage": 1,
+        "xp_gain": 1
+      }
+    ],
     "enemies_list": [
       "Starving wolf rat",
       "Wolf rat"
@@ -284,7 +306,8 @@
       "climb the mountain"
     ],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "cave-room": {
     "id": "Cave room",
@@ -305,6 +328,17 @@
       "travel_time": 5
     },
     "leave_text": "Go back to entrance",
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 1,
+        "xp_gain": 3
+      },
+      {
+        "type": "bright",
+        "stage": 1
+      }
+    ],
     "enemies_list": [
       "Wolf rat"
     ],
@@ -359,6 +393,18 @@
       "travel_time": 20
     },
     "leave_text": "Climb out",
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 1,
+        "xp_gain": 3
+      },
+      {
+        "type": "dark",
+        "stage": 2,
+        "xp_gain": 3
+      }
+    ],
     "enemies_list": [
       "Wolf rat"
     ],
@@ -394,6 +440,18 @@
       "travel_time": 40
     },
     "leave_text": "Retreat for now",
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 1,
+        "xp_gain": 3
+      },
+      {
+        "type": "dark",
+        "stage": 3,
+        "xp_gain": 1
+      }
+    ],
     "enemies_list": [
       "Elite wolf rat"
     ],
@@ -432,6 +490,18 @@
       "travel_time": 60
     },
     "leave_text": "Retreat for now",
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 1,
+        "xp_gain": 6
+      },
+      {
+        "type": "dark",
+        "stage": 3,
+        "xp_gain": 3
+      }
+    ],
     "enemies_list": [
       "Elite wolf rat"
     ],
@@ -468,6 +538,13 @@
       "travel_time": 90
     },
     "leave_text": "Get away",
+    "types": [
+      {
+        "type": "dark",
+        "stage": 3,
+        "xp_gain": 5
+      }
+    ],
     "enemies_list": [
       "Elite wolf rat guardian"
     ],
@@ -520,6 +597,23 @@
       "travel_time": 100
     },
     "leave_text": "Run away...",
+    "types": [
+      {
+        "type": "dark",
+        "stage": 3,
+        "xp_gain": 5
+      },
+      {
+        "type": "narrow",
+        "stage": 2,
+        "xp_gain": 5
+      },
+      {
+        "type": "eldritch",
+        "stage": 1,
+        "xp_gain": 1
+      }
+    ],
     "enemies_list": [
       "Wall rat"
     ],
@@ -559,7 +653,8 @@
     "activities": [],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "forest-road": {
     "id": "Forest road",
@@ -633,7 +728,8 @@
       "search predator"
     ],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "forest": {
     "id": "Forest",
@@ -654,6 +750,13 @@
       "travel_time": 30
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 1,
+        "xp_gain": 1
+      }
+    ],
     "enemies_list": [
       "Starving wolf",
       "Young wolf"
@@ -693,6 +796,13 @@
       "travel_time": 60
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 1,
+        "xp_gain": 2
+      }
+    ],
     "enemies_list": [
       "Wolf",
       "Starving wolf",
@@ -731,6 +841,13 @@
       "travel_time": 60
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "open",
+        "stage": 2,
+        "xp_gain": 3
+      }
+    ],
     "enemies_list": [
       "Boar"
     ],
@@ -772,6 +889,18 @@
       "travel_time": 90
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 2,
+        "xp_gain": 5
+      },
+      {
+        "type": "dark",
+        "stage": 2,
+        "xp_gain": 5
+      }
+    ],
     "enemies_list": [
       "Direwolf"
     ],
@@ -799,6 +928,18 @@
       "travel_time": 180
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 2,
+        "xp_gain": 10
+      },
+      {
+        "type": "dark",
+        "stage": 2,
+        "xp_gain": 10
+      }
+    ],
     "enemies_list": [
       "Forest bear"
     ],
@@ -839,7 +980,8 @@
       "gaze"
     ],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "frogs": {
     "id": "Frogs",
@@ -860,6 +1002,18 @@
       "travel_time": 0
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "aquatic",
+        "stage": 1,
+        "xp_gain": 5
+      },
+      {
+        "type": "open",
+        "stage": 1,
+        "xp_gain": 5
+      }
+    ],
     "enemies_list": [
       "Frog"
     ],
@@ -888,6 +1042,18 @@
       "travel_time": 120
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 3,
+        "xp_gain": 10
+      },
+      {
+        "type": "dark",
+        "stage": 2,
+        "xp_gain": 7
+      }
+    ],
     "enemies_list": [
       "Red ant swarm"
     ],
@@ -932,7 +1098,8 @@
     ],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "slums": {
     "id": "Slums",
@@ -968,7 +1135,8 @@
     "activities": [],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "town-farms": {
     "id": "Town farms",
@@ -1014,7 +1182,8 @@
       "follow ant trail"
     ],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "red-ant-nest-1": {
     "id": "Red ant nest 1",
@@ -1035,6 +1204,18 @@
       "travel_time": 10
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 3,
+        "xp_gain": 10
+      },
+      {
+        "type": "dark",
+        "stage": 2,
+        "xp_gain": 7
+      }
+    ],
     "enemies_list": [
       "Red ant swarm"
     ],
@@ -1075,6 +1256,18 @@
       "travel_time": 10
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 3,
+        "xp_gain": 10
+      },
+      {
+        "type": "dark",
+        "stage": 2,
+        "xp_gain": 7
+      }
+    ],
     "enemies_list": [
       "Red ant swarm"
     ],
@@ -1115,6 +1308,18 @@
       "travel_time": 10
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 3,
+        "xp_gain": 10
+      },
+      {
+        "type": "dark",
+        "stage": 2,
+        "xp_gain": 7
+      }
+    ],
     "enemies_list": [
       "Red ant swarm"
     ],
@@ -1163,6 +1368,18 @@
       "travel_time": 10
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 2,
+        "xp_gain": 3
+      },
+      {
+        "type": "dark",
+        "stage": 1,
+        "xp_gain": 3
+      }
+    ],
     "enemies_list": [
       "Slums thug"
     ],
@@ -1229,7 +1446,8 @@
     "activities": [],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "cat-caf": {
     "id": "Cat café",
@@ -1250,7 +1468,8 @@
     "activities": [],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "mountain-path": {
     "id": "Mountain path",
@@ -1289,7 +1508,8 @@
       "explore"
     ],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "small-flat-area-in-mountains": {
     "id": "Small flat area in mountains",
@@ -1312,7 +1532,8 @@
       "create camp"
     ],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "mountain-camp": {
     "id": "Mountain camp",
@@ -1345,7 +1566,8 @@
       "explore2"
     ],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "gentle-mountain-slope": {
     "id": "Gentle mountain slope",
@@ -1366,6 +1588,18 @@
       "travel_time": 120
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "open",
+        "stage": 1,
+        "xp_gain": 5
+      },
+      {
+        "type": "thin air",
+        "stage": 1,
+        "xp_gain": 3
+      }
+    ],
     "enemies_list": [
       "Angry mountain goat"
     ],
@@ -1404,7 +1638,8 @@
     "activities": [],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "riverbank": {
     "id": "Riverbank",
@@ -1443,7 +1678,8 @@
     ],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "riverbank-shore": {
     "id": "Riverbank shore",
@@ -1464,6 +1700,18 @@
       "travel_time": 15
     },
     "leave_text": "Climb off the beach and back to safety",
+    "types": [
+      {
+        "type": "open",
+        "stage": 1,
+        "xp_gain": 2
+      },
+      {
+        "type": "rough",
+        "stage": 1,
+        "xp_gain": 1
+      }
+    ],
     "enemies_list": [
       "River crab"
     ],
@@ -1502,7 +1750,8 @@
     "activities": [],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "lake-beach": {
     "id": "Lake beach",
@@ -1540,7 +1789,8 @@
       "create lake weightlifting"
     ],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "waterfall-basin": {
     "id": "Waterfall basin",
@@ -1574,7 +1824,8 @@
     ],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "crab-spawning-grounds": {
     "id": "Crab spawning grounds",
@@ -1595,6 +1846,22 @@
       "travel_time": 20
     },
     "leave_text": "Leave the crab spawning grounds",
+    "types": [
+      {
+        "type": "open",
+        "stage": 2,
+        "xp_gain": 10
+      },
+      {
+        "type": "rough",
+        "stage": 1,
+        "xp_gain": 3
+      },
+      {
+        "type": "wet",
+        "stage": 1
+      }
+    ],
     "enemies_list": [
       "Stone crab"
     ],
@@ -1632,7 +1899,8 @@
     "activities": [],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "the-swamplands": {
     "id": "The swamplands",
@@ -1653,6 +1921,17 @@
       "travel_time": 45
     },
     "leave_text": "Slink away to some higher, dryer ground",
+    "types": [
+      {
+        "type": "rough",
+        "stage": 2,
+        "xp_gain": 7
+      },
+      {
+        "type": "wet",
+        "stage": 1
+      }
+    ],
     "enemies_list": [
       "Alligator",
       "Snapping turtle",
@@ -1697,7 +1976,8 @@
     ],
     "actions": [],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "longhouse": {
     "id": "Longhouse",
@@ -1723,7 +2003,8 @@
       "learn forage"
     ],
     "parent_location": null,
-    "leave_text": null
+    "leave_text": null,
+    "types": []
   },
   "sparring-with-the-village-guard-heavy": {
     "id": "Sparring with the village guard (heavy)",
@@ -1744,6 +2025,7 @@
       "travel_time": 0
     },
     "leave_text": "Give up",
+    "types": [],
     "enemies_list": [
       "Village guard (heavy)"
     ],
@@ -1778,6 +2060,7 @@
       "travel_time": 0
     },
     "leave_text": "Give up",
+    "types": [],
     "enemies_list": [
       "Village guard (quick)"
     ],
@@ -1812,6 +2095,7 @@
       "travel_time": 0
     },
     "leave_text": "Leave it for now",
+    "types": [],
     "enemies_list": [
       "Suspicious wall"
     ],
@@ -1855,6 +2139,7 @@
       "travel_time": 0
     },
     "leave_text": "Run away for now",
+    "types": [],
     "enemies_list": [
       "Suspicious man"
     ],
@@ -1890,6 +2175,18 @@
       "travel_time": 0
     },
     "leave_text": "Run away and hope it won't follow",
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 1,
+        "xp_gain": 1
+      },
+      {
+        "type": "thin air",
+        "stage": 1,
+        "xp_gain": 3
+      }
+    ],
     "enemies_list": [
       "Angry-looking mountain goat"
     ],
@@ -1922,6 +2219,13 @@
       "travel_time": 5
     },
     "leave_text": "Scramble away and hide!",
+    "types": [
+      {
+        "type": "open",
+        "stage": 1,
+        "xp_gain": 2
+      }
+    ],
     "enemies_list": [
       "Giant crab"
     ],
@@ -1968,6 +2272,18 @@
       "travel_time": 5
     },
     "leave_text": "Scramble away and hide!",
+    "types": [
+      {
+        "type": "open",
+        "stage": 2,
+        "xp_gain": 5
+      },
+      {
+        "type": "rough",
+        "stage": 1,
+        "xp_gain": 3
+      }
+    ],
     "enemies_list": [
       "Enraged giant crab"
     ],
@@ -2014,6 +2330,18 @@
       "travel_time": 90
     },
     "leave_text": null,
+    "types": [
+      {
+        "type": "narrow",
+        "stage": 2,
+        "xp_gain": 5
+      },
+      {
+        "type": "dark",
+        "stage": 2,
+        "xp_gain": 5
+      }
+    ],
     "enemies_list": [
       "Direwolf"
     ],

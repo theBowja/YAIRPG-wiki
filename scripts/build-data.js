@@ -1,8 +1,8 @@
 import fs from 'node:fs';
 import { skills } from '../yairpg/src/skills.js?real=true';
 import { activities } from '../yairpg/src/activities.js?real=true';
-import { enemy_templates } from '../yairpg/src/enemies.js?real=true';
-import { locations } from '../yairpg/src/locations.js?real=true';
+import { enemy_templates, enemy_tag_to_skill_mapping } from '../yairpg/src/enemies.js?real=true';
+import { locations, location_types } from '../yairpg/src/locations.js?real=true';
 import { item_templates } from '../yairpg/src/items.js?real=true';
 import { recipes, get_recipe_xp_value } from '../yairpg/src/crafting_recipes.js?real=true';
 
@@ -38,6 +38,25 @@ function capitalize(text) {
 const activitiesOutput = {};
 for (const [id, activity] of Object.entries(activities)) {
     const slug = slugify(id);
+    const activityLocations = [];
+    
+    // Find locations that have this activity
+    for (const [locId, loc] of Object.entries(locations)) {
+        if (loc.activities) {
+            for (const [actKey, act] of Object.entries(loc.activities)) {
+                if (act.activity_name === id) {
+                    activityLocations.push({
+                        id: slugify(locId),
+                        name: loc.name,
+                        xp: act.skill_xp_per_tick,
+                        activity_id: actKey,
+                        starting_text: act.starting_text
+                    });
+                }
+            }
+        }
+    }
+
     activitiesOutput[slug] = {
         id: id,
         name: capitalize(activity.name),
@@ -46,7 +65,8 @@ for (const [id, activity] of Object.entries(activities)) {
         base_skills_names: activity.base_skills_names,
         type: capitalize(activity.type),
         required_tool_type: activity.required_tool_type,
-        payment_type: activity.payment_type
+        payment_type: activity.payment_type,
+        locations: activityLocations
     };
 }
 
@@ -98,7 +118,12 @@ for (const [id, loc] of Object.entries(locations)) {
             name: loc.parent_location.name,
             travel_time: (loc.parent_location.connected_locations || []).find(conn => conn.location === loc)?.travel_time || 0
         } : null,
-        leave_text: loc.leave_text || null
+        leave_text: loc.leave_text || null,
+        types: (loc.types || []).map(t => ({
+            type: t.type,
+            stage: t.stage || 1,
+            xp_gain: t.xp_gain
+        })),
     };
 
     if (locationData.is_combat_zone) {
@@ -200,6 +225,80 @@ for (const [category, subcategories] of Object.entries(recipes)) {
     }
 }
 
+
+// Build skill sources mapping
+const skillSources = {};
+
+// Activities
+for (const [id, activity] of Object.entries(activities)) {
+    (activity.base_skills_names || []).forEach(skillName => {
+        const skillSlug = slugify(skillName);
+        if (!skillSources[skillSlug]) skillSources[skillSlug] = { activities: [], locations: [], recipes: [], combat: [] };
+        // Find locations that have this activity
+        const activityLocations = [];
+        for (const [locId, loc] of Object.entries(locations)) {
+            if (loc.activities && loc.activities[id]) {
+                activityLocations.push({ id: locId, name: loc.name });
+            }
+        }
+        skillSources[skillSlug].activities.push({
+            id,
+            name: activity.name,
+            locations: activityLocations
+        });
+    });
+}
+
+// Locations (Types/Environment)
+for (const [id, loc] of Object.entries(locations)) {
+    (loc.types || []).forEach(typeObj => {
+        const typeInfo = location_types[typeObj.type];
+        if (typeInfo) {
+            const skillName = typeInfo.stages[typeObj.stage || 1].related_skill;
+            if (skillName) {
+                const skillSlug = slugify(skillName);
+                if (!skillSources[skillSlug]) skillSources[skillSlug] = { activities: [], locations: [], recipes: [], combat: [] };
+                skillSources[skillSlug].locations.push({
+                    id,
+                    name: loc.name,
+                    type: typeObj.type,
+                    xp_gain: typeObj.xp_gain
+                });
+            }
+        }
+    });
+}
+
+// Recipes
+for (const [slug, recipe] of Object.entries(recipesOutput)) {
+    const skillName = recipe.recipe_skill;
+    if (skillName) {
+        const skillSlug = slugify(skillName);
+        if (!skillSources[skillSlug]) skillSources[skillSlug] = { activities: [], locations: [], recipes: [], combat: [] };
+        skillSources[skillSlug].recipes.push({
+            slug,
+            name: recipe.name,
+            level: recipe.recipe_level
+        });
+    }
+}
+
+// Combat
+for (const [tag, skillNames] of Object.entries(enemy_tag_to_skill_mapping)) {
+    skillNames.forEach(skillName => {
+        const skillSlug = slugify(skillName);
+        if (!skillSources[skillSlug]) skillSources[skillSlug] = { activities: [], locations: [], recipes: [], combat: [] };
+        skillSources[skillSlug].combat.push({
+            tag,
+            description: `Killing ${tag} enemies`
+        });
+    });
+}
+
+// Add sources to skillsOutput
+for (const [slug, skill] of Object.entries(skillsOutput)) {
+    skill.sources = skillSources[slug] || { activities: [], locations: [], recipes: [], combat: [] };
+}
 
 fs.writeFileSync('./src/data/skills.json', JSON.stringify(skillsOutput, null, 2));
 fs.writeFileSync('./src/data/activities.json', JSON.stringify(activitiesOutput, null, 2));

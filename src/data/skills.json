@@ -6,7 +6,13 @@
     "max_level": 60,
     "category": "Combat",
     "base_xp_cost": 60,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "pest-killer": {
     "id": "Pest killer",
@@ -15,7 +21,18 @@
     "max_level": 60,
     "category": "Combat",
     "base_xp_cost": 100,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": [
+        {
+          "tag": "small",
+          "description": "Killing small enemies"
+        }
+      ]
+    }
   },
   "giant-slayer": {
     "id": "Giant slayer",
@@ -24,7 +41,18 @@
     "max_level": 60,
     "category": "Combat",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": [
+        {
+          "tag": "large",
+          "description": "Killing large enemies"
+        }
+      ]
+    }
   },
   "evasion": {
     "id": "Evasion",
@@ -33,7 +61,13 @@
     "max_level": 60,
     "category": "Combat",
     "base_xp_cost": 20,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "shield-blocking": {
     "id": "Shield blocking",
@@ -42,7 +76,13 @@
     "max_level": 30,
     "category": "Combat",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "unarmed": {
     "id": "Unarmed",
@@ -51,7 +91,13 @@
     "max_level": 60,
     "category": "Combat",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "stance-mastery": {
     "id": "Stance mastery",
@@ -60,7 +106,13 @@
     "max_level": 30,
     "category": "Stance",
     "base_xp_cost": 60,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "quick-steps": {
     "id": "Quick steps",
@@ -69,7 +121,13 @@
     "max_level": 30,
     "category": "Stance",
     "base_xp_cost": 60,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "heavy-strike": {
     "id": "Heavy strike",
@@ -78,7 +136,13 @@
     "max_level": 30,
     "category": "Stance",
     "base_xp_cost": 60,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "wide-swing": {
     "id": "Wide swing",
@@ -87,7 +151,13 @@
     "max_level": 30,
     "category": "Stance",
     "base_xp_cost": 60,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "defensive-measures": {
     "id": "Defensive measures",
@@ -96,7 +166,13 @@
     "max_level": 30,
     "category": "Stance",
     "base_xp_cost": 60,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "berserkers-stride": {
     "id": "Berserker's stride",
@@ -105,7 +181,13 @@
     "max_level": 30,
     "category": "Stance",
     "base_xp_cost": 60,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "flowing-water": {
     "id": "Flowing water",
@@ -114,7 +196,13 @@
     "max_level": 30,
     "category": "Stance",
     "base_xp_cost": 60,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "spatial-awareness": {
     "id": "Spatial awareness",
@@ -123,7 +211,73 @@
     "max_level": 60,
     "category": "Environmental",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [
+        {
+          "id": "patrolling",
+          "name": "patrolling",
+          "locations": [
+            {
+              "id": "Village",
+              "name": "Village"
+            }
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "Infested field",
+          "name": "Infested field",
+          "type": "open",
+          "xp_gain": 1
+        },
+        {
+          "id": "Forest clearing",
+          "name": "Forest clearing",
+          "type": "open",
+          "xp_gain": 3
+        },
+        {
+          "id": "Frogs",
+          "name": "Frogs",
+          "type": "open",
+          "xp_gain": 5
+        },
+        {
+          "id": "Gentle mountain slope",
+          "name": "Gentle mountain slope",
+          "type": "open",
+          "xp_gain": 5
+        },
+        {
+          "id": "Riverbank shore",
+          "name": "Riverbank shore",
+          "type": "open",
+          "xp_gain": 2
+        },
+        {
+          "id": "Crab spawning grounds",
+          "name": "Crab spawning grounds",
+          "type": "open",
+          "xp_gain": 10
+        },
+        {
+          "id": "Fight the giant crab",
+          "name": "Fight the giant crab",
+          "type": "open",
+          "xp_gain": 2
+        },
+        {
+          "id": "Fight the giant crab again",
+          "name": "Fight the giant crab again!",
+          "type": "open",
+          "xp_gain": 5
+        }
+      ],
+      "recipes": [],
+      "combat": []
+    }
   },
   "tight-maneuvers": {
     "id": "Tight maneuvers",
@@ -132,7 +286,116 @@
     "max_level": 60,
     "category": "Environmental",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [
+        {
+          "id": "Eastern storehouse",
+          "name": "Eastern storehouse",
+          "type": "narrow",
+          "xp_gain": 3
+        },
+        {
+          "id": "Cave room",
+          "name": "Cave room",
+          "type": "narrow",
+          "xp_gain": 3
+        },
+        {
+          "id": "Cave depths",
+          "name": "Cave depths",
+          "type": "narrow",
+          "xp_gain": 3
+        },
+        {
+          "id": "Hidden tunnel",
+          "name": "Hidden tunnel",
+          "type": "narrow",
+          "xp_gain": 3
+        },
+        {
+          "id": "Pitch black tunnel",
+          "name": "Pitch black tunnel",
+          "type": "narrow",
+          "xp_gain": 6
+        },
+        {
+          "id": "Writhing tunnel",
+          "name": "Writhing tunnel",
+          "type": "narrow",
+          "xp_gain": 5
+        },
+        {
+          "id": "Forest",
+          "name": "Forest",
+          "type": "narrow",
+          "xp_gain": 1
+        },
+        {
+          "id": "Deep forest",
+          "name": "Deep forest",
+          "type": "narrow",
+          "xp_gain": 2
+        },
+        {
+          "id": "Forest den",
+          "name": "Forest den",
+          "type": "narrow",
+          "xp_gain": 5
+        },
+        {
+          "id": "Bears' den",
+          "name": "Bears' den",
+          "type": "narrow",
+          "xp_gain": 10
+        },
+        {
+          "id": "Forest ant nest",
+          "name": "Red ant nest",
+          "type": "narrow",
+          "xp_gain": 10
+        },
+        {
+          "id": "Red ant nest 1",
+          "name": "Red ant nest",
+          "type": "narrow",
+          "xp_gain": 10
+        },
+        {
+          "id": "Red ant nest 2",
+          "name": "Red ant nest",
+          "type": "narrow",
+          "xp_gain": 10
+        },
+        {
+          "id": "Red ant nest 3",
+          "name": "Red ant nest",
+          "type": "narrow",
+          "xp_gain": 10
+        },
+        {
+          "id": "Gang hideout",
+          "name": "Gang hideout",
+          "type": "narrow",
+          "xp_gain": 3
+        },
+        {
+          "id": "Fight the angry mountain goat",
+          "name": "Fight the angry mountain goat",
+          "type": "narrow",
+          "xp_gain": 1
+        },
+        {
+          "id": "Forest den traversal",
+          "name": "Forest den traversal",
+          "type": "narrow",
+          "xp_gain": 5
+        }
+      ],
+      "recipes": [],
+      "combat": []
+    }
   },
   "night-vision": {
     "id": "Night vision",
@@ -141,7 +404,74 @@
     "max_level": 10,
     "category": "Environmental",
     "base_xp_cost": 600,
-    "xp_scaling": 1.9
+    "xp_scaling": 1.9,
+    "sources": {
+      "activities": [],
+      "locations": [
+        {
+          "id": "Eastern storehouse",
+          "name": "Eastern storehouse",
+          "type": "dark",
+          "xp_gain": 2
+        },
+        {
+          "id": "Cave depths",
+          "name": "Cave depths",
+          "type": "dark",
+          "xp_gain": 3
+        },
+        {
+          "id": "Forest den",
+          "name": "Forest den",
+          "type": "dark",
+          "xp_gain": 5
+        },
+        {
+          "id": "Bears' den",
+          "name": "Bears' den",
+          "type": "dark",
+          "xp_gain": 10
+        },
+        {
+          "id": "Forest ant nest",
+          "name": "Red ant nest",
+          "type": "dark",
+          "xp_gain": 7
+        },
+        {
+          "id": "Red ant nest 1",
+          "name": "Red ant nest",
+          "type": "dark",
+          "xp_gain": 7
+        },
+        {
+          "id": "Red ant nest 2",
+          "name": "Red ant nest",
+          "type": "dark",
+          "xp_gain": 7
+        },
+        {
+          "id": "Red ant nest 3",
+          "name": "Red ant nest",
+          "type": "dark",
+          "xp_gain": 7
+        },
+        {
+          "id": "Gang hideout",
+          "name": "Gang hideout",
+          "type": "dark",
+          "xp_gain": 3
+        },
+        {
+          "id": "Forest den traversal",
+          "name": "Forest den traversal",
+          "type": "dark",
+          "xp_gain": 5
+        }
+      ],
+      "recipes": [],
+      "combat": []
+    }
   },
   "presence-sensing": {
     "id": "Presence sensing",
@@ -150,7 +480,38 @@
     "max_level": 20,
     "category": "Environmental",
     "base_xp_cost": 60,
-    "xp_scaling": 2
+    "xp_scaling": 2,
+    "sources": {
+      "activities": [],
+      "locations": [
+        {
+          "id": "Hidden tunnel",
+          "name": "Hidden tunnel",
+          "type": "dark",
+          "xp_gain": 1
+        },
+        {
+          "id": "Pitch black tunnel",
+          "name": "Pitch black tunnel",
+          "type": "dark",
+          "xp_gain": 3
+        },
+        {
+          "id": "Mysterious gate",
+          "name": "Mysterious gate",
+          "type": "dark",
+          "xp_gain": 5
+        },
+        {
+          "id": "Writhing tunnel",
+          "name": "Writhing tunnel",
+          "type": "dark",
+          "xp_gain": 5
+        }
+      ],
+      "recipes": [],
+      "combat": []
+    }
   },
   "strength-of-mind": {
     "id": "Strength of mind",
@@ -159,7 +520,20 @@
     "max_level": 40,
     "category": "Environmental",
     "base_xp_cost": 400,
-    "xp_scaling": 1.7
+    "xp_scaling": 1.7,
+    "sources": {
+      "activities": [],
+      "locations": [
+        {
+          "id": "Writhing tunnel",
+          "name": "Writhing tunnel",
+          "type": "eldritch",
+          "xp_gain": 1
+        }
+      ],
+      "recipes": [],
+      "combat": []
+    }
   },
   "scrambling": {
     "id": "Scrambling",
@@ -168,7 +542,38 @@
     "max_level": 60,
     "category": "Environmental",
     "base_xp_cost": 400,
-    "xp_scaling": 1.7
+    "xp_scaling": 1.7,
+    "sources": {
+      "activities": [],
+      "locations": [
+        {
+          "id": "Riverbank shore",
+          "name": "Riverbank shore",
+          "type": "rough",
+          "xp_gain": 1
+        },
+        {
+          "id": "Crab spawning grounds",
+          "name": "Crab spawning grounds",
+          "type": "rough",
+          "xp_gain": 3
+        },
+        {
+          "id": "The swamplands",
+          "name": "The swamplands",
+          "type": "rough",
+          "xp_gain": 7
+        },
+        {
+          "id": "Fight the giant crab again",
+          "name": "Fight the giant crab again!",
+          "type": "rough",
+          "xp_gain": 3
+        }
+      ],
+      "recipes": [],
+      "combat": []
+    }
   },
   "heat-resistance": {
     "id": "Heat resistance",
@@ -177,7 +582,13 @@
     "max_level": 40,
     "category": "Environmental",
     "base_xp_cost": 100,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "cold-resistance": {
     "id": "Cold resistance",
@@ -186,7 +597,13 @@
     "max_level": 40,
     "category": "Environmental",
     "base_xp_cost": 200,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "dazzle-resistance": {
     "id": "Dazzle resistance",
@@ -195,7 +612,13 @@
     "max_level": 30,
     "category": "Environmental",
     "base_xp_cost": 60,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "weapon-mastery": {
     "id": "Weapon mastery",
@@ -204,7 +627,13 @@
     "max_level": 60,
     "category": "Weapon",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "swords": {
     "id": "Swords",
@@ -213,7 +642,13 @@
     "max_level": 60,
     "category": "Weapon",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "axes": {
     "id": "Axes",
@@ -222,7 +657,13 @@
     "max_level": 60,
     "category": "Weapon",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "spears": {
     "id": "Spears",
@@ -231,7 +672,13 @@
     "max_level": 60,
     "category": "Weapon",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "hammers": {
     "id": "Hammers",
@@ -240,7 +687,13 @@
     "max_level": 60,
     "category": "Weapon",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "daggers": {
     "id": "Daggers",
@@ -249,7 +702,13 @@
     "max_level": 60,
     "category": "Weapon",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "wands": {
     "id": "Wands",
@@ -258,7 +717,13 @@
     "max_level": 60,
     "category": "Weapon",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "staffs": {
     "id": "Staffs",
@@ -267,7 +732,13 @@
     "max_level": 60,
     "category": "Weapon",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "farming": {
     "id": "Farming",
@@ -276,7 +747,28 @@
     "max_level": 10,
     "category": "Activity",
     "base_xp_cost": 40,
-    "xp_scaling": 1.6
+    "xp_scaling": 1.6,
+    "sources": {
+      "activities": [
+        {
+          "id": "fieldwork",
+          "name": "fieldwork",
+          "locations": [
+            {
+              "id": "Village",
+              "name": "Village"
+            },
+            {
+              "id": "Town farms",
+              "name": "Town farms"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "sleeping": {
     "id": "Sleeping",
@@ -285,7 +777,13 @@
     "max_level": 10,
     "category": "Activity",
     "base_xp_cost": 1000,
-    "xp_scaling": 2
+    "xp_scaling": 2,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "meditation": {
     "id": "Meditation",
@@ -294,7 +792,32 @@
     "max_level": 30,
     "category": "Activity",
     "base_xp_cost": 200,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [
+        {
+          "id": "meditating",
+          "name": "meditating",
+          "locations": [
+            {
+              "id": "Village",
+              "name": "Village"
+            },
+            {
+              "id": "Nearby cave",
+              "name": "Nearby cave"
+            },
+            {
+              "id": "Waterfall basin",
+              "name": "Waterfall basin"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "running": {
     "id": "Running",
@@ -303,7 +826,32 @@
     "max_level": 50,
     "category": "Activity",
     "base_xp_cost": 50,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [
+        {
+          "id": "running",
+          "name": "running",
+          "locations": [
+            {
+              "id": "Village",
+              "name": "Village"
+            },
+            {
+              "id": "Forest road",
+              "name": "Forest road"
+            },
+            {
+              "id": "Lake beach",
+              "name": "Lake beach"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "weightlifting": {
     "id": "Weightlifting",
@@ -312,7 +860,32 @@
     "max_level": 50,
     "category": "Activity",
     "base_xp_cost": 50,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [
+        {
+          "id": "weightlifting",
+          "name": "weightlifting",
+          "locations": [
+            {
+              "id": "Village",
+              "name": "Village"
+            },
+            {
+              "id": "Nearby cave",
+              "name": "Nearby cave"
+            },
+            {
+              "id": "Lake beach",
+              "name": "Lake beach"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "swimming": {
     "id": "Swimming",
@@ -321,7 +894,39 @@
     "max_level": 50,
     "category": "Activity",
     "base_xp_cost": 50,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [
+        {
+          "id": "swimming",
+          "name": "swimming",
+          "locations": [
+            {
+              "id": "Village",
+              "name": "Village"
+            },
+            {
+              "id": "Forest lake",
+              "name": "Forest lake"
+            },
+            {
+              "id": "Lake beach",
+              "name": "Lake beach"
+            }
+          ]
+        }
+      ],
+      "locations": [
+        {
+          "id": "Frogs",
+          "name": "Frogs",
+          "type": "aquatic",
+          "xp_gain": 5
+        }
+      ],
+      "recipes": [],
+      "combat": []
+    }
   },
   "equilibrium": {
     "id": "Equilibrium",
@@ -330,7 +935,36 @@
     "max_level": 50,
     "category": "Activity",
     "base_xp_cost": 50,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [
+        {
+          "id": "balancing",
+          "name": "balancing",
+          "locations": [
+            {
+              "id": "Village",
+              "name": "Village"
+            },
+            {
+              "id": "Forest lake",
+              "name": "Forest lake"
+            },
+            {
+              "id": "Mountain path",
+              "name": "Mountain path"
+            },
+            {
+              "id": "Mountain camp",
+              "name": "Mountain camp"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "climbing": {
     "id": "Climbing",
@@ -339,7 +973,32 @@
     "max_level": 50,
     "category": "Activity",
     "base_xp_cost": 50,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [
+        {
+          "id": "climbing",
+          "name": "climbing",
+          "locations": [
+            {
+              "id": "Nearby cave",
+              "name": "Nearby cave"
+            },
+            {
+              "id": "Mountain camp",
+              "name": "Mountain camp"
+            },
+            {
+              "id": "Lake beach",
+              "name": "Lake beach"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "woodcutting": {
     "id": "Woodcutting",
@@ -348,7 +1007,28 @@
     "max_level": 60,
     "category": "Gathering",
     "base_xp_cost": 10,
-    "xp_scaling": 1.6
+    "xp_scaling": 1.6,
+    "sources": {
+      "activities": [
+        {
+          "id": "woodcutting",
+          "name": "woodcutting",
+          "locations": [
+            {
+              "id": "Village",
+              "name": "Village"
+            },
+            {
+              "id": "Forest road",
+              "name": "Forest road"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "mining": {
     "id": "Mining",
@@ -357,7 +1037,28 @@
     "max_level": 60,
     "category": "Gathering",
     "base_xp_cost": 10,
-    "xp_scaling": 1.6
+    "xp_scaling": 1.6,
+    "sources": {
+      "activities": [
+        {
+          "id": "mining",
+          "name": "mining",
+          "locations": [
+            {
+              "id": "Nearby cave",
+              "name": "Nearby cave"
+            },
+            {
+              "id": "Forest lake",
+              "name": "Forest lake"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "digging": {
     "id": "Digging",
@@ -366,7 +1067,19 @@
     "max_level": 60,
     "category": "Gathering",
     "base_xp_cost": 10,
-    "xp_scaling": 1.6
+    "xp_scaling": 1.6,
+    "sources": {
+      "activities": [
+        {
+          "id": "digging",
+          "name": "digging",
+          "locations": []
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "herbalism": {
     "id": "Herbalism",
@@ -375,7 +1088,40 @@
     "max_level": 60,
     "category": "Gathering",
     "base_xp_cost": 10,
-    "xp_scaling": 1.6
+    "xp_scaling": 1.6,
+    "sources": {
+      "activities": [
+        {
+          "id": "herbalism",
+          "name": "herbalism",
+          "locations": [
+            {
+              "id": "Forest road",
+              "name": "Forest road"
+            },
+            {
+              "id": "Town outskirts",
+              "name": "Town outskirts"
+            },
+            {
+              "id": "Mountain camp",
+              "name": "Mountain camp"
+            },
+            {
+              "id": "Riverbank",
+              "name": "Riverbank"
+            },
+            {
+              "id": "Swampland tribe",
+              "name": "Swampland tribe"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "animal-handling": {
     "id": "Animal handling",
@@ -384,7 +1130,24 @@
     "max_level": 60,
     "category": "Gathering",
     "base_xp_cost": 10,
-    "xp_scaling": 1.6
+    "xp_scaling": 1.6,
+    "sources": {
+      "activities": [
+        {
+          "id": "animal care",
+          "name": "animal care",
+          "locations": [
+            {
+              "id": "Town farms",
+              "name": "Town farms"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "fishing": {
     "id": "Fishing",
@@ -393,7 +1156,28 @@
     "max_level": 60,
     "category": "Gathering",
     "base_xp_cost": 10,
-    "xp_scaling": 1.6
+    "xp_scaling": 1.6,
+    "sources": {
+      "activities": [
+        {
+          "id": "fishing",
+          "name": "fishing",
+          "locations": [
+            {
+              "id": "Village",
+              "name": "Village"
+            },
+            {
+              "id": "Forest lake",
+              "name": "Forest lake"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "crafting-mastery": {
     "id": "Crafting mastery",
@@ -402,7 +1186,13 @@
     "max_level": 60,
     "category": "Crafting",
     "base_xp_cost": 40,
-    "xp_scaling": 1.5
+    "xp_scaling": 1.5,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "crafting": {
     "id": "Crafting",
@@ -411,7 +1201,294 @@
     "max_level": 60,
     "category": "Crafting",
     "base_xp_cost": 40,
-    "xp_scaling": 1.5
+    "xp_scaling": 1.5,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [
+        {
+          "slug": "crafting-items-wool-cloth",
+          "name": "Wool cloth",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "crafting-items-linen-cloth",
+          "name": "Linen cloth",
+          "level": [
+            22,
+            30
+          ]
+        },
+        {
+          "slug": "crafting-items-glass-phial",
+          "name": "Glass phial",
+          "level": [
+            15,
+            25
+          ]
+        },
+        {
+          "slug": "crafting-items-glass-bottle",
+          "name": "Glass bottle",
+          "level": [
+            15,
+            25
+          ]
+        },
+        {
+          "slug": "crafting-items-bonemeal",
+          "name": "Bonemeal",
+          "level": [
+            1,
+            12
+          ]
+        },
+        {
+          "slug": "crafting-items-wolf-trophy",
+          "name": "Wolf trophy",
+          "level": [
+            1,
+            10
+          ]
+        },
+        {
+          "slug": "crafting-items-boar-trophy",
+          "name": "Boar trophy",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "crafting-items-mountain-goat-trophy",
+          "name": "Mountain goat trophy",
+          "level": [
+            10,
+            20
+          ]
+        },
+        {
+          "slug": "crafting-items-bear-trophy",
+          "name": "Bear trophy",
+          "level": [
+            15,
+            25
+          ]
+        },
+        {
+          "slug": "crafting-items-crab-trophy",
+          "name": "Crab trophy",
+          "level": [
+            22,
+            30
+          ]
+        },
+        {
+          "slug": "crafting-components-short-hilt",
+          "name": "Short hilt",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-components-medium-handle",
+          "name": "Medium handle",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-components-long-shaft",
+          "name": "Long shaft",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-components-helmet-exterior",
+          "name": "Helmet exterior",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-components-chestplate-exterior",
+          "name": "Chestplate exterior",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-components-leg-armor-exterior",
+          "name": "Leg armor exterior",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-components-glove-exterior",
+          "name": "Glove exterior",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-components-shoes-exterior",
+          "name": "Shoes exterior",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-axe",
+          "name": "Axe",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-dagger",
+          "name": "Dagger",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-hammer",
+          "name": "Hammer",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-spear",
+          "name": "Spear",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-sword",
+          "name": "Sword",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-shield",
+          "name": "Shield",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-helmet",
+          "name": "Helmet",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-chestplate",
+          "name": "Chestplate",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-leg-armor",
+          "name": "Leg armor",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-gauntlets",
+          "name": "Gauntlets",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-armored-shoes",
+          "name": "Armored shoes",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-hat",
+          "name": "Hat",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-shirt",
+          "name": "Shirt",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-pants",
+          "name": "Pants",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-gloves",
+          "name": "Gloves",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-shoes",
+          "name": "Shoes",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "crafting-equipment-cape",
+          "name": "Cape",
+          "level": [
+            1,
+            1
+          ]
+        }
+      ],
+      "combat": []
+    }
   },
   "smelting": {
     "id": "Smelting",
@@ -420,7 +1497,54 @@
     "max_level": 60,
     "category": "Crafting",
     "base_xp_cost": 40,
-    "xp_scaling": 1.5
+    "xp_scaling": 1.5,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [
+        {
+          "slug": "smelting-items-low-quality-iron-ingot",
+          "name": "Low quality iron ingot",
+          "level": [
+            1,
+            5
+          ]
+        },
+        {
+          "slug": "smelting-items-iron-ingot",
+          "name": "Iron ingot",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "smelting-items-steel-ingot-inefficient",
+          "name": "Steel ingot (inefficient)",
+          "level": [
+            10,
+            20
+          ]
+        },
+        {
+          "slug": "smelting-items-raw-glass",
+          "name": "Raw Glass",
+          "level": [
+            10,
+            20
+          ]
+        },
+        {
+          "slug": "smelting-items-charcoal",
+          "name": "Charcoal",
+          "level": [
+            1,
+            10
+          ]
+        }
+      ],
+      "combat": []
+    }
   },
   "forging": {
     "id": "Forging",
@@ -429,7 +1553,134 @@
     "max_level": 60,
     "category": "Crafting",
     "base_xp_cost": 40,
-    "xp_scaling": 1.5
+    "xp_scaling": 1.5,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [
+        {
+          "slug": "forging-items-iron-chainmail",
+          "name": "Iron chainmail",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "forging-items-steel-chainmail",
+          "name": "Steel chainmail",
+          "level": [
+            10,
+            20
+          ]
+        },
+        {
+          "slug": "forging-components-short-blade",
+          "name": "Short blade",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-long-blade",
+          "name": "Long blade",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-axe-head",
+          "name": "Axe head",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-hammer-head",
+          "name": "Hammer head",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-short-hilt",
+          "name": "Short hilt",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-medium-handle",
+          "name": "Medium handle",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-long-shaft",
+          "name": "Long shaft",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-shield-base",
+          "name": "Shield base",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-helmet-exterior",
+          "name": "Helmet exterior",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-chestplate-exterior",
+          "name": "Chestplate exterior",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-leg-armor-exterior",
+          "name": "Leg armor exterior",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-glove-exterior",
+          "name": "Glove exterior",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "forging-components-shoes-exterior",
+          "name": "Shoes exterior",
+          "level": [
+            1,
+            1
+          ]
+        }
+      ],
+      "combat": []
+    }
   },
   "cooking": {
     "id": "Cooking",
@@ -438,7 +1689,182 @@
     "max_level": 60,
     "category": "Crafting",
     "base_xp_cost": 40,
-    "xp_scaling": 1.5
+    "xp_scaling": 1.5,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [
+        {
+          "slug": "cooking-items-animal-fat",
+          "name": "Animal fat",
+          "level": [
+            7,
+            20
+          ]
+        },
+        {
+          "slug": "cooking-items-roasted-rat-meat",
+          "name": "Roasted rat meat",
+          "level": [
+            1,
+            5
+          ]
+        },
+        {
+          "slug": "cooking-items-roasted-purified-rat-meat",
+          "name": "Roasted purified rat meat",
+          "level": [
+            1,
+            10
+          ]
+        },
+        {
+          "slug": "cooking-items-fried-pork",
+          "name": "Fried pork",
+          "level": [
+            7,
+            15
+          ]
+        },
+        {
+          "slug": "cooking-items-fried-goat-meat",
+          "name": "Fried goat meat",
+          "level": [
+            10,
+            15
+          ]
+        },
+        {
+          "slug": "cooking-items-pork-roast",
+          "name": "Pork roast",
+          "level": [
+            10,
+            20
+          ]
+        },
+        {
+          "slug": "cooking-items-goat-stew",
+          "name": "Goat stew",
+          "level": [
+            15,
+            25
+          ]
+        },
+        {
+          "slug": "cooking-items-bread-kwas",
+          "name": "Bread kwas",
+          "level": [
+            10,
+            15
+          ]
+        },
+        {
+          "slug": "cooking-items-fish-skewer",
+          "name": "Fish skewer",
+          "level": [
+            1,
+            10
+          ]
+        },
+        {
+          "slug": "cooking-items-fried-fish",
+          "name": "Fried fish",
+          "level": [
+            7,
+            15
+          ]
+        },
+        {
+          "slug": "cooking-items-fish-steak",
+          "name": "Fish steak",
+          "level": [
+            7,
+            15
+          ]
+        },
+        {
+          "slug": "cooking-items-fried-frog-meat",
+          "name": "Fried frog meat",
+          "level": [
+            12,
+            20
+          ]
+        },
+        {
+          "slug": "cooking-items-kingsized-frog-legs",
+          "name": "Kingsized frog legs",
+          "level": [
+            15,
+            25
+          ]
+        },
+        {
+          "slug": "cooking-items-alligator-jerky",
+          "name": "Alligator jerky",
+          "level": [
+            22,
+            30
+          ]
+        },
+        {
+          "slug": "cooking-items-snake-jerky",
+          "name": "Snake jerky",
+          "level": [
+            22,
+            30
+          ]
+        },
+        {
+          "slug": "cooking-items-turtle-jerky",
+          "name": "Turtle jerky",
+          "level": [
+            22,
+            30
+          ]
+        },
+        {
+          "slug": "cooking-items-swampland-skewer",
+          "name": "Swampland skewer",
+          "level": [
+            27,
+            37
+          ]
+        },
+        {
+          "slug": "cooking-items-crab-bisque",
+          "name": "Crab bisque",
+          "level": [
+            22,
+            30
+          ]
+        },
+        {
+          "slug": "cooking-items-clam-broth",
+          "name": "Clam broth",
+          "level": [
+            22,
+            30
+          ]
+        },
+        {
+          "slug": "cooking-items-turtle-soup",
+          "name": "Turtle soup",
+          "level": [
+            22,
+            30
+          ]
+        },
+        {
+          "slug": "cooking-items-basin-gumbo",
+          "name": "Basin gumbo",
+          "level": [
+            35,
+            60
+          ]
+        }
+      ],
+      "combat": []
+    }
   },
   "alchemy": {
     "id": "Alchemy",
@@ -447,7 +1873,62 @@
     "max_level": 60,
     "category": "Crafting",
     "base_xp_cost": 40,
-    "xp_scaling": 1.5
+    "xp_scaling": 1.5,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [
+        {
+          "slug": "alchemy-items-potash",
+          "name": "Potash",
+          "level": [
+            10,
+            20
+          ]
+        },
+        {
+          "slug": "alchemy-items-weak-healing-powder",
+          "name": "Weak healing powder",
+          "level": [
+            1,
+            10
+          ]
+        },
+        {
+          "slug": "alchemy-items-healing-powder",
+          "name": "Healing powder",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "alchemy-items-oneberry-juice",
+          "name": "Oneberry juice",
+          "level": [
+            2,
+            12
+          ]
+        },
+        {
+          "slug": "alchemy-items-healing-potion",
+          "name": "Healing potion",
+          "level": [
+            7,
+            17
+          ]
+        },
+        {
+          "slug": "alchemy-items-healing-balm",
+          "name": "Healing balm",
+          "level": [
+            7,
+            15
+          ]
+        }
+      ],
+      "combat": []
+    }
   },
   "butchering": {
     "id": "Butchering",
@@ -456,7 +1937,190 @@
     "max_level": 60,
     "category": "Crafting",
     "base_xp_cost": 40,
-    "xp_scaling": 1.5
+    "xp_scaling": 1.5,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [
+        {
+          "slug": "butchering-items-piece-of-wolf-rat-leather",
+          "name": "Piece of wolf rat leather",
+          "level": [
+            1,
+            5
+          ]
+        },
+        {
+          "slug": "butchering-items-piece-of-wolf-leather",
+          "name": "Piece of wolf leather",
+          "level": [
+            1,
+            10
+          ]
+        },
+        {
+          "slug": "butchering-items-piece-of-boar-leather",
+          "name": "Piece of boar leather",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "butchering-items-piece-of-goat-leather",
+          "name": "Piece of goat leather",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "butchering-items-piece-of-bear-leather",
+          "name": "Piece of bear leather",
+          "level": [
+            12,
+            25
+          ]
+        },
+        {
+          "slug": "butchering-items-piece-of-frog-leather",
+          "name": "Piece of frog leather",
+          "level": [
+            12,
+            25
+          ]
+        },
+        {
+          "slug": "butchering-items-piece-of-alligator-leather",
+          "name": "Piece of alligator leather",
+          "level": [
+            22,
+            30
+          ]
+        },
+        {
+          "slug": "butchering-items-piece-of-snakeskin-leather",
+          "name": "Piece of snakeskin leather",
+          "level": [
+            22,
+            30
+          ]
+        },
+        {
+          "slug": "butchering-items-turtle-shellplate",
+          "name": "Turtle shellplate",
+          "level": [
+            27,
+            37
+          ]
+        },
+        {
+          "slug": "butchering-items-processed-rat-pelt",
+          "name": "Processed rat pelt",
+          "level": [
+            1,
+            5
+          ]
+        },
+        {
+          "slug": "butchering-items-processed-wolf-pelt",
+          "name": "Processed wolf pelt",
+          "level": [
+            1,
+            10
+          ]
+        },
+        {
+          "slug": "butchering-items-processed-boar-hide",
+          "name": "Processed boar hide",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "butchering-items-processed-goat-hide",
+          "name": "Processed goat hide",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "butchering-items-processed-bear-hide",
+          "name": "Processed bear hide",
+          "level": [
+            12,
+            25
+          ]
+        },
+        {
+          "slug": "butchering-items-rat-meat-chunks",
+          "name": "Rat meat chunks",
+          "level": [
+            1,
+            5
+          ]
+        },
+        {
+          "slug": "butchering-items-fish-fillet",
+          "name": "Fish fillet",
+          "level": [
+            10,
+            15
+          ]
+        },
+        {
+          "slug": "butchering-items-processed-weak-monster-bone",
+          "name": "Processed weak monster bone",
+          "level": [
+            10,
+            20
+          ]
+        },
+        {
+          "slug": "butchering-items-high-quality-wolf-fang",
+          "name": "High quality wolf fang",
+          "level": [
+            1,
+            7
+          ]
+        },
+        {
+          "slug": "butchering-items-high-quality-boar-tusk",
+          "name": "High quality boar tusk",
+          "level": [
+            5,
+            12
+          ]
+        },
+        {
+          "slug": "butchering-items-pristine-mountain-goat-horn",
+          "name": "Pristine mountain goat horn",
+          "level": [
+            10,
+            17
+          ]
+        },
+        {
+          "slug": "butchering-items-sharp-bear-claw",
+          "name": "Sharp bear claw",
+          "level": [
+            13,
+            20
+          ]
+        },
+        {
+          "slug": "butchering-items-giant-crab-claw",
+          "name": "Giant crab claw",
+          "level": [
+            18,
+            25
+          ]
+        }
+      ],
+      "combat": []
+    }
   },
   "woodworking": {
     "id": "Woodworking",
@@ -465,7 +2129,86 @@
     "max_level": 60,
     "category": "Crafting",
     "base_xp_cost": 40,
-    "xp_scaling": 1.5
+    "xp_scaling": 1.5,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [
+        {
+          "slug": "woodworking-items-processed-rough-wood",
+          "name": "Processed rough wood",
+          "level": [
+            1,
+            5
+          ]
+        },
+        {
+          "slug": "woodworking-items-processed-wood",
+          "name": "Processed wood",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "woodworking-items-processed-ash-wood",
+          "name": "Processed ash wood",
+          "level": [
+            10,
+            20
+          ]
+        },
+        {
+          "slug": "woodworking-items-makeshift-fishing-pole",
+          "name": "Makeshift fishing pole",
+          "level": [
+            1,
+            10
+          ]
+        },
+        {
+          "slug": "woodworking-components-short-hilt",
+          "name": "Short hilt",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "woodworking-components-medium-handle",
+          "name": "Medium handle",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "woodworking-components-long-shaft",
+          "name": "Long shaft",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "woodworking-components-shield-base",
+          "name": "Shield base",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
+          "slug": "woodworking-components-shield-handle",
+          "name": "Shield handle",
+          "level": [
+            1,
+            1
+          ]
+        }
+      ],
+      "combat": []
+    }
   },
   "iron-skin": {
     "id": "Iron skin",
@@ -474,7 +2217,13 @@
     "max_level": 30,
     "category": "Combat",
     "base_xp_cost": 400,
-    "xp_scaling": 1.9
+    "xp_scaling": 1.9,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "fortitude": {
     "id": "Fortitude",
@@ -483,7 +2232,13 @@
     "max_level": 60,
     "category": "Combat",
     "base_xp_cost": 200,
-    "xp_scaling": 1.6
+    "xp_scaling": 1.6,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "persistence": {
     "id": "Persistence",
@@ -492,7 +2247,24 @@
     "max_level": 30,
     "category": "Character",
     "base_xp_cost": 60,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [
+        {
+          "id": "enduring",
+          "name": "enduring",
+          "locations": [
+            {
+              "id": "Waterfall basin",
+              "name": "Waterfall basin"
+            }
+          ]
+        }
+      ],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "perception": {
     "id": "Perception",
@@ -501,7 +2273,13 @@
     "max_level": 40,
     "category": "Character",
     "base_xp_cost": 100,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "literacy": {
     "id": "Literacy",
@@ -510,7 +2288,13 @@
     "max_level": 10,
     "category": "Character",
     "base_xp_cost": 120,
-    "xp_scaling": 2
+    "xp_scaling": 2,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "medicine": {
     "id": "Medicine",
@@ -519,7 +2303,13 @@
     "max_level": 30,
     "category": "Character",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "gluttony": {
     "id": "Gluttony",
@@ -528,7 +2318,13 @@
     "max_level": 30,
     "category": "Character",
     "base_xp_cost": 40,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "breathing": {
     "id": "Breathing",
@@ -537,7 +2333,26 @@
     "max_level": 40,
     "category": "Character",
     "base_xp_cost": 400,
-    "xp_scaling": 1.6
+    "xp_scaling": 1.6,
+    "sources": {
+      "activities": [],
+      "locations": [
+        {
+          "id": "Gentle mountain slope",
+          "name": "Gentle mountain slope",
+          "type": "thin air",
+          "xp_gain": 3
+        },
+        {
+          "id": "Fight the angry mountain goat",
+          "name": "Fight the angry mountain goat",
+          "type": "thin air",
+          "xp_gain": 3
+        }
+      ],
+      "recipes": [],
+      "combat": []
+    }
   },
   "regeneration": {
     "id": "Regeneration",
@@ -546,7 +2361,13 @@
     "max_level": 40,
     "category": "Character",
     "base_xp_cost": 1000,
-    "xp_scaling": 1.5
+    "xp_scaling": 1.5,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   },
   "haggling": {
     "id": "Haggling",
@@ -555,6 +2376,12 @@
     "max_level": 25,
     "category": "Character",
     "base_xp_cost": 100,
-    "xp_scaling": 1.8
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
   }
 }

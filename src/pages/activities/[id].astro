@@ -25,6 +25,34 @@ const { activity } = Astro.props;
 <StarlightPage frontmatter={{ title: activity.name, description: activity.description }}>
   <div class="activity-details">
     <p>{activity.description}</p>
+
+    <h2>Locations</h2>
+    {activity.locations && activity.locations.length > 0 ? (
+      <div class="table-container">
+        <table>
+          <thead>
+            <tr>
+              <th>Location</th>
+              <th>Starting Text</th>
+              <th>XP per tick</th>
+              <th>Activity ID</th>
+            </tr>
+          </thead>
+          <tbody>
+            {activity.locations.map(location => (
+              <tr>
+                <td><a href={`/YAIRPG-wiki/locations/${location.id}`}>{location.name}</a></td>
+                <td>{location.starting_text}</td>
+                <td>{location.xp}</td>
+                <td><code>{location.activity_id}</code></td>
+              </tr>
+            ))}
+          </tbody>
+        </table>
+      </div>
+    ) : (
+      <p>No locations found for this activity.</p>
+    )}
   </div>
 </StarlightPage>
 
@@ -37,11 +65,31 @@ const { activity } = Astro.props;
     border-bottom: 1px solid var(--sl-color-gray-5);
     padding-bottom: 0.5rem;
   }
-  .activity-details ul {
-    list-style: none;
-    padding: 0;
+  .table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
   }
-  .activity-details li {
-    margin-bottom: 0.5rem;
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--sl-color-gray-5);
+  }
+  th {
+    background-color: var(--sl-color-gray-6);
+    font-weight: 600;
+  }
+  tr:hover {
+    background-color: var(--sl-color-gray-6);
+  }
+  code {
+    background-color: var(--sl-color-gray-6);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
   }
 </style>
