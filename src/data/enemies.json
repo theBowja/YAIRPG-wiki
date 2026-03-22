@@ -18,6 +18,9 @@
       "defense": 1,
       "max_health": 20
     },
+    "base_AP": 9,
+    "base_EP": 11,
+    "evasion_to_dodge": 81,
     "tags": [
       "living",
       "beast",
@@ -58,6 +61,9 @@
       "defense": 2,
       "max_health": 30
     },
+    "base_AP": 12,
+    "base_EP": 15,
+    "evasion_to_dodge": 111,
     "tags": [
       "living",
       "beast",
@@ -98,6 +104,9 @@
       "defense": 8,
       "max_health": 80
     },
+    "base_AP": 118,
+    "base_EP": 147,
+    "evasion_to_dodge": 1059,
     "tags": [
       "living",
       "beast",
@@ -138,6 +147,9 @@
       "defense": 30,
       "max_health": 600
     },
+    "base_AP": 354,
+    "base_EP": 354,
+    "evasion_to_dodge": 3182,
     "tags": [
       "living",
       "beast",
@@ -184,6 +196,9 @@
       "defense": 20,
       "max_health": 4000
     },
+    "base_AP": 1697,
+    "base_EP": 28,
+    "evasion_to_dodge": 15274,
     "tags": [
       "living",
       "beast",
@@ -222,6 +237,9 @@
       "defense": 12,
       "max_health": 200
     },
+    "base_AP": 192,
+    "base_EP": 192,
+    "evasion_to_dodge": 1731,
     "tags": [
       "living",
       "beast",
@@ -257,6 +275,9 @@
       "defense": 6,
       "max_health": 150
     },
+    "base_AP": 147,
+    "base_EP": 167,
+    "evasion_to_dodge": 1323,
     "tags": [
       "living",
       "beast",
@@ -292,6 +313,9 @@
       "defense": 20,
       "max_health": 250
     },
+    "base_AP": 316,
+    "base_EP": 316,
+    "evasion_to_dodge": 2847,
     "tags": [
       "living",
       "beast",
@@ -331,6 +355,9 @@
       "defense": 30,
       "max_health": 1000
     },
+    "base_AP": 586,
+    "base_EP": 1339,
+    "evasion_to_dodge": 5271,
     "tags": [
       "living",
       "beast",
@@ -374,6 +401,9 @@
       "defense": 40,
       "max_health": 2000
     },
+    "base_AP": 759,
+    "base_EP": 1233,
+    "evasion_to_dodge": 6831,
     "tags": [
       "living",
       "beast",
@@ -417,6 +447,9 @@
       "defense": 35,
       "max_health": 600
     },
+    "base_AP": 387,
+    "base_EP": 232,
+    "evasion_to_dodge": 3486,
     "tags": [
       "living",
       "beast",
@@ -460,6 +493,9 @@
       "defense": 50,
       "max_health": 600
     },
+    "base_AP": 465,
+    "base_EP": 775,
+    "evasion_to_dodge": 4183,
     "tags": [
       "living",
       "beast",
@@ -503,6 +539,9 @@
       "defense": 500,
       "max_health": 6000
     },
+    "base_AP": 2828,
+    "base_EP": 2263,
+    "evasion_to_dodge": 25456,
     "tags": [
       "living",
       "beast",
@@ -542,6 +581,9 @@
       "defense": 500,
       "max_health": 8000
     },
+    "base_AP": 4243,
+    "base_EP": 3536,
+    "evasion_to_dodge": 38184,
     "tags": [
       "living",
       "beast",
@@ -582,6 +624,9 @@
       "defense": 10,
       "max_health": 600
     },
+    "base_AP": 2000,
+    "base_EP": 1000,
+    "evasion_to_dodge": 18001,
     "tags": [
       "living",
       "insect",
@@ -625,6 +670,9 @@
       "defense": 20,
       "max_health": 200
     },
+    "base_AP": 2000,
+    "base_EP": 500,
+    "evasion_to_dodge": 18001,
     "tags": [
       "living",
       "insect",
@@ -651,6 +699,9 @@
       "defense": 45,
       "max_health": 500
     },
+    "base_AP": 465,
+    "base_EP": 465,
+    "evasion_to_dodge": 4183,
     "tags": [
       "living",
       "human",
@@ -678,6 +729,9 @@
       "defense": 145,
       "max_health": 2000
     },
+    "base_AP": 636,
+    "base_EP": 849,
+    "evasion_to_dodge": 5728,
     "tags": [
       "living",
       "beast",
@@ -711,6 +765,9 @@
       "defense": 700,
       "max_health": 7000
     },
+    "base_AP": 1753,
+    "base_EP": 1972,
+    "evasion_to_dodge": 15775,
     "tags": [
       "living",
       "beast",
@@ -751,6 +808,9 @@
       "defense": 545,
       "max_health": 16750
     },
+    "base_AP": 3834,
+    "base_EP": 2739,
+    "evasion_to_dodge": 34507,
     "tags": [
       "living",
       "beast",
@@ -787,6 +847,9 @@
       "defense": 1000,
       "max_health": 22000
     },
+    "base_AP": 2508,
+    "base_EP": 2622,
+    "evasion_to_dodge": 22576,
     "tags": [
       "living",
       "beast",
@@ -823,6 +886,9 @@
       "defense": 385,
       "max_health": 12500
     },
+    "base_AP": 5634,
+    "base_EP": 3184,
+    "evasion_to_dodge": 50705,
     "tags": [
       "living",
       "beast",
@@ -858,6 +924,9 @@
       "defense": 30,
       "max_health": 300
     },
+    "base_AP": 358,
+    "base_EP": 89,
+    "evasion_to_dodge": 3220,
     "tags": [
       "living",
       "human",
@@ -884,6 +953,9 @@
       "defense": 10,
       "max_health": 300
     },
+    "base_AP": 224,
+    "base_EP": 89,
+    "evasion_to_dodge": 2013,
     "tags": [
       "living",
       "human",
@@ -910,6 +982,9 @@
       "defense": 100,
       "max_health": 10000
     },
+    "base_AP": 0,
+    "base_EP": 0,
+    "evasion_to_dodge": 1,
     "tags": [
       "inanimate",
       "large"
@@ -935,6 +1010,9 @@
       "defense": 30,
       "max_health": 400
     },
+    "base_AP": 465,
+    "base_EP": 465,
+    "evasion_to_dodge": 4183,
     "tags": [
       "living",
       "human",
@@ -961,6 +1039,9 @@
       "defense": 60,
       "max_health": 1200
     },
+    "base_AP": 542,
+    "base_EP": 775,
+    "evasion_to_dodge": 4880,
     "tags": [
       "living",
       "beast",
@@ -988,6 +1069,9 @@
       "defense": 4000,
       "max_health": 30000
     },
+    "base_AP": 8367,
+    "base_EP": 5020,
+    "evasion_to_dodge": 75300,
     "tags": [
       "living",
       "beast",
@@ -1016,6 +1100,9 @@
       "defense": 2000,
       "max_health": 22000
     },
+    "base_AP": 7000,
+    "base_EP": 4500,
+    "evasion_to_dodge": 63001,
     "tags": [
       "living",
       "beast",

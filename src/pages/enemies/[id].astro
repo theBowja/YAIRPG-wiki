@@ -48,7 +48,31 @@ const foundInLocations = Object.entries(locationsData)
       </>
     )}
 
-    <h2>Stats</h2>
+    <h2>Combat Stats</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Combat Stat</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Base AP (Attack Points)</td>
+          <td>{enemy.base_AP}</td>
+        </tr>
+        <tr>
+          <td>Base EP (Evasion Points)</td>
+          <td>{enemy.base_EP}</td>
+        </tr>
+        <tr>
+          <td>Evasion for 100% Dodge <br/><small>(accounts for max stat variation)</small></td>
+          <td>{enemy.evasion_to_dodge}</td>
+        </tr>
+      </tbody>
+    </table>
+
+    <h2>Base Stats</h2>
     <table>
       <thead>
         <tr>
