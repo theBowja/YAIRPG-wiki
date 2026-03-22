@@ -111,7 +111,13 @@ for (const [id, loc] of Object.entries(locations)) {
         tags: Object.keys(loc.tags),
         traders: loc.traders || [],
         dialogues: loc.dialogues || [],
-        activities: Object.keys(loc.activities || {}),
+        activities: Object.entries(loc.activities || {}).map(([key, act]) => ({
+            id: key,
+            activity_name: act.activity_name,
+            starting_text: act.starting_text,
+            xp: act.skill_xp_per_tick
+        })),
+
         actions: Object.keys(loc.actions || {}),
         parent_location: loc.parent_location ? {
             id: loc.parent_location.id,

@@ -62,13 +62,30 @@ const { location } = Astro.props;
     {location.activities.length > 0 && (
       <>
         <h2>Activities</h2>
-        <ul>
-          {location.activities.map(activity => (
-            <li>
-              <a href={`/YAIRPG-wiki/activities/${slugify(activity)}`}>{activity}</a>
-            </li>
-          ))}
-        </ul>
+        <div class="table-container">
+          <table>
+            <thead>
+              <tr>
+                <th>Starting Text</th>
+                <th>XP per tick</th>
+                <th>Activity ID</th>
+              </tr>
+            </thead>
+            <tbody>
+              {location.activities.map(activity => (
+                <tr>
+                  <td>
+                    <a href={`/YAIRPG-wiki/activities/${slugify(activity.activity_name)}`}>
+                      {activity.starting_text || activity.id}
+                    </a>
+                  </td>
+                  <td>{activity.xp || '-'}</td>
+                  <td><code>{activity.id}</code></td>
+                </tr>
+              ))}
+            </tbody>
+          </table>
+        </div>
       </>
     )}
 
@@ -137,5 +154,32 @@ const { location } = Astro.props;
   }
   .location-details li {
     margin-bottom: 0.5rem;
+  }
+  .table-container {
+    overflow-x: auto;
+    margin-top: 1rem;
+  }
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1rem;
+  }
+  th, td {
+    padding: 0.75rem;
+    text-align: left;
+    border-bottom: 1px solid var(--sl-color-gray-5);
+  }
+  th {
+    background-color: var(--sl-color-gray-6);
+    font-weight: 600;
+  }
+  tr:hover {
+    background-color: var(--sl-color-gray-6);
+  }
+  code {
+    background-color: var(--sl-color-gray-6);
+    padding: 0.2rem 0.4rem;
+    border-radius: 4px;
+    font-size: 0.9em;
   }
 </style>

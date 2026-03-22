@@ -59,16 +59,66 @@
       "old craftsman"
     ],
     "activities": [
-      "fieldwork",
-      "running",
-      "weightlifting",
-      "swimming",
-      "balancing",
-      "meditating",
-      "patrolling",
-      "woodcutting",
-      "sand",
-      "fishing"
+      {
+        "id": "fieldwork",
+        "activity_name": "fieldwork",
+        "starting_text": "Work on the fields",
+        "xp": 1
+      },
+      {
+        "id": "running",
+        "activity_name": "running",
+        "starting_text": "Go for a run around the village",
+        "xp": 1
+      },
+      {
+        "id": "weightlifting",
+        "activity_name": "weightlifting",
+        "starting_text": "Try to carry some bags of grain",
+        "xp": 1
+      },
+      {
+        "id": "swimming",
+        "activity_name": "swimming",
+        "starting_text": "Swim in the river",
+        "xp": 1
+      },
+      {
+        "id": "balancing",
+        "activity_name": "balancing",
+        "starting_text": "Try to keep your balance on rocks in the river",
+        "xp": 1
+      },
+      {
+        "id": "meditating",
+        "activity_name": "meditating",
+        "starting_text": "Sit down and meditate",
+        "xp": 1
+      },
+      {
+        "id": "patrolling",
+        "activity_name": "patrolling",
+        "starting_text": "Go on a patrol around the village.",
+        "xp": 1
+      },
+      {
+        "id": "woodcutting",
+        "activity_name": "woodcutting",
+        "starting_text": "Gather wood on the outskirts",
+        "xp": 1
+      },
+      {
+        "id": "sand",
+        "activity_name": "digging",
+        "starting_text": "Dredge up some sand from the riverbed",
+        "xp": 1
+      },
+      {
+        "id": "fishing",
+        "activity_name": "fishing",
+        "starting_text": "Try fishing in the river",
+        "xp": 1
+      }
     ],
     "actions": [
       "search for delivery",
@@ -294,12 +344,42 @@
     "traders": [],
     "dialogues": [],
     "activities": [
-      "weightlifting",
-      "climbing",
-      "meditating",
-      "mining",
-      "mining2",
-      "mining3"
+      {
+        "id": "weightlifting",
+        "activity_name": "weightlifting",
+        "starting_text": "Try lifting some of the rocks",
+        "xp": 4
+      },
+      {
+        "id": "climbing",
+        "activity_name": "climbing",
+        "starting_text": "Attempt climbing the mountain walls outside",
+        "xp": 1
+      },
+      {
+        "id": "meditating",
+        "activity_name": "meditating",
+        "starting_text": "Sit down and meditate in front of the gate",
+        "xp": 4
+      },
+      {
+        "id": "mining",
+        "activity_name": "mining",
+        "starting_text": "Mine the strange looking iron vein",
+        "xp": 1
+      },
+      {
+        "id": "mining2",
+        "activity_name": "mining",
+        "starting_text": "Mine the deeper iron vein",
+        "xp": 5
+      },
+      {
+        "id": "mining3",
+        "activity_name": "mining",
+        "starting_text": "Mine the atratan vein",
+        "xp": 12
+      }
     ],
     "actions": [
       "open the gate",
@@ -717,10 +797,30 @@
     "traders": [],
     "dialogues": [],
     "activities": [
-      "running",
-      "woodcutting",
-      "woodcutting2",
-      "herbalism"
+      {
+        "id": "running",
+        "activity_name": "running",
+        "starting_text": "Go for a run through the forest",
+        "xp": 4
+      },
+      {
+        "id": "woodcutting",
+        "activity_name": "woodcutting",
+        "starting_text": "Gather wood from nearby trees",
+        "xp": 5
+      },
+      {
+        "id": "woodcutting2",
+        "activity_name": "woodcutting",
+        "starting_text": "Gather wood from sturdy trees",
+        "xp": 12
+      },
+      {
+        "id": "herbalism",
+        "activity_name": "herbalism",
+        "starting_text": "Gather useful herbs throughout the forest",
+        "xp": 2
+      }
     ],
     "actions": [
       "search for boars",
@@ -969,10 +1069,30 @@
     "traders": [],
     "dialogues": [],
     "activities": [
-      "swimming",
-      "balancing",
-      "mining",
-      "fishing"
+      {
+        "id": "swimming",
+        "activity_name": "swimming",
+        "starting_text": "Go diving in the lake waters",
+        "xp": 4
+      },
+      {
+        "id": "balancing",
+        "activity_name": "balancing",
+        "starting_text": "Try to keep your balance on top of the waterfall as water rushes around your feet",
+        "xp": 7
+      },
+      {
+        "id": "mining",
+        "activity_name": "mining",
+        "starting_text": "Mine the the shiny underwater vein",
+        "xp": 1
+      },
+      {
+        "id": "fishing",
+        "activity_name": "fishing",
+        "starting_text": "Try fishing in the lake",
+        "xp": 4
+      }
     ],
     "actions": [
       "search1",
@@ -1094,7 +1214,12 @@
       "gate guard"
     ],
     "activities": [
-      "herbalism"
+      {
+        "id": "herbalism",
+        "activity_name": "herbalism",
+        "starting_text": "Search for useful herbs by the roadside",
+        "xp": 4
+      }
     ],
     "actions": [],
     "parent_location": null,
@@ -1172,8 +1297,18 @@
       "farm supervisor"
     ],
     "activities": [
-      "fieldwork",
-      "animal care"
+      {
+        "id": "fieldwork",
+        "activity_name": "fieldwork",
+        "starting_text": "Work on the fields",
+        "xp": 2
+      },
+      {
+        "id": "animal care",
+        "activity_name": "animal care",
+        "starting_text": "Take care of local sheep in exchange for some wool",
+        "xp": 3
+      }
     ],
     "actions": [
       "dig for ants 1",
@@ -1502,7 +1637,12 @@
     "traders": [],
     "dialogues": [],
     "activities": [
-      "balancing"
+      {
+        "id": "balancing",
+        "activity_name": "balancing",
+        "starting_text": "Stupidly risk your life by trying to balance on some stones on the very edge of the cliff",
+        "xp": 4
+      }
     ],
     "actions": [
       "explore"
@@ -1557,9 +1697,24 @@
     "traders": [],
     "dialogues": [],
     "activities": [
-      "herbalism",
-      "balancing",
-      "climbing"
+      {
+        "id": "herbalism",
+        "activity_name": "herbalism",
+        "starting_text": "Search for useful herbs on the mountainside",
+        "xp": 6
+      },
+      {
+        "id": "balancing",
+        "activity_name": "balancing",
+        "starting_text": "Stupidly risk your life by trying to balance on some stones on the very edge of the cliff",
+        "xp": 4
+      },
+      {
+        "id": "climbing",
+        "activity_name": "climbing",
+        "starting_text": "Take a lesson from the goats and try to climb a wall near the camp",
+        "xp": 4
+      }
     ],
     "actions": [
       "explore1",
@@ -1674,7 +1829,12 @@
     "traders": [],
     "dialogues": [],
     "activities": [
-      "herbalism"
+      {
+        "id": "herbalism",
+        "activity_name": "herbalism",
+        "starting_text": "Harvest flax from around the riverbank",
+        "xp": 9
+      }
     ],
     "actions": [],
     "parent_location": null,
@@ -1776,11 +1936,36 @@
     "traders": [],
     "dialogues": [],
     "activities": [
-      "swimming",
-      "sand",
-      "climbing",
-      "weightlifting",
-      "running"
+      {
+        "id": "swimming",
+        "activity_name": "swimming",
+        "starting_text": "Swim against the current",
+        "xp": 7
+      },
+      {
+        "id": "sand",
+        "activity_name": "digging",
+        "starting_text": "Dig for clams around the lake beach",
+        "xp": 10
+      },
+      {
+        "id": "climbing",
+        "activity_name": "climbing",
+        "starting_text": "Practice rappelling down the cliff face",
+        "xp": 10
+      },
+      {
+        "id": "weightlifting",
+        "activity_name": "weightlifting",
+        "starting_text": "Sled pull a boulder",
+        "xp": 10
+      },
+      {
+        "id": "running",
+        "activity_name": "running",
+        "starting_text": "Run along the shore",
+        "xp": 10
+      }
     ],
     "actions": [
       "create lake camp",
@@ -1819,8 +2004,18 @@
     "traders": [],
     "dialogues": [],
     "activities": [
-      "enduring",
-      "meditating"
+      {
+        "id": "enduring",
+        "activity_name": "enduring",
+        "starting_text": "Harden your resolve by sitting underneath the waterfall",
+        "xp": 2
+      },
+      {
+        "id": "meditating",
+        "activity_name": "meditating",
+        "starting_text": "Sit in the rock shelter behind the waterfall and focus your mind",
+        "xp": 8
+      }
     ],
     "actions": [],
     "parent_location": null,
@@ -1972,7 +2167,12 @@
       "swampland tanner"
     ],
     "activities": [
-      "herbalism"
+      {
+        "id": "herbalism",
+        "activity_name": "herbalism",
+        "starting_text": "Forage for wild herbs and vegetables in the swamplands",
+        "xp": 14
+      }
     ],
     "actions": [],
     "parent_location": null,
