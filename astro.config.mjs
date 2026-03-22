@@ -172,7 +172,9 @@ if (fs.existsSync(recipesDataPath)) {
 		/** @type {Object.<string, any[]>} */
 		const skills = {};
 		for (const [slug, recipe] of Object.entries(recipesData)) {
-			const skill = recipe.recipe_skill || 'Miscellaneous';
+			let skill = recipe.recipe_skill || 'Miscellaneous';
+			if (skill === 'Crafting') skill = 'Tinkering';
+			
 			if (!skills[skill]) skills[skill] = [];
 			skills[skill].push({
 				label: recipe.name,
@@ -180,15 +182,16 @@ if (fs.existsSync(recipesDataPath)) {
 			});
 		}
 
+		const order = ['Tinkering', 'Butchering', 'Cooking', 'Woodworking', 'Smelting', 'Forging', 'Alchemy'];
+		const otherSkills = Object.keys(skills).filter(s => !order.includes(s));
+
 		recipeSidebarItems = [
 			{ label: 'All Recipes', link: '/recipes' },
-			...Object.entries(skills)
-				.sort(([a], [b]) => a.localeCompare(b))
-				.map(([skill, items]) => ({
-					label: skill,
-					collapsed: true,
-					items: items.sort((a, b) => a.label.localeCompare(b.label)),
-				}))
+			...[...order, ...otherSkills].filter(skill => skills[skill]).map(skill => ({
+				label: skill,
+				collapsed: true,
+				items: skills[skill],
+			}))
 		];
 	} catch (e) {
 		console.error('Failed to parse recipes.json for sidebar:', e);
