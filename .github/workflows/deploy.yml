@@ -20,6 +20,8 @@ jobs:
     steps:
       - name: Checkout your repository using git
         uses: actions/checkout@v5
+      - name: Clone YAIRPG
+        run: npm run cloneYAIRPG
       - name: Install, build, and upload your site
         uses: withastro/action@v5
         # with:

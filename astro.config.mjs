@@ -1,6 +1,7 @@
 // @ts-check
 import { defineConfig } from 'astro/config';
 import starlight from '@astrojs/starlight';
+import yairpgPlugin from './yairpg-plugin';
 
 import fs from 'node:fs';
 
@@ -174,7 +175,7 @@ if (fs.existsSync(recipesDataPath)) {
 		for (const [slug, recipe] of Object.entries(recipesData)) {
 			let skill = recipe.recipe_skill || 'Miscellaneous';
 			if (skill === 'Crafting') skill = 'Tinkering';
-			
+
 			if (!skills[skill]) skills[skill] = [];
 			skills[skill].push({
 				label: recipe.name,
@@ -186,6 +187,7 @@ if (fs.existsSync(recipesDataPath)) {
 		const otherSkills = Object.keys(skills).filter(s => !order.includes(s));
 
 		recipeSidebarItems = [
+			{ label: 'Tinkering Calculator', link: '/recipes/tinkering-calculator' },
 			{ label: 'All Recipes', link: '/recipes' },
 			...[...order, ...otherSkills].filter(skill => skills[skill]).map(skill => ({
 				label: skill,
@@ -238,4 +240,8 @@ export default defineConfig({
 			pagination: false
 		}),
 	],
+
+	vite: {
+		plugins: [yairpgPlugin()]
+	}
 });

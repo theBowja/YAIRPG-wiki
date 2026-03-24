@@ -8,7 +8,7 @@
     "build": "astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "clone": "node ./scripts/clone-yairpg.js",
+    "cloneYAIRPG": "node ./scripts/clone-yairpg.js",
     "danger": "node --import ./scripts/register-hooks.js ./scripts/danger.js",
     "build:data": "node --import ./scripts/register-hooks.js ./scripts/build-data.js"
   },

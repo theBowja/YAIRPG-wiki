@@ -326,6 +326,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "helmet exterior",
     "xp_value": 13.8
   },
   "crafting-components-chestplate-exterior": {
@@ -362,6 +363,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "chestplate exterior",
     "xp_value": 23
   },
   "crafting-components-leg-armor-exterior": {
@@ -398,6 +400,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "leg armor exterior",
     "xp_value": 18.4
   },
   "crafting-components-glove-exterior": {
@@ -434,6 +437,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "glove exterior",
     "xp_value": 13.8
   },
   "crafting-components-shoes-exterior": {
@@ -470,6 +474,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "shoes exterior",
     "xp_value": 13.8
   },
   "crafting-equipment-axe": {
@@ -714,6 +719,7 @@
       }
     ],
     "item_type": "Armor",
+    "component_type": "helmet interior",
     "xp_value": 13.8
   },
   "crafting-equipment-shirt": {
@@ -765,6 +771,7 @@
       }
     ],
     "item_type": "Armor",
+    "component_type": "chestplate interior",
     "xp_value": 23
   },
   "crafting-equipment-pants": {
@@ -816,6 +823,7 @@
       }
     ],
     "item_type": "Armor",
+    "component_type": "leg armor interior",
     "xp_value": 13.8
   },
   "crafting-equipment-gloves": {
@@ -862,6 +870,7 @@
       }
     ],
     "item_type": "Armor",
+    "component_type": "glove interior",
     "xp_value": 9.2
   },
   "crafting-equipment-shoes": {
@@ -903,6 +912,7 @@
       }
     ],
     "item_type": "Armor",
+    "component_type": "shoes interior",
     "xp_value": 9.2
   },
   "crafting-equipment-cape": {
@@ -2005,6 +2015,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "shield base",
     "xp_value": 23
   },
   "forging-components-helmet-exterior": {
@@ -2036,6 +2047,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "helmet exterior",
     "xp_value": 13.8
   },
   "forging-components-chestplate-exterior": {
@@ -2067,6 +2079,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "chestplate exterior",
     "xp_value": 23
   },
   "forging-components-leg-armor-exterior": {
@@ -2098,6 +2111,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "leg armor exterior",
     "xp_value": 18.4
   },
   "forging-components-glove-exterior": {
@@ -2129,6 +2143,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "Glove exterior",
     "xp_value": 13.8
   },
   "forging-components-shoes-exterior": {
@@ -2160,6 +2175,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "shoes exterior",
     "xp_value": 13.8
   },
   "alchemy-items-potash": {
@@ -3052,6 +3068,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "shield base",
     "xp_value": 27.6
   },
   "woodworking-components-shield-handle": {
@@ -3083,6 +3100,7 @@
       }
     ],
     "item_type": "Component",
+    "component_type": "shield handle",
     "xp_value": 18.4
   }
 }

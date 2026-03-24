@@ -254,6 +254,19 @@ for (const [id, item] of Object.entries(item_templates)) {
         itemData.rarity = item.getRarity();
     }
 
+    // Used by Armor naming logic (Armor.getName() uses external components' full_armor_name).
+    if (typeof item.full_armor_name === 'string' && item.full_armor_name.length > 0) {
+        itemData.full_armor_name = item.full_armor_name;
+    }
+
+    if (typeof item.component_tier === 'number') {
+        itemData.component_tier = item.component_tier;
+    }
+
+    if (typeof item.item_tier === 'number') {
+        itemData.item_tier = item.item_tier;
+    }
+
     itemsOutput[slug] = itemData;
 }
 
@@ -294,6 +307,10 @@ for (const [category, subcategories] of Object.entries(recipes)) {
 
             if (recipe.item_type) {
                 recipeData.item_type = recipe.item_type;
+            }
+
+            if (recipe.component_type) {
+                recipeData.component_type = recipe.component_type;
             }
 
             // Calculate a base XP value for display (assuming tier 1/station 1 if needed)

@@ -1,0 +1,328 @@
+---
+import StarlightPage from '@astrojs/starlight/components/StarlightPage.astro';
+import itemsData from '../../data/items.json';
+import skillsData from '../../data/skills.json';
+
+// Note: We still use skillsData for max_level, but we will fetch recipes 
+// from the JS file in the client-side script to ensure logic parity.
+const maxLevelBySkillName = Object.values(skillsData as any).reduce((acc: Record<string, number>, skill: any) => {
+  acc[skill.name] = skill.max_level;
+  return acc;
+}, {} as Record<string, number>);
+
+const calculatorData = {
+  maxLevelBySkillName,
+};
+---
+
+<StarlightPage frontmatter={{ title: 'Tinkering Calculator', description: 'Calculate quality ranges for equipment recipes using game logic.' }}>
+  <div class="calculator">
+    <div class="grid">
+      <label>
+        <span>Tinkering level</span>
+        <input id="tinkering-level" type="number" min="1" max="60" value="12" />
+      </label>
+      <label>
+        <span>Forging level</span>
+        <input id="forging-level" type="number" min="1" max="60" value="12" />
+      </label>
+      <label>
+        <span>Woodworking level</span>
+        <input id="woodworking-level" type="number" min="1" max="60" value="12" />
+      </label>
+    </div>
+    <div class="grid">
+      <label>
+        <span>Recipe</span>
+        <select id="recipe"></select>
+      </label>
+    </div>
+
+    <div class="grid components">
+      <section class="component-card">
+        <h3 id="comp-1-heading">Component 1</h3>
+        <label>
+          <span id="component-1-slot">Type</span>
+          <select id="component-1-select"></select>
+        </label>
+        <label>
+          <span>Quality</span>
+          <input id="component-1-quality" type="number" min="10" max="250" value="100" />
+        </label>
+        <p id="component-1-range" class="range"></p>
+      </section>
+
+      <section class="component-card">
+        <h3 id="comp-2-heading">Component 2</h3>
+        <label>
+          <span id="component-2-slot">Type</span>
+          <select id="component-2-select"></select>
+        </label>
+        <label>
+          <span>Quality</span>
+          <input id="component-2-quality" type="number" min="10" max="250" value="100" />
+        </label>
+        <p id="component-2-range" class="range"></p>
+      </section>
+    </div>
+
+    <section class="result-card">
+      <h3>Result</h3>
+      <p id="result-name"></p>
+      <p id="quality-range"></p>
+      <p id="result-base"></p>
+      <p id="result-stats"></p>
+    </section>
+  </div>
+
+  <script type="application/json" id="calculator-data" set:html={JSON.stringify(calculatorData)} />
+  
+  <script>
+    import { recipes, ItemRecipe } from '../../../yairpg/src/crafting_recipes.js?real=true';
+    import { item_templates, Item } from '../../../yairpg/src/items.js?real=true';
+    const equipmentRecipes = Object.values(recipes.crafting.equipment).filter((v: ItemRecipe) => v.recipe_type === 'equipment') as ItemRecipe[];
+
+    const data = JSON.parse(document.getElementById('calculator-data').textContent || '{}');
+
+    window.__YAIRPG_OVERRIDES__ = {
+      get_total_skill_level: (skillId: string) => {
+        return getSkillLevel(skillId);
+      }
+    };
+
+    // --- Logic Helpers ---
+
+    function clamp(value: number, min: number, max: number) {
+      return Math.max(min, Math.min(max, value));
+    }
+
+    // Given the component type of an equipment recipe, return a list of items with that component type
+    function getComponentPoolByType(itemType: string): Item[] {
+      return Object.values(item_templates).filter((item: Item) => item.component_type === itemType);    
+    }
+
+    // Given an item id, looks for a ComponentRecipe that can craft it.
+    // returns undefined if not found.
+    function getComponentRecipe(itemId: string): ItemRecipe | undefined {
+      for (const recipeCategory of Object.values(recipes) as any) {
+        if (!recipeCategory.components) continue;
+        for (const recipeType of Object.values(recipeCategory) as any) {
+          for (const recipe of Object.values(recipeType) as ItemRecipe[]) {
+            const isMatch = recipe.recipe_type === 'component' && 
+                            recipe.materials?.some((mat: any) => mat.result_id === itemId);
+            
+            if (isMatch) {
+              return recipe;
+            }
+          }
+        }
+      }
+      return undefined;
+    }
+
+    function getSkillLevel(skill: string) {
+      switch(skill) {
+        case 'Crafting':
+          return Number(tinkeringLevelEl.value);
+        case 'Forging':
+          return Number(forgingLevelEl.value);
+        case 'Woodworking':
+          return Number(woodworkingLevelEl.value);
+        default:
+          return 0;
+      }
+    }
+
+    function getComponentQualityRange(component: Item) {
+      const componentRecipe = getComponentRecipe(component.id);
+      if (!componentRecipe) return undefined;
+
+      // 1 is the crafting station tier
+      return componentRecipe.get_quality_range(1 - component.component_tier);
+    }
+
+    function capitalize_first_letter(some_string: string) {
+      return some_string.charAt(0).toUpperCase() + some_string.slice(1);
+    }
+
+    // --- UI Logic ---
+
+    const recipeEl = document.getElementById('recipe') as HTMLInputElement;
+    const tinkeringLevelEl = document.getElementById('tinkering-level') as HTMLInputElement;
+    const forgingLevelEl = document.getElementById('forging-level') as HTMLInputElement;
+    const woodworkingLevelEl = document.getElementById('woodworking-level') as HTMLInputElement;
+    const component1SelectEl = document.getElementById('component-1-select') as HTMLInputElement;
+    const component2SelectEl = document.getElementById('component-2-select') as HTMLInputElement;
+    const component1QualityEl = document.getElementById('component-1-quality') as HTMLInputElement;
+    const component2QualityEl = document.getElementById('component-2-quality') as HTMLInputElement;
+    
+    function update() {
+      const recipe = equipmentRecipes.find((r) => r.id === recipeEl.value);
+      if (!recipe) return;
+
+      const options1 = getComponentPoolByType(recipe.components[0]);
+      const options2 = getComponentPoolByType(recipe.components[1]);
+
+      const comp1 = (options1.find((i: Item) => i.id === component1SelectEl.value) || options1[0]) as Item;
+      const comp2 = (options2.find((i: Item) => i.id === component2SelectEl.value) || options2[0]) as Item;
+
+      if (!comp1 || !comp2) return;
+
+      const rangeQ1 = getComponentQualityRange(comp1);
+      const rangeQ2 = getComponentQualityRange(comp2);
+
+      if (rangeQ1)
+        document.getElementById('component-1-range')!.textContent = `Quality: ${rangeQ1[0]}% - ${rangeQ1[1]}%`;
+      else
+        document.getElementById('component-1-range')!.textContent = `Quality: N/A`;
+
+      if (rangeQ2)
+        document.getElementById('component-2-range')!.textContent = `Quality: ${rangeQ2[0]}% - ${rangeQ2[1]}%`;
+      else
+        document.getElementById('component-2-range')!.textContent = `Quality: N/A`;
+
+      const q1 = clamp(Number(component1QualityEl.value), 0, rangeQ1 ? rangeQ1[1] : 999);
+      component1QualityEl.value = ''+q1;
+      const q2 = clamp(Number(component2QualityEl.value), 0, rangeQ2 ? rangeQ2[1] : 999);
+      component2QualityEl.value = ''+q2;
+
+      comp1.quality = q1;
+      comp2.quality = q2;
+
+      const t1 = recipe.get_component_quality_weighted(comp1, comp2);
+      const [minF, maxF] = recipe.get_quality_range(t1, 1 - Math.max(comp1.component_tier, comp2.component_tier));
+
+      const result = recipe.getResult(comp1, comp2, 1);
+      console.log(result.getStats(maxF))
+      
+      document.getElementById('result-name')!.textContent = result.getName();
+      
+      let qualityString = `Quality: ${minF}% - ${maxF}%\n[${result.getRarity(minF)} - ${result.getRarity(maxF)}]`;
+      document.getElementById('quality-range')!.innerText = qualityString;
+
+      if (result.tags.weapon) {
+        document.getElementById('result-base')!.textContent = `Attack: ${result.getAttack(minF)} - ${result.getAttack(maxF)}`;
+      } else if (result.tags.armor) {
+        document.getElementById('result-base')!.textContent = `Defense: ${result.getDefense(minF)} - ${result.getDefense(maxF)}`;
+      } else if (result.tags.shield) {
+        document.getElementById('result-base')!.textContent = `Base block: ${result.getShieldStrength(minF)} - ${result.getShieldStrength(maxF)}`;
+      }
+
+      const minStats = result.getStats(minF);
+      const maxStats = result.getStats(maxF);
+      let statString = '';
+      Object.keys(minStats).forEach(effect_key => {
+          if(minStats[effect_key].flat != null) {
+            statString += 
+              `\n${capitalize_first_letter(effect_key).replace("_"," ")}: +${minStats[effect_key].flat} - ${maxStats[effect_key].flat}`;
+          }
+          if(minStats[effect_key].multiplier != null) {
+            statString += 
+              `\n${capitalize_first_letter(effect_key).replace("_"," ")}: x${minStats[effect_key].multiplier} - ${maxStats[effect_key].multiplier}`;
+          }
+      });
+      statString = statString.trim();
+
+      document.getElementById('result-stats')!.innerText = statString;
+    }
+
+    // Initialize Selects
+    equipmentRecipes.forEach((r: ItemRecipe) => {
+      const opt = document.createElement('option');
+      opt.value = r.id;
+      opt.textContent = r.name;
+      recipeEl.appendChild(opt);
+    });
+
+    recipeEl.addEventListener('change', () => {
+      const recipe = equipmentRecipes.find((r: ItemRecipe) => r.id === recipeEl.value);
+      const syncSelect = (el: HTMLInputElement, itemtype: string) => {
+        el.innerHTML = '';
+        getComponentPoolByType(itemtype).forEach((i: Item) => {
+            const o = document.createElement('option');
+            o.value = i.id;
+            o.textContent = `${i.id} (tier ${i.component_tier})`;
+            el.appendChild(o);
+        });
+      };
+      syncSelect(component1SelectEl, recipe.components[0]);
+      syncSelect(component2SelectEl, recipe.components[1]);
+      document.getElementById('component-1-slot')!.textContent = recipe.components[0];
+      document.getElementById('component-2-slot')!.textContent = recipe.components[1];
+      update();
+    });
+
+    [tinkeringLevelEl, forgingLevelEl, woodworkingLevelEl, component1SelectEl, component2SelectEl, component1QualityEl, component2QualityEl].forEach(el => {
+        el.addEventListener('input', update);
+    });
+
+    // Trigger initial state
+    recipeEl.dispatchEvent(new Event('change'));
+  </script>
+</StarlightPage>
+
+<style>
+  .calculator {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 1rem;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+    gap: 1rem;
+  }
+  .grid label,section {
+    margin-top: 0;
+  }
+  .components {
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  }
+  label {
+    display: flex;
+    flex-direction: column;
+    gap: 0.4rem;
+  }
+  span {
+    font-size: var(--sl-text-sm);
+    color: var(--sl-color-gray-2);
+  }
+  input,
+  select {
+    padding: 0.55rem 0.7rem;
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.5rem;
+    background: var(--sl-color-gray-6);
+    color: var(--sl-color-white);
+  }
+  .component-card,
+  .result-card {
+    background: var(--sl-color-gray-6);
+    border: 1px solid var(--sl-color-gray-5);
+    border-radius: 0.7rem;
+    padding: 1rem;
+  }
+  .component-card h3,
+  .result-card h3 {
+    margin: 0 0 0.8rem 0;
+    font-size: var(--sl-text-lg);
+  }
+  .range {
+    color: var(--sl-color-gray-2);
+    font-size: var(--sl-text-sm);
+    margin: 0.8rem 0 0 0;
+  }
+  #result-name {
+    margin: 0.5rem 0;
+    font-weight: 600;
+  }
+  #final-quality-range {
+    margin: 0.5rem 0;
+    font-weight: 600;
+  }
+  #stat-scaling {
+    margin: 0.5rem 0 0 0;
+    color: var(--sl-color-gray-2);
+  }
+</style>
