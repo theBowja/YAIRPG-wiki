@@ -20,7 +20,13 @@ const MOCK_SOURCES = {
     export const add_active_effect = () => {};
     export const global_flags = {};
   `,
-  'display.js': `export const log_message = () => {};`,
+  'display.js': `
+    export const log_message = () => {};
+    export const update_bestiary_entry_tooltip = () => {};
+    export const capitalize_first_letter = (some_string) => {
+      return some_string.charAt(0).toUpperCase() + some_string.slice(1);
+    };
+  `,
   'game_time.js': `
     export const current_game_time = { hour: 12, minute: 0, day_of_week: 1, day: 1, month: 1, year: 1 };
   `,
