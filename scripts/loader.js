@@ -4,9 +4,10 @@ export async function resolve(specifier, context, nextResolve) {
     // console.log(specifier);
     // console.log(context);
 
-    // Allow real imports
+    // Allow real imports and strip the query parameter to prevent duplicate module instantiation
     if (specifier.includes('?real=true')) {
-        return nextResolve(specifier, context);
+        const cleanSpecifier = specifier.replace('?real=true', '');
+        return nextResolve(cleanSpecifier, context);
     }
 
     const dataModules = ['misc.js', 'enemies.js', 'skills.js', 'activities.js', 'locations.js', 'items.js', 'crafting_recipes.js'];

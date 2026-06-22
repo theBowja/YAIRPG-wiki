@@ -47,9 +47,13 @@ export default function yairpgPlugin() {
   return {
     name: 'yairpg-plugin',
     enforce: 'pre',
-    resolveId(source, importer) {
-      // 1. Allow real imports via query param
-      if (source.includes('?real=true')) return null;
+    async resolveId(source, importer) {
+      // 1. Allow real imports via query param and strip the query parameter to prevent duplicate module instantiation
+      if (source.includes('?real=true')) {
+        const cleanSource = source.replace('?real=true', '');
+        const resolved = await this.resolve(cleanSource, importer, { skipSelf: true });
+        return resolved ? resolved.id : null;
+      }
 
       // 2. Allow specific data modules to load normally
       if (dataModules.some(mod => source.includes(mod))) return null;

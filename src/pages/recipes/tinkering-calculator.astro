@@ -81,7 +81,7 @@ const calculatorData = {
   <script type="application/json" id="calculator-data" set:html={JSON.stringify(calculatorData)} />
 
   <script>
-    import { recipes, ItemRecipe } from "../../../yairpg/src/crafting_recipes.js?real=true";
+    import { recipes, ItemRecipe, get_component_stats } from "../../../yairpg/src/crafting_recipes.js?real=true";
     import { item_templates, Item } from "../../../yairpg/src/items.js?real=true";
     const equipmentRecipes = Object.values(recipes.crafting.equipment).filter((v: ItemRecipe) => v.recipe_type === "equipment") as ItemRecipe[];
 
@@ -167,6 +167,7 @@ const calculatorData = {
 
       const comp1 = (options1.find((i: Item) => i.id === component1SelectEl.value) || options1[0]) as Item;
       const comp2 = (options2.find((i: Item) => i.id === component2SelectEl.value) || options2[0]) as Item;
+      const components = [{ item: comp1 }, { item: comp2 }];
 
       if (!comp1 || !comp2) return;
 
@@ -187,10 +188,12 @@ const calculatorData = {
       comp1.quality = q1;
       comp2.quality = q2;
 
-      const t1 = recipe.get_component_quality_weighted(comp1, comp2);
-      const [minF, maxF] = recipe.get_quality_range(t1, 1 - Math.max(comp1.component_tier, comp2.component_tier));
+      // Taken from display.js:create_recipe_tooltip_content
+      const station_tier = 1; // TODO: Make this a UI control
+      const component_stats = get_component_stats(components);
+      const [minF, maxF] = recipe.get_quality_range(station_tier - component_stats.max_tier, component_stats.weighted_quality);
 
-      const result = recipe.getResult(comp1, comp2, 1);
+      const result = recipe.getResult(components, station_tier);
       console.log(result.getStats(maxF));
 
       document.getElementById("result-name")!.textContent = result.getName();
