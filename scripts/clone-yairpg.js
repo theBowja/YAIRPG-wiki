@@ -1,14 +1,21 @@
 import { execSync } from 'node:child_process';
 import path from 'node:path';
 import { fileURLToPath } from 'node:url';
+import fs from 'node:fs';
 
-// In ES Modules, __dirname and __filename are not defined. 
-// We recreate them using the current file's URL.
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 function cloneRepo(repoUrl, targetFolder) {
     try {
+        // Check if the directory already exists
+        if (fs.existsSync(targetFolder)) {
+            console.log(`⚠️  Target directory ${targetFolder} already exists. Cleaning it up...`);
+
+            // Recursive delete to ensure the folder is completely empty/gone
+            fs.rmSync(targetFolder, { recursive: true, force: true });
+        }
+
         console.log(`Cloning ${repoUrl} into ${targetFolder}...`);
 
         execSync(
