@@ -53,6 +53,7 @@ const calculatorData = {
           <input id="component-1-quality" type="number" min="10" max="250" value="100" />
         </label>
         <p id="component-1-range" class="range"></p>
+        <p id="component-1-stats" class="range"></p>
       </section>
 
       <section class="component-card">
@@ -66,6 +67,7 @@ const calculatorData = {
           <input id="component-2-quality" type="number" min="10" max="250" value="100" />
         </label>
         <p id="component-2-range" class="range"></p>
+        <p id="component-2-stats" class="range"></p>
       </section>
     </div>
 
@@ -147,6 +149,42 @@ const calculatorData = {
       return some_string.charAt(0).toUpperCase() + some_string.slice(1);
     }
 
+    function getComponentStatsText(comp: Item): string {
+      if (!comp) return "";
+      let statsString = "";
+      if (comp.attack_value) {
+        statsString += `\nAttack power: +${comp.attack_value}`;
+      }
+      if (comp.attack_multiplier && comp.attack_multiplier !== 1) {
+        statsString += `\nAttack multiplier: x${comp.attack_multiplier}`;
+      }
+      if (comp.defense_value) {
+        statsString += `\nDefense: +${comp.defense_value}`;
+      }
+      if (comp.shield_strength) {
+        statsString += `\nShield strength: +${comp.shield_strength}`;
+      }
+      if (comp.component_stats) {
+        Object.keys(comp.component_stats).forEach((effect_key) => {
+          const stat = comp.component_stats[effect_key];
+          if (stat.flat != null) {
+            const sign = stat.flat > 0 ? "+" : "";
+            statsString += `\n${capitalize_first_letter(effect_key).replace(/_/g, " ")}: ${sign}${stat.flat}`;
+          }
+          if (stat.multiplier != null) {
+            statsString += `\n${capitalize_first_letter(effect_key).replace(/_/g, " ")}: x${stat.multiplier}`;
+          }
+        });
+      }
+      if (comp.component_bonus_skill_levels) {
+        Object.keys(comp.component_bonus_skill_levels).forEach((skill_key) => {
+          const val = comp.component_bonus_skill_levels[skill_key];
+          statsString += `\n${capitalize_first_letter(skill_key).replace(/_/g, " ")} level: +${val}`;
+        });
+      }
+      return statsString.trim();
+    }
+
     // --- UI Logic ---
 
     const recipeEl = document.getElementById("recipe") as HTMLInputElement;
@@ -157,6 +195,8 @@ const calculatorData = {
     const component2SelectEl = document.getElementById("component-2-select") as HTMLInputElement;
     const component1QualityEl = document.getElementById("component-1-quality") as HTMLInputElement;
     const component2QualityEl = document.getElementById("component-2-quality") as HTMLInputElement;
+    const component1StatsEl = document.getElementById("component-1-stats") as HTMLInputElement;
+    const component2StatsEl = document.getElementById("component-2-stats") as HTMLInputElement;
 
     function update() {
       const recipe = equipmentRecipes.find((r) => r.id === recipeEl.value);
@@ -179,6 +219,9 @@ const calculatorData = {
 
       if (rangeQ2) document.getElementById("component-2-range")!.textContent = `Quality: ${rangeQ2[0]}% - ${rangeQ2[1]}%`;
       else document.getElementById("component-2-range")!.textContent = `Quality: N/A`;
+
+      component1StatsEl.innerText = getComponentStatsText(comp1);
+      component2StatsEl.innerText = getComponentStatsText(comp2);
 
       const q1 = clamp(Number(component1QualityEl.value), 0, rangeQ1 ? rangeQ1[1] : 999);
       component1QualityEl.value = "" + q1;
@@ -223,6 +266,22 @@ const calculatorData = {
       statString = statString.trim();
 
       document.getElementById("result-stats")!.innerText = statString;
+      updateUrlParams();
+    }
+
+    function updateUrlParams() {
+      const params = new URLSearchParams();
+      params.set("tink", tinkeringLevelEl.value);
+      params.set("forg", forgingLevelEl.value);
+      params.set("wood", woodworkingLevelEl.value);
+      params.set("recipe", recipeEl.value);
+      params.set("c1", component1SelectEl.value);
+      params.set("q1", component1QualityEl.value);
+      params.set("c2", component2SelectEl.value);
+      params.set("q2", component2QualityEl.value);
+
+      const newUrl = `${window.location.pathname}?${params.toString()}`;
+      window.history.replaceState(null, "", newUrl);
     }
 
     // Initialize Selects
@@ -233,9 +292,28 @@ const calculatorData = {
       recipeEl.appendChild(opt);
     });
 
+    // Read initial URL parameters for level inputs and recipe select
+    const urlParams = new URLSearchParams(window.location.search);
+    const tink = urlParams.get("tink");
+    if (tink) tinkeringLevelEl.value = tink;
+    const forg = urlParams.get("forg");
+    if (forg) forgingLevelEl.value = forg;
+    const wood = urlParams.get("wood");
+    if (wood) woodworkingLevelEl.value = wood;
+    const qParamRecipe = urlParams.get("recipe");
+    if (qParamRecipe) {
+      const hasRecipe = equipmentRecipes.some((r) => r.id === qParamRecipe);
+      if (hasRecipe) {
+        recipeEl.value = qParamRecipe;
+      }
+    }
+
     recipeEl.addEventListener("change", () => {
       const recipe = equipmentRecipes.find((r: ItemRecipe) => r.id === recipeEl.value);
-      const syncSelect = (el: HTMLInputElement, itemtype: string) => {
+      if (!recipe) return;
+
+      const params = new URLSearchParams(window.location.search);
+      const syncSelect = (el: any, itemtype: string, defaultValue: string | null) => {
         el.innerHTML = "";
         getComponentPoolByType(itemtype).forEach((i: Item) => {
           const o = document.createElement("option");
@@ -243,9 +321,22 @@ const calculatorData = {
           o.textContent = `${i.id} (tier ${i.component_tier})`;
           el.appendChild(o);
         });
+        if (defaultValue) {
+          const hasOption = Array.from(el.options as any).some((o: any) => o.value === defaultValue);
+          if (hasOption) {
+            el.value = defaultValue;
+          }
+        }
       };
-      syncSelect(component1SelectEl, recipe.components[0]);
-      syncSelect(component2SelectEl, recipe.components[1]);
+
+      syncSelect(component1SelectEl, recipe.components[0], params.get("c1"));
+      syncSelect(component2SelectEl, recipe.components[1], params.get("c2"));
+
+      const q1 = params.get("q1");
+      if (q1) component1QualityEl.value = q1;
+      const q2 = params.get("q2");
+      if (q2) component2QualityEl.value = q2;
+
       document.getElementById("component-1-slot")!.textContent = recipe.components[0];
       document.getElementById("component-2-slot")!.textContent = recipe.components[1];
       update();
@@ -314,6 +405,11 @@ const calculatorData = {
     color: var(--sl-color-gray-2);
     font-size: var(--sl-text-sm);
     margin: 0.8rem 0 0 0;
+  }
+  #component-1-stats,
+  #component-2-stats {
+    white-space: pre-line;
+    margin-top: 0.3rem;
   }
   #result-name {
     margin: 0.5rem 0;
