@@ -91,6 +91,52 @@
     },
     "xp_value": 53.9
   },
+  "crafting-items-sinew-string": {
+    "id": "Sinew string",
+    "name": "Sinew string",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Sinew",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Sinew string",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "crafting-items-flax-string": {
+    "id": "Flax string",
+    "name": "Flax string",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      20,
+      30
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Flax",
+        "count": 5
+      }
+    ],
+    "result": {
+      "id": "Flax string",
+      "count": 1
+    },
+    "xp_value": 65.8
+  },
   "crafting-items-bonemeal": {
     "id": "Bonemeal",
     "name": "Bonemeal",
@@ -229,6 +275,33 @@
     },
     "xp_value": 65.8
   },
+  "crafting-items-simple-dream-catcher": {
+    "id": "Simple dream catcher",
+    "name": "Simple dream catcher",
+    "category": "crafting",
+    "subcategory": "items",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "Piece of willow wood",
+        "count": 1
+      },
+      {
+        "id": "Sinew string",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Simple dream catcher",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
   "crafting-components-short-hilt": {
     "id": "Short hilt",
     "name": "Short hilt",
@@ -244,7 +317,7 @@
       {
         "id": "Processed weak monster bone",
         "count": 1,
-        "result_id": "Short weak bone hilt"
+        "result_id": "Weak bone short handle"
       }
     ],
     "item_type": "Component",
@@ -265,7 +338,7 @@
       {
         "id": "Processed weak monster bone",
         "count": 2,
-        "result_id": "Medium weak bone handle"
+        "result_id": "Weak bone medium handle"
       }
     ],
     "item_type": "Component",
@@ -286,7 +359,7 @@
       {
         "id": "Processed weak monster bone",
         "count": 4,
-        "result_id": "Long weak bone shaft"
+        "result_id": "Weak bone long handle"
       }
     ],
     "item_type": "Component",
@@ -322,7 +395,7 @@
       {
         "id": "Piece of alligator leather",
         "count": 3,
-        "result_id": "Alligator leather helmet armor"
+        "result_id": "Alligator helmet armor"
       }
     ],
     "item_type": "Component",
@@ -359,7 +432,7 @@
       {
         "id": "Piece of alligator leather",
         "count": 5,
-        "result_id": "Alligator leather chestplate armor"
+        "result_id": "Alligator chestplate armor"
       }
     ],
     "item_type": "Component",
@@ -396,7 +469,7 @@
       {
         "id": "Piece of alligator leather",
         "count": 4,
-        "result_id": "Alligator leather greaves"
+        "result_id": "Alligator greaves"
       }
     ],
     "item_type": "Component",
@@ -433,7 +506,7 @@
       {
         "id": "Piece of alligator leather",
         "count": 3,
-        "result_id": "Alligator leather glove armor"
+        "result_id": "Alligator glove armor"
       }
     ],
     "item_type": "Component",
@@ -470,7 +543,7 @@
       {
         "id": "Piece of alligator leather",
         "count": 3,
-        "result_id": "Alligator leather shoe armor"
+        "result_id": "Alligator shoe armor"
       }
     ],
     "item_type": "Component",
@@ -493,7 +566,7 @@
       "medium handle"
     ],
     "item_type": "Weapon",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-dagger": {
     "id": "Dagger",
@@ -511,7 +584,7 @@
       "short handle"
     ],
     "item_type": "Weapon",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-hammer": {
     "id": "Hammer",
@@ -529,7 +602,7 @@
       "medium handle"
     ],
     "item_type": "Weapon",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-spear": {
     "id": "Spear",
@@ -547,7 +620,7 @@
       "long handle"
     ],
     "item_type": "Weapon",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-sword": {
     "id": "Sword",
@@ -565,7 +638,7 @@
       "short handle"
     ],
     "item_type": "Weapon",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-shield": {
     "id": "Shield",
@@ -583,7 +656,7 @@
       "shield handle"
     ],
     "item_type": "Shield",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-helmet": {
     "id": "Helmet",
@@ -601,7 +674,7 @@
       "helmet exterior"
     ],
     "item_type": "Armor",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-chestplate": {
     "id": "Chestplate",
@@ -619,7 +692,7 @@
       "chestplate exterior"
     ],
     "item_type": "Armor",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-leg-armor": {
     "id": "Leg armor",
@@ -637,7 +710,7 @@
       "leg armor exterior"
     ],
     "item_type": "Armor",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-gauntlets": {
     "id": "Gauntlets",
@@ -655,7 +728,7 @@
       "glove exterior"
     ],
     "item_type": "Armor",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-armored-shoes": {
     "id": "Armored shoes",
@@ -673,7 +746,7 @@
       "shoes exterior"
     ],
     "item_type": "Armor",
-    "xp_value": 9.8
+    "xp_value": "Dynamic"
   },
   "crafting-equipment-hat": {
     "id": "Hat",
@@ -698,6 +771,11 @@
         "result_id": "Wool hat"
       },
       {
+        "id": "Wicker",
+        "count": 3,
+        "result_id": "Sun hat"
+      },
+      {
         "id": "Piece of goat leather",
         "count": 3,
         "result_id": "Goat leather hat"
@@ -708,14 +786,14 @@
         "result_id": "Linen bandanna"
       },
       {
-        "id": "Piece of snakeskin leather",
-        "count": 3,
-        "result_id": "Snakeskin hat"
-      },
-      {
         "id": "Piece of frog leather",
         "count": 3,
         "result_id": "Batrachian hat"
+      },
+      {
+        "id": "Piece of snakeskin leather",
+        "count": 3,
+        "result_id": "Snakeskin hat"
       }
     ],
     "item_type": "Armor",
@@ -760,14 +838,14 @@
         "result_id": "Linen vest"
       },
       {
-        "id": "Piece of snakeskin leather",
-        "count": 5,
-        "result_id": "Snakeskin vest"
-      },
-      {
         "id": "Piece of frog leather",
         "count": 5,
         "result_id": "Batrachian vest"
+      },
+      {
+        "id": "Piece of snakeskin leather",
+        "count": 5,
+        "result_id": "Snakeskin vest"
       }
     ],
     "item_type": "Armor",
@@ -812,14 +890,14 @@
         "result_id": "Linen leggings"
       },
       {
-        "id": "Piece of snakeskin leather",
-        "count": 3,
-        "result_id": "Snakeskin leggings"
-      },
-      {
         "id": "Piece of frog leather",
         "count": 3,
         "result_id": "Batrachian pants"
+      },
+      {
+        "id": "Piece of snakeskin leather",
+        "count": 3,
+        "result_id": "Snakeskin leggings"
       }
     ],
     "item_type": "Armor",
@@ -859,14 +937,14 @@
         "result_id": "Linen gloves"
       },
       {
-        "id": "Piece of snakeskin leather",
-        "count": 2,
-        "result_id": "Snakeskin gloves"
-      },
-      {
         "id": "Piece of frog leather",
         "count": 2,
         "result_id": "Batrachian gloves"
+      },
+      {
+        "id": "Piece of snakeskin leather",
+        "count": 2,
+        "result_id": "Snakeskin gloves"
       }
     ],
     "item_type": "Armor",
@@ -901,19 +979,40 @@
         "result_id": "Goat leather shoes"
       },
       {
-        "id": "Piece of snakeskin leather",
-        "count": 2,
-        "result_id": "Snakeskin boots"
-      },
-      {
         "id": "Piece of frog leather",
         "count": 2,
         "result_id": "Batrachian shoes"
+      },
+      {
+        "id": "Piece of snakeskin leather",
+        "count": 2,
+        "result_id": "Snakeskin boots"
       }
     ],
     "item_type": "Armor",
     "component_type": "shoes interior",
     "xp_value": 9.2
+  },
+  "crafting-equipment-amulet": {
+    "id": "Amulet",
+    "name": "Amulet",
+    "category": "crafting",
+    "subcategory": "equipment",
+    "recipe_skill": "Crafting",
+    "recipe_level": [
+      1,
+      1
+    ],
+    "recipe_type": "component",
+    "materials": [
+      {
+        "id": "Wool cloth",
+        "count": 5,
+        "result_id": "Wool scarf"
+      }
+    ],
+    "item_type": "Amulet",
+    "xp_value": 23
   },
   "crafting-equipment-cape": {
     "id": "Cape",
@@ -1114,8 +1213,8 @@
     "subcategory": "items",
     "recipe_skill": "Cooking",
     "recipe_level": [
-      15,
-      25
+      12,
+      22
     ],
     "recipe_type": "usable",
     "materials": [
@@ -1132,7 +1231,7 @@
       "id": "Goat stew",
       "count": 1
     },
-    "xp_value": 53.9
+    "xp_value": 46.8
   },
   "cooking-items-bread-kwas": {
     "id": "Bread kwas",
@@ -1680,6 +1779,37 @@
     },
     "xp_value": 42.2
   },
+  "smelting-items-alchemical-wood": {
+    "id": "Alchemical Wood",
+    "name": "Alchemical Wood",
+    "category": "smelting",
+    "subcategory": "items",
+    "recipe_skill": "Smelting",
+    "recipe_level": [
+      15,
+      25
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Sulfur",
+        "count": 5
+      },
+      {
+        "id": "Potash",
+        "count": 5
+      },
+      {
+        "id": "Processed hickory wood",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Alchemical Wood",
+      "count": 1
+    },
+    "xp_value": 53.9
+  },
   "smelting-items-charcoal": {
     "id": "Charcoal",
     "name": "Charcoal",
@@ -1694,7 +1824,7 @@
     "materials": [
       {
         "type": "raw wood",
-        "count": 5
+        "count": 1
       }
     ],
     "result": {
@@ -1717,7 +1847,7 @@
     "materials": [
       {
         "id": "Iron ingot",
-        "count": 5
+        "count": 2
       }
     ],
     "result": {
@@ -1740,7 +1870,7 @@
     "materials": [
       {
         "id": "Steel ingot",
-        "count": 5
+        "count": 2
       }
     ],
     "result": {
@@ -1748,6 +1878,29 @@
       "count": 1
     },
     "xp_value": 42.2
+  },
+  "forging-items-metal-fishing-hook": {
+    "id": "Metal fishing hook",
+    "name": "Metal fishing hook",
+    "category": "forging",
+    "subcategory": "items",
+    "recipe_skill": "Forging",
+    "recipe_level": [
+      5,
+      15
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "type": "metal",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Metal fishing hook",
+      "count": 1
+    },
+    "xp_value": 30.7
   },
   "forging-components-short-blade": {
     "id": "Short blade",
@@ -1764,17 +1917,17 @@
       {
         "id": "Low quality iron ingot",
         "count": 2,
-        "result_id": "Cheap short iron blade"
+        "result_id": "Cheap iron short blade"
       },
       {
         "id": "Iron ingot",
         "count": 2,
-        "result_id": "Short iron blade"
+        "result_id": "Iron short blade"
       },
       {
         "id": "Steel ingot",
         "count": 2,
-        "result_id": "Short steel blade"
+        "result_id": "Steel short blade"
       }
     ],
     "item_type": "Component",
@@ -1795,17 +1948,17 @@
       {
         "id": "Low quality iron ingot",
         "count": 3,
-        "result_id": "Cheap long iron blade"
+        "result_id": "Cheap iron long blade"
       },
       {
         "id": "Iron ingot",
         "count": 3,
-        "result_id": "Long iron blade"
+        "result_id": "Iron long blade"
       },
       {
         "id": "Steel ingot",
         "count": 3,
-        "result_id": "Long steel blade"
+        "result_id": "Steel long blade"
       }
     ],
     "item_type": "Component",
@@ -1888,22 +2041,22 @@
       {
         "id": "Low quality iron ingot",
         "count": 1,
-        "result_id": "Cheap short iron hilt"
+        "result_id": "Cheap iron short handle"
       },
       {
         "id": "Iron ingot",
         "count": 1,
-        "result_id": "Short iron hilt"
+        "result_id": "Iron short handle"
       },
       {
         "id": "Steel ingot",
         "count": 1,
-        "result_id": "Short steel hilt"
+        "result_id": "Steel short handle"
       },
       {
         "id": "Turtle shellplate",
         "count": 2,
-        "result_id": "Turtleshell hilt"
+        "result_id": "Turtleshell short handle"
       }
     ],
     "item_type": "Component",
@@ -1924,22 +2077,22 @@
       {
         "id": "Low quality iron ingot",
         "count": 2,
-        "result_id": "Cheap medium iron handle"
+        "result_id": "Cheap iron medium handle"
       },
       {
         "id": "Iron ingot",
         "count": 2,
-        "result_id": "Medium iron handle"
+        "result_id": "Iron medium handle"
       },
       {
         "id": "Steel ingot",
         "count": 2,
-        "result_id": "Medium steel handle"
+        "result_id": "Steel medium handle"
       },
       {
         "id": "Turtle shellplate",
         "count": 4,
-        "result_id": "Turtleshell handle"
+        "result_id": "Turtleshell medium handle"
       }
     ],
     "item_type": "Component",
@@ -1960,22 +2113,22 @@
       {
         "id": "Low quality iron ingot",
         "count": 4,
-        "result_id": "Cheap long iron shaft"
+        "result_id": "Cheap iron long handle"
       },
       {
         "id": "Iron ingot",
         "count": 4,
-        "result_id": "Long iron shaft"
+        "result_id": "Iron long handle"
       },
       {
         "id": "Steel ingot",
         "count": 4,
-        "result_id": "Long steel shaft"
+        "result_id": "Steel long handle"
       },
       {
         "id": "Turtle shellplate",
         "count": 8,
-        "result_id": "Turtleshell shaft"
+        "result_id": "Turtleshell long handle"
       }
     ],
     "item_type": "Component",
@@ -1996,7 +2149,7 @@
       {
         "id": "Low quality iron ingot",
         "count": 5,
-        "result_id": "Crude iron shield base"
+        "result_id": "Cheap iron shield base"
       },
       {
         "id": "Iron ingot",
@@ -2075,7 +2228,7 @@
       {
         "id": "Turtle shellplate",
         "count": 10,
-        "result_id": "Turtleshell chestplate"
+        "result_id": "Turtleshell chestplate armor"
       }
     ],
     "item_type": "Component",
@@ -2129,17 +2282,17 @@
       {
         "id": "Iron chainmail",
         "count": 3,
-        "result_id": "Iron chainmail glove"
+        "result_id": "Iron chainmail glove armor"
       },
       {
         "id": "Steel chainmail",
         "count": 3,
-        "result_id": "Steel chainmail glove"
+        "result_id": "Steel chainmail glove armor"
       },
       {
         "id": "Turtle shellplate",
         "count": 6,
-        "result_id": "Turtleshell glove"
+        "result_id": "Turtleshell glove armor"
       }
     ],
     "item_type": "Component",
@@ -2161,17 +2314,17 @@
       {
         "id": "Iron chainmail",
         "count": 3,
-        "result_id": "Iron chainmail shoes"
+        "result_id": "Iron chainmail shoe armor"
       },
       {
         "id": "Steel chainmail",
         "count": 3,
-        "result_id": "Steel chainmail shoes"
+        "result_id": "Steel chainmail shoe armor"
       },
       {
         "id": "Turtle shellplate",
         "count": 6,
-        "result_id": "Turtleshell shoes"
+        "result_id": "Turtleshell shoe armor"
       }
     ],
     "item_type": "Component",
@@ -2192,7 +2345,7 @@
     "materials": [
       {
         "id": "Charcoal",
-        "count": 10
+        "count": 8
       }
     ],
     "result": {
@@ -2250,6 +2403,33 @@
       "count": 1
     },
     "xp_value": 30.7
+  },
+  "alchemy-items-potent-healing-powder": {
+    "id": "Potent healing powder",
+    "name": "Potent healing powder",
+    "category": "alchemy",
+    "subcategory": "items",
+    "recipe_skill": "Alchemy",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Willow bark",
+        "count": 3
+      },
+      {
+        "id": "Silver thistle",
+        "count": 3
+      }
+    ],
+    "result": {
+      "id": "Potent healing powder",
+      "count": 1
+    },
+    "xp_value": 42.2
   },
   "alchemy-items-oneberry-juice": {
     "id": "Oneberry juice",
@@ -2339,6 +2519,83 @@
       "count": 1
     },
     "xp_value": 30.7
+  },
+  "alchemy-items-thick-healing-balm": {
+    "id": "Thick healing balm",
+    "name": "Thick healing balm",
+    "category": "alchemy",
+    "subcategory": "items",
+    "recipe_skill": "Alchemy",
+    "recipe_level": [
+      12,
+      20
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Healing balm",
+        "count": 1
+      },
+      {
+        "id": "Willow bark",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Thick healing balm",
+      "count": 2
+    },
+    "xp_value": 42.2
+  },
+  "alchemy-items-potion-of-sapping": {
+    "id": "Potion of sapping",
+    "name": "Potion of sapping",
+    "category": "alchemy",
+    "subcategory": "items",
+    "recipe_skill": "Alchemy",
+    "recipe_level": [
+      3,
+      15
+    ],
+    "recipe_type": "usable",
+    "materials": [
+      {
+        "id": "Tree sap",
+        "count": 2
+      },
+      {
+        "id": "Glass phial",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Potion of sapping",
+      "count": 1
+    },
+    "xp_value": 30.7
+  },
+  "alchemy-items-sulfur": {
+    "id": "Sulfur",
+    "name": "Sulfur",
+    "category": "alchemy",
+    "subcategory": "items",
+    "recipe_skill": "Alchemy",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Low quality iron ore",
+        "count": 10
+      }
+    ],
+    "result": {
+      "id": "Sulfur",
+      "count": 1
+    },
+    "xp_value": 42.2
   },
   "butchering-items-piece-of-wolf-rat-leather": {
     "id": "Piece of wolf rat leather",
@@ -2473,7 +2730,7 @@
       },
       {
         "id": "Belmart leaf",
-        "count": 4
+        "count": 2
       }
     ],
     "result": {
@@ -2850,6 +3107,29 @@
     },
     "xp_value": 53.9
   },
+  "butchering-items-sinew": {
+    "id": "Sinew",
+    "name": "Sinew",
+    "category": "butchering",
+    "subcategory": "items",
+    "recipe_skill": "Butchering",
+    "recipe_level": [
+      10,
+      20
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "type": "raw meat",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Sinew",
+      "count": 1
+    },
+    "xp_value": 42.2
+  },
   "woodworking-items-processed-rough-wood": {
     "id": "Processed rough wood",
     "name": "Processed rough wood",
@@ -2858,20 +3138,20 @@
     "recipe_skill": "Woodworking",
     "recipe_level": [
       1,
-      5
+      8
     ],
     "recipe_type": "material",
     "materials": [
       {
-        "id": "Piece of rough wood",
-        "count": 5
+        "id": "Rough wood log",
+        "count": 1
       }
     ],
     "result": {
       "id": "Processed rough wood",
-      "count": 1
+      "count": 3
     },
-    "xp_value": 9.2
+    "xp_value": 15.4
   },
   "woodworking-items-processed-wood": {
     "id": "Processed wood",
@@ -2880,21 +3160,21 @@
     "subcategory": "items",
     "recipe_skill": "Woodworking",
     "recipe_level": [
-      5,
-      15
+      6,
+      16
     ],
     "recipe_type": "material",
     "materials": [
       {
-        "id": "Piece of wood",
-        "count": 5
+        "id": "Wood log",
+        "count": 1
       }
     ],
     "result": {
       "id": "Processed wood",
-      "count": 1
+      "count": 3
     },
-    "xp_value": 30.7
+    "xp_value": 33
   },
   "woodworking-items-processed-ash-wood": {
     "id": "Processed ash wood",
@@ -2903,21 +3183,90 @@
     "subcategory": "items",
     "recipe_skill": "Woodworking",
     "recipe_level": [
-      10,
-      20
+      11,
+      22
     ],
     "recipe_type": "material",
     "materials": [
       {
-        "id": "Piece of ash wood",
-        "count": 5
+        "id": "Ash wood log",
+        "count": 1
       }
     ],
     "result": {
       "id": "Processed ash wood",
+      "count": 3
+    },
+    "xp_value": 46.8
+  },
+  "woodworking-items-processed-hickory-wood": {
+    "id": "Processed hickory wood",
+    "name": "Processed hickory wood",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      17,
+      28
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Hickory wood log",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Processed hickory wood",
+      "count": 3
+    },
+    "xp_value": 61
+  },
+  "woodworking-items-wicker": {
+    "id": "Wicker",
+    "name": "Wicker",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      7,
+      17
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Piece of willow wood",
+        "count": 6
+      }
+    ],
+    "result": {
+      "id": "Wicker",
       "count": 1
     },
-    "xp_value": 42.2
+    "xp_value": 35.3
+  },
+  "woodworking-items-willow-bark": {
+    "id": "Willow bark",
+    "name": "Willow bark",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      10,
+      25
+    ],
+    "recipe_type": "material",
+    "materials": [
+      {
+        "id": "Piece of willow wood",
+        "count": 2
+      }
+    ],
+    "result": {
+      "id": "Willow bark",
+      "count": 1
+    },
+    "xp_value": 53.9
   },
   "woodworking-items-makeshift-fishing-pole": {
     "id": "Makeshift fishing pole",
@@ -2927,7 +3276,7 @@
     "recipe_skill": "Woodworking",
     "recipe_level": [
       1,
-      10
+      12
     ],
     "recipe_type": "equipment",
     "materials": [
@@ -2944,7 +3293,131 @@
       "id": "Makeshift fishing pole",
       "count": 1
     },
-    "xp_value": 19.7
+    "xp_value": 24
+  },
+  "woodworking-items-wooden-fishing-pole": {
+    "id": "Wooden fishing pole",
+    "name": "Wooden fishing pole",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      7,
+      17
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "Processed wood",
+        "count": 4
+      },
+      {
+        "id": "Sinew string",
+        "count": 1
+      },
+      {
+        "id": "Metal fishing hook",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Wooden fishing pole",
+      "count": 1
+    },
+    "xp_value": 35.3
+  },
+  "woodworking-items-ash-wood-fishing-pole": {
+    "id": "Ash wood fishing pole",
+    "name": "Ash wood fishing pole",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      12,
+      22
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "Processed ash wood",
+        "count": 4
+      },
+      {
+        "id": "Sinew string",
+        "count": 1
+      },
+      {
+        "id": "Metal fishing hook",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Ash wood fishing pole",
+      "count": 1
+    },
+    "xp_value": 46.8
+  },
+  "woodworking-items-hickory-wood-fishing-pole": {
+    "id": "Hickory wood fishing pole",
+    "name": "Hickory wood fishing pole",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      17,
+      27
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "Processed hickory wood",
+        "count": 4
+      },
+      {
+        "id": "Flax string",
+        "count": 1
+      },
+      {
+        "id": "Metal fishing hook",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Hickory wood fishing pole",
+      "count": 1
+    },
+    "xp_value": 58.6
+  },
+  "woodworking-items-alchemical-wood-fishing-pole": {
+    "id": "Alchemical wood fishing pole",
+    "name": "Alchemical wood fishing pole",
+    "category": "woodworking",
+    "subcategory": "items",
+    "recipe_skill": "Woodworking",
+    "recipe_level": [
+      22,
+      32
+    ],
+    "recipe_type": "equipment",
+    "materials": [
+      {
+        "id": "Alchemical Wood",
+        "count": 4
+      },
+      {
+        "id": "Flax string",
+        "count": 1
+      },
+      {
+        "id": "Metal fishing hook",
+        "count": 1
+      }
+    ],
+    "result": {
+      "id": "Alchemical wood fishing pole",
+      "count": 1
+    },
+    "xp_value": 70.7
   },
   "woodworking-components-short-hilt": {
     "id": "Short hilt",
@@ -2961,17 +3434,27 @@
       {
         "id": "Processed rough wood",
         "count": 1,
-        "result_id": "Simple short wooden hilt"
+        "result_id": "Simple wooden short handle"
       },
       {
         "id": "Processed wood",
         "count": 1,
-        "result_id": "Short wooden hilt"
+        "result_id": "Wooden short handle"
       },
       {
         "id": "Processed ash wood",
         "count": 1,
-        "result_id": "Short ash wood hilt"
+        "result_id": "Ash wood short handle"
+      },
+      {
+        "id": "Processed hickory wood",
+        "count": 1,
+        "result_id": "Hickory short handle"
+      },
+      {
+        "id": "Alchemical Wood",
+        "count": 1,
+        "result_id": "Alchemical wood short handle"
       }
     ],
     "item_type": "Component",
@@ -2992,17 +3475,27 @@
       {
         "id": "Processed rough wood",
         "count": 2,
-        "result_id": "Simple medium wooden handle"
+        "result_id": "Simple wooden medium handle"
       },
       {
         "id": "Processed wood",
         "count": 2,
-        "result_id": "Medium wooden handle"
+        "result_id": "Wooden medium handle"
       },
       {
         "id": "Processed ash wood",
         "count": 2,
-        "result_id": "Medium ash wood handle"
+        "result_id": "Ash wood medium handle"
+      },
+      {
+        "id": "Processed hickory wood",
+        "count": 2,
+        "result_id": "Hickory medium handle"
+      },
+      {
+        "id": "Alchemical Wood",
+        "count": 2,
+        "result_id": "Alchemical wood medium handle"
       }
     ],
     "item_type": "Component",
@@ -3023,17 +3516,27 @@
       {
         "id": "Processed rough wood",
         "count": 4,
-        "result_id": "Simple long wooden shaft"
+        "result_id": "Simple wooden long handle"
       },
       {
         "id": "Processed wood",
         "count": 4,
-        "result_id": "Long wooden shaft"
+        "result_id": "Wooden long handle"
       },
       {
         "id": "Processed ash wood",
         "count": 4,
-        "result_id": "Long ash wood shaft"
+        "result_id": "Ash wood long handle"
+      },
+      {
+        "id": "Processed hickory wood",
+        "count": 4,
+        "result_id": "Hickory long handle"
+      },
+      {
+        "id": "Alchemical Wood",
+        "count": 4,
+        "result_id": "Alchemical wood long handle"
       }
     ],
     "item_type": "Component",
@@ -3054,7 +3557,7 @@
       {
         "id": "Processed rough wood",
         "count": 6,
-        "result_id": "Crude wooden shield base"
+        "result_id": "Simple wooden shield base"
       },
       {
         "id": "Processed wood",
@@ -3065,6 +3568,16 @@
         "id": "Processed ash wood",
         "count": 6,
         "result_id": "Ash wood shield base"
+      },
+      {
+        "id": "Processed hickory wood",
+        "count": 6,
+        "result_id": "Hickory shield base"
+      },
+      {
+        "id": "Alchemical Wood",
+        "count": 6,
+        "result_id": "Alchemical wood shield base"
       }
     ],
     "item_type": "Component",
@@ -3086,7 +3599,7 @@
       {
         "id": "Processed rough wood",
         "count": 4,
-        "result_id": "Basic shield handle"
+        "result_id": "Simple wooden shield handle"
       },
       {
         "id": "Processed wood",
@@ -3097,6 +3610,16 @@
         "id": "Processed ash wood",
         "count": 4,
         "result_id": "Ash wood shield handle"
+      },
+      {
+        "id": "Processed hickory wood",
+        "count": 4,
+        "result_id": "Hickory shield handle"
+      },
+      {
+        "id": "Alchemical Wood",
+        "count": 4,
+        "result_id": "Alchemical wood shield handle"
       }
     ],
     "item_type": "Component",

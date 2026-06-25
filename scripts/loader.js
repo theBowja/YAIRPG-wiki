@@ -10,7 +10,7 @@ export async function resolve(specifier, context, nextResolve) {
         return nextResolve(cleanSpecifier, context);
     }
 
-    const dataModules = ['misc.js', 'enemies.js', 'skills.js', 'activities.js', 'locations.js', 'items.js', 'crafting_recipes.js'];
+    const dataModules = ['misc.js', 'enemies.js', 'skills.js', 'activities.js', 'locations.js', 'items.js', 'crafting_recipes.js', 'crafting_component_filling.js'];
     if (dataModules.some(mod => specifier.includes(mod))) {
         return nextResolve(specifier, context);
     }
@@ -57,6 +57,7 @@ const characterSource = `
 export const get_total_level_bonus = () => 100;
 export const get_total_skill_coefficient = () => 1.5;
 export const get_total_skill_level = () => 50;
+export const get_skill_modifier = () => 1;
 export const is_rat = () => false;
 export const character = {
     inventory: {},
@@ -78,6 +79,8 @@ export const global_flags = {};
 
 const displaySource = `
 export const log_message = () => {};
+export const update_bestiary_entry_tooltip = () => {};
+export const capitalize_first_letter = (str) => str ? str.charAt(0).toUpperCase() + str.slice(1) : str;
 `
 
 const gameTimeSource = `

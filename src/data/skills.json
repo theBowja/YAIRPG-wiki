@@ -147,7 +147,7 @@
   "wide-swing": {
     "id": "Wide swing",
     "name": "Broad arc",
-    "description": "A special technique that allows striking multiple enemies at once, although at a cost of lower overall efficiency. Slightly reduces xp and loot.",
+    "description": "A special technique that allows striking multiple enemies at once, although at a cost of lower overall efficiency. <br>Divides gained xp by number of enemies attacked, reduces drop rate in proportion to that number (down to 1/4th against 8).",
     "max_level": 30,
     "category": "Stance",
     "base_xp_cost": 60,
@@ -236,11 +236,11 @@
           "id": "Forest clearing",
           "name": "Forest clearing",
           "type": "open",
-          "xp_gain": 3
+          "xp_gain": 7
         },
         {
           "id": "Frogs",
-          "name": "Frogs",
+          "name": "Water's edge",
           "type": "open",
           "xp_gain": 5
         },
@@ -919,9 +919,9 @@
       "locations": [
         {
           "id": "Frogs",
-          "name": "Frogs",
+          "name": "Water's edge",
           "type": "aquatic",
-          "xp_gain": 5
+          "xp_gain": 3
         }
       ],
       "recipes": [],
@@ -1003,7 +1003,7 @@
   "woodcutting": {
     "id": "Woodcutting",
     "name": "Woodcutting",
-    "description": "Get better with chopping the wood",
+    "description": "Get better with chopping the wood and recognizing useful trees",
     "max_level": 60,
     "category": "Gathering",
     "base_xp_cost": 10,
@@ -1021,6 +1021,14 @@
             {
               "id": "Forest road",
               "name": "Forest road"
+            },
+            {
+              "id": "Carya Canyon",
+              "name": "Carya Canyon"
+            },
+            {
+              "id": "Forest lake",
+              "name": "Forest lake"
             }
           ]
         }
@@ -1033,7 +1041,7 @@
   "mining": {
     "id": "Mining",
     "name": "Mining",
-    "description": "Get better with mining the ores",
+    "description": "Get better with mining for ore and stone",
     "max_level": 60,
     "category": "Gathering",
     "base_xp_cost": 10,
@@ -1098,6 +1106,10 @@
             {
               "id": "Forest road",
               "name": "Forest road"
+            },
+            {
+              "id": "Carya Canyon",
+              "name": "Carya Canyon"
             },
             {
               "id": "Town outskirts",
@@ -1181,7 +1193,7 @@
   },
   "crafting-mastery": {
     "id": "Crafting mastery",
-    "name": "Crafting mastery",
+    "name": "Crafting proficiency",
     "description": "A mastery of the minor crafting branches like tinkering, woodworking, or butchering",
     "max_level": 60,
     "category": "Crafting",
@@ -1239,6 +1251,22 @@
           ]
         },
         {
+          "slug": "crafting-items-sinew-string",
+          "name": "Sinew string",
+          "level": [
+            5,
+            15
+          ]
+        },
+        {
+          "slug": "crafting-items-flax-string",
+          "name": "Flax string",
+          "level": [
+            20,
+            30
+          ]
+        },
+        {
           "slug": "crafting-items-bonemeal",
           "name": "Bonemeal",
           "level": [
@@ -1284,6 +1312,14 @@
           "level": [
             22,
             30
+          ]
+        },
+        {
+          "slug": "crafting-items-simple-dream-catcher",
+          "name": "Simple dream catcher",
+          "level": [
+            10,
+            20
           ]
         },
         {
@@ -1479,6 +1515,14 @@
           ]
         },
         {
+          "slug": "crafting-equipment-amulet",
+          "name": "Amulet",
+          "level": [
+            1,
+            1
+          ]
+        },
+        {
           "slug": "crafting-equipment-cape",
           "name": "Cape",
           "level": [
@@ -1535,6 +1579,14 @@
           ]
         },
         {
+          "slug": "smelting-items-alchemical-wood",
+          "name": "Alchemical Wood",
+          "level": [
+            15,
+            25
+          ]
+        },
+        {
           "slug": "smelting-items-charcoal",
           "name": "Charcoal",
           "level": [
@@ -1572,6 +1624,14 @@
           "level": [
             10,
             20
+          ]
+        },
+        {
+          "slug": "forging-items-metal-fishing-hook",
+          "name": "Metal fishing hook",
+          "level": [
+            5,
+            15
           ]
         },
         {
@@ -1746,8 +1806,8 @@
           "slug": "cooking-items-goat-stew",
           "name": "Goat stew",
           "level": [
-            15,
-            25
+            12,
+            22
           ]
         },
         {
@@ -1903,6 +1963,14 @@
           ]
         },
         {
+          "slug": "alchemy-items-potent-healing-powder",
+          "name": "Potent healing powder",
+          "level": [
+            10,
+            20
+          ]
+        },
+        {
           "slug": "alchemy-items-oneberry-juice",
           "name": "Oneberry juice",
           "level": [
@@ -1924,6 +1992,30 @@
           "level": [
             7,
             15
+          ]
+        },
+        {
+          "slug": "alchemy-items-thick-healing-balm",
+          "name": "Thick healing balm",
+          "level": [
+            12,
+            20
+          ]
+        },
+        {
+          "slug": "alchemy-items-potion-of-sapping",
+          "name": "Potion of sapping",
+          "level": [
+            3,
+            15
+          ]
+        },
+        {
+          "slug": "alchemy-items-sulfur",
+          "name": "Sulfur",
+          "level": [
+            10,
+            20
           ]
         }
       ],
@@ -2117,6 +2209,14 @@
             18,
             25
           ]
+        },
+        {
+          "slug": "butchering-items-sinew",
+          "name": "Sinew",
+          "level": [
+            10,
+            20
+          ]
         }
       ],
       "combat": []
@@ -2139,23 +2239,47 @@
           "name": "Processed rough wood",
           "level": [
             1,
-            5
+            8
           ]
         },
         {
           "slug": "woodworking-items-processed-wood",
           "name": "Processed wood",
           "level": [
-            5,
-            15
+            6,
+            16
           ]
         },
         {
           "slug": "woodworking-items-processed-ash-wood",
           "name": "Processed ash wood",
           "level": [
+            11,
+            22
+          ]
+        },
+        {
+          "slug": "woodworking-items-processed-hickory-wood",
+          "name": "Processed hickory wood",
+          "level": [
+            17,
+            28
+          ]
+        },
+        {
+          "slug": "woodworking-items-wicker",
+          "name": "Wicker",
+          "level": [
+            7,
+            17
+          ]
+        },
+        {
+          "slug": "woodworking-items-willow-bark",
+          "name": "Willow bark",
+          "level": [
             10,
-            20
+            25
           ]
         },
         {
@@ -2163,7 +2287,39 @@
           "name": "Makeshift fishing pole",
           "level": [
             1,
-            10
+            12
+          ]
+        },
+        {
+          "slug": "woodworking-items-wooden-fishing-pole",
+          "name": "Wooden fishing pole",
+          "level": [
+            7,
+            17
+          ]
+        },
+        {
+          "slug": "woodworking-items-ash-wood-fishing-pole",
+          "name": "Ash wood fishing pole",
+          "level": [
+            12,
+            22
+          ]
+        },
+        {
+          "slug": "woodworking-items-hickory-wood-fishing-pole",
+          "name": "Hickory wood fishing pole",
+          "level": [
+            17,
+            27
+          ]
+        },
+        {
+          "slug": "woodworking-items-alchemical-wood-fishing-pole",
+          "name": "Alchemical wood fishing pole",
+          "level": [
+            22,
+            32
           ]
         },
         {
@@ -2269,7 +2425,7 @@
   "perception": {
     "id": "Perception",
     "name": "Perception",
-    "description": "Better grasp on your senses allows you to notice small and hidden things, as well as to discern the true nature of what you observe",
+    "description": "A better grasp on your senses allows you to notice small and hidden things, as well as to discern the true nature of what you observe",
     "max_level": 40,
     "category": "Character",
     "base_xp_cost": 100,
@@ -2300,6 +2456,21 @@
     "id": "Medicine",
     "name": "Medicine",
     "description": "Create better medicaments and improve your skill at treating wounds",
+    "max_level": 30,
+    "category": "Character",
+    "base_xp_cost": 40,
+    "xp_scaling": 1.8,
+    "sources": {
+      "activities": [],
+      "locations": [],
+      "recipes": [],
+      "combat": []
+    }
+  },
+  "poison-resistance": {
+    "id": "Poison resistance",
+    "name": "Poison resistance",
+    "description": "As your body suffers from poisons more and more, it slowly builds up a resistance to them",
     "max_level": 30,
     "category": "Character",
     "base_xp_cost": 40,

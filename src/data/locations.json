@@ -2,7 +2,7 @@
   "village": {
     "id": "Village",
     "name": "Village",
-    "description": "Medium-sized village, built next to a small and calm river at the foot of the mountains. It's surrounded by many fields, most of them infested by huge rats. Other than that, there's nothing interesting around",
+    "description": "Medium-sized village, built at the foot of the mountains, with rocks preventing any expansions towards north. It's surrounded by many fields, most of them infested by huge rats. There is a relatively calm, somewhat small river south of it with no bridges over it , and with some old structures on the other side, clearly not used for years if not longer. Many villagers seem to have nothing to do and are just sitting around.",
     "connected_locations": [
       {
         "name": "Shack",
@@ -15,6 +15,10 @@
       {
         "name": "Infested field",
         "travel_time": 15
+      },
+      {
+        "name": "Infested woods",
+        "travel_time": 40
       },
       {
         "name": "Nearby cave",
@@ -63,61 +67,81 @@
         "id": "fieldwork",
         "activity_name": "fieldwork",
         "starting_text": "Work on the fields",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "running",
         "activity_name": "running",
         "starting_text": "Go for a run around the village",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "weightlifting",
         "activity_name": "weightlifting",
         "starting_text": "Try to carry some bags of grain",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "swimming",
         "activity_name": "swimming",
         "starting_text": "Swim in the river",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "balancing",
         "activity_name": "balancing",
         "starting_text": "Try to keep your balance on rocks in the river",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "meditating",
         "activity_name": "meditating",
         "starting_text": "Sit down and meditate",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "patrolling",
         "activity_name": "patrolling",
         "starting_text": "Go on a patrol around the village.",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "woodcutting",
         "activity_name": "woodcutting",
         "starting_text": "Gather wood on the outskirts",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "sand",
         "activity_name": "digging",
         "starting_text": "Dredge up some sand from the riverbed",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "fishing",
         "activity_name": "fishing",
         "starting_text": "Try fishing in the river",
-        "xp": 1
+        "xp": [
+          1
+        ]
       }
     ],
     "actions": [
@@ -125,7 +149,11 @@
       "carry grain",
       "pull cart",
       "convince horse",
-      "hike down river"
+      "carry cart",
+      "hike down river",
+      "dig canal",
+      "bridge mat delivery",
+      "bridge construction"
     ],
     "parent_location": null,
     "leave_text": null,
@@ -190,7 +218,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -245,7 +273,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -274,11 +302,49 @@
         {
           "dialogue": "village elder",
           "lines": [
-            "cleared field"
+            "cleared field",
+            "cleared field alt"
           ]
         }
       ],
       "xp": 5
+    },
+    "is_farmable": true
+  },
+  "infested-woods": {
+    "id": "Infested woods",
+    "name": "Infested woods",
+    "description": "",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Village",
+      "name": "Village",
+      "travel_time": 40
+    },
+    "leave_text": "Run back towards the bridge and to the village",
+    "types": [],
+    "enemies_list": [
+      "Huge dragonfly"
+    ],
+    "enemy_count": 40,
+    "repeatable_reward": {
+      "textlines": [
+        {
+          "dialogue": "village elder",
+          "lines": [
+            "dragonflies killed"
+          ]
+        }
+      ],
+      "xp": 750
     },
     "is_farmable": true
   },
@@ -350,37 +416,57 @@
         "id": "weightlifting",
         "activity_name": "weightlifting",
         "starting_text": "Try lifting some of the rocks",
-        "xp": 4
+        "xp": [
+          4
+        ]
       },
       {
         "id": "climbing",
         "activity_name": "climbing",
         "starting_text": "Attempt climbing the mountain walls outside",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "meditating",
         "activity_name": "meditating",
         "starting_text": "Sit down and meditate in front of the gate",
-        "xp": 4
+        "xp": [
+          4
+        ]
+      },
+      {
+        "id": "mining stone",
+        "activity_name": "mining",
+        "starting_text": "Make stone bricks",
+        "xp": [
+          0.5
+        ]
       },
       {
         "id": "mining",
         "activity_name": "mining",
         "starting_text": "Mine the strange looking iron vein",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "mining2",
         "activity_name": "mining",
         "starting_text": "Mine the deeper iron vein",
-        "xp": 5
+        "xp": [
+          5
+        ]
       },
       {
         "id": "mining3",
         "activity_name": "mining",
         "starting_text": "Mine the atratan vein",
-        "xp": 12
+        "xp": [
+          16
+        ]
       }
     ],
     "actions": [
@@ -398,7 +484,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -464,7 +550,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -512,7 +598,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -563,7 +649,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -612,7 +698,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -672,7 +758,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -769,6 +855,11 @@
         "custom_text": "Go towards the [Forest clearing] in the north"
       },
       {
+        "name": "Carya Canyon",
+        "travel_time": 120,
+        "custom_text": "Hike to [Carya Canyon]"
+      },
+      {
         "name": "Forest den",
         "travel_time": 90,
         "custom_text": "Enter the [Forest den]"
@@ -809,30 +900,39 @@
         "id": "running",
         "activity_name": "running",
         "starting_text": "Go for a run through the forest",
-        "xp": 4
+        "xp": [
+          4
+        ]
       },
       {
         "id": "woodcutting",
         "activity_name": "woodcutting",
         "starting_text": "Gather wood from nearby trees",
-        "xp": 5
+        "xp": [
+          5
+        ]
       },
       {
         "id": "woodcutting2",
         "activity_name": "woodcutting",
         "starting_text": "Gather wood from sturdy trees",
-        "xp": 12
+        "xp": [
+          12
+        ]
       },
       {
         "id": "herbalism",
         "activity_name": "herbalism",
         "starting_text": "Gather useful herbs throughout the forest",
-        "xp": 2
+        "xp": [
+          2
+        ]
       }
     ],
     "actions": [
       "search for boars",
       "follow the trail",
+      "What was that noise?",
       "search predator"
     ],
     "parent_location": null,
@@ -846,7 +946,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -893,7 +993,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -939,7 +1039,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -955,7 +1055,7 @@
       {
         "type": "open",
         "stage": 2,
-        "xp_gain": 3
+        "xp_gain": 7
       }
     ],
     "enemies_list": [
@@ -981,6 +1081,90 @@
     },
     "is_farmable": true
   },
+  "carya-canyon": {
+    "id": "Carya Canyon",
+    "name": "Carya Canyon",
+    "description": "The forest ends abruptly, giving way to a deep canyon past which you see some really nice trees",
+    "connected_locations": [
+      {
+        "name": "Forest road",
+        "travel_time": 300
+      },
+      {
+        "name": "Warthog",
+        "travel_time": 30,
+        "custom_text": "To to cross the [Precarious tree bridge]"
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [
+      {
+        "id": "woodcutting",
+        "activity_name": "woodcutting",
+        "starting_text": "Gather wood from the resilient trees",
+        "xp": [
+          16
+        ]
+      },
+      {
+        "id": "herbalism",
+        "activity_name": "herbalism",
+        "starting_text": "Search for herbs growing around the canyon",
+        "xp": [
+          5
+        ]
+      }
+    ],
+    "actions": [
+      "Make a bridge"
+    ],
+    "parent_location": null,
+    "leave_text": null,
+    "types": []
+  },
+  "precarious-tree-bridge": {
+    "id": "Precarious tree bridge",
+    "name": "Warthog",
+    "description": "A warthog heard the commotion and is guarding the way across.",
+    "connected_locations": [],
+    "is_combat_zone": true,
+    "tags": [
+      "combat zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": {
+      "id": "Carya Canyon",
+      "name": "Carya Canyon",
+      "travel_time": 30
+    },
+    "leave_text": "Looks dangerous",
+    "types": [],
+    "enemies_list": [
+      "Warthog"
+    ],
+    "enemy_count": 1,
+    "repeatable_reward": {
+      "activities": [
+        {
+          "location": "Carya Canyon",
+          "activity": "woodcutting"
+        },
+        {
+          "location": "Carya Canyon",
+          "activity": "herbalism"
+        }
+      ]
+    },
+    "is_farmable": false
+  },
   "forest-den": {
     "id": "Forest den",
     "name": "Forest den",
@@ -988,7 +1172,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -1028,7 +1212,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -1071,7 +1255,7 @@
         "travel_time": 120
       },
       {
-        "name": "Frogs",
+        "name": "Water's edge",
         "custom_text": "Challenge the apex predator"
       }
     ],
@@ -1086,25 +1270,41 @@
         "id": "swimming",
         "activity_name": "swimming",
         "starting_text": "Go diving in the lake waters",
-        "xp": 4
+        "xp": [
+          4
+        ]
       },
       {
         "id": "balancing",
         "activity_name": "balancing",
         "starting_text": "Try to keep your balance on top of the waterfall as water rushes around your feet",
-        "xp": 7
+        "xp": [
+          7
+        ]
+      },
+      {
+        "id": "woodcutting",
+        "activity_name": "woodcutting",
+        "starting_text": "Harvest wood from the weeping willows",
+        "xp": [
+          10
+        ]
       },
       {
         "id": "mining",
         "activity_name": "mining",
         "starting_text": "Mine the the shiny underwater vein",
-        "xp": 1
+        "xp": [
+          1
+        ]
       },
       {
         "id": "fishing",
         "activity_name": "fishing",
         "starting_text": "Try fishing in the lake",
-        "xp": 4
+        "xp": [
+          4
+        ]
       }
     ],
     "actions": [
@@ -1118,12 +1318,12 @@
   },
   "frogs": {
     "id": "Frogs",
-    "name": "Frogs",
+    "name": "Water's edge",
     "description": "Battling at the lake's edge",
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -1139,7 +1339,7 @@
       {
         "type": "aquatic",
         "stage": 1,
-        "xp_gain": 5
+        "xp_gain": 3
       },
       {
         "type": "open",
@@ -1164,7 +1364,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -1233,7 +1433,9 @@
         "id": "herbalism",
         "activity_name": "herbalism",
         "starting_text": "Search for useful herbs by the roadside",
-        "xp": 4
+        "xp": [
+          4
+        ]
       }
     ],
     "actions": [],
@@ -1316,13 +1518,17 @@
         "id": "fieldwork",
         "activity_name": "fieldwork",
         "starting_text": "Work on the fields",
-        "xp": 2
+        "xp": [
+          2
+        ]
       },
       {
         "id": "animal care",
         "activity_name": "animal care",
         "starting_text": "Take care of local sheep in exchange for some wool",
-        "xp": 3
+        "xp": [
+          3
+        ]
       }
     ],
     "actions": [
@@ -1342,7 +1548,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -1395,7 +1601,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -1448,7 +1654,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -1509,7 +1715,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -1589,6 +1795,22 @@
       {
         "name": "Cat café",
         "travel_time": 4
+      },
+      {
+        "name": "Nekomimi café",
+        "travel_time": 4
+      },
+      {
+        "name": "Adventurer's guild",
+        "travel_time": 4
+      },
+      {
+        "name": "Mages guild",
+        "travel_time": 4
+      },
+      {
+        "name": "Antique store",
+        "travel_time": 4
       }
     ],
     "is_combat_zone": false,
@@ -1603,10 +1825,100 @@
     "leave_text": null,
     "types": []
   },
-  "cat-caf": {
-    "id": "Cat café",
+  "cat-cafe": {
+    "id": "Cat cafe",
     "name": "Cat café",
-    "description": "A cat café in the center of town. There are multiple kitties of all kinds, but two females especially catch your eyes\n - a chubby mackerel tabby with a white belly and neck, and a slender tortoishell that seems blind on the right eye. There's a single worker in the café, a person of ambiguous gender with with long ponytail and glasses.",
+    "description": "A cat café in the center of town. There are multiple kitties of all kinds, but two females especially catch your eyes\n - a chubby mackerel tabby with a white belly and neck, and a slender tortoishell that seems blind on the right eye. There's a single worker in the café, a person of ambiguous gender with long ponytail and glasses.",
+    "connected_locations": [
+      {
+        "name": "Town square",
+        "travel_time": 4
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null,
+    "types": []
+  },
+  "nekomimi-cafe": {
+    "id": "Nekomimi cafe",
+    "name": "Nekomimi café",
+    "description": "A nekomimi café in the center of town. Multiple catboys and catgirls are busy with a mix of work and silliness, sometimes properly serving drinks and snacks and sometimes just acting the way their four legged equivalents tend to do.",
+    "connected_locations": [
+      {
+        "name": "Town square",
+        "travel_time": 4
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [
+      "nekomimi proprietress"
+    ],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null,
+    "types": []
+  },
+  "antique-store": {
+    "id": "Antique store",
+    "name": "Antique store",
+    "description": "An old but well kept store on the side of the central square, with a huge collection of antiques inside, most of them apparently not for sale as this place also functions as a private museum. There are paintings, furniture, ancient weapons and armors, as well as some things you cannot even recognize.",
+    "connected_locations": [
+      {
+        "name": "Town square",
+        "travel_time": 4
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null,
+    "types": []
+  },
+  "adventurers-guild": {
+    "id": "Adventurer's guild",
+    "name": "Adventurer's guild",
+    "description": "A local home of a big and influential guild that brings together all the kinds of adventurers and mercenaries, making it easier to find work and to be recognized. Building is well lit, with a crowd inside. People have all the kinds of equipment, some are alone and some are in groups. Some are waiting to report their most recent achievements, while others are drinking and celebrating.",
+    "connected_locations": [
+      {
+        "name": "Town square",
+        "travel_time": 4
+      }
+    ],
+    "is_combat_zone": false,
+    "tags": [
+      "safe_zone"
+    ],
+    "traders": [],
+    "dialogues": [],
+    "activities": [],
+    "actions": [],
+    "parent_location": null,
+    "leave_text": null,
+    "types": []
+  },
+  "mages-guild": {
+    "id": "Mages guild",
+    "name": "Mages guild",
+    "description": "A nekomimi café in the center of town. Multiple catboys and catgirls are busy with a mix of work and silliness, sometimes properly serving drinks and snacks and sometimes just acting the way their four legged equivalents tend to do.",
     "connected_locations": [
       {
         "name": "Town square",
@@ -1660,7 +1972,9 @@
         "id": "balancing",
         "activity_name": "balancing",
         "starting_text": "Stupidly risk your life by trying to balance on some stones on the very edge of the cliff",
-        "xp": 4
+        "xp": [
+          4
+        ]
       }
     ],
     "actions": [
@@ -1720,19 +2034,25 @@
         "id": "herbalism",
         "activity_name": "herbalism",
         "starting_text": "Search for useful herbs on the mountainside",
-        "xp": 6
+        "xp": [
+          6
+        ]
       },
       {
         "id": "balancing",
         "activity_name": "balancing",
         "starting_text": "Stupidly risk your life by trying to balance on some stones on the very edge of the cliff",
-        "xp": 4
+        "xp": [
+          4
+        ]
       },
       {
         "id": "climbing",
         "activity_name": "climbing",
         "starting_text": "Take a lesson from the goats and try to climb a wall near the camp",
-        "xp": 4
+        "xp": [
+          4
+        ]
       }
     ],
     "actions": [
@@ -1750,7 +2070,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -1819,7 +2139,7 @@
   "riverbank": {
     "id": "Riverbank",
     "name": "Riverbank",
-    "description": "You manage to deal a wounding crack to the giant crab's shell, driving it into a rage as it flees through the forest. With a moment of peace, you take stock of your surroundings. And if the amount of crabs on the river's shore are any indication, this might be the enormous crab nest you had heard about. You can't even tell where the shore meets the riverbank with the amount of crabs around here. The giant crab's trail is easy to spot, but it's just not possible to follow it without getting attacked by the smaller crabs. You will likely nead to get through  multiple groups of them on your way",
+    "description": "You manage to deal a wounding crack to the giant crab's shell, driving it into a rage as it flees through the forest. With a moment of peace, you take stock of your surroundings. And if the amount of crabs on the river's shore are any indication, this might be the enormous crab nest you had heard about. You can't even tell where the shore meets the riverbank with the amount of crabs around here. The giant crab's trail is easy to spot, but it's just not possible to follow it without getting attacked by the smaller crabs. You will likely need to get through  multiple groups of them on your way",
     "connected_locations": [
       {
         "name": "Village",
@@ -1853,7 +2173,9 @@
         "id": "herbalism",
         "activity_name": "herbalism",
         "starting_text": "Harvest flax from around the riverbank",
-        "xp": 9
+        "xp": [
+          9
+        ]
       }
     ],
     "actions": [],
@@ -1868,7 +2190,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -1961,31 +2283,41 @@
         "id": "swimming",
         "activity_name": "swimming",
         "starting_text": "Swim against the current",
-        "xp": 7
+        "xp": [
+          7
+        ]
       },
       {
         "id": "sand",
         "activity_name": "digging",
         "starting_text": "Dig for clams around the lake beach",
-        "xp": 10
+        "xp": [
+          10
+        ]
       },
       {
         "id": "climbing",
         "activity_name": "climbing",
         "starting_text": "Practice rappelling down the cliff face",
-        "xp": 10
+        "xp": [
+          10
+        ]
       },
       {
         "id": "weightlifting",
         "activity_name": "weightlifting",
         "starting_text": "Sled pull a boulder",
-        "xp": 10
+        "xp": [
+          10
+        ]
       },
       {
         "id": "running",
         "activity_name": "running",
         "starting_text": "Run along the shore",
-        "xp": 10
+        "xp": [
+          10
+        ]
       }
     ],
     "actions": [
@@ -2029,13 +2361,17 @@
         "id": "enduring",
         "activity_name": "enduring",
         "starting_text": "Harden your resolve by sitting underneath the waterfall",
-        "xp": 2
+        "xp": [
+          1
+        ]
       },
       {
         "id": "meditating",
         "activity_name": "meditating",
         "starting_text": "Sit in the rock shelter behind the waterfall and focus your mind",
-        "xp": 8
+        "xp": [
+          8
+        ]
       }
     ],
     "actions": [],
@@ -2050,7 +2386,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -2126,7 +2462,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -2194,7 +2530,9 @@
         "id": "herbalism",
         "activity_name": "herbalism",
         "starting_text": "Forage for wild herbs and vegetables in the swamplands",
-        "xp": 14
+        "xp": [
+          14
+        ]
       }
     ],
     "actions": [],
@@ -2236,7 +2574,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -2272,7 +2610,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -2308,7 +2646,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -2353,7 +2691,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -2390,7 +2728,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -2435,7 +2773,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -2489,7 +2827,7 @@
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],
@@ -2544,11 +2882,11 @@
   "forest-den-traversal": {
     "id": "Forest den traversal",
     "name": "Forest den traversal",
-    "description": "A relatively large cave in the depths of the forest, filled with hordes of direwolves. You are trying to find out what's on the other side.",
+    "description": "A relatively large cave in the depths of the forest, filled with hordes of direwolves. You are trying to find out what's on the other side",
     "connected_locations": [],
     "is_combat_zone": true,
     "tags": [
-      "Combat zone"
+      "combat zone"
     ],
     "traders": [],
     "dialogues": [],

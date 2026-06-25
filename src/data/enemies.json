@@ -15,7 +15,7 @@
       "magic": 0,
       "intuition": 5,
       "attack_speed": 0.8,
-      "defense": 1,
+      "defense": 0,
       "max_health": 20
     },
     "base_AP": 9,
@@ -67,7 +67,7 @@
       "intuition": 6,
       "magic": 0,
       "attack_speed": 1,
-      "defense": 2,
+      "defense": 1,
       "max_health": 30
     },
     "base_AP": 12,
@@ -586,7 +586,7 @@
     "id": "Boar",
     "name": "Boar",
     "description": "A big wild creature, with thick skin and large tusks",
-    "rank": 4,
+    "rank": 5,
     "xp_value": 10,
     "size": "medium",
     "add_to_bestiary": true,
@@ -752,26 +752,26 @@
     "size": "large",
     "add_to_bestiary": true,
     "stats": {
-      "health": 8000,
+      "health": 12000,
       "attack": 500,
       "agility": 250,
       "dexterity": 300,
-      "intuition": 200,
+      "intuition": 100,
       "magic": 0,
       "attack_speed": 0.8,
-      "defense": 500,
-      "max_health": 8000
+      "defense": 400,
+      "max_health": 12000
     },
-    "base_AP": 4243,
-    "base_EP": 3536,
+    "base_AP": 3000,
+    "base_EP": 2500,
     "location_combat_stats": [
       {
         "location_id": "frogs",
-        "location_name": "Frogs",
+        "location_name": "Water's edge",
         "max_enemies": 1,
         "stat_variation": 0.2,
-        "evasion_to_dodge": 50194,
-        "ap_to_hit": 34001
+        "evasion_to_dodge": 35493,
+        "ap_to_hit": 24043
       }
     ],
     "tags": [
@@ -869,8 +869,8 @@
         "chance": 0.005
       },
       {
-        "item_name": "Piece of wood",
-        "chance": 0.005
+        "item_name": "Wood log",
+        "chance": 0.002
       }
     ]
   },
@@ -927,6 +927,82 @@
         "stat_variation": 0.1,
         "evasion_to_dodge": 20767,
         "ap_to_hit": 4221
+      }
+    ],
+    "tags": [
+      "living",
+      "insect",
+      "small"
+    ],
+    "loot_list": []
+  },
+  "huge-dragonfly": {
+    "id": "Huge dragonfly",
+    "name": "Huge dragonfly",
+    "description": "A huge, hostile dragonfly, with a nasty poisoned stinger",
+    "rank": 6,
+    "xp_value": 15,
+    "size": "small",
+    "add_to_bestiary": true,
+    "stats": {
+      "health": 300,
+      "attack": 40,
+      "agility": 200,
+      "dexterity": 150,
+      "intuition": 100,
+      "magic": 0,
+      "attack_speed": 1.5,
+      "defense": 5,
+      "max_health": 300
+    },
+    "base_AP": 1500,
+    "base_EP": 2000,
+    "location_combat_stats": [
+      {
+        "location_id": "infested-woods",
+        "location_name": "Infested woods",
+        "max_enemies": 6,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 32248,
+        "ap_to_hit": 30103
+      }
+    ],
+    "tags": [
+      "living",
+      "insect",
+      "small"
+    ],
+    "loot_list": []
+  },
+  "dragonfly-queen": {
+    "id": "Dragonfly queen",
+    "name": "Dragonfly queen",
+    "description": "An exceptionally huge, hostile dragonfly, with a nasty poisoned stinger",
+    "rank": 6,
+    "xp_value": 30,
+    "size": "small",
+    "add_to_bestiary": true,
+    "stats": {
+      "health": 800,
+      "attack": 80,
+      "agility": 280,
+      "dexterity": 200,
+      "intuition": 100,
+      "magic": 0,
+      "attack_speed": 1.1,
+      "defense": 10,
+      "max_health": 800
+    },
+    "base_AP": 2000,
+    "base_EP": 2800,
+    "location_combat_stats": [
+      {
+        "location_id": "infested-woods",
+        "location_name": "Infested woods",
+        "max_enemies": 6,
+        "stat_variation": 0.2,
+        "evasion_to_dodge": 42997,
+        "ap_to_hit": 42144
       }
     ],
     "tags": [
@@ -1486,6 +1562,61 @@
       {
         "item_name": "Giant crab claw",
         "chance": 1
+      }
+    ]
+  },
+  "warthog": {
+    "id": "Warthog",
+    "name": "Warthog",
+    "description": "A large, aggressive porcine creature with a tough hide and large tusks",
+    "rank": 8,
+    "xp_value": 30,
+    "size": "large",
+    "add_to_bestiary": false,
+    "stats": {
+      "health": 12000,
+      "attack": 600,
+      "agility": 80,
+      "dexterity": 800,
+      "intuition": 100,
+      "magic": 0,
+      "attack_speed": 0.6,
+      "defense": 600,
+      "max_health": 12000
+    },
+    "base_AP": 8000,
+    "base_EP": 800,
+    "location_combat_stats": [
+      {
+        "location_id": "precarious-tree-bridge",
+        "location_name": "Warthog",
+        "max_enemies": 1,
+        "stat_variation": 0,
+        "evasion_to_dodge": 72001,
+        "ap_to_hit": 5853
+      }
+    ],
+    "tags": [
+      "living",
+      "beast",
+      "large"
+    ],
+    "loot_list": [
+      {
+        "item_name": "Boar hide",
+        "chance": 0.08
+      },
+      {
+        "item_name": "Boar meat",
+        "chance": 0.1
+      },
+      {
+        "item_name": "Boar tusk",
+        "chance": 0.05
+      },
+      {
+        "item_name": "High quality boar tusk",
+        "chance": 0.005
       }
     ]
   }
